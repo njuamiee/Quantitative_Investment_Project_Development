@@ -1,0 +1,17 @@
+# Local notes, datasets, and virtual environment
+/学习笔记/
+/training_data/
+/.venv_quant/
+
+# Local plaintext server credentials
+/ftp服务器
+/项目规划.mm
+/天软因子库/因子下载说明（天软科技）/TSFactors_WebAPI_demo_temp.ipynb
+/天软因子库/因子下载说明（天软科技）/api_factor_更新数据.py
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

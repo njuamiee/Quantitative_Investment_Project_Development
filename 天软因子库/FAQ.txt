@@ -1,0 +1,20 @@
+Q：天软中如何查找因子模型
+http://www.tinysoft.com.cn/tsdn/helpdoc/display.tsl?id=35785
+
+TSL脚本
+http://www.tinysoft.com.cn/tsdn/helpdoc/display.tsl?id=36973
+
+高频行情数据提取
+http://www.tinysoft.com.cn/tsdn/tstrain/detail.tsl?id=98#0
+
+
+Q：如何通过第三方接口下载当天的行情及基本面数据(以python为例) 
+http://www.tinysoft.com.cn/tsdn/helpdoc/display.tsl?id=31429
+
+范例三：使用pyTSL盘中获取实盘行情数据
+http://www.tinysoft.com.cn/tsdn/helpdoc/display.tsl?id=31429
+
+
+2016-07-28-应用专题-第三方交互：对ODBC接口的使用方法和范例
+http://www.tinysoft.com.cn/tsdn/helpdoc/display.tsl?id=15297
+可使: 用 Python pyodbc 使用 TinyODBC 参数调用访问天软平台

@@ -1,0 +1,8 @@
+{
+  "batch": {
+    "njobs": 8,
+    "min_bars": 250,
+    "plot_sides": [1, 5],
+    "plot_ks": [1, 5, 20]
+  }
+}

@@ -1,0 +1,7 @@
+三种交互方式：
+通过调用TSL, 通过安装目录下的TSLPy3x.pyd
+通过webAPI
+通过数据库语言 TinyODBC
+
+
+http://www.tinysoft.com.cn/tsdn/helpdoc/display.tsl?id=15257

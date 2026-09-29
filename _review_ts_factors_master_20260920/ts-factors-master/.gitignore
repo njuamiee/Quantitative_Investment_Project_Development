@@ -1,0 +1,18 @@
+# Python 缓存
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 编辑器
+.vscode/
+
+# 运行时生成的评价报告/图（体积大，可随时重跑生成）
+reports/
+tmp_rep_check/
+tmp_ic_analysis/
+
+# 个人草稿笔记
+z-prompt.txt
+
+# Windows 快捷方式（本地专用）
+*.lnk
