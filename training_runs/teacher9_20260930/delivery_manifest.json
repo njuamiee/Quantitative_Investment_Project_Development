@@ -1,0 +1,20 @@
+{
+  "training_runs/teacher9_20260930/final_summary.json": "7f7a7ce046e1f15df5e64e26a426806c782dfddec5576a7800163ca1b83ec70f",
+  "training_runs/teacher9_20260930/experiment_config.json": "a41bee82bc9742d9692f1004e47298cd0ca6afec4160d2f97fd5991adfadc20e",
+  "training_runs/teacher9_20260930/output_verification.json": "1f246f7ed072838e2019aa355edf9d97af63ad2a2a92b6e934e39962de2998a6",
+  "training_runs/teacher9_20260930/document_qa.json": "4069cb9be89a41168355fbe1207f92151b96cc17df71d31a7148e9e00ba87f49",
+  "tools/research_20260930/accounts.py": "dc06e7c1c2d006953a0c59aa08122e769e6d6d594cd56a9faf38690b8d3ff7b6",
+  "tools/research_20260930/analyze.py": "116f970e609073bd3a7a0df0a4055e9f0202df685547cd70c0583fecab11e679",
+  "tools/research_20260930/build_report.py": "b6aa6971d68535df85b77eedca9fefd8758f868f044b0f72ff6509d088604d56",
+  "tools/research_20260930/fetch_data.py": "1bcb3d2bedab1b0fcb85e16f34c4ac3b30844fe14b4fa74cbd189ea41fd4b192",
+  "tools/research_20260930/map_dictionary.py": "c184746ada629caad49a92b098ef62483a6149cb258e82277d0c829556711229",
+  "tools/research_20260930/prepare.py": "440cce8815d249b125370eba61621fe4903501be534b4f1578691e0dcf0af0dc",
+  "tools/research_20260930/prepare_capital.py": "034f6312cbf3f9425bfc6f10a7902fca397bf5d4b1a6475c468730245a08d017",
+  "tools/research_20260930/render_report_windows.py": "f959449b9a278da875f790c83f9010203e288aa73495544d98508696e77a2477",
+  "tools/research_20260930/replay.py": "3b5cef33ee8ee4888ccb9b0b29bda91f1943cacba2e49306f4c6c38903bde015",
+  "tools/research_20260930/test_research.py": "9c084e1cdaf4e596146f66bd24827e9b9cab12270dfbcef57ac7dde7276646cf",
+  "tools/research_20260930/train.py": "f5a1664f91056b1f38eeb95da987dd431c222d3c50d217adf172ee79f792047c",
+  "tools/research_20260930/verify_outputs.py": "c8b23dfc664489e8f4a9f379959b687f3b4e3cb021b5be89444a24033c2b46c2",
+  "tools/research_20260930/vnpy_adapter.py": "d371f89ba7a44051ac5a60f76c64fca0bc0e4b118de2ebfcd4f9a818f9ce216b",
+  "tools/research_20260930/README.md": "0a5cd8d5ca37e2b331bc7d998aabd3c3a77c8ff9df44533d01b22a65a999f67f"
+}

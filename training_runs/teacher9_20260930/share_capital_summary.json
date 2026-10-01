@@ -1,0 +1,15 @@
+{
+  "rows": 259656,
+  "snapshot_dates": 1184,
+  "stocks": 350,
+  "first_date": "2021-11-15",
+  "last_date": "2026-09-29",
+  "pool_circulating_share_coverage": 0.9998274452819907,
+  "pool_free_float_share_coverage": 1.0,
+  "minute_daily_volume_ratio_median": 99.66540720720522,
+  "daily_volume_to_shares_multiplier": 100,
+  "turnover_proxy_median": 0.023694369543296998,
+  "capital_ordering_violation_rows": 22954,
+  "status": "auxiliary candidate only; not added to already evaluated primary models",
+  "limitations": "Supplier snapshot availability assumed 18:00 on file date; historical publication/revision timing unverified. No backfill. Report-date share count may lag. Not a verified corporate-action cash/share ledger."
+}

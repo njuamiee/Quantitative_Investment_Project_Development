@@ -1,0 +1,6 @@
+﻿date,stockid,pred_selected,signal_available_at,earliest_execution_date,model_version,target_new_batch_weight,horizon,research_only
+2026-09-29,BJ920662,0.03315161413000798,2026-09-29 18:00:00,2026-09-30,teacher9_20260930/2026Q3,0.04,exit t+5 close; delayed if not tradable,True
+2026-09-29,BJ920726,0.03315161413000798,2026-09-29 18:00:00,2026-09-30,teacher9_20260930/2026Q3,0.04,exit t+5 close; delayed if not tradable,True
+2026-09-29,BJ920576,0.03204823519323257,2026-09-29 18:00:00,2026-09-30,teacher9_20260930/2026Q3,0.04,exit t+5 close; delayed if not tradable,True
+2026-09-29,BJ920111,0.03185924640371283,2026-09-29 18:00:00,2026-09-30,teacher9_20260930/2026Q3,0.04,exit t+5 close; delayed if not tradable,True
+2026-09-29,BJ920222,0.03175578840540305,2026-09-29 18:00:00,2026-09-30,teacher9_20260930/2026Q3,0.04,exit t+5 close; delayed if not tradable,True

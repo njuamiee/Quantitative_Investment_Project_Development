@@ -1,0 +1,7 @@
+{
+  "tables": 120,
+  "fields": 2508,
+  "constant_snapshot_fields": 70,
+  "low_coverage_snapshot_fields": 81,
+  "invalid_stockid_rows": 5
+}

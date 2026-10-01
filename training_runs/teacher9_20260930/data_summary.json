@@ -1,0 +1,30 @@
+{
+  "bj": {
+    "rows": 110110,
+    "stocks": 301,
+    "features": 304,
+    "signal_start": "2022-02-14 00:00:00",
+    "signal_end": "2026-09-29 00:00:00",
+    "factor_coverage_mean": 0.944931189607404,
+    "factor_coverage_below_70pct_rows": 11946
+  },
+  "shsz": {
+    "rows": 252500,
+    "stocks": 291,
+    "features": 12,
+    "signal_start": "2016-04-01 00:00:00",
+    "signal_end": "2026-08-21 00:00:00",
+    "factor_coverage_mean": null,
+    "factor_coverage_below_70pct_rows": null
+  },
+  "latest_factor_quality": {
+    "tables": 120,
+    "fields": 2508,
+    "constant_snapshot_fields": 70,
+    "low_coverage_snapshot_fields": 81,
+    "invalid_stockid_rows": 5
+  },
+  "price_returns": "unadjusted price-only research returns, not total returns; qfq ratios diagnostic only",
+  "eligibility": "60 observed valid trading days, >=16/20 active, current positive OHLC/amount/volume; history proxy not official listing eligibility",
+  "survivorship": "available-file universe; historical security master incomplete; SHSZ deterministic convenience sample"
+}

@@ -1,0 +1,18 @@
+{
+  "alpha_research_feature_importance.csv": "74fbf3fa456b33a1b51badcc2bace76841cc4e674d63ddea252c59a2ee357cfb",
+  "alpha_research_model.txt": "fea6d15b202774963429383274598289fbc1b72ffa6697283ac334dd0a7fa921",
+  "config.json": "490ebf2f317d1f6b4701ae8e593caf3f8d1a71cb18b401b018da34096cb31c93",
+  "data_audit.json": "8d9301a90cf11758bbea24ae8eca57a4f585f91a40b3a2b26c609526d6a586b8",
+  "hmm_probabilities.csv": "7b5da9101e6a06c2033af819e666b4148cd63f7c2fabb85f29b50134b7892a94",
+  "metrics.json": "b39a1ecd1a37ddde7f2a07099c3757355b0f90d0b4d4b00ebada06228eeeec53",
+  "portfolio_fixed_daily.csv": "0e7f1822bad3513cc8cafaf5d9b3e771b1e2cf71e2f2a5736195e7df0f0f876e",
+  "portfolio_fixed_trades.csv": "ae7fc52c5c690608525828b479753cd0f09609bb07ad8ef13d2dfc5a66c36bcb",
+  "portfolio_hmm_daily.csv": "332163ec4d667fad91cbe29ac7d99c07b5d33578f7f8388493202596afb7a002",
+  "portfolio_hmm_trades.csv": "3085b8744e695a51962a2778963e49999e21ac409e56959732d496ef595bfa4b",
+  "price_only_feature_importance.csv": "64ddbff3fcb2dfeb92a369bc1d2c17caed6d4ed1a10a2da5cdd5db15becda204",
+  "price_only_model.txt": "04cc0802e6c6bf682bbfc30dc1f9acb53ca5b166cd6cc7c6269000c44e628966",
+  "report.md": "052d56caf2a6fd27b77bbcb65d154838c41cbb2c0696c515d76ea004d895fa49",
+  "test_daily_metrics_alpha_research.csv": "22e01ac22ba6ee1e6e0fb871d6cdabcd090902532a4bfd50720bd4a30e174f69",
+  "test_daily_metrics_price_only.csv": "6f40f47b80cb31deabdec2c9b1e2e87e30ac901eab1dc35667bcc75e2a32c95a",
+  "test_predictions.parquet": "e49fc3bd1866914c37ebf238aff84ff3d19c13bc9a20bae73acae4e46a08ae1d"
+}

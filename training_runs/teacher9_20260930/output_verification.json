@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "actual_account_files_checked": 16,
+  "max_cash_plus_value_error": 9.313225746154785e-10,
+  "rolling_folds_checked": 39,
+  "maximum_selected_pair_abs_mean_daily_spearman": 0.8498029464206734,
+  "monthly_hmm_train_boundaries_checked": 24,
+  "research_signals_checked": 2420,
+  "frozen_old_files_unchanged": 16,
+  "limitations": "Checks validate implementation, not historical source availability, real executions, corporate actions or profitability."
+}

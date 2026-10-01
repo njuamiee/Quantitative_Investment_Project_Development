@@ -1,0 +1,7 @@
+{
+  "run": 12,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "details": "test_future_price_mutation_preserves_past_pool_and_features (__main__.CausalityTests.test_future_price_mutation_preserves_past_pool_and_features) ... ok\ntest_offline_signal_time_gate (__main__.CausalityTests.test_offline_signal_time_gate) ... ok\ntest_null_bar_and_limit_order (__main__.ExecutionTests.test_null_bar_and_limit_order) ... ok\ntest_partial_and_zero_volume (__main__.ExecutionTests.test_partial_and_zero_volume) ... ok\ntest_cash_dividend_conservation (__main__.LedgerTests.test_cash_dividend_conservation) ... ok\ntest_cost_is_real_cash_debit (__main__.LedgerTests.test_cost_is_real_cash_debit) ... ok\ntest_flat_price_and_cash_conservation (__main__.LedgerTests.test_flat_price_and_cash_conservation) ... ok\ntest_limit_proxy_blocks_entry (__main__.LedgerTests.test_limit_proxy_blocks_entry) ... ok\ntest_split_conservation (__main__.LedgerTests.test_split_conservation) ... ok\ntest_suspension_delays_exit (__main__.LedgerTests.test_suspension_delays_exit) ... ok\ntest_t_plus_one_cap_sell (__main__.LedgerTests.test_t_plus_one_cap_sell) ... ok\ntest_zero_volume_does_not_trade (__main__.LedgerTests.test_zero_volume_does_not_trade) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.719s\n\nOK\n"
+}
