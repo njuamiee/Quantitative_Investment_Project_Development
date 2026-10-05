@@ -1,0 +1,264 @@
+table 1: tblW=dxa:9360 grid_sum=9360 grid=[3456, 5904]
+  row 1: tcW=[3456, 5904] sum=9360
+  row 2: tcW=[3456, 5904] sum=9360
+  row 3: tcW=[3456, 5904] sum=9360
+  row 4: tcW=[3456, 5904] sum=9360
+  row 5: tcW=[3456, 5904] sum=9360
+table 2: tblW=dxa:9360 grid_sum=9360 grid=[4680, 1440, 1800, 1440]
+  row 1: tcW=[4680, 1440, 1800, 1440] sum=9360
+  row 2: tcW=[4680, 1440, 1800, 1440] sum=9360
+  row 3: tcW=[4680, 1440, 1800, 1440] sum=9360
+  row 4: tcW=[4680, 1440, 1800, 1440] sum=9360
+  row 5: tcW=[4680, 1440, 1800, 1440] sum=9360
+table 3: tblW=dxa:9360 grid_sum=9360 grid=[3600, 2304, 3456]
+  row 1: tcW=[3600, 2304, 3456] sum=9360
+  row 2: tcW=[3600, 2304, 3456] sum=9360
+  row 3: tcW=[3600, 2304, 3456] sum=9360
+  row 4: tcW=[3600, 2304, 3456] sum=9360
+  row 5: tcW=[3600, 2304, 3456] sum=9360
+  row 6: tcW=[3600, 2304, 3456] sum=9360
+  row 7: tcW=[3600, 2304, 3456] sum=9360
+table 4: tblW=dxa:9360 grid_sum=9360 grid=[4608, 4752]
+  row 1: tcW=[4608, 4752] sum=9360
+  row 2: tcW=[4608, 4752] sum=9360
+  row 3: tcW=[4608, 4752] sum=9360
+  row 4: tcW=[4608, 4752] sum=9360
+  row 5: tcW=[4608, 4752] sum=9360
+  row 6: tcW=[4608, 4752] sum=9360
+  row 7: tcW=[4608, 4752] sum=9360
+table 5: tblW=dxa:9360 grid_sum=9360 grid=[3168, 1728, 4464]
+  row 1: tcW=[3168, 1728, 4464] sum=9360
+  row 2: tcW=[3168, 1728, 4464] sum=9360
+  row 3: tcW=[3168, 1728, 4464] sum=9360
+  row 4: tcW=[3168, 1728, 4464] sum=9360
+table 6: tblW=dxa:9360 grid_sum=9360 grid=[4176, 2160, 3024]
+  row 1: tcW=[4176, 2160, 3024] sum=9360
+  row 2: tcW=[4176, 2160, 3024] sum=9360
+  row 3: tcW=[4176, 2160, 3024] sum=9360
+  row 4: tcW=[4176, 2160, 3024] sum=9360
+  row 5: tcW=[4176, 2160, 3024] sum=9360
+table 7: tblW=dxa:9360 grid_sum=9360 grid=[1728, 3816, 3816]
+  row 1: tcW=[1728, 3816, 3816] sum=9360
+  row 2: tcW=[1728, 3816, 3816] sum=9360
+  row 3: tcW=[1728, 3816, 3816] sum=9360
+  row 4: tcW=[1728, 3816, 3816] sum=9360
+table 8: tblW=dxa:9360 grid_sum=9360 grid=[2376, 6984]
+  row 1: tcW=[2376, 6984] sum=9360
+  row 2: tcW=[2376, 6984] sum=9360
+  row 3: tcW=[2376, 6984] sum=9360
+  row 4: tcW=[2376, 6984] sum=9360
+  row 5: tcW=[2376, 6984] sum=9360
+  row 6: tcW=[2376, 6984] sum=9360
+table 9: tblW=dxa:9360 grid_sum=9360 grid=[4464, 2448, 2448]
+  row 1: tcW=[4464, 2448, 2448] sum=9360
+  row 2: tcW=[4464, 2448, 2448] sum=9360
+  row 3: tcW=[4464, 2448, 2448] sum=9360
+  row 4: tcW=[4464, 2448, 2448] sum=9360
+table 10: tblW=dxa:9360 grid_sum=9360 grid=[2880, 6480]
+  row 1: tcW=[2880, 6480] sum=9360
+  row 2: tcW=[2880, 6480] sum=9360
+  row 3: tcW=[2880, 6480] sum=9360
+  row 4: tcW=[2880, 6480] sum=9360
+  row 5: tcW=[2880, 6480] sum=9360
+  row 6: tcW=[2880, 6480] sum=9360
+table 11: tblW=dxa:9360 grid_sum=9360 grid=[4896, 2232, 2232]
+  row 1: tcW=[4896, 2232, 2232] sum=9360
+  row 2: tcW=[4896, 2232, 2232] sum=9360
+  row 3: tcW=[4896, 2232, 2232] sum=9360
+  row 4: tcW=[4896, 2232, 2232] sum=9360
+table 12: tblW=dxa:9360 grid_sum=9360 grid=[4752, 1800, 2808]
+  row 1: tcW=[4752, 1800, 2808] sum=9360
+  row 2: tcW=[4752, 1800, 2808] sum=9360
+  row 3: tcW=[4752, 1800, 2808] sum=9360
+table 13: tblW=dxa:9360 grid_sum=9360 grid=[2160, 3600, 3600]
+  row 1: tcW=[2160, 3600, 3600] sum=9360
+  row 2: tcW=[2160, 3600, 3600] sum=9360
+  row 3: tcW=[2160, 3600, 3600] sum=9360
+  row 4: tcW=[2160, 3600, 3600] sum=9360
+  row 5: tcW=[2160, 3600, 3600] sum=9360
+  row 6: tcW=[2160, 3600, 3600] sum=9360
+  row 7: tcW=[2160, 3600, 3600] sum=9360
+  row 8: tcW=[2160, 3600, 3600] sum=9360
+  row 9: tcW=[2160, 3600, 3600] sum=9360
+table 14: tblW=dxa:9360 grid_sum=9360 grid=[4464, 4896]
+  row 1: tcW=[4464, 4896] sum=9360
+  row 2: tcW=[4464, 4896] sum=9360
+  row 3: tcW=[4464, 4896] sum=9360
+  row 4: tcW=[4464, 4896] sum=9360
+  row 5: tcW=[4464, 4896] sum=9360
+  row 6: tcW=[4464, 4896] sum=9360
+table 15: tblW=dxa:9360 grid_sum=9360 grid=[2160, 3600, 3600]
+  row 1: tcW=[2160, 3600, 3600] sum=9360
+  row 2: tcW=[2160, 3600, 3600] sum=9360
+  row 3: tcW=[2160, 3600, 3600] sum=9360
+  row 4: tcW=[2160, 3600, 3600] sum=9360
+  row 5: tcW=[2160, 3600, 3600] sum=9360
+table 16: tblW=dxa:9360 grid_sum=9360 grid=[2016, 3744, 3600]
+  row 1: tcW=[2016, 3744, 3600] sum=9360
+  row 2: tcW=[2016, 3744, 3600] sum=9360
+  row 3: tcW=[2016, 3744, 3600] sum=9360
+  row 4: tcW=[2016, 3744, 3600] sum=9360
+  row 5: tcW=[2016, 3744, 3600] sum=9360
+  row 6: tcW=[2016, 3744, 3600] sum=9360
+  row 7: tcW=[2016, 3744, 3600] sum=9360
+table 17: tblW=dxa:9360 grid_sum=9360 grid=[2304, 3888, 3168]
+  row 1: tcW=[2304, 3888, 3168] sum=9360
+  row 2: tcW=[2304, 3888, 3168] sum=9360
+  row 3: tcW=[2304, 3888, 3168] sum=9360
+  row 4: tcW=[2304, 3888, 3168] sum=9360
+  row 5: tcW=[2304, 3888, 3168] sum=9360
+  row 6: tcW=[2304, 3888, 3168] sum=9360
+table 18: tblW=dxa:9360 grid_sum=9360 grid=[3096, 6264]
+  row 1: tcW=[3096, 6264] sum=9360
+  row 2: tcW=[3096, 6264] sum=9360
+  row 3: tcW=[3096, 6264] sum=9360
+  row 4: tcW=[3096, 6264] sum=9360
+  row 5: tcW=[3096, 6264] sum=9360
+table 19: tblW=dxa:9360 grid_sum=9360 grid=[2160, 7200]
+  row 1: tcW=[2160, 7200] sum=9360
+  row 2: tcW=[2160, 7200] sum=9360
+  row 3: tcW=[2160, 7200] sum=9360
+  row 4: tcW=[2160, 7200] sum=9360
+table 20: tblW=dxa:9360 grid_sum=9360 grid=[3168, 2736, 3456]
+  row 1: tcW=[3168, 2736, 3456] sum=9360
+  row 2: tcW=[3168, 2736, 3456] sum=9360
+  row 3: tcW=[3168, 2736, 3456] sum=9360
+  row 4: tcW=[3168, 2736, 3456] sum=9360
+  row 5: tcW=[3168, 2736, 3456] sum=9360
+  row 6: tcW=[3168, 2736, 3456] sum=9360
+  row 7: tcW=[3168, 2736, 3456] sum=9360
+table 21: tblW=dxa:9360 grid_sum=9360 grid=[2448, 6912]
+  row 1: tcW=[2448, 6912] sum=9360
+  row 2: tcW=[2448, 6912] sum=9360
+  row 3: tcW=[2448, 6912] sum=9360
+  row 4: tcW=[2448, 6912] sum=9360
+  row 5: tcW=[2448, 6912] sum=9360
+  row 6: tcW=[2448, 6912] sum=9360
+  row 7: tcW=[2448, 6912] sum=9360
+  row 8: tcW=[2448, 6912] sum=9360
+  row 9: tcW=[2448, 6912] sum=9360
+  row 10: tcW=[2448, 6912] sum=9360
+table 22: tblW=dxa:9360 grid_sum=9360 grid=[5472, 3888]
+  row 1: tcW=[5472, 3888] sum=9360
+  row 2: tcW=[5472, 3888] sum=9360
+  row 3: tcW=[5472, 3888] sum=9360
+  row 4: tcW=[5472, 3888] sum=9360
+  row 5: tcW=[5472, 3888] sum=9360
+  row 6: tcW=[5472, 3888] sum=9360
+  row 7: tcW=[5472, 3888] sum=9360
+  row 8: tcW=[5472, 3888] sum=9360
+  row 9: tcW=[5472, 3888] sum=9360
+  row 10: tcW=[5472, 3888] sum=9360
+  row 11: tcW=[5472, 3888] sum=9360
+  row 12: tcW=[5472, 3888] sum=9360
+  row 13: tcW=[5472, 3888] sum=9360
+  row 14: tcW=[5472, 3888] sum=9360
+  row 15: tcW=[5472, 3888] sum=9360
+table 23: tblW=dxa:9360 grid_sum=9360 grid=[5112, 4248]
+  row 1: tcW=[5112, 4248] sum=9360
+  row 2: tcW=[5112, 4248] sum=9360
+  row 3: tcW=[5112, 4248] sum=9360
+  row 4: tcW=[5112, 4248] sum=9360
+  row 5: tcW=[5112, 4248] sum=9360
+  row 6: tcW=[5112, 4248] sum=9360
+  row 7: tcW=[5112, 4248] sum=9360
+  row 8: tcW=[5112, 4248] sum=9360
+  row 9: tcW=[5112, 4248] sum=9360
+  row 10: tcW=[5112, 4248] sum=9360
+  row 11: tcW=[5112, 4248] sum=9360
+  row 12: tcW=[5112, 4248] sum=9360
+  row 13: tcW=[5112, 4248] sum=9360
+  row 14: tcW=[5112, 4248] sum=9360
+  row 15: tcW=[5112, 4248] sum=9360
+  row 16: tcW=[5112, 4248] sum=9360
+  row 17: tcW=[5112, 4248] sum=9360
+table 24: tblW=dxa:9360 grid_sum=9360 grid=[5184, 4176]
+  row 1: tcW=[5184, 4176] sum=9360
+  row 2: tcW=[5184, 4176] sum=9360
+  row 3: tcW=[5184, 4176] sum=9360
+  row 4: tcW=[5184, 4176] sum=9360
+  row 5: tcW=[5184, 4176] sum=9360
+  row 6: tcW=[5184, 4176] sum=9360
+  row 7: tcW=[5184, 4176] sum=9360
+  row 8: tcW=[5184, 4176] sum=9360
+  row 9: tcW=[5184, 4176] sum=9360
+  row 10: tcW=[5184, 4176] sum=9360
+  row 11: tcW=[5184, 4176] sum=9360
+  row 12: tcW=[5184, 4176] sum=9360
+  row 13: tcW=[5184, 4176] sum=9360
+  row 14: tcW=[5184, 4176] sum=9360
+  row 15: tcW=[5184, 4176] sum=9360
+  row 16: tcW=[5184, 4176] sum=9360
+  row 17: tcW=[5184, 4176] sum=9360
+table 25: tblW=dxa:9360 grid_sum=9360 grid=[4608, 4752]
+  row 1: tcW=[4608, 4752] sum=9360
+  row 2: tcW=[4608, 4752] sum=9360
+  row 3: tcW=[4608, 4752] sum=9360
+  row 4: tcW=[4608, 4752] sum=9360
+  row 5: tcW=[4608, 4752] sum=9360
+  row 6: tcW=[4608, 4752] sum=9360
+  row 7: tcW=[4608, 4752] sum=9360
+  row 8: tcW=[4608, 4752] sum=9360
+  row 9: tcW=[4608, 4752] sum=9360
+  row 10: tcW=[4608, 4752] sum=9360
+  row 11: tcW=[4608, 4752] sum=9360
+table 26: tblW=dxa:9360 grid_sum=9360 grid=[3024, 6336]
+  row 1: tcW=[3024, 6336] sum=9360
+  row 2: tcW=[3024, 6336] sum=9360
+  row 3: tcW=[3024, 6336] sum=9360
+  row 4: tcW=[3024, 6336] sum=9360
+  row 5: tcW=[3024, 6336] sum=9360
+  row 6: tcW=[3024, 6336] sum=9360
+  row 7: tcW=[3024, 6336] sum=9360
+  row 8: tcW=[3024, 6336] sum=9360
+  row 9: tcW=[3024, 6336] sum=9360
+table 27: tblW=dxa:9360 grid_sum=9360 grid=[1440, 2664, 2592, 2664]
+  row 1: tcW=[1440, 2664, 2592, 2664] sum=9360
+  row 2: tcW=[1440, 2664, 2592, 2664] sum=9360
+  row 3: tcW=[1440, 2664, 2592, 2664] sum=9360
+  row 4: tcW=[1440, 2664, 2592, 2664] sum=9360
+  row 5: tcW=[1440, 2664, 2592, 2664] sum=9360
+  row 6: tcW=[1440, 2664, 2592, 2664] sum=9360
+table 28: tblW=dxa:9360 grid_sum=9360 grid=[4680, 4680]
+  row 1: tcW=[4680, 4680] sum=9360
+  row 2: tcW=[4680, 4680] sum=9360
+  row 3: tcW=[4680, 4680] sum=9360
+  row 4: tcW=[4680, 4680] sum=9360
+  row 5: tcW=[4680, 4680] sum=9360
+  row 6: tcW=[4680, 4680] sum=9360
+  row 7: tcW=[4680, 4680] sum=9360
+  row 8: tcW=[4680, 4680] sum=9360
+  row 9: tcW=[4680, 4680] sum=9360
+table 29: tblW=dxa:9360 grid_sum=9360 grid=[6048, 3312]
+  row 1: tcW=[6048, 3312] sum=9360
+  row 2: tcW=[6048, 3312] sum=9360
+  row 3: tcW=[6048, 3312] sum=9360
+  row 4: tcW=[6048, 3312] sum=9360
+  row 5: tcW=[6048, 3312] sum=9360
+  row 6: tcW=[6048, 3312] sum=9360
+  row 7: tcW=[6048, 3312] sum=9360
+  row 8: tcW=[6048, 3312] sum=9360
+table 30: tblW=dxa:9360 grid_sum=9360 grid=[3888, 2736, 2736]
+  row 1: tcW=[3888, 2736, 2736] sum=9360
+  row 2: tcW=[3888, 2736, 2736] sum=9360
+  row 3: tcW=[3888, 2736, 2736] sum=9360
+  row 4: tcW=[3888, 2736, 2736] sum=9360
+  row 5: tcW=[3888, 2736, 2736] sum=9360
+table 31: tblW=dxa:9360 grid_sum=9360 grid=[3024, 3888, 2448]
+  row 1: tcW=[3024, 3888, 2448] sum=9360
+  row 2: tcW=[3024, 3888, 2448] sum=9360
+  row 3: tcW=[3024, 3888, 2448] sum=9360
+  row 4: tcW=[3024, 3888, 2448] sum=9360
+  row 5: tcW=[3024, 3888, 2448] sum=9360
+table 32: tblW=dxa:9360 grid_sum=9360 grid=[2088, 4032, 3240]
+  row 1: tcW=[2088, 4032, 3240] sum=9360
+  row 2: tcW=[2088, 4032, 3240] sum=9360
+  row 3: tcW=[2088, 4032, 3240] sum=9360
+  row 4: tcW=[2088, 4032, 3240] sum=9360
+  row 5: tcW=[2088, 4032, 3240] sum=9360
+  row 6: tcW=[2088, 4032, 3240] sum=9360
+  row 7: tcW=[2088, 4032, 3240] sum=9360
+  row 8: tcW=[2088, 4032, 3240] sum=9360
+  row 9: tcW=[2088, 4032, 3240] sum=9360
+  row 10: tcW=[2088, 4032, 3240] sum=9360
+OK: all tables have matching tblW, tblGrid, and tcW

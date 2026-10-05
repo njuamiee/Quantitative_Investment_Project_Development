@@ -1,0 +1,952 @@
+{
+  "created_at_utc": "2026-09-20T13:07:14.593507+00:00",
+  "research_only": true,
+  "price_only": {
+    "train_rows": 58449,
+    "train_dates": 514,
+    "train_min_signal": "2021-11-15",
+    "train_max_signal": "2023-12-22",
+    "train_max_label_date": "2023-12-29",
+    "validation_rows": 52637,
+    "validation_dates": 233,
+    "validation_min_signal": "2024-01-08",
+    "validation_max_signal": "2024-12-24",
+    "validation_max_label_date": "2024-12-31",
+    "test_scored_rows": 59875,
+    "test_evaluable_rows": 59833,
+    "test_dates": 239,
+    "test_min_signal": "2025-01-08",
+    "test_max_signal": "2025-12-31",
+    "best_iteration": 123,
+    "model_prefix": "price_only",
+    "feature_count": 13,
+    "params": {
+      "objective": "regression_l1",
+      "learning_rate": 0.03,
+      "n_estimators": 123,
+      "num_leaves": 15,
+      "max_depth": 5,
+      "min_child_samples": 200,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 2.0,
+      "reg_alpha": 0.1,
+      "random_state": 20260920,
+      "n_jobs": 8,
+      "verbosity": -1
+    },
+    "validation_metrics": {
+      "rows": 52637,
+      "dates": 233,
+      "stocks": 243,
+      "directional_accuracy": 0.5387569671107623,
+      "directional_accuracy_95ci": [
+        0.521169390442404,
+        0.5564502375409547
+      ],
+      "directional_accuracy_ci_method": "10-day moving-block bootstrap, 5000 repetitions",
+      "balanced_reference_accuracy": 0.5,
+      "mean_daily_rank_ic": 0.11503556323658799,
+      "daily_rank_ic_std": 0.17134250521824565,
+      "daily_icir": 0.6713778527404084,
+      "positive_rank_ic_day_fraction": 0.776824034334764,
+      "top5_positive_hit_rate": 0.5450643776824035,
+      "top5_daily_outperform_fraction": 0.51931330472103,
+      "mean_top5_5d_raw_return": 0.013179109332226501,
+      "mean_universe_5d_raw_return": 0.01233120707073967,
+      "mean_top_bottom_10pct_5d_spread": 0.015831348896766375
+    },
+    "test_metrics": {
+      "rows": 59833,
+      "dates": 239,
+      "stocks": 263,
+      "directional_accuracy": 0.5454855562386641,
+      "directional_accuracy_95ci": [
+        0.5314969412723937,
+        0.564365175776998
+      ],
+      "directional_accuracy_ci_method": "10-day moving-block bootstrap, 5000 repetitions",
+      "balanced_reference_accuracy": 0.5,
+      "mean_daily_rank_ic": 0.138871882237692,
+      "daily_rank_ic_std": 0.14676112255044665,
+      "daily_icir": 0.9462443447170905,
+      "positive_rank_ic_day_fraction": 0.8410041841004184,
+      "top5_positive_hit_rate": 0.6075313807531381,
+      "top5_daily_outperform_fraction": 0.5062761506276151,
+      "mean_top5_5d_raw_return": 0.01642386615341897,
+      "mean_universe_5d_raw_return": 0.010523330927329131,
+      "mean_top_bottom_10pct_5d_spread": 0.018531725977532346
+    },
+    "validation_momentum20_baseline": {
+      "rows": 52632,
+      "dates": 233,
+      "stocks": 243,
+      "directional_accuracy": 0.4640280948594472,
+      "directional_accuracy_95ci": [
+        0.4481431098244979,
+        0.48205246349213016
+      ],
+      "directional_accuracy_ci_method": "10-day moving-block bootstrap, 5000 repetitions",
+      "balanced_reference_accuracy": 0.5,
+      "mean_daily_rank_ic": -0.10625674322065509,
+      "daily_rank_ic_std": 0.16594699138352623,
+      "daily_icir": -0.6403053308455663,
+      "positive_rank_ic_day_fraction": 0.27467811158798283,
+      "top5_positive_hit_rate": 0.3776824034334764,
+      "top5_daily_outperform_fraction": 0.33905579399141633,
+      "mean_top5_5d_raw_return": 0.00028396946013958314,
+      "mean_universe_5d_raw_return": 0.012325910683605758,
+      "mean_top_bottom_10pct_5d_spread": -0.019352458244024817
+    },
+    "test_momentum20_baseline": {
+      "rows": 59833,
+      "dates": 239,
+      "stocks": 263,
+      "directional_accuracy": 0.4584393123098148,
+      "directional_accuracy_95ci": [
+        0.4455359195730846,
+        0.47145436289184256
+      ],
+      "directional_accuracy_ci_method": "10-day moving-block bootstrap, 5000 repetitions",
+      "balanced_reference_accuracy": 0.5,
+      "mean_daily_rank_ic": -0.11871986778853551,
+      "daily_rank_ic_std": 0.1412681585107094,
+      "daily_icir": -0.8403866026153054,
+      "positive_rank_ic_day_fraction": 0.17154811715481172,
+      "top5_positive_hit_rate": 0.35648535564853556,
+      "top5_daily_outperform_fraction": 0.3179916317991632,
+      "mean_top5_5d_raw_return": -0.013188780518026208,
+      "mean_universe_5d_raw_return": 0.010523330927329131,
+      "mean_top_bottom_10pct_5d_spread": -0.017066336860227252
+    }
+  },
+  "alpha_research": {
+    "train_rows": 58449,
+    "train_dates": 514,
+    "train_min_signal": "2021-11-15",
+    "train_max_signal": "2023-12-22",
+    "train_max_label_date": "2023-12-29",
+    "validation_rows": 52637,
+    "validation_dates": 233,
+    "validation_min_signal": "2024-01-08",
+    "validation_max_signal": "2024-12-24",
+    "validation_max_label_date": "2024-12-31",
+    "test_scored_rows": 59875,
+    "test_evaluable_rows": 59833,
+    "test_dates": 239,
+    "test_min_signal": "2025-01-08",
+    "test_max_signal": "2025-12-31",
+    "best_iteration": 165,
+    "model_prefix": "alpha_research",
+    "feature_count": 115,
+    "params": {
+      "objective": "regression_l1",
+      "learning_rate": 0.03,
+      "n_estimators": 165,
+      "num_leaves": 15,
+      "max_depth": 5,
+      "min_child_samples": 200,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 2.0,
+      "reg_alpha": 0.1,
+      "random_state": 20260920,
+      "n_jobs": 8,
+      "verbosity": -1
+    },
+    "validation_metrics": {
+      "rows": 52637,
+      "dates": 233,
+      "stocks": 243,
+      "directional_accuracy": 0.5448012431548426,
+      "directional_accuracy_95ci": [
+        0.5275098472860583,
+        0.5620682636314235
+      ],
+      "directional_accuracy_ci_method": "10-day moving-block bootstrap, 5000 repetitions",
+      "balanced_reference_accuracy": 0.5,
+      "mean_daily_rank_ic": 0.12941144560269793,
+      "daily_rank_ic_std": 0.1748181655432371,
+      "daily_icir": 0.7402631482864469,
+      "positive_rank_ic_day_fraction": 0.8154506437768241,
+      "top5_positive_hit_rate": 0.5321888412017167,
+      "top5_daily_outperform_fraction": 0.4978540772532189,
+      "mean_top5_5d_raw_return": 0.012857730955006181,
+      "mean_universe_5d_raw_return": 0.01233120707073967,
+      "mean_top_bottom_10pct_5d_spread": 0.015733180623606458
+    },
+    "test_metrics": {
+      "rows": 59833,
+      "dates": 239,
+      "stocks": 263,
+      "directional_accuracy": 0.548052663433277,
+      "directional_accuracy_95ci": [
+        0.5356865777090722,
+        0.5655351677319229
+      ],
+      "directional_accuracy_ci_method": "10-day moving-block bootstrap, 5000 repetitions",
+      "balanced_reference_accuracy": 0.5,
+      "mean_daily_rank_ic": 0.1487727325196957,
+      "daily_rank_ic_std": 0.1442616163270437,
+      "daily_icir": 1.0312703843718567,
+      "positive_rank_ic_day_fraction": 0.8451882845188284,
+      "top5_positive_hit_rate": 0.602510460251046,
+      "top5_daily_outperform_fraction": 0.5690376569037657,
+      "mean_top5_5d_raw_return": 0.017645240990912657,
+      "mean_universe_5d_raw_return": 0.010523330927329131,
+      "mean_top_bottom_10pct_5d_spread": 0.0216357468589888
+    },
+    "validation_momentum20_baseline": {
+      "rows": 52632,
+      "dates": 233,
+      "stocks": 243,
+      "directional_accuracy": 0.4640280948594472,
+      "directional_accuracy_95ci": [
+        0.4481431098244979,
+        0.48205246349213016
+      ],
+      "directional_accuracy_ci_method": "10-day moving-block bootstrap, 5000 repetitions",
+      "balanced_reference_accuracy": 0.5,
+      "mean_daily_rank_ic": -0.10625674322065509,
+      "daily_rank_ic_std": 0.16594699138352623,
+      "daily_icir": -0.6403053308455663,
+      "positive_rank_ic_day_fraction": 0.27467811158798283,
+      "top5_positive_hit_rate": 0.3776824034334764,
+      "top5_daily_outperform_fraction": 0.33905579399141633,
+      "mean_top5_5d_raw_return": 0.00028396946013958314,
+      "mean_universe_5d_raw_return": 0.012325910683605758,
+      "mean_top_bottom_10pct_5d_spread": -0.019352458244024817
+    },
+    "test_momentum20_baseline": {
+      "rows": 59833,
+      "dates": 239,
+      "stocks": 263,
+      "directional_accuracy": 0.4584393123098148,
+      "directional_accuracy_95ci": [
+        0.4455359195730846,
+        0.47145436289184256
+      ],
+      "directional_accuracy_ci_method": "10-day moving-block bootstrap, 5000 repetitions",
+      "balanced_reference_accuracy": 0.5,
+      "mean_daily_rank_ic": -0.11871986778853551,
+      "daily_rank_ic_std": 0.1412681585107094,
+      "daily_icir": -0.8403866026153054,
+      "positive_rank_ic_day_fraction": 0.17154811715481172,
+      "top5_positive_hit_rate": 0.35648535564853556,
+      "top5_daily_outperform_fraction": 0.3179916317991632,
+      "mean_top5_5d_raw_return": -0.013188780518026208,
+      "mean_universe_5d_raw_return": 0.010523330927329131,
+      "mean_top_bottom_10pct_5d_spread": -0.017066336860227252
+    }
+  },
+  "hmm": {
+    "observation_columns": [
+      "market_return",
+      "log_vol20",
+      "breadth",
+      "dispersion"
+    ],
+    "fits": [
+      {
+        "fit_month": "2025-01",
+        "train_rows": 751,
+        "train_end": "2025-01-07",
+        "log_likelihood": -3092.821727504693,
+        "seed": 20260922,
+        "converged": true,
+        "state_order_original": [
+          0,
+          1,
+          2
+        ],
+        "expected_duration_ordered": [
+          7.280908108690958,
+          1.6110448424911659,
+          6.991673651076556
+        ],
+        "transition_matrix": [
+          [
+            0.862654495143767,
+            0.09594782131815557,
+            0.041397683538077476
+          ],
+          [
+            0.48340360539734406,
+            0.3792848134173004,
+            0.13731158118535566
+          ],
+          [
+            0.03411183219818488,
+            0.10891543851059922,
+            0.8569727292912158
+          ]
+        ],
+        "means": [
+          [
+            -0.020703433976396863,
+            -0.6124370862552119,
+            0.04674458627397369,
+            -0.564055158653938
+          ],
+          [
+            -0.7048248350762077,
+            0.2620503264258197,
+            -1.129758022394623,
+            -0.13412478165165706
+          ],
+          [
+            0.3807726938077696,
+            1.0660397696353794,
+            0.454687139468841,
+            1.1631910643607055
+          ]
+        ]
+      },
+      {
+        "fit_month": "2025-02",
+        "train_rows": 765,
+        "train_end": "2025-01-27",
+        "log_likelihood": -3164.1997282427824,
+        "seed": 20260922,
+        "converged": true,
+        "state_order_original": [
+          1,
+          0,
+          2
+        ],
+        "expected_duration_ordered": [
+          7.6801650339777074,
+          1.6078308979768197,
+          5.680868187711021
+        ],
+        "transition_matrix": [
+          [
+            0.37804404601358943,
+            0.4303317798622791,
+            0.19162417412413146
+          ],
+          [
+            0.08872935746043875,
+            0.8697944646272685,
+            0.041476177912292675
+          ],
+          [
+            0.14150891875030372,
+            0.034520513188149284,
+            0.823970568061547
+          ]
+        ],
+        "means": [
+          [
+            -0.7423689014056204,
+            0.3238696499488573,
+            -1.1305650633805133,
+            -0.08582315071959766
+          ],
+          [
+            -0.026715726141378286,
+            -0.6234245445042387,
+            0.030943920127985886,
+            -0.5734383200938126
+          ],
+          [
+            0.4279516485210101,
+            1.0373276948032126,
+            0.5136778319003042,
+            1.1487444405737137
+          ]
+        ]
+      },
+      {
+        "fit_month": "2025-03",
+        "train_rows": 783,
+        "train_end": "2025-02-28",
+        "log_likelihood": -3245.4333938797663,
+        "seed": 20260922,
+        "converged": true,
+        "state_order_original": [
+          0,
+          1,
+          2
+        ],
+        "expected_duration_ordered": [
+          7.782953457168143,
+          1.6012172401075593,
+          6.127542594708454
+        ],
+        "transition_matrix": [
+          [
+            0.8715140716820047,
+            0.08761329856976395,
+            0.04087262974823141
+          ],
+          [
+            0.4220899311613779,
+            0.3754751229553171,
+            0.2024349458833049
+          ],
+          [
+            0.03126460236696012,
+            0.1319329575918345,
+            0.8368024400412055
+          ]
+        ],
+        "means": [
+          [
+            -0.037485875664737885,
+            -0.6488047704401756,
+            0.016628846601406868,
+            -0.5975774425556661
+          ],
+          [
+            -0.75082998004209,
+            0.3025853394420611,
+            -1.1359465810170872,
+            -0.10819872893929207
+          ],
+          [
+            0.41595488577203626,
+            1.0085986257035842,
+            0.4993694711474782,
+            1.1090779762924314
+          ]
+        ]
+      },
+      {
+        "fit_month": "2025-04",
+        "train_rows": 804,
+        "train_end": "2025-03-31",
+        "log_likelihood": -3340.2383252476966,
+        "seed": 20260921,
+        "converged": true,
+        "state_order_original": [
+          1,
+          0,
+          2
+        ],
+        "expected_duration_ordered": [
+          16.879454550541436,
+          2.870869539746694,
+          1.687925428205805
+        ],
+        "transition_matrix": [
+          [
+            0.6516734786603249,
+            0.07145485750762787,
+            0.27687166383204714
+          ],
+          [
+            0.027498360619008344,
+            0.9407563794786293,
+            0.03174525990236235
+          ],
+          [
+            0.5228177249963836,
+            0.06962550933711346,
+            0.407556765666503
+          ]
+        ],
+        "means": [
+          [
+            -0.6497753314793161,
+            0.7870857583785693,
+            -0.6539825822966009,
+            0.6156312647635663
+          ],
+          [
+            -0.090846800758418,
+            -0.6786065661504252,
+            -0.10812349288670883,
+            -0.6250380933232587
+          ],
+          [
+            1.4492141259712232,
+            0.8468844299980895,
+            1.5136653417694579,
+            0.973422689192928
+          ]
+        ]
+      },
+      {
+        "fit_month": "2025-05",
+        "train_rows": 825,
+        "train_end": "2025-04-30",
+        "log_likelihood": -3421.8318130808534,
+        "seed": 20260921,
+        "converged": true,
+        "state_order_original": [
+          1,
+          0,
+          2
+        ],
+        "expected_duration_ordered": [
+          17.35399036648293,
+          2.809139048346443,
+          1.722616692034003
+        ],
+        "transition_matrix": [
+          [
+            0.6440190454122822,
+            0.06662079674790126,
+            0.28936015783981656
+          ],
+          [
+            0.026611238031586014,
+            0.9423763653844492,
+            0.031012396583964683
+          ],
+          [
+            0.5067447200446588,
+            0.07376747667580624,
+            0.4194878032795349
+          ]
+        ],
+        "means": [
+          [
+            -0.6566907176223568,
+            0.7947281668163473,
+            -0.6501544911716173,
+            0.6400118767587659
+          ],
+          [
+            -0.09500801590913945,
+            -0.6818357266699548,
+            -0.12396455074939929,
+            -0.6365945573593798
+          ],
+          [
+            1.4031647711764743,
+            0.8558777806354599,
+            1.4850426342788263,
+            0.9697081021428535
+          ]
+        ]
+      },
+      {
+        "fit_month": "2025-06",
+        "train_rows": 844,
+        "train_end": "2025-05-30",
+        "log_likelihood": -3511.7229364414707,
+        "seed": 20260922,
+        "converged": true,
+        "state_order_original": [
+          0,
+          2,
+          1
+        ],
+        "expected_duration_ordered": [
+          17.59972387701699,
+          2.8364940798472267,
+          1.6739212784679465
+        ],
+        "transition_matrix": [
+          [
+            0.9431809267584094,
+            0.03069653605597861,
+            0.026122537185612055
+          ],
+          [
+            0.06860623336974246,
+            0.4026003415672878,
+            0.5287934250629698
+          ],
+          [
+            0.06206800335148307,
+            0.29047988564459054,
+            0.6474521110039264
+          ]
+        ],
+        "means": [
+          [
+            -0.09773754374842338,
+            -0.7042688420967115,
+            -0.1287330133432647,
+            -0.6566268112238907
+          ],
+          [
+            1.4019426058309912,
+            0.8391741531039878,
+            1.4867445068284209,
+            0.9506190887929061
+          ],
+          [
+            -0.6331319133137229,
+            0.7727135844058309,
+            -0.6266941427162792,
+            0.6235599394351278
+          ]
+        ]
+      },
+      {
+        "fit_month": "2025-07",
+        "train_rows": 864,
+        "train_end": "2025-06-30",
+        "log_likelihood": -3423.078602666785,
+        "seed": 20260921,
+        "converged": true,
+        "state_order_original": [
+          2,
+          1,
+          0
+        ],
+        "expected_duration_ordered": [
+          28.842219219040853,
+          22.56457907955249,
+          22.86694785158366
+        ],
+        "transition_matrix": [
+          [
+            0.9562687593250122,
+            0.04373124067498781,
+            1.0329473561091502e-89
+          ],
+          [
+            0.01626985876893167,
+            0.9556827540866394,
+            0.02804738714442896
+          ],
+          [
+            1.2220989264953931e-72,
+            0.034671395859158655,
+            0.9653286041408413
+          ]
+        ],
+        "means": [
+          [
+            0.4463958653687366,
+            1.4912472514580337,
+            0.36334133115845957,
+            1.3471552027561822
+          ],
+          [
+            -0.0976958410196381,
+            0.2703640120697849,
+            -0.0288936421804886,
+            0.11709544680386935
+          ],
+          [
+            -0.08422919499373197,
+            -1.0209243094899891,
+            -0.13129926071835787,
+            -0.764703413141108
+          ]
+        ]
+      },
+      {
+        "fit_month": "2025-08",
+        "train_rows": 887,
+        "train_end": "2025-07-31",
+        "log_likelihood": -3755.3458302303507,
+        "seed": 20260922,
+        "converged": true,
+        "state_order_original": [
+          1,
+          0,
+          2
+        ],
+        "expected_duration_ordered": [
+          9.99710183850553,
+          1.5238348474135839,
+          4.001046381160276
+        ],
+        "transition_matrix": [
+          [
+            0.3437609057849627,
+            0.26479905033704515,
+            0.3914400438779921
+          ],
+          [
+            0.06368995642858222,
+            0.8999710099832803,
+            0.03633903358813755
+          ],
+          [
+            0.22531146861712065,
+            0.024623149663911867,
+            0.7500653817189675
+          ]
+        ],
+        "means": [
+          [
+            -0.8811317775919407,
+            0.41874564379671864,
+            -1.1525102359208794,
+            0.10321219679324783
+          ],
+          [
+            -0.05832332785260252,
+            -0.7115337929990391,
+            -0.04767224203418883,
+            -0.6753546919474412
+          ],
+          [
+            0.5282416845229484,
+            0.8907518136909104,
+            0.6467390326948649,
+            0.9917774482270258
+          ]
+        ]
+      },
+      {
+        "fit_month": "2025-09",
+        "train_rows": 908,
+        "train_end": "2025-08-29",
+        "log_likelihood": -3857.6079632556425,
+        "seed": 20260922,
+        "converged": true,
+        "state_order_original": [
+          1,
+          0,
+          2
+        ],
+        "expected_duration_ordered": [
+          7.851098381683008,
+          1.536477375865036,
+          6.081393528318259
+        ],
+        "transition_matrix": [
+          [
+            0.3491606087352895,
+            0.39151019793882236,
+            0.25932919332588805
+          ],
+          [
+            0.09113139171697222,
+            0.8726292868354512,
+            0.03623932144757653
+          ],
+          [
+            0.14455570264414075,
+            0.019880293043929506,
+            0.8355640043119297
+          ]
+        ],
+        "means": [
+          [
+            -0.7888902317373784,
+            0.26666615213788697,
+            -1.1479711605400633,
+            -0.0646230521707687
+          ],
+          [
+            -0.04316183776499904,
+            -0.7032640507859373,
+            -0.010522496687840948,
+            -0.6615389079156537
+          ],
+          [
+            0.40423624989032114,
+            0.9173443753755365,
+            0.5114654494682696,
+            0.9992251113863877
+          ]
+        ]
+      },
+      {
+        "fit_month": "2025-10",
+        "train_rows": 930,
+        "train_end": "2025-09-30",
+        "log_likelihood": -3720.9187467642246,
+        "seed": 20260921,
+        "converged": true,
+        "state_order_original": [
+          2,
+          1,
+          0
+        ],
+        "expected_duration_ordered": [
+          34.380124979860085,
+          36.13653220877706,
+          43.2389448495764
+        ],
+        "transition_matrix": [
+          [
+            0.9768727011383166,
+            0.02312729886168347,
+            2.0887508270431452e-73
+          ],
+          [
+            0.011037585862890852,
+            0.9723271731160437,
+            0.01663524102106546
+          ],
+          [
+            1.2834175977024559e-44,
+            0.029086572564404656,
+            0.9709134274355954
+          ]
+        ],
+        "means": [
+          [
+            0.2709793987407358,
+            1.3094788629254568,
+            0.23953756850982305,
+            1.1352352208693919
+          ],
+          [
+            -0.0790013468487783,
+            0.07496486690275324,
+            -0.037448866863589024,
+            -0.07455115815993349
+          ],
+          [
+            -0.0876928312844671,
+            -1.2241739068591269,
+            -0.13427326745543286,
+            -0.8167394759996232
+          ]
+        ]
+      },
+      {
+        "fit_month": "2025-11",
+        "train_rows": 947,
+        "train_end": "2025-10-31",
+        "log_likelihood": -3799.2658299271775,
+        "seed": 20260921,
+        "converged": true,
+        "state_order_original": [
+          2,
+          1,
+          0
+        ],
+        "expected_duration_ordered": [
+          34.50923409107379,
+          37.83099991381884,
+          54.16629078851376
+        ],
+        "transition_matrix": [
+          [
+            0.9815383334276222,
+            0.018461666572377723,
+            6.63895424069153e-241
+          ],
+          [
+            0.009775927079240281,
+            0.9735666516275526,
+            0.01665742129320721
+          ],
+          [
+            1.5605869891171511e-130,
+            0.0289777512117738,
+            0.9710222487882262
+          ]
+        ],
+        "means": [
+          [
+            0.23242890005479294,
+            1.2715209634629856,
+            0.2127641683613799,
+            1.0457735057640292
+          ],
+          [
+            -0.07139768407993559,
+            0.0367299338183392,
+            -0.03377159327621426,
+            -0.08012269835806199
+          ],
+          [
+            -0.08962244495674022,
+            -1.235315760390008,
+            -0.1371093325029972,
+            -0.8236325609314108
+          ]
+        ]
+      },
+      {
+        "fit_month": "2025-12",
+        "train_rows": 967,
+        "train_end": "2025-11-28",
+        "log_likelihood": -4135.518672656732,
+        "seed": 20260922,
+        "converged": true,
+        "state_order_original": [
+          1,
+          0,
+          2
+        ],
+        "expected_duration_ordered": [
+          6.0602375048351504,
+          1.59178993812258,
+          8.710861528633847
+        ],
+        "transition_matrix": [
+          [
+            0.37177640337427964,
+            0.5021042682750898,
+            0.12611932835063064
+          ],
+          [
+            0.1222670484956149,
+            0.8349899654589195,
+            0.04274298604546564
+          ],
+          [
+            0.0912908591199743,
+            0.023508348365170236,
+            0.8852007925148555
+          ]
+        ],
+        "means": [
+          [
+            -0.6916404331848336,
+            0.1258439430670064,
+            -1.117658735610135,
+            -0.2301764956883962
+          ],
+          [
+            -0.017204010854378282,
+            -0.6840648734161935,
+            0.04927445350793697,
+            -0.635041115863214
+          ],
+          [
+            0.3201287856729818,
+            0.9229746127221826,
+            0.4072600244801845,
+            1.00511611967495
+          ]
+        ]
+      }
+    ],
+    "probability_rows": 239,
+    "mean_exposure_cap": 0.5515414897954379,
+    "state_day_counts": {
+      "high_vol": 119,
+      "crisis": 69,
+      "low_vol": 51
+    },
+    "unstable_fit_count": 9
+  },
+  "portfolio_fixed": {
+    "total_return": 0.6976541959300036,
+    "annual_return": 0.6653686074917917,
+    "sharpe": 2.0241664000529753,
+    "max_drawdown": -0.18279574743501759,
+    "mean_gross_exposure": 0.4798428854855253,
+    "max_gross_exposure": 0.8069237957277878,
+    "completed_trades": 1164,
+    "open_positions_at_end": 0,
+    "missed_entries": 2,
+    "rejected_below_100_shares": 29,
+    "fee_rate_each_side": 0.001,
+    "uses_hmm_exposure": false,
+    "industry_cap_missing": true
+  },
+  "portfolio_hmm": {
+    "total_return": 0.2148478662400024,
+    "annual_return": 0.2063003883298149,
+    "sharpe": 1.048257858194624,
+    "max_drawdown": -0.12470883342901962,
+    "mean_gross_exposure": 0.3986700447845443,
+    "max_gross_exposure": 0.7175152488647036,
+    "completed_trades": 948,
+    "open_positions_at_end": 0,
+    "missed_entries": 2,
+    "rejected_below_100_shares": 55,
+    "fee_rate_each_side": 0.001,
+    "uses_hmm_exposure": true,
+    "industry_cap_missing": true
+  }
+}

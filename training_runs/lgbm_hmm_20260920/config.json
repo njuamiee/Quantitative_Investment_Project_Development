@@ -1,0 +1,19 @@
+{
+  "factor_dir": "..\\..\\factor_demo_run\\factor_lib",
+  "price_dir": "..\\..\\training_data\\snapshot_20260920\\unadjusted_daily",
+  "output_dir": "..\\..\\training_runs\\lgbm_hmm_20260920",
+  "train_label_end": "2023-12-31",
+  "valid_start": "2024-01-08",
+  "valid_label_end": "2024-12-31",
+  "test_start": "2025-01-08",
+  "test_signal_end": "2025-12-31",
+  "minimum_listing_bars": 20,
+  "minimum_factor_count": 70,
+  "seed": 20260920,
+  "initial_capital": 1000000.0,
+  "daily_batch_fraction": 0.2,
+  "max_stock_fraction": 0.1,
+  "adv20_fraction": 0.01,
+  "buy_fee_rate": 0.001,
+  "sell_fee_rate": 0.001
+}
