@@ -1,0 +1,447 @@
+{
+  "audit_date": "2026-09-25",
+  "scope": "Read-only SFTP listings, all latest factor table headers, five full latest factor CSV samples, daily file head/tail audit, benchmark samples, one minute parquet; no training or backtest. Remote inventory changed during inspection.",
+  "factor_inventory": {
+    "tables": 120,
+    "non_key_fields": 2508,
+    "latest_file_dates": [
+      "20260924"
+    ],
+    "tables_with_fewer_2025_files": [
+      {
+        "table": "ts_stockfactordata_001",
+        "years": [
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "latest_date": "20260924",
+        "latest_year_files": 178,
+        "files_2025": 4,
+        "first_2025_file": "20250415.zip",
+        "last_2025_file": "20251112.zip",
+        "non_key_columns": 26
+      },
+      {
+        "table": "ts_stockfactordata_017",
+        "years": [
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "latest_date": "20260924",
+        "latest_year_files": 178,
+        "files_2025": 133,
+        "first_2025_file": "20250103.zip",
+        "last_2025_file": "20251114.zip",
+        "non_key_columns": 11
+      },
+      {
+        "table": "ts_stockfactordata_018",
+        "years": [
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "latest_date": "20260924",
+        "latest_year_files": 178,
+        "files_2025": 134,
+        "first_2025_file": "20250103.zip",
+        "last_2025_file": "20251114.zip",
+        "non_key_columns": 11
+      },
+      {
+        "table": "ts_stockfactordata_019",
+        "years": [
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "latest_date": "20260924",
+        "latest_year_files": 178,
+        "files_2025": 15,
+        "first_2025_file": "20250124.zip",
+        "last_2025_file": "20251231.zip",
+        "non_key_columns": 6
+      },
+      {
+        "table": "ts_stockfactordata_026",
+        "years": [
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "latest_date": "20260924",
+        "latest_year_files": 178,
+        "files_2025": 53,
+        "first_2025_file": "20250103.zip",
+        "last_2025_file": "20251231.zip",
+        "non_key_columns": 1
+      }
+    ]
+  },
+  "factor_samples": {
+    "factor_c01": {
+      "path": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c01/2026/20260924.zip",
+      "rows": 5397,
+      "market_rows": {
+        "BJ": 275,
+        "SH": 2266,
+        "SZ": 2856
+      },
+      "distinct_valid_stocks": 5397,
+      "invalid_id_values": {},
+      "enddates": {
+        "46289": 5397
+      },
+      "rdates": {},
+      "all_nil_fields": [],
+      "sha256": "faf398b4014574399b6f49e892a3c41236a9a1a7e15020a0f4a99d0927b928b1"
+    },
+    "factor_c02": {
+      "path": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c02/2026/20260924.zip",
+      "rows": 5357,
+      "market_rows": {
+        "invalid": 5357
+      },
+      "distinct_valid_stocks": 0,
+      "invalid_id_values": {
+        "<NIL>": 5357
+      },
+      "enddates": {
+        "46289": 5357
+      },
+      "rdates": {},
+      "all_nil_fields": [
+        "stockid",
+        "gtalpha165",
+        "gtalpha166",
+        "gtalpha183"
+      ],
+      "sha256": "60fde8a03b4fee31527b7b38d2da6ebff9426d9d5b028886d78bd7109cf16a21"
+    },
+    "factor_001": {
+      "path": "/home/quant/factors/kyzqsh11/ts_stockfactordata_001/2026/20260924.zip",
+      "rows": 5270,
+      "market_rows": {
+        "invalid": 5270
+      },
+      "distinct_valid_stocks": 0,
+      "invalid_id_values": {
+        "<NIL>": 5270
+      },
+      "enddates": {
+        "46279": 5270
+      },
+      "rdates": {
+        "20260630": 5270
+      },
+      "all_nil_fields": [
+        "stockid"
+      ],
+      "sha256": "e9c08e25c1226554cf95f53667f7b9f1237e34337b039e0a3d37113d5d2cec8c"
+    },
+    "factor_802": {
+      "path": "/home/quant/factors/kyzqsh11/ts_stockfactordata_802/2026/20260924.zip",
+      "rows": 5557,
+      "market_rows": {
+        "invalid": 5557
+      },
+      "distinct_valid_stocks": 0,
+      "invalid_id_values": {
+        "<NIL>": 5557
+      },
+      "enddates": {
+        "46289": 5557
+      },
+      "rdates": {
+        "20260630": 5544,
+        "20251231": 13
+      },
+      "all_nil_fields": [
+        "stockid"
+      ],
+      "sha256": "475c19b0569087d8646fd9ac1ce592b2fbd3c1a066ff07b745f3c64d0b9f47f3"
+    },
+    "factor_a01": {
+      "path": "/home/quant/factors/kyzqsh11/ts_stockfactordata_a01/2026/20260924.zip",
+      "rows": 5557,
+      "market_rows": {
+        "invalid": 5557
+      },
+      "distinct_valid_stocks": 0,
+      "invalid_id_values": {
+        "<NIL>": 5557
+      },
+      "enddates": {
+        "46289": 5557
+      },
+      "rdates": {
+        "20260630": 5544,
+        "20251231": 13
+      },
+      "all_nil_fields": [
+        "stockid"
+      ],
+      "sha256": "a5816fe2bea22f97fcc3cffba653094802fc7711e27541bf5d60f7f592b72384"
+    }
+  },
+  "daily_inventory": {
+    "raw": {
+      "path": "/home/quant/quantDataProcess/backend/data/day-data/tickflow/raw",
+      "csv_files": 349,
+      "last_dates": {
+        "2026-07-29": 1,
+        "2025-12-31": 1,
+        "2026-09-24": 347
+      }
+    },
+    "qfq": {
+      "path": "/home/quant/quantDataProcess/backend/data/day-data/tickflow/qfq",
+      "csv_files": 349,
+      "last_dates": {
+        "2026-07-29": 1,
+        "2025-12-30": 1,
+        "2026-09-24": 347
+      }
+    }
+  },
+  "benchmark_minute_and_daily_samples": {
+    "audit_time_utc": "2026-09-25T07:44:43.263777+00:00",
+    "benchmark": {
+      "csv_count": 23,
+      "files": [
+        "000001.SH-上证指数.csv",
+        "000015.SH-上证红利.csv",
+        "000016.SH-上证50.csv",
+        "000300.SH-沪深300.csv",
+        "000510.SH-中证A500.csv",
+        "000688.SH-科创50.csv",
+        "000852.SH-中证1000.csv",
+        "000905.SH-中证500.csv",
+        "000985.SH-中证全指.csv",
+        "159901.SZ-深证100ETF.csv",
+        "159915.SZ-创业板ETF.csv",
+        "159919.SZ-沪深300ETF深.csv",
+        "159922.SZ-中证500ETF深.csv",
+        "399001.SZ-深证成指.csv",
+        "399006.SZ-创业板指.csv",
+        "399324.SZ-深证红利.csv",
+        "399330.SZ-深证100.csv",
+        "510050.SH-上证50ETF.csv",
+        "510300.SH-沪深300ETF.csv",
+        "510500.SH-中证500ETF.csv",
+        "588000.SH-科创50ETF.csv",
+        "588080.SH-科创板50ETF.csv",
+        "899050.BJ-北证50.csv"
+      ],
+      "bse50_rows": 1058,
+      "bse50_first": "2022-04-29",
+      "bse50_last": "2026-09-24"
+    },
+    "minute_inventory": {
+      "count": 795,
+      "years": {
+        "2021": 35,
+        "2022": 212,
+        "2024": 138,
+        "2025": 242,
+        "2026": 168
+      },
+      "first": "20211115.parquet",
+      "last": "20260911.parquet"
+    },
+    "minute_sample": {
+      "date": "20260911",
+      "rows": 83490,
+      "securities": 345,
+      "minutes": 242,
+      "all_null_price_fraction": 0.24117858426158822,
+      "stock_rows": 83006,
+      "stocks": 343,
+      "stock_null_price_fraction": 0.24253668409512566,
+      "columns": [
+        "code",
+        "datetime",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "amount"
+      ]
+    },
+    "daily_raw": {
+      "file": "920010.BJ-凯添燃气.csv",
+      "encoding": "gb18030",
+      "rows": 1498,
+      "columns": [
+        "Unnamed: 0",
+        "日期",
+        "股票代码",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额"
+      ],
+      "first": [
+        {
+          "Unnamed: 0": 0,
+          "日期": "2020-07-27",
+          "股票代码": "920010",
+          "开盘": 4.84,
+          "收盘": 4.09,
+          "最高": 4.92,
+          "最低": 3.35,
+          "成交量": 100428,
+          "成交额": 40936423.0,
+          "振幅": null,
+          "涨跌幅": null,
+          "涨跌额": null
+        }
+      ],
+      "last": [
+        {
+          "Unnamed: 0": 1497,
+          "日期": "2026-09-24",
+          "股票代码": "920010.BJ",
+          "开盘": 8.79,
+          "收盘": 8.75,
+          "最高": 8.9,
+          "最低": 8.7,
+          "成交量": 39288,
+          "成交额": 34520242.0,
+          "振幅": 2.3,
+          "涨跌幅": 0.46,
+          "涨跌额": 0.04
+        }
+      ],
+      "nonpositive_close_count": 0
+    },
+    "daily_qfq": {
+      "file": "920010.BJ-凯添燃气.csv",
+      "encoding": "gb18030",
+      "rows": 1498,
+      "columns": [
+        "Unnamed: 0",
+        "日期",
+        "股票代码",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额"
+      ],
+      "first": [
+        {
+          "Unnamed: 0": 0,
+          "日期": "2020-07-27",
+          "股票代码": "920010.BJ",
+          "开盘": 4.26,
+          "收盘": 3.51,
+          "最高": 4.34,
+          "最低": 2.77,
+          "成交量": 100428,
+          "成交额": 40936423.0,
+          "振幅": null,
+          "涨跌幅": null,
+          "涨跌额": null
+        }
+      ],
+      "last": [
+        {
+          "Unnamed: 0": 1497,
+          "日期": "2026-09-24",
+          "股票代码": "920010.BJ",
+          "开盘": 8.79,
+          "收盘": 8.75,
+          "最高": 8.9,
+          "最低": 8.7,
+          "成交量": 39288,
+          "成交额": 34520242.0,
+          "振幅": 2.3,
+          "涨跌幅": 0.46,
+          "涨跌额": 0.04
+        }
+      ],
+      "nonpositive_close_count": 0
+    }
+  },
+  "excel_serial_dates": {
+    "46279": "2026-09-14",
+    "46289": "2026-09-24"
+  },
+  "tick_suspected_duplicate": {
+    "date": "2026-01-05",
+    "directories": [
+      "tick-All/BJ/2026",
+      "tick-All/SZ/2026"
+    ],
+    "observed": "Same archive size, same supplied MD5 text, same first security 899050.BJ",
+    "limit": "Full archive content identity was not verified. This is a suspected misplaced or duplicate sample, not a conclusion about all SZ archives."
+  },
+  "document_sources": [
+    {
+      "file": "server_data_service_readme.md",
+      "sha256": "7eabb5321b2d8830363da47a15a04751883caed419009b2091d66e1a1cde2290"
+    },
+    {
+      "file": "factor_table_inventory.json",
+      "sha256": "34b9424a5703cea18e0f35639bc98919368283dc9b0a847cf21c0a54a3ac0e5e"
+    }
+  ],
+  "existing_run": {
+    "config": "training_runs/lgbm_hmm_20260920/config.json",
+    "unchanged_config_sha256": "490ebf2f317d1f6b4701ae8e593caf3f8d1a71cb18b401b018da34096cb31c93",
+    "prior_report": "学习笔记/老师意见分析_20260923/老师九项意见_分析与解决方案.md"
+  }
+}

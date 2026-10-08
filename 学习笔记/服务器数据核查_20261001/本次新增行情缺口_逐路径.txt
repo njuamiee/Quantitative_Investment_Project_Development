@@ -1,0 +1,9 @@
+核查结束：2026-10-01 17:03:26 北京时间。
+检查截止日期延长，新增 9 月 30 日路径；不表示旧文件被删除。
+共 5 条。
+
+/home/quant/quantDataProcess/backend/data/bar1m/BJ/20260930.parquet
+/home/quant/quantDataProcess/backend/data/tick/BJ/20260930.parquet
+/home/quant/tick-All/BJ/2026/20260930_Tick1.tar.gz
+/home/quant/tick-All/SH/2026/20260930_Tick1.tar.gz
+/home/quant/tick-All/SZ/2026/20260930_Tick1.tar.gz

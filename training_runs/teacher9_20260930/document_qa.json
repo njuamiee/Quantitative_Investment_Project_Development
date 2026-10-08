@@ -1,0 +1,9 @@
+{
+  "document": "学习笔记\\老师意见实施_20260930\\老师九项意见_实施结果与效果报告.docx",
+  "document_sha256": "4ad6ca6e1301459c9190e724c4e0c957ba09be2326bdfffe96a6b1604bfd5484",
+  "pages": 11,
+  "all_pages_visually_reviewed": true,
+  "render_directory": "training_runs\\teacher9_20260930\\docx_qa_verified",
+  "renderer": "canonical render_docx.py via Windows file-profile URI wrapper",
+  "passed": true
+}

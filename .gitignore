@@ -1,7 +1,10 @@
-# Local notes, datasets, and virtual environment
-/学习笔记/
+# Local datasets and virtual environment; learning notes are versioned from 2026-10-08
 /training_data/
 /.venv_quant/
+
+# Reproducible document preview intermediates
+/training_runs/**/docx_qa*/
+/training_runs/**/pptx_qa*/
 
 # Local plaintext server credentials
 /ftp服务器

@@ -1,0 +1,47 @@
+{
+  "pred_price": {
+    "dates": 479,
+    "mean_ic": 0.13942723867362136,
+    "icir": 0.8069684391989521,
+    "relative_direction_hit": 0.5501674880112101,
+    "top5_5d_mean": 0.006116223866637367,
+    "pool_5d_mean": 0.002490103474478633,
+    "top_bottom_5d_spread": 0.015749124063535812
+  },
+  "pred_selected": {
+    "dates": 479,
+    "mean_ic": 0.15313229331021236,
+    "icir": 0.8632924830008017,
+    "relative_direction_hit": 0.5501436201734442,
+    "top5_5d_mean": 0.011954401612696253,
+    "pool_5d_mean": 0.002490103474478633,
+    "top_bottom_5d_spread": 0.018765086489995645
+  },
+  "pred_ridge": {
+    "dates": 479,
+    "mean_ic": 0.15115411123048397,
+    "icir": 0.8496226836169947,
+    "relative_direction_hit": 0.5507519875160795,
+    "top5_5d_mean": 0.012186987431166838,
+    "pool_5d_mean": 0.002490103474478633,
+    "top_bottom_5d_spread": 0.018331798467558683
+  },
+  "pred_simple": {
+    "dates": 479,
+    "mean_ic": 0.12284283142851667,
+    "icir": 0.6371581049985822,
+    "relative_direction_hit": 0.5420387198458536,
+    "top5_5d_mean": 0.008433867826902834,
+    "pool_5d_mean": 0.0025434230540590397,
+    "top_bottom_5d_spread": 0.01591459542807711
+  },
+  "pred_lag1": {
+    "dates": 479,
+    "mean_ic": 0.12911126128631525,
+    "icir": 0.7322014600902794,
+    "relative_direction_hit": 0.5439360328176315,
+    "top5_5d_mean": 0.008138400740742333,
+    "pool_5d_mean": 0.002490103474478633,
+    "top_bottom_5d_spread": 0.013077480606044207
+  }
+}

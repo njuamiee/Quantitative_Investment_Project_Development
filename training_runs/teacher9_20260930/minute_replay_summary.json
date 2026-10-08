@@ -1,0 +1,16 @@
+{
+  "minute_files_checked": 61,
+  "quarter_orders": 558,
+  "orders_with_minute_files": 558,
+  "requested_shares": 2033110.0,
+  "filled_shares": 1372966.0,
+  "share_fill_fraction": 0.6753033529912302,
+  "full_fill_order_fraction": 0.4336917562724014,
+  "unfilled_order_fraction": 0.0,
+  "median_adverse_price_difference": 0.001052222380395873,
+  "volume_ratio_median": 99.66540720720522,
+  "volume_ratio_p05": 97.79153141741382,
+  "volume_ratio_p95": 99.99686944473464,
+  "amount_ratio_median": 0.9966629180950215,
+  "scope": "order-level stress replay, not a second cash-account return; worst bar price, 1% realized volume, no queue model; no commercial vn.py installation"
+}

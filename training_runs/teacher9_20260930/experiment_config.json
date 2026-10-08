@@ -1,0 +1,45 @@
+{
+  "seed": 20260930,
+  "training_days": 504,
+  "validation_days": 126,
+  "first_bj_test_quarter": "2024Q4",
+  "first_shsz_test_quarter": "2019Q1",
+  "max_selected_features": 40,
+  "correlation_threshold": 0.85,
+  "minimum_feature_coverage": 0.7,
+  "prediction_horizon_market_days": 5,
+  "feature_time": "after close t",
+  "label": "open t+1 to close t+5, unadjusted price return; corporate actions not verified",
+  "lgbm": {
+    "num_leaves": 15,
+    "max_depth": 5,
+    "learning_rate": 0.03,
+    "min_child_samples": 200,
+    "reg_lambda": 5,
+    "reg_alpha": 0.1,
+    "n_estimators": 400,
+    "verbosity": -1,
+    "n_jobs": 4,
+    "random_state": 20260930,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "ridge_alpha": 10,
+  "hmm_states": 2,
+  "hmm_train_days": 504,
+  "hmm_caps": [
+    1,
+    0.7
+  ],
+  "fixed_cap_control": 0.85,
+  "initial_capital": 1000000,
+  "daily_new_batch_nav_fraction": 0.2,
+  "single_stock_cap": 0.1,
+  "adv20_participation": 0.01,
+  "one_way_cost_bp_scenarios": [
+    5,
+    15,
+    30
+  ],
+  "test_policy": "fixed rules before viewing results; no optimization on outer test returns"
+}

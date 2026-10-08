@@ -1,0 +1,9 @@
+{
+  "registry_fields": 2508,
+  "dictionary_matches": 2508,
+  "numeric_candidates": 2447,
+  "metadata_fields": 61,
+  "numeric_constant_fields": 9,
+  "numeric_coverage_below70pct": 22,
+  "dictionary_sha256": "66a42d66edbb6931c091d8b9d10f46e8c524800958bfc7b9aae29e4f1dc2efa4"
+}

@@ -1,0 +1,22 @@
+主扫描：2026-09-30 09:18:47—09:20:55（北京时间）；截至2026-09-29。9月30日尚未收盘，不计缺口。
+上次缺失、本次日期已覆盖；不是逐值质量验收。
+共18条路径。
+
+/home/quant/quantDataProcess/backend/data/bar1m/BJ/20260914.parquet
+/home/quant/quantDataProcess/backend/data/bar1m/BJ/20260915.parquet
+/home/quant/quantDataProcess/backend/data/bar1m/BJ/20260916.parquet
+/home/quant/quantDataProcess/backend/data/bar1m/BJ/20260917.parquet
+/home/quant/quantDataProcess/backend/data/bar1m/BJ/20260918.parquet
+/home/quant/quantDataProcess/backend/data/bar1m/BJ/20260921.parquet
+/home/quant/quantDataProcess/backend/data/bar1m/BJ/20260922.parquet
+/home/quant/quantDataProcess/backend/data/bar1m/BJ/20260923.parquet
+/home/quant/quantDataProcess/backend/data/bar1m/BJ/20260924.parquet
+/home/quant/quantDataProcess/backend/data/tick/BJ/20260914.parquet
+/home/quant/quantDataProcess/backend/data/tick/BJ/20260915.parquet
+/home/quant/quantDataProcess/backend/data/tick/BJ/20260916.parquet
+/home/quant/quantDataProcess/backend/data/tick/BJ/20260917.parquet
+/home/quant/quantDataProcess/backend/data/tick/BJ/20260918.parquet
+/home/quant/quantDataProcess/backend/data/tick/BJ/20260921.parquet
+/home/quant/quantDataProcess/backend/data/tick/BJ/20260922.parquet
+/home/quant/quantDataProcess/backend/data/tick/BJ/20260923.parquet
+/home/quant/quantDataProcess/backend/data/tick/BJ/20260924.parquet

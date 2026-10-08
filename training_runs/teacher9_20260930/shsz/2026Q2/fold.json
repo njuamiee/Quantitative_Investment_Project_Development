@@ -1,0 +1,32 @@
+{
+  "quarter": "2026Q2",
+  "train_first": "2023-08-21 00:00:00",
+  "train_last": "2025-09-09 00:00:00",
+  "train_label_end": "2025-09-16 00:00:00",
+  "validation_start": "2025-09-17 00:00:00",
+  "refit_label_end": "2026-03-31 00:00:00",
+  "test_first": "2026-04-01 00:00:00",
+  "test_last": "2026-06-30 00:00:00",
+  "train_rows": 49862,
+  "valid_rows": 12090,
+  "refit_rows": 62452,
+  "test_rows": 6000,
+  "selected_features": [
+    "x_vol10",
+    "x_range20",
+    "x_mom20",
+    "x_mom10",
+    "x_amount_ratio",
+    "x_mom5",
+    "x_mom60",
+    "x_log_illiq",
+    "x_observed_days",
+    "x_adv20"
+  ],
+  "selected_count": 10,
+  "best_iteration": 51,
+  "price_iteration": 43,
+  "lag_iteration": null,
+  "simple_factor": "x_vol10",
+  "simple_direction": -1.0
+}
