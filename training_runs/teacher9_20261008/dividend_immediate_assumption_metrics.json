@@ -1,0 +1,20 @@
+{
+  "total_return": 0.7325236899064991,
+  "annual_return": 0.3210280111581667,
+  "sharpe": 0.9401024422872273,
+  "max_drawdown": -0.44512860921293207,
+  "mean_exposure": 0.6727563705472485,
+  "turnover_sum": 162.66378266709233,
+  "total_cost": 516477.94909350004,
+  "last_equity": 1732523.689906499,
+  "attempted_entries": 2395,
+  "unfilled_entries": 119,
+  "unfilled_fraction": 0.049686847599164925,
+  "completed_sales": 2276,
+  "open_lots_at_end": 0,
+  "candidate_adjustment_held_lot_events": 32,
+  "corporate_action_cash": 17239.950000000004,
+  "corporate_action_ledger_present": true,
+  "cost_bp": 15,
+  "scenario": "gross cash and bonus shares immediately usable on ex-date; unverified settlement timing; current final event snapshot; price forecasts unchanged"
+}

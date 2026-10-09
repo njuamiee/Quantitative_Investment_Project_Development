@@ -9,6 +9,7 @@ from sklearn.linear_model import Ridge
 from sklearn.preprocessing import StandardScaler
 from hmmlearn.hmm import GaussianHMM
 import lightgbm as lgb
+from fast_correlation import daily_spearman
 from prepare import DATA,RUN,PRICE_FEATURES,dump
 
 SEED=20260930
@@ -68,7 +69,7 @@ def factor_selection(train,ics,columns,fold):
     candidates=card[(card.coverage>=.7)&(card.n_ic_days>=100)&card.mean_ic.notna()].sort_values(['abs_ic','coverage'],ascending=False).head(100).index.tolist()
     sums=np.zeros((len(candidates),len(candidates)));counts=np.zeros_like(sums)
     for _,g in train.groupby('date'):
-        matrix=g[candidates].corr(method='spearman',min_periods=30).to_numpy()
+        matrix=daily_spearman(g[candidates],min_periods=30).to_numpy()
         sums+=np.nan_to_num(matrix);counts+=np.isfinite(matrix)
     corr=pd.DataFrame(np.divide(sums,counts,out=np.zeros_like(sums),where=counts>0),index=candidates,columns=candidates)
     selected=[]; reasons={}

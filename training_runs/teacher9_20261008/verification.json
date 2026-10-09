@@ -1,0 +1,289 @@
+{
+  "passed": true,
+  "checks": {
+    "september20_frozen_files": {
+      "passed": true,
+      "details": 16
+    },
+    "frozen_bj_predictions_unchanged": {
+      "passed": true,
+      "details": null
+    },
+    "fast_spearman_exact": {
+      "passed": true,
+      "details": 0.0
+    },
+    "quarter_boundaries": {
+      "passed": true,
+      "details": 8
+    },
+    "past_validation_choice_2024Q4": {
+      "passed": true,
+      "details": null
+    },
+    "actual_count_and_dedup_2024Q4_20": {
+      "passed": true,
+      "details": 0.8251715519333799
+    },
+    "actual_count_and_dedup_2024Q4_40": {
+      "passed": true,
+      "details": 0.827158715446364
+    },
+    "actual_count_and_dedup_2024Q4_60": {
+      "passed": true,
+      "details": 0.8445305374750924
+    },
+    "actual_count_and_dedup_2024Q4_80": {
+      "passed": true,
+      "details": 0.8445305374750924
+    },
+    "actual_count_and_dedup_2024Q4_100": {
+      "passed": true,
+      "details": 0.8445305374750924
+    },
+    "past_validation_choice_2025Q1": {
+      "passed": true,
+      "details": null
+    },
+    "actual_count_and_dedup_2025Q1_20": {
+      "passed": true,
+      "details": 0.8477357219288936
+    },
+    "actual_count_and_dedup_2025Q1_40": {
+      "passed": true,
+      "details": 0.8477357219288936
+    },
+    "actual_count_and_dedup_2025Q1_60": {
+      "passed": true,
+      "details": 0.8477357219288936
+    },
+    "actual_count_and_dedup_2025Q1_80": {
+      "passed": true,
+      "details": 0.8477357219288936
+    },
+    "actual_count_and_dedup_2025Q1_100": {
+      "passed": true,
+      "details": 0.8477357219288936
+    },
+    "past_validation_choice_2025Q2": {
+      "passed": true,
+      "details": null
+    },
+    "actual_count_and_dedup_2025Q2_20": {
+      "passed": true,
+      "details": 0.8483709654040397
+    },
+    "actual_count_and_dedup_2025Q2_40": {
+      "passed": true,
+      "details": 0.8483709654040397
+    },
+    "actual_count_and_dedup_2025Q2_60": {
+      "passed": true,
+      "details": 0.8483709654040397
+    },
+    "actual_count_and_dedup_2025Q2_80": {
+      "passed": true,
+      "details": 0.8483709654040397
+    },
+    "actual_count_and_dedup_2025Q2_100": {
+      "passed": true,
+      "details": 0.8483709654040397
+    },
+    "past_validation_choice_2025Q3": {
+      "passed": true,
+      "details": null
+    },
+    "actual_count_and_dedup_2025Q3_20": {
+      "passed": true,
+      "details": 0.8458865001531907
+    },
+    "actual_count_and_dedup_2025Q3_40": {
+      "passed": true,
+      "details": 0.8458865001531907
+    },
+    "actual_count_and_dedup_2025Q3_60": {
+      "passed": true,
+      "details": 0.8487081128111804
+    },
+    "actual_count_and_dedup_2025Q3_80": {
+      "passed": true,
+      "details": 0.8487081128111804
+    },
+    "actual_count_and_dedup_2025Q3_100": {
+      "passed": true,
+      "details": 0.8487081128111804
+    },
+    "past_validation_choice_2025Q4": {
+      "passed": true,
+      "details": null
+    },
+    "actual_count_and_dedup_2025Q4_20": {
+      "passed": true,
+      "details": 0.8428081081163008
+    },
+    "actual_count_and_dedup_2025Q4_40": {
+      "passed": true,
+      "details": 0.8486812137158705
+    },
+    "actual_count_and_dedup_2025Q4_60": {
+      "passed": true,
+      "details": 0.8486812137158705
+    },
+    "actual_count_and_dedup_2025Q4_80": {
+      "passed": true,
+      "details": 0.8486812137158705
+    },
+    "actual_count_and_dedup_2025Q4_100": {
+      "passed": true,
+      "details": 0.8486812137158705
+    },
+    "past_validation_choice_2026Q1": {
+      "passed": true,
+      "details": null
+    },
+    "actual_count_and_dedup_2026Q1_20": {
+      "passed": true,
+      "details": 0.8498029464206734
+    },
+    "actual_count_and_dedup_2026Q1_40": {
+      "passed": true,
+      "details": 0.8498029464206734
+    },
+    "actual_count_and_dedup_2026Q1_60": {
+      "passed": true,
+      "details": 0.8498029464206734
+    },
+    "actual_count_and_dedup_2026Q1_80": {
+      "passed": true,
+      "details": 0.8498029464206734
+    },
+    "actual_count_and_dedup_2026Q1_100": {
+      "passed": true,
+      "details": 0.8498029464206734
+    },
+    "past_validation_choice_2026Q2": {
+      "passed": true,
+      "details": null
+    },
+    "actual_count_and_dedup_2026Q2_20": {
+      "passed": true,
+      "details": 0.8394713319784739
+    },
+    "actual_count_and_dedup_2026Q2_40": {
+      "passed": true,
+      "details": 0.8394713319784739
+    },
+    "actual_count_and_dedup_2026Q2_60": {
+      "passed": true,
+      "details": 0.8394713319784739
+    },
+    "actual_count_and_dedup_2026Q2_80": {
+      "passed": true,
+      "details": 0.8394713319784739
+    },
+    "actual_count_and_dedup_2026Q2_100": {
+      "passed": true,
+      "details": 0.8394713319784739
+    },
+    "past_validation_choice_2026Q3": {
+      "passed": true,
+      "details": null
+    },
+    "actual_count_and_dedup_2026Q3_20": {
+      "passed": true,
+      "details": 0.8445281059160354
+    },
+    "actual_count_and_dedup_2026Q3_40": {
+      "passed": true,
+      "details": 0.8469197615512676
+    },
+    "actual_count_and_dedup_2026Q3_60": {
+      "passed": true,
+      "details": 0.8469197615512676
+    },
+    "actual_count_and_dedup_2026Q3_80": {
+      "passed": true,
+      "details": 0.8469197615512676
+    },
+    "actual_count_and_dedup_2026Q3_100": {
+      "passed": true,
+      "details": 0.8469197615512676
+    },
+    "all_account_cash_identities": {
+      "passed": true,
+      "details": {
+        "accounts": 40,
+        "maximum_error": 1.1641532182693481e-09
+      }
+    },
+    "all_accounts_no_negative_cash": {
+      "passed": true,
+      "details": 61161.65245241432
+    },
+    "minute_tplus1_capacity_positive_fills": {
+      "passed": true,
+      "details": [
+        {
+          "file": "minute_0.5pct_fills.csv",
+          "fills": 8829,
+          "same_day_sales": 0,
+          "capacity_overrun": 0.0,
+          "min_shares": 1.0
+        },
+        {
+          "file": "minute_1pct_fills.csv",
+          "fills": 5049,
+          "same_day_sales": 0,
+          "capacity_overrun": 0.0,
+          "min_shares": 1.0
+        },
+        {
+          "file": "minute_2pct_fills.csv",
+          "fills": 2829,
+          "same_day_sales": 0,
+          "capacity_overrun": 0.0,
+          "min_shares": 1.0
+        },
+        {
+          "file": "q3_minute_0.5pct_fills.csv",
+          "fills": 11134,
+          "same_day_sales": 0,
+          "capacity_overrun": 0.0,
+          "min_shares": 1.0
+        },
+        {
+          "file": "q3_minute_1pct_fills.csv",
+          "fills": 7046,
+          "same_day_sales": 0,
+          "capacity_overrun": 0.0,
+          "min_shares": 1.0
+        },
+        {
+          "file": "q3_minute_2pct_fills.csv",
+          "fills": 4005,
+          "same_day_sales": 0,
+          "capacity_overrun": 0.0,
+          "min_shares": 1.0
+        }
+      ]
+    },
+    "minute_no_negative_lot_inventory": {
+      "passed": true,
+      "details": 0.0
+    },
+    "count40_reproduces_frozen_predictions": {
+      "passed": true,
+      "details": 0.0
+    },
+    "events_not_future_or_duplicate": {
+      "passed": true,
+      "details": 2147
+    },
+    "hmm_uses_only_past": {
+      "passed": true,
+      "details": 24
+    }
+  },
+  "failed": [],
+  "count": 59
+}

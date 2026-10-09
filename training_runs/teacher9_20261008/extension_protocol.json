@@ -1,0 +1,33 @@
+{
+  "written_before_training": true,
+  "counts": [
+    20,
+    40,
+    60,
+    80,
+    100
+  ],
+  "correlation_threshold": 0.85,
+  "candidate_budget": "all training-qualified original 304 features, not only top 100; nested selections",
+  "period": "2024Q4-2026Q3, exact frozen September 30 panel and trading rules",
+  "selection": "Each quarter choose by mean validation daily Rank IC, tie smaller count; refit only past labels",
+  "count_models": [
+    "LightGBM fixed leaves=15",
+    "Ridge alpha=10"
+  ],
+  "extra_models": [
+    "40 features leaves 7/31",
+    "Alpha101 only",
+    "Alpha191 only",
+    "40 plus lagged capital proxies",
+    "Alpha lag 2 trading days",
+    "40 leaves15 sampling seeds 17/29"
+  ],
+  "limitations": "Retrospective extensions on a previously inspected period; no fresh holdout and no causal/live claim. Features ranked within current eligible pool. Missing values retained for trees, 0 imputation for Ridge.",
+  "costs_bp": [
+    5,
+    15,
+    30
+  ],
+  "new_count_main": "validation-selected LightGBM count, not outer-return winner"
+}

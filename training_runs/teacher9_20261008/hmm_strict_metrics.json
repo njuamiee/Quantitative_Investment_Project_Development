@@ -1,0 +1,22 @@
+{
+  "total_return": 0.44912781642500144,
+  "annual_return": 0.20674283526090753,
+  "sharpe": 0.7315102090787761,
+  "max_drawdown": -0.4531397932625979,
+  "mean_exposure": 0.6316390454769347,
+  "turnover_sum": 152.78578954881016,
+  "total_cost": 420132.493575,
+  "last_equity": 1449127.8164250015,
+  "attempted_entries": 2395,
+  "unfilled_entries": 113,
+  "unfilled_fraction": 0.04718162839248434,
+  "completed_sales": 2282,
+  "open_lots_at_end": 0,
+  "candidate_adjustment_held_lot_events": 32,
+  "corporate_action_cash": 0.0,
+  "corporate_action_ledger_present": false,
+  "cost_bp": 15,
+  "fallback_months": 0,
+  "months": 24,
+  "policy": "Prior-free likelihood fit; train-only nonnegative <.001 final delta, no iteration limit hit, expected state duration >=5 days; otherwise fixed .85 cap. Old forecasts and fixed period."
+}
