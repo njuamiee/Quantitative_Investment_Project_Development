@@ -42,7 +42,7 @@
 
 `late_snapshot.py`另读取晚间终检快照，通过SFTP下载10月8日c01/c02，保存100只当日池内股票的研究评分。文件明确记录实际抓取时间、使用2026Q3冻结模型、未按Q4重训、未来标签未成熟。它不是实盘订单或已获得结果的前瞻验证；重复运行会重新抓取供应商当前版本。
 
-Word生成：用文档运行时Python执行`build_guide.py`，再用`tools/research_20260930/render_report_windows.py`渲染到`training_runs/beginner_guide_20261008/docx_qa_final/`，逐页检查后执行`verify_deliverables.py`。`build_results_note.py`生成最新结果清单。PPT由artifact-tool JSX生成，图表来自本轮`figures/`，正文和表格为可编辑对象，23页均含讲者备注。
+Word生成：用文档运行时Python执行`build_guide.py`，再用`tools/research_20260930/render_report_windows.py`渲染到`training_runs/beginner_guide_20261008/docx_qa_final/`，逐页检查后执行`verify_deliverables.py`。`build_results_note.py`生成最新结果清单。原23页阶段更新PPT的交付记录保留在`document_qa.json`；该验证脚本仍对应旧版交付路径。当前汇报已重组为[37页首次完整汇报](../../学习笔记/10月9日汇报/量化选股项目_首次完整汇报_20261009.pptx)，使用artifact-tool JSX生成，正文和表格文字可编辑，全部页面有讲者备注；本次说明见[10月9日目录](../research_20261009/README.md)。
 
 ## 关键产物与核对
 
