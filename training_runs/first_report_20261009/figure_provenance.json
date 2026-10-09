@@ -1,0 +1,10 @@
+{
+  "purpose": "Explain existing strict HMM output; no model retraining or new backtest.",
+  "rows": 484,
+  "first": "2024-10-08",
+  "last": "2026-09-29",
+  "inputs": {
+    "hmm_strict_probabilities.csv": "27da74a3680e905b0ea53ecfed68516a63b9fc1dabcfde593e13df71ef1ed3da",
+    "hmm_strict_account.csv": "435622a18e960922b089fe6903eaf986b803dd70ad55fed232c30cf945fe8dc7"
+  }
+}

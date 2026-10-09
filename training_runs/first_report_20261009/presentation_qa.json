@@ -1,0 +1,216 @@
+{
+  "deck": "学习笔记/10月9日汇报/量化选股项目_首次完整汇报_20261009.pptx",
+  "sha256": "491833ff7b5c962d2e3d76330e8ea9fdce515f4a0634b5ddefad42300c99bdb1",
+  "companion": "学习笔记/10月9日汇报/首次完整汇报_逐页讲稿.md",
+  "companion_sha256": "0e3171ebaff445a53aa25163a5d5ac157e06cdd049d270f747f8beb58ea82221",
+  "slides": 37,
+  "main_slides": 32,
+  "appendix_slides": 5,
+  "speaker_notes": 37,
+  "speaker_note_characters": 10954,
+  "editable_text_shapes": 461,
+  "experimental_images": 11,
+  "all_eight_prior_extension_figures_preserved": true,
+  "embedded_images_match_source_pixels": true,
+  "figure_source_sha256": {
+    "training_runs/first_report_20261009/hmm_probability_and_exposure.png": "a1fa137dbf9a4faa7c5a4491f34f41d256f46c75b0cb81f79c9b7d43eb383245",
+    "training_runs/teacher9_20260930/figures/bj_equity.png": "6f55a48c46b0610b93fb0e533487cadae0458f3fe1d60314c110ef662d3f85aa",
+    "training_runs/teacher9_20260930/figures/quintiles.png": "c5cd101b59965d3ed8af64034e01c50b3b1bbe901d324ac76c5605ef9318ef27",
+    "training_runs/teacher9_20261008/figures/01_factor_count.png": "071191863da28a8ee2473e3bcc809bc266507d136b8e355aa327d32e00506810",
+    "training_runs/teacher9_20261008/figures/02_count_nav.png": "2fead418fa0509c0451ac04ebfa00c8c4e394a5e0038d274f5320d1ed39882fc",
+    "training_runs/teacher9_20261008/figures/03_validation_choices.png": "de6f7cb81decd788e8d33435608e9d4b359865cdb1e2e506fbb9d57fe7c84eea",
+    "training_runs/teacher9_20261008/figures/04_sensitivity.png": "dbeb7d35ce3871e19acf937ac0aaa7e022b5be26959701998a99b1b4e4835be4",
+    "training_runs/teacher9_20261008/figures/05_minute_accounts.png": "e5439fa3c679b5a8b053e9c5c3c8417d13a80f2c359f1c10e30964097d65829f",
+    "training_runs/teacher9_20261008/figures/06_hmm_controls.png": "144dd43b42bc5eb39dd9f57fc27e53d32dae67a839f1c0fd12386df2889ca2ae",
+    "training_runs/teacher9_20261008/figures/07_shsz_alpha.png": "296d891d6d266b0d34c2b9bd5b69e19b58fc2767d002871f39353c3eae6aed70",
+    "training_runs/teacher9_20261008/figures/08_dividend_sensitivity.png": "10566f2124b312f3ec2a084db768d4e623cc521ec9d1122c340399d4b78c9e09"
+  },
+  "teacher_response_pages": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "key_metrics_checked_against_saved_results": [
+    {
+      "page": 16,
+      "metric": "count_20",
+      "source_value": 0.3743078104699995,
+      "display_magnitude": "37.43"
+    },
+    {
+      "page": 16,
+      "metric": "count_40",
+      "source_value": 0.644669304959999,
+      "display_magnitude": "64.47"
+    },
+    {
+      "page": 16,
+      "metric": "count_60",
+      "source_value": 0.6252540287999975,
+      "display_magnitude": "62.53"
+    },
+    {
+      "page": 16,
+      "metric": "count_80",
+      "source_value": 0.7642315303049996,
+      "display_magnitude": "76.42"
+    },
+    {
+      "page": 16,
+      "metric": "count_100",
+      "source_value": 1.000679842449998,
+      "display_magnitude": "100.07"
+    },
+    {
+      "page": 15,
+      "metric": "pred_price",
+      "source_value": 0.14401979621500316,
+      "display_magnitude": "14.40"
+    },
+    {
+      "page": 15,
+      "metric": "pred_selected",
+      "source_value": 0.644669304959999,
+      "display_magnitude": "64.47"
+    },
+    {
+      "page": 15,
+      "metric": "pred_ridge",
+      "source_value": 0.8823963022299997,
+      "display_magnitude": "88.24"
+    },
+    {
+      "page": 15,
+      "metric": "original selected drawdown",
+      "source_value": -0.45328689980372305,
+      "display_magnitude": "45.33"
+    },
+    {
+      "page": 17,
+      "metric": "validation-selected return",
+      "source_value": 0.7602577724150008,
+      "display_magnitude": "76.03"
+    },
+    {
+      "page": 17,
+      "metric": "validation-selected drawdown",
+      "source_value": -0.4394765658656481,
+      "display_magnitude": "43.95"
+    },
+    {
+      "page": 17,
+      "metric": "ridge validation return",
+      "source_value": 1.2152513685500006,
+      "display_magnitude": "121.53"
+    },
+    {
+      "page": 18,
+      "metric": "minute_q4 matched_daily",
+      "source_value": 0.012000621454999694,
+      "display_magnitude": "1.20"
+    },
+    {
+      "page": 18,
+      "metric": "minute_q4 minute_1pct",
+      "source_value": -0.02661070683778899,
+      "display_magnitude": "2.66"
+    },
+    {
+      "page": 18,
+      "metric": "minute_q3 matched_daily",
+      "source_value": -0.05115526105499979,
+      "display_magnitude": "5.12"
+    },
+    {
+      "page": 18,
+      "metric": "minute_q3 q3_minute_1pct",
+      "source_value": -0.07073419099628553,
+      "display_magnitude": "7.07"
+    },
+    {
+      "page": 19,
+      "metric": "shsz pred_price",
+      "source_value": 0.1277720569999996,
+      "display_magnitude": "12.78"
+    },
+    {
+      "page": 19,
+      "metric": "shsz pred_selected",
+      "source_value": 0.24209391400000047,
+      "display_magnitude": "24.21"
+    },
+    {
+      "page": 19,
+      "metric": "shsz selected drawdown",
+      "source_value": -0.5235159505394853,
+      "display_magnitude": "52.35"
+    },
+    {
+      "page": 20,
+      "metric": "strict HMM",
+      "source_value": 0.44912781642500144,
+      "display_magnitude": "44.91"
+    },
+    {
+      "page": 20,
+      "metric": "fixed85 cap",
+      "source_value": 0.6505121423400024,
+      "display_magnitude": "65.05"
+    },
+    {
+      "page": 21,
+      "metric": "dividend immediate-availability scenario",
+      "source_value": 0.7325236899064991,
+      "display_magnitude": "73.25"
+    },
+    {
+      "page": 29,
+      "metric": "extra two-day factor delay",
+      "source_value": 0.1633109196600006,
+      "display_magnitude": "16.33"
+    },
+    {
+      "page": 34,
+      "metric": "validation cost 5bp",
+      "source_value": 1.0738703948650001,
+      "display_magnitude": "107.39"
+    },
+    {
+      "page": 34,
+      "metric": "validation cost 30bp",
+      "source_value": 0.37730930337999835,
+      "display_magnitude": "37.73"
+    }
+  ],
+  "layout_errors": 0,
+  "layout_warnings": 0,
+  "credential_scan_passed": true,
+  "runtime": "artifact-tool 2.7.4; presentation JSX",
+  "scope": "First complete project report; no new training or backtest. HMM explanation plot uses existing outputs.",
+  "visual_review": {
+    "all_37_slides_reviewed_full_size": true,
+    "revised_slides_rechecked": [
+      3,
+      5,
+      10,
+      20,
+      28,
+      31,
+      35
+    ],
+    "final_contact_sheet_reviewed": true,
+    "figure_geometry_and_text_checked": true,
+    "score": 41,
+    "out_of": 45,
+    "remaining_tradeoffs": [
+      "Original scientific figures retain raster labels and legends.",
+      "32 main slides plus 5 appendices; suggested main report 25-30 minutes."
+    ]
+  }
+}
