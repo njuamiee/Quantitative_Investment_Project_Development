@@ -1,0 +1,52 @@
+{
+  "input_files": 348,
+  "label_coverage_among_raw_labeled": 0.9854334373802092,
+  "label_pairs_differ_over_1pp": 1246,
+  "models": [
+    {
+      "total_return": 0.9349325054199988,
+      "annual_return": 0.397080674993203,
+      "sharpe": 1.062347644595883,
+      "max_drawdown": -0.4297083735235425,
+      "mean_exposure": 0.6748078903968269,
+      "turnover_sum": 162.43847612346053,
+      "total_cost": 581720.77458,
+      "last_equity": 1934932.505419999,
+      "attempted_entries": 2395,
+      "unfilled_entries": 105,
+      "unfilled_fraction": 0.04384133611691023,
+      "completed_sales": 2290,
+      "open_lots_at_end": 0,
+      "candidate_adjustment_held_lot_events": 34,
+      "corporate_action_cash": 0.0,
+      "corporate_action_ledger_present": false,
+      "cost_bp": 15,
+      "model": "hfq_target_only",
+      "hfq_rank_ic": 0.15416130660481273,
+      "return_basis": "unchanged raw-price-only account to isolate changed predictions; not hfq as execution prices"
+    },
+    {
+      "total_return": 0.5538695264450018,
+      "annual_return": 0.2501678543950314,
+      "sharpe": 0.7848018185070997,
+      "max_drawdown": -0.4533168958087297,
+      "mean_exposure": 0.6713982625661776,
+      "turnover_sum": 161.76185015870263,
+      "total_cost": 493390.563555,
+      "last_equity": 1553869.5264450018,
+      "attempted_entries": 2395,
+      "unfilled_entries": 121,
+      "unfilled_fraction": 0.050521920668058454,
+      "completed_sales": 2274,
+      "open_lots_at_end": 0,
+      "candidate_adjustment_held_lot_events": 37,
+      "corporate_action_cash": 0.0,
+      "corporate_action_ledger_present": false,
+      "cost_bp": 15,
+      "model": "hfq_target_features",
+      "hfq_rank_ic": 0.1524781372502791,
+      "return_basis": "unchanged raw-price-only account to isolate changed predictions; not hfq as execution prices"
+    }
+  ],
+  "limitations": "Current supplier proportional hfq series is a return-continuity proxy. Historical revisions, reinvestment/tax convention and event completeness remain unverified. Original training-only feature identities frozen; do not call this a newly selected optimal model."
+}

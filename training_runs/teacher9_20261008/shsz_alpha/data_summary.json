@@ -1,0 +1,9 @@
+{
+  "pool_rows": 252500,
+  "pool_stocks": 469,
+  "price_files": 496,
+  "features": 113,
+  "alpha_coverage": 0.9599278894226054,
+  "first": "2016-04-01 00:00:00",
+  "last": "2026-08-21 00:00:00"
+}

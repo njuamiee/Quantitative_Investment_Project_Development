@@ -1,0 +1,770 @@
+[
+  {
+    "month": "2024-10",
+    "train_end": "2024-09-30 00:00:00",
+    "first_prediction_date": "2024-10-08 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0008129670518428611,
+        "iterations": 34,
+        "duration_min": 12.026353859700075,
+        "accepted": true,
+        "train_log_likelihood": -2266.422064590122
+      },
+      {
+        "seed": 29,
+        "delta": 0.0007981512176229444,
+        "iterations": 29,
+        "duration_min": 12.026108121265223,
+        "accepted": true,
+        "train_log_likelihood": -2266.4220519670343
+      },
+      {
+        "seed": 43,
+        "delta": 0.0008548263813281665,
+        "iterations": 37,
+        "duration_min": 12.026514572406853,
+        "accepted": true,
+        "train_log_likelihood": -2266.422100073827
+      }
+    ]
+  },
+  {
+    "month": "2024-11",
+    "train_end": "2024-10-31 00:00:00",
+    "first_prediction_date": "2024-11-01 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0005844747288392682,
+        "iterations": 43,
+        "duration_min": 14.363624244681205,
+        "accepted": true,
+        "train_log_likelihood": -2199.048499291236
+      },
+      {
+        "seed": 29,
+        "delta": 0.00036066650682187174,
+        "iterations": 14,
+        "duration_min": 14.352144811683385,
+        "accepted": true,
+        "train_log_likelihood": -2199.048087092696
+      },
+      {
+        "seed": 43,
+        "delta": 0.0006270479243539739,
+        "iterations": 16,
+        "duration_min": 14.362809253770038,
+        "accepted": true,
+        "train_log_likelihood": -2199.048329282588
+      }
+    ]
+  },
+  {
+    "month": "2024-12",
+    "train_end": "2024-11-29 00:00:00",
+    "first_prediction_date": "2024-12-02 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0006943344083083502,
+        "iterations": 17,
+        "duration_min": 31.723494227309576,
+        "accepted": true,
+        "train_log_likelihood": -2170.166462413657
+      },
+      {
+        "seed": 29,
+        "delta": 0.000581688263991964,
+        "iterations": 62,
+        "duration_min": 31.173904384835083,
+        "accepted": true,
+        "train_log_likelihood": -2170.1663022816306
+      },
+      {
+        "seed": 43,
+        "delta": 0.00092485856202984,
+        "iterations": 17,
+        "duration_min": 31.767763004876105,
+        "accepted": true,
+        "train_log_likelihood": -2170.1666475077986
+      }
+    ]
+  },
+  {
+    "month": "2025-01",
+    "train_end": "2024-12-31 00:00:00",
+    "first_prediction_date": "2025-01-02 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0007524215370722231,
+        "iterations": 14,
+        "duration_min": 33.7689189548289,
+        "accepted": true,
+        "train_log_likelihood": -2217.4716432371697
+      },
+      {
+        "seed": 29,
+        "delta": 0.0009069262691809854,
+        "iterations": 18,
+        "duration_min": 21.15932351762646,
+        "accepted": true,
+        "train_log_likelihood": -2218.137558058155
+      },
+      {
+        "seed": 43,
+        "delta": 0.0008983017605714849,
+        "iterations": 26,
+        "duration_min": 21.16324578927091,
+        "accepted": true,
+        "train_log_likelihood": -2218.1375148183447
+      }
+    ]
+  },
+  {
+    "month": "2025-02",
+    "train_end": "2025-01-27 00:00:00",
+    "first_prediction_date": "2025-02-05 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0003558486182555498,
+        "iterations": 13,
+        "duration_min": 44.324848524207304,
+        "accepted": true,
+        "train_log_likelihood": -2253.269513486994
+      },
+      {
+        "seed": 29,
+        "delta": 0.00035748620985032176,
+        "iterations": 23,
+        "duration_min": 44.06127083451881,
+        "accepted": true,
+        "train_log_likelihood": -2253.2694804407884
+      },
+      {
+        "seed": 43,
+        "delta": 0.0005008694602111063,
+        "iterations": 15,
+        "duration_min": 44.34828143689492,
+        "accepted": true,
+        "train_log_likelihood": -2253.269542429709
+      }
+    ]
+  },
+  {
+    "month": "2025-03",
+    "train_end": "2025-02-28 00:00:00",
+    "first_prediction_date": "2025-03-03 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0006410720475287235,
+        "iterations": 10,
+        "duration_min": 52.052253684410054,
+        "accepted": true,
+        "train_log_likelihood": -2252.3808358111605
+      },
+      {
+        "seed": 29,
+        "delta": 0.000571917178149306,
+        "iterations": 17,
+        "duration_min": 52.0135090764233,
+        "accepted": true,
+        "train_log_likelihood": -2252.380824767893
+      },
+      {
+        "seed": 43,
+        "delta": 0.0006425229753403983,
+        "iterations": 10,
+        "duration_min": 52.011221607671274,
+        "accepted": true,
+        "train_log_likelihood": -2252.3808249971667
+      }
+    ]
+  },
+  {
+    "month": "2025-04",
+    "train_end": "2025-03-31 00:00:00",
+    "first_prediction_date": "2025-04-01 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.00016971635159279685,
+        "iterations": 11,
+        "duration_min": 52.91092286477855,
+        "accepted": true,
+        "train_log_likelihood": -2286.7832979526042
+      },
+      {
+        "seed": 29,
+        "delta": 0.0002785894939734135,
+        "iterations": 17,
+        "duration_min": 52.87851930674843,
+        "accepted": true,
+        "train_log_likelihood": -2286.7832911708365
+      },
+      {
+        "seed": 43,
+        "delta": 0.0004475314549381437,
+        "iterations": 13,
+        "duration_min": 52.918527035015785,
+        "accepted": true,
+        "train_log_likelihood": -2286.7833028341784
+      }
+    ]
+  },
+  {
+    "month": "2025-05",
+    "train_end": "2025-04-30 00:00:00",
+    "first_prediction_date": "2025-05-06 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.00025525698401906993,
+        "iterations": 19,
+        "duration_min": 50.15739210163981,
+        "accepted": true,
+        "train_log_likelihood": -2310.0762811162303
+      },
+      {
+        "seed": 29,
+        "delta": 0.0002445001123305701,
+        "iterations": 17,
+        "duration_min": 50.07420751417834,
+        "accepted": true,
+        "train_log_likelihood": -2310.0762587507247
+      },
+      {
+        "seed": 43,
+        "delta": 0.0007367912567133317,
+        "iterations": 11,
+        "duration_min": 49.99665734221365,
+        "accepted": true,
+        "train_log_likelihood": -2310.07628300424
+      }
+    ]
+  },
+  {
+    "month": "2025-06",
+    "train_end": "2025-05-30 00:00:00",
+    "first_prediction_date": "2025-06-03 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0006914045175108186,
+        "iterations": 8,
+        "duration_min": 21.90626410709573,
+        "accepted": true,
+        "train_log_likelihood": -2366.7317533898477
+      },
+      {
+        "seed": 29,
+        "delta": 0.0004012873719148047,
+        "iterations": 21,
+        "duration_min": 49.84164831682838,
+        "accepted": true,
+        "train_log_likelihood": -2361.622336045613
+      },
+      {
+        "seed": 43,
+        "delta": 0.0003212360393263225,
+        "iterations": 10,
+        "duration_min": 21.908081424103166,
+        "accepted": true,
+        "train_log_likelihood": -2366.731735770319
+      }
+    ]
+  },
+  {
+    "month": "2025-07",
+    "train_end": "2025-06-30 00:00:00",
+    "first_prediction_date": "2025-07-01 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0002074726294267748,
+        "iterations": 7,
+        "duration_min": 21.809126909428734,
+        "accepted": true,
+        "train_log_likelihood": -2377.359543553072
+      },
+      {
+        "seed": 29,
+        "delta": 0.0006733909272043093,
+        "iterations": 18,
+        "duration_min": 21.81279410871329,
+        "accepted": true,
+        "train_log_likelihood": -2377.3595535095114
+      },
+      {
+        "seed": 43,
+        "delta": 0.0006282780491346784,
+        "iterations": 9,
+        "duration_min": 21.803405957793174,
+        "accepted": true,
+        "train_log_likelihood": -2377.359552809404
+      }
+    ]
+  },
+  {
+    "month": "2025-08",
+    "train_end": "2025-07-31 00:00:00",
+    "first_prediction_date": "2025-08-01 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0003872374613820284,
+        "iterations": 6,
+        "duration_min": 21.734420868253945,
+        "accepted": true,
+        "train_log_likelihood": -2374.6991141534
+      },
+      {
+        "seed": 29,
+        "delta": 0.00024936892395999166,
+        "iterations": 16,
+        "duration_min": 21.739653880107557,
+        "accepted": true,
+        "train_log_likelihood": -2374.699114613955
+      },
+      {
+        "seed": 43,
+        "delta": 0.0002652965013112407,
+        "iterations": 15,
+        "duration_min": 21.740546760336017,
+        "accepted": true,
+        "train_log_likelihood": -2374.699114753604
+      }
+    ]
+  },
+  {
+    "month": "2025-09",
+    "train_end": "2025-08-29 00:00:00",
+    "first_prediction_date": "2025-09-01 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0004710491284640739,
+        "iterations": 6,
+        "duration_min": 21.701672234789292,
+        "accepted": true,
+        "train_log_likelihood": -2382.8176610661294
+      },
+      {
+        "seed": 29,
+        "delta": 0.0007510060486310977,
+        "iterations": 15,
+        "duration_min": 21.705144599453433,
+        "accepted": true,
+        "train_log_likelihood": -2382.817663272877
+      },
+      {
+        "seed": 43,
+        "delta": 0.0005463983875415579,
+        "iterations": 11,
+        "duration_min": 21.709275720640644,
+        "accepted": true,
+        "train_log_likelihood": -2382.81766293865
+      }
+    ]
+  },
+  {
+    "month": "2025-10",
+    "train_end": "2025-09-30 00:00:00",
+    "first_prediction_date": "2025-10-09 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0003522030906424334,
+        "iterations": 7,
+        "duration_min": 22.00682321452954,
+        "accepted": true,
+        "train_log_likelihood": -2364.1102249099595
+      },
+      {
+        "seed": 29,
+        "delta": 0.0006872969224787084,
+        "iterations": 14,
+        "duration_min": 19.325227251302163,
+        "accepted": true,
+        "train_log_likelihood": -2365.896678500132
+      },
+      {
+        "seed": 43,
+        "delta": 0.0004610223941199365,
+        "iterations": 11,
+        "duration_min": 22.01142632905337,
+        "accepted": true,
+        "train_log_likelihood": -2364.110223890457
+      }
+    ]
+  },
+  {
+    "month": "2025-11",
+    "train_end": "2025-10-31 00:00:00",
+    "first_prediction_date": "2025-11-03 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0003238301032979507,
+        "iterations": 7,
+        "duration_min": 21.969625236540434,
+        "accepted": true,
+        "train_log_likelihood": -2366.0529933971916
+      },
+      {
+        "seed": 29,
+        "delta": 0.0001495668179813947,
+        "iterations": 17,
+        "duration_min": 21.973515387854228,
+        "accepted": true,
+        "train_log_likelihood": -2366.052987635918
+      },
+      {
+        "seed": 43,
+        "delta": 0.0001514816508461081,
+        "iterations": 10,
+        "duration_min": 21.971575864309084,
+        "accepted": true,
+        "train_log_likelihood": -2366.0529899599874
+      }
+    ]
+  },
+  {
+    "month": "2025-12",
+    "train_end": "2025-11-28 00:00:00",
+    "first_prediction_date": "2025-12-01 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.00024281389778479934,
+        "iterations": 9,
+        "duration_min": 22.350163298638794,
+        "accepted": true,
+        "train_log_likelihood": -2339.6791097496657
+      },
+      {
+        "seed": 29,
+        "delta": 0.000935199692776223,
+        "iterations": 13,
+        "duration_min": 22.34464201880879,
+        "accepted": true,
+        "train_log_likelihood": -2339.679129105106
+      },
+      {
+        "seed": 43,
+        "delta": 0.00027772728071795427,
+        "iterations": 9,
+        "duration_min": 22.361651212344732,
+        "accepted": true,
+        "train_log_likelihood": -2339.679105008813
+      }
+    ]
+  },
+  {
+    "month": "2026-01",
+    "train_end": "2025-12-31 00:00:00",
+    "first_prediction_date": "2026-01-05 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0005199445286052651,
+        "iterations": 9,
+        "duration_min": 21.280683723115786,
+        "accepted": true,
+        "train_log_likelihood": -2344.798229438796
+      },
+      {
+        "seed": 29,
+        "delta": 0.0009599510772204667,
+        "iterations": 13,
+        "duration_min": 21.27682256237004,
+        "accepted": true,
+        "train_log_likelihood": -2344.798251356882
+      },
+      {
+        "seed": 43,
+        "delta": 0.000642715759568091,
+        "iterations": 12,
+        "duration_min": 21.304108648154994,
+        "accepted": true,
+        "train_log_likelihood": -2344.798229201477
+      }
+    ]
+  },
+  {
+    "month": "2026-02",
+    "train_end": "2026-01-30 00:00:00",
+    "first_prediction_date": "2026-02-02 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0005357150839699898,
+        "iterations": 22,
+        "duration_min": 25.394067972990165,
+        "accepted": true,
+        "train_log_likelihood": -2374.776603872955
+      },
+      {
+        "seed": 29,
+        "delta": 0.0003030158691217366,
+        "iterations": 32,
+        "duration_min": 25.394976604749086,
+        "accepted": true,
+        "train_log_likelihood": -2374.7765822293586
+      },
+      {
+        "seed": 43,
+        "delta": 0.0002566831753938459,
+        "iterations": 25,
+        "duration_min": 25.395185650393557,
+        "accepted": true,
+        "train_log_likelihood": -2374.7765778020866
+      }
+    ]
+  },
+  {
+    "month": "2026-03",
+    "train_end": "2026-02-27 00:00:00",
+    "first_prediction_date": "2026-03-02 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.000721424357379874,
+        "iterations": 9,
+        "duration_min": 15.219423102352915,
+        "accepted": true,
+        "train_log_likelihood": -2368.53382702551
+      },
+      {
+        "seed": 29,
+        "delta": 0.0008681502708896005,
+        "iterations": 20,
+        "duration_min": 15.258458845557673,
+        "accepted": true,
+        "train_log_likelihood": -2368.5338351167143
+      },
+      {
+        "seed": 43,
+        "delta": 0.000316441720315197,
+        "iterations": 12,
+        "duration_min": 15.22697420532894,
+        "accepted": true,
+        "train_log_likelihood": -2368.5337672087066
+      }
+    ]
+  },
+  {
+    "month": "2026-04",
+    "train_end": "2026-03-31 00:00:00",
+    "first_prediction_date": "2026-04-01 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0004300171713111922,
+        "iterations": 10,
+        "duration_min": 11.553653801965282,
+        "accepted": true,
+        "train_log_likelihood": -2378.7983230618747
+      },
+      {
+        "seed": 29,
+        "delta": 0.0007117684276636282,
+        "iterations": 21,
+        "duration_min": 11.486060776942447,
+        "accepted": true,
+        "train_log_likelihood": -2378.7984396617726
+      },
+      {
+        "seed": 43,
+        "delta": 0.0006872835688227497,
+        "iterations": 17,
+        "duration_min": 11.486883695023277,
+        "accepted": true,
+        "train_log_likelihood": -2378.7984299894683
+      }
+    ]
+  },
+  {
+    "month": "2026-05",
+    "train_end": "2026-04-30 00:00:00",
+    "first_prediction_date": "2026-05-06 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.000491419984427921,
+        "iterations": 9,
+        "duration_min": 12.411599152276517,
+        "accepted": true,
+        "train_log_likelihood": -2360.9521029147268
+      },
+      {
+        "seed": 29,
+        "delta": 0.0008163049842551118,
+        "iterations": 19,
+        "duration_min": 12.355239998932298,
+        "accepted": true,
+        "train_log_likelihood": -2360.952162802977
+      },
+      {
+        "seed": 43,
+        "delta": 0.0003591639656406187,
+        "iterations": 16,
+        "duration_min": 30.746917887061905,
+        "accepted": true,
+        "train_log_likelihood": -2357.2268384875947
+      }
+    ]
+  },
+  {
+    "month": "2026-06",
+    "train_end": "2026-05-29 00:00:00",
+    "first_prediction_date": "2026-06-01 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0004456997162378684,
+        "iterations": 9,
+        "duration_min": 15.647546875634875,
+        "accepted": true,
+        "train_log_likelihood": -2348.1097423766632
+      },
+      {
+        "seed": 29,
+        "delta": 0.000619623118382151,
+        "iterations": 25,
+        "duration_min": 26.494270148885114,
+        "accepted": true,
+        "train_log_likelihood": -2345.049942541491
+      },
+      {
+        "seed": 43,
+        "delta": 0.0006705621040055121,
+        "iterations": 14,
+        "duration_min": 43.064590387209684,
+        "accepted": true,
+        "train_log_likelihood": -2340.4877055119496
+      }
+    ]
+  },
+  {
+    "month": "2026-07",
+    "train_end": "2026-06-30 00:00:00",
+    "first_prediction_date": "2026-07-01 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.00034711990383584634,
+        "iterations": 8,
+        "duration_min": 16.791109454974265,
+        "accepted": true,
+        "train_log_likelihood": -2362.318365615955
+      },
+      {
+        "seed": 29,
+        "delta": 0.0005857899282091239,
+        "iterations": 24,
+        "duration_min": 27.819915328149524,
+        "accepted": true,
+        "train_log_likelihood": -2356.8725385733856
+      },
+      {
+        "seed": 43,
+        "delta": 0.0008721437002350285,
+        "iterations": 12,
+        "duration_min": 55.80611880261686,
+        "accepted": true,
+        "train_log_likelihood": -2353.440717801156
+      }
+    ]
+  },
+  {
+    "month": "2026-08",
+    "train_end": "2026-07-31 00:00:00",
+    "first_prediction_date": "2026-08-03 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.0002599877957436547,
+        "iterations": 8,
+        "duration_min": 16.525326130943384,
+        "accepted": true,
+        "train_log_likelihood": -2384.263794459434
+      },
+      {
+        "seed": 29,
+        "delta": 0.00019443152859821566,
+        "iterations": 19,
+        "duration_min": 16.522249075153937,
+        "accepted": true,
+        "train_log_likelihood": -2384.263792572799
+      },
+      {
+        "seed": 43,
+        "delta": 0.0007482655446438002,
+        "iterations": 8,
+        "duration_min": 16.505474530485525,
+        "accepted": true,
+        "train_log_likelihood": -2384.2638049579573
+      }
+    ]
+  },
+  {
+    "month": "2026-09",
+    "train_end": "2026-08-31 00:00:00",
+    "first_prediction_date": "2026-09-01 00:00:00",
+    "fallback_fixed85": false,
+    "candidates": [
+      {
+        "seed": 17,
+        "delta": 0.00015204113196887192,
+        "iterations": 8,
+        "duration_min": 20.55500703775184,
+        "accepted": true,
+        "train_log_likelihood": -2369.8593977831806
+      },
+      {
+        "seed": 29,
+        "delta": 0.000640959220163495,
+        "iterations": 14,
+        "duration_min": 20.54844073415749,
+        "accepted": true,
+        "train_log_likelihood": -2369.859396705743
+      },
+      {
+        "seed": 43,
+        "delta": 0.00017345500964438543,
+        "iterations": 8,
+        "duration_min": 20.54178199075699,
+        "accepted": true,
+        "train_log_likelihood": -2369.85939867446
+      }
+    ]
+  }
+]

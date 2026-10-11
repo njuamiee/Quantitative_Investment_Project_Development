@@ -1,0 +1,7 @@
+model,paired_days,mean_ic_difference_vs40,ci_low,ci_high,note
+count_20,479,-0.005048599000696357,-0.010371948223944055,-0.00016952872601695118,"Pointwise descriptive block bootstrap; not familywise corrected, not untouched holdout."
+count_40,479,0.0,0.0,0.0,"Pointwise descriptive block bootstrap; not familywise corrected, not untouched holdout."
+count_60,479,-0.0005425863704587984,-0.00491638242452678,0.00393387149818352,"Pointwise descriptive block bootstrap; not familywise corrected, not untouched holdout."
+count_80,479,0.0018044994927859407,-0.00334058472165688,0.007125672677305845,"Pointwise descriptive block bootstrap; not familywise corrected, not untouched holdout."
+count_100,479,0.004469025355006548,-0.00041549439409417947,0.009593314486020245,"Pointwise descriptive block bootstrap; not familywise corrected, not untouched holdout."
+validation_count,479,0.001739121438534689,-0.003062818064729256,0.007451958517719722,"Pointwise descriptive block bootstrap; not familywise corrected, not untouched holdout."

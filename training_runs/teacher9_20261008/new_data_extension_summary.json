@@ -1,0 +1,28 @@
+{
+  "total_return": 0.6136634411099986,
+  "annual_return": 0.2705087158942179,
+  "sharpe": 0.8404835376707961,
+  "max_drawdown": -0.45328689980372305,
+  "mean_exposure": 0.6727421171458633,
+  "turnover_sum": 163.34380680243942,
+  "total_cost": 503881.79889,
+  "last_equity": 1613663.4411099986,
+  "attempted_entries": 2405,
+  "unfilled_entries": 123,
+  "unfilled_fraction": 0.051143451143451146,
+  "completed_sales": 2282,
+  "open_lots_at_end": 0,
+  "candidate_adjustment_held_lot_events": 32,
+  "corporate_action_cash": 0.0,
+  "corporate_action_ledger_present": false,
+  "cost_bp": 15,
+  "raw_price_history_revised_rows": 0,
+  "new_signal_dates": [
+    "2026-09-30"
+  ],
+  "prices_through": "2026-10-08",
+  "latest_full_factor_date": "2026-09-30",
+  "latest_signal_label_mature": false,
+  "comparison_note": "Updated input vintage and two additional trading sessions; separate from the fixed-window factor-count comparison.",
+  "cash_only_receivable_at_old_end": 16874.83
+}

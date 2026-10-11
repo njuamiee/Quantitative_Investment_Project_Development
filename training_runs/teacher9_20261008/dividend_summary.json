@@ -1,0 +1,16 @@
+{
+  "source_rows": 2187,
+  "source_stocks": 315,
+  "implemented_unique_nonfuture_events": 2147,
+  "in_price_history_events": 1159,
+  "record_not_previous_trade_day": 0,
+  "events_in_original_test": 532,
+  "stock_bonus_events_in_original_test": 100,
+  "missing_fields": [
+    "cash payment date",
+    "bonus-share listing/tradability date",
+    "investor-specific withholding/tax timing",
+    "historical revision versions"
+  ],
+  "interpretation": "Useful implemented-event source, not a complete verified settlement ledger; no price-only performance relabeled as total return."
+}
