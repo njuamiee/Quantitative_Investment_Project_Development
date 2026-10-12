@@ -1,10 +1,18 @@
 # Local datasets and virtual environment; learning notes are versioned from 2026-10-08
 /training_data/
 /.venv_quant/
+/.venv_research_20261011/
 
 # Reproducible document preview intermediates
 /training_runs/**/docx_qa*/
 /training_runs/**/pptx_qa*/
+/training_runs/**/document_draft/
+
+# Rebuildable October 11 prediction caches; retain latest deployable model bundles
+/training_runs/research_20261011/**/*.parquet
+/training_runs/research_20261011/h*/*_models.joblib
+!/training_runs/research_20261011/h*/2026Q4_models.joblib
+/training_runs/research_20261011/ledger_v1_validation_archive/
 
 # Local plaintext server credentials
 /ftp服务器

@@ -1,0 +1,24 @@
+{
+  "status": "follow-up exploratory study after recent-year failure, not untouched validation",
+  "forecast_horizons": [
+    1,
+    5,
+    20
+  ],
+  "training_sessions": [
+    63,
+    126,
+    252
+  ],
+  "refit": "monthly",
+  "bank": "initial 2024Q4 training-selected 100 plus causal price/LLM features",
+  "models": [
+    "ridge20",
+    "ridge180",
+    "lgbm",
+    "ic"
+  ],
+  "risk_grid": "w504/w126 HMM3 defensive/growth, scales .25/.5, plus none and vol12",
+  "acceptance": "Full interval AND recent year AND recent half-year must jointly pass Sharpe>1, Calmar>2 for a stability claim",
+  "input_sha256": "43409666b797332d31605d37f1786585b8a21797b0e89e6c0de0fbe2544c4765"
+}

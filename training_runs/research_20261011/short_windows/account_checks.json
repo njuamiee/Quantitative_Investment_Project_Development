@@ -1,0 +1,8 @@
+{
+  "accounts": 480,
+  "rows": 233760,
+  "cash_identity_max_error": 4.656612873077393e-10,
+  "minimum_cash": 64.30595000003086,
+  "unique_strategy_date": true,
+  "passed": true
+}

@@ -1,0 +1,17 @@
+{
+  "total_return": 0.17766593704019895,
+  "annual_return": 0.08514248585626882,
+  "sharpe": 0.408947326624135,
+  "sharpe_rf15": 0.37606891401188886,
+  "max_drawdown": 0.38549506621688245,
+  "calmar": 0.22086530624588335,
+  "pass_target": false,
+  "mean_exposure": 1.0,
+  "cash_days_fraction": 0.0,
+  "turnover_sum": 0.0,
+  "total_cost": 0.0,
+  "days": 487,
+  "start": "2024-10-08 00:00:00",
+  "end": "2026-10-09 00:00:00",
+  "worst_day": -0.17946855973889309
+}

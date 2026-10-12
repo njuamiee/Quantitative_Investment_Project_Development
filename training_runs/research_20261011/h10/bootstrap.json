@@ -1,0 +1,18 @@
+{
+  "method": "circular moving-block bootstrap; conditional on fixed strategy, not research-selection corrected",
+  "block_sessions": 20,
+  "replicates": 1500,
+  "sharpe_rf15_95": [
+    -0.9411843291204485,
+    2.118176928070332
+  ],
+  "calmar_95": [
+    -0.4657345674907518,
+    3.9739339384916317
+  ],
+  "annual_return_95": [
+    -0.159652025633903,
+    0.5504925245786388
+  ],
+  "bootstrap_joint_pass_fraction": 0.11666666666666667
+}

@@ -1,0 +1,3 @@
+# Keep published artifact bytes consistent with delivery_manifest.json.
+/学习笔记/20261012_多期限选股项目/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/training_runs/research_20261011/**/*.joblib binary

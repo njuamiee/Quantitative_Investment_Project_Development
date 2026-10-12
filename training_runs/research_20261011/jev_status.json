@@ -1,0 +1,17 @@
+{
+  "status": "offline-only",
+  "live_calls": 0,
+  "tasks": [
+    "financial_report_classification",
+    "news_event_score",
+    "risk_signal_extraction"
+  ],
+  "endpoint": "https://api.typesafe.ai/v1/systemone",
+  "authorization": "User explicitly deferred paid calls",
+  "pending": [
+    "real document labels",
+    "chronological calibration",
+    "live API contract test",
+    "downstream incremental stock-selection evidence"
+  ]
+}

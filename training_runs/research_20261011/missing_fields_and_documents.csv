@@ -1,0 +1,10 @@
+﻿scope,required_file_or_field,content,affects
+all markets,historical_security_master,"Listing/delisting history, name/ST changes, code migration mapping and historical universe membership",Survivorship and code continuity
+all markets,daily_trade_status,Exact suspension and exchange limit-up/down/reference-price fields with release timestamp,Replace 30 percent execution proxy
+BJ,corporate_action_settlement,"Cash payment date, dividend tax by holding duration, bonus-share tradable date",Ex-date immediate gross scenario is not verified real settlement
+factor supplier,historical_factor_vintages,"Per-field computation/release timestamp, revisions and as-of archives",Current-vintage factors cannot establish point-in-time correctness
+financial/news,text_document_archive,"Issuer, publication/ingestion/version timestamps, source text and licensed usage",Jev classification/event/risk live evaluation
+financial/news,text_annotation_labels,"Dated human labels and mature outcomes, chronological train/validation/test",Jev calibration and incremental benefit
+HMM,historical_macro_vintages,"Macro releases, financing data and spread/liquidity fields",Enrich emissions without release-time leakage
+execution,orderbook_and_order_logs,"Depth/queue snapshots, fills, impact/slippage and account fee schedule",Minute bar stress is not queue-level execution
+factor supplier,alpha101_versioned_formulas,"Exact implemented Alpha101 formulas, rank universe, adjustment mode and exception conventions for the supplied version",Existing extraction/API guides do not verify every supplied formula
