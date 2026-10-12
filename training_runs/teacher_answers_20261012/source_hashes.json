@@ -1,0 +1,11 @@
+{
+  "1012老师提出的新问题.pdf": "88a3f28bcbbab102e1a42caee1ddc432c4db3f3dd242253df26e3bc381bb909d",
+  "tools\\research_20260930\\train.py": "f2cc7ecbb50cb0d69abdf8825361faca085afbbe2fec1badc4ba4ad57ecf0871",
+  "tools\\research_20260930\\prepare.py": "440cce8815d249b125370eba61621fe4903501be534b4f1578691e0dcf0af0dc",
+  "tools\\research_20260930\\accounts.py": "dc06e7c1c2d006953a0c59aa08122e769e6d6d594cd56a9faf38690b8d3ff7b6",
+  "tools\\research_20261008\\experiments.py": "7d7e0ca8629663d83f3f5fc9534aa888b26978973a6b77a6600e49bf377f54ae",
+  "tools\\research_20261011\\train_models.py": "a75f08490a6ad753c4291a35b1f374715eaf0a8002e4cb25c953e511043c1ba3",
+  "tools\\research_20261011\\prepare_data.py": "80f58cae049e88bdb7eb63541ee6e3ba630354ac59e11065520cc947700b7532",
+  "training_runs\\teacher9_20261008\\extension_results.csv": "2232523c07b67a527fbe2e2be875a9fd6bf3b427f312382d75cf61df5d7536d9",
+  "training_runs\\teacher9_20260930\\bj_folds.json": "be894dc7ab207498cc028d50d63819b47c54567099d4c0f197d24d225cb445a1"
+}

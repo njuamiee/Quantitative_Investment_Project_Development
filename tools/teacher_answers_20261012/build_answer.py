@@ -1,0 +1,354 @@
+"""Build the teacher-facing answer from audited project artifacts; managed Python only."""
+from pathlib import Path
+import csv,json,sys,hashlib,shutil
+from docx import Document
+from docx.shared import Inches,Pt,RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
+
+ROOT=Path(__file__).resolve().parents[2]
+RUN=ROOT/'training_runs/teacher_answers_20261012'
+OUT=ROOT/'学习笔记/20261012_老师新问题逐项解答';OUT.mkdir(parents=True,exist_ok=True)
+SKILL=Path('C:/Users/Amiee/.codex/plugins/cache/openai-primary-runtime/documents/26.430.10722/skills/documents')
+sys.path.insert(0,str(SKILL/'scripts'))
+from table_geometry import apply_table_geometry,column_widths_from_weights
+def load(p):return json.loads((RUN/p).read_text('utf-8'))
+def rows(p):return list(csv.DictReader((RUN/p).open(encoding='utf-8-sig',newline='')))
+def pc(v,d=2):return f'{float(v):.{d}%}'
+def n(v,d=4):return f'{float(v):.{d}f}'
+def short(f):return f.removeprefix('x_').replace('c02_gtalpha','GT').replace('c01_Alpha','A')
+F=load('original_folds.json');Q=rows('selected40_2026Q3_details.csv')
+D={r['model']:r for r in rows('drawdown_diagnostics.csv')};S=load('selection_summary.json')
+ST={(r['version'],r['model']):r for r in rows('quarterly_ic_stability.csv')}
+IC={(r['version'],r['model'],r['quarter']):r for r in rows('quarterly_ic.csv')}
+doc=Document();sec=doc.sections[0]
+sec.page_width=Inches(8.5);sec.page_height=Inches(11)
+sec.top_margin=sec.bottom_margin=sec.left_margin=sec.right_margin=Inches(1)
+sec.header_distance=sec.footer_distance=Inches(.4)
+for name,size,bold,color in [('Normal',12,False,'263238'),('Title',22,True,'153F57'),('Subtitle',12,False,'58676F'),('Heading 1',16,True,'153F57'),('Heading 2',14,True,'153F57'),('Heading 3',12,True,'153F57'),('Caption',9,False,'58676F')]:
+    st=doc.styles[name];st.font.name='Arial';st.font.size=Pt(size);st.font.bold=bold;st.font.color.rgb=RGBColor.from_string(color)
+    st.element.get_or_add_rPr().rFonts.set(qn('w:eastAsia'),'Microsoft YaHei')
+    st.paragraph_format.line_spacing=1.08;st.paragraph_format.space_after=Pt(6)
+    if name.startswith('Heading'):
+        st.paragraph_format.keep_with_next=True;st.paragraph_format.space_before=Pt(12 if name=='Heading 1' else 10)
+head=sec.header.paragraphs[0];head.text='10月12日老师新问题  |  代码、已存结果与后续协议核对';head.runs[0].font.size=Pt(9)
+pr=head._p.get_or_add_pPr();bd=OxmlElement('w:pBdr');b=OxmlElement('w:bottom');b.set(qn('w:val'),'single');b.set(qn('w:sz'),'4');b.set(qn('w:color'),'CCD4D8');bd.append(b);pr.append(bd)
+foot=sec.footer.paragraphs[0];foot.alignment=WD_ALIGN_PARAGRAPH.RIGHT;foot.add_run('2026-10-12  |  ').font.size=Pt(9)
+fld=OxmlElement('w:fldSimple');fld.set(qn('w:instr'),'PAGE');foot._p.append(fld)
+doc.core_properties.title='1012老师新问题逐项解答与40因子筛选详解'
+doc.core_properties.author='项目研究记录';transcript=[];questions=[]
+def p(t,style=None):transcript.append(t);return doc.add_paragraph(t,style)
+def h(t):doc.add_heading(t,2);transcript.append('\n### '+t+'\n')
+def page(t):
+    para=doc.add_heading(t,1);para.paragraph_format.page_break_before=True;transcript.append('\n## '+t+'\n')
+def tab(headers,data,weights=None,size=10,compact=False):
+    t=doc.add_table(rows=1,cols=len(headers));t.style='Table Grid'
+    for c,v in zip(t.rows[0].cells,headers):c.text=str(v)
+    for rr in data:
+        for c,v in zip(t.add_row().cells,rr):c.text=str(v)
+    widths=column_widths_from_weights(weights or [1]*len(headers),9360)
+    apply_table_geometry(t,widths,table_width_dxa=9360,indent_dxa=120,
+                         cell_margins_dxa={'top':50,'bottom':50} if compact else None)
+    for i,row in enumerate(t.rows):
+        rp=row._tr.get_or_add_trPr();rp.append(OxmlElement('w:cantSplit'))
+        if i==0:rp.append(OxmlElement('w:tblHeader'))
+        for c in row.cells:
+            c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
+            for para in c.paragraphs:
+                para.paragraph_format.space_before=Pt(0 if compact else 1);para.paragraph_format.space_after=Pt(0 if compact else 2);para.paragraph_format.line_spacing=1.05
+                if i>0 and len(para.text)<=14 and para.text.isascii():para.alignment=WD_ALIGN_PARAGRAPH.CENTER
+                for r in para.runs:r.font.size=Pt(size);r.font.bold=i==0
+            if i==0:
+                sh=OxmlElement('w:shd');sh.set(qn('w:fill'),'F0F3F4');c._tc.get_or_add_tcPr().append(sh)
+    def md_cell(value):return str(value).replace('|','\\|').replace('\n',' / ')
+    md_rows=['| '+' | '.join(md_cell(v) for v in headers)+' |','| '+' | '.join('---' for _ in headers)+' |']
+    for rr in data:md_rows.append('| '+' | '.join(md_cell(v) for v in rr)+' |')
+    transcript.append('\n'.join(md_rows))
+    return t
+def link(label,url):
+    para=doc.add_paragraph();rel=para.part.relate_to(url,RT.HYPERLINK,is_external=True);hy=OxmlElement('w:hyperlink');hy.set(qn('r:id'),rel)
+    r=OxmlElement('w:r');pr=OxmlElement('w:rPr');color=OxmlElement('w:color');color.set(qn('w:val'),'245F7C');pr.append(color);r.append(pr)
+    tx=OxmlElement('w:t');tx.text=label;r.append(tx);hy.append(r);para._p.append(hy);transcript.append(f'[{label}]({url})')
+
+p('老师新问题逐项解答\n与40因子筛选详解','Title')
+p('依据：《1012老师提出的新问题.pdf》全部3页；项目最新数据至2026-10-09。','Subtitle')
+h('给老师的回复摘要')
+p('老师您好，我对照您标注的两张图、现有训练代码和每季度保存的实验产物做了逐项核查。原图采用季度滚动训练与验证：名义训练窗504个交易日、验证窗126日，标签跨界的样本会剔除。2024年10月是第一段外层测试的起点，每个后续季度都会重新筛因子、训练和预测。')
+p('此前提到的“40个因子”是每轮训练内筛选的数量上限。旧版候选共304项，经覆盖率和有效IC天数筛选，按平均Rank IC绝对值排序取前100，再按相关性0.85去重，最多保留40项。8轮实际均为40项，但累计涉及77个不同因子，只有14项每轮都在。完整规则和最后一轮40项明细见第05—09节。')
+p('LightGBM的叶子数、学习率等主要采用固定研究设置，树的实际轮数由验证期早停决定；旧版Ridge的正则系数固定为10，没有把它包装成已找到的最优值。两种模型随因子数量变化的回撤差异，只能视为这段历史的实测现象，不能推出普遍规律。')
+p('您这次要求先集中解决选因子与选股，我将按这个研究顺序组织后续实验：固定持有与交易时点，使用后复权收益口径，手续费每边万分之一，暂不叠加HMM、分钟执行或独立分红记账；优先核查回撤、行业和风格暴露、滚动窗稳定性。')
+p('需要说明，现有新版本虽然已有后复权特征、多期限和滚动实验，但尚未按本次全部新口径完成重训。尤其旧标签是次日开盘到t+5收盘，您写的是到t+6收盘，两者不同。本文把已经核实的事实、新补充的统计和下一轮具体方案分别标明。')
+p('本次新增工作：复核8轮因子选择与8轮扩展名单，16项一致性核对全部通过；重算10个因子数量方案的回撤起止日期，以及旧版和新版的分季度IC。未开展新的参数搜索，也未把旧结果更名为新口径结果。','Caption')
+
+page('01  问题覆盖索引')
+items=[
+('Q01','第1页','是否以2024/10一次切成前训后测','02—03'),('Q02','第1页','LightGBM的train/val/test具体哪段','02—03'),
+('Q03','第1页','num_leaves、learning_rate、n_estimators如何定','04'),('Q04','第1页','Ridge做法和正则权重','05'),
+('Q05','第1页','是否考虑共线性','05、07'),('Q06','第1页','调仓频率是多少','12'),
+('Q07','第1页','两算法回撤趋势为何相反','10—11'),('Q08','第1页','先做选因子选股，暂缓其他模块','12、18'),
+('Q09','第1页','每边万分之一手续费、暂不算滑点','12'),('Q10','第1页','持有周期与IC(5)标签对齐','12'),
+('Q11','第2页','使用后复权价格','13'),('Q12','第2页','检查回撤及个别价格错误','11、13'),
+('Q13','第2页','市场、行业中性化及风格权重','14'),('Q14','第2页','嵌套滚动train/val/test、拼接OOS','15'),
+('Q15','第3页','隔离带不短于标签期限','15'),('Q16','第3页','超参锁定，不从测试结果回头改','15'),
+('Q17','第3页','重训是否必要、频率怎么取','16'),('Q18','第3页','每轮重新做训练窗内因子筛选','06—07、15'),
+('Q19','第3页','申万行业等数据的point-in-time属性','14'),('Q20','第3页','各滚动窗IC均值、标准差、最差轮次','17'),
+('Q21','补充提问','40个因子从哪里来、每个步骤如何执行','06—09、附录')]
+tab(['编号','位置','问题或新增要求','解答章节'],items,[.55,.75,4.2,1],9.5,compact=True)
+questions=[dict(zip(['id','source','question','answer_section'],r)) for r in items]
+p('本PDF为图片型文件。本次逐页阅读了全部页面，并将复合问题拆成上述21项；Q21为本次用户额外强调的因子筛选细节。','Caption')
+
+page('02  训练、验证、测试如何划分')
+h('直接回答：原图是季度滚动，2024/10是首个测试起点')
+p('旧版每到一个季度起点T，先取此前630个股票池交易日期：前504日作为名义训练窗，后126日作为名义验证窗，当前季度作为外层测试窗。股票和日期均按时间顺序处理，没有随机打散train/test。[O1—O3]')
+tab(['步骤','2024Q4第一轮的真实日期与动作'],[
+('训练筛选','信号日2022-03-01至2024-03-19；最后训练标签结束于2024-03-26。47,763条股票日样本。'),
+('隔离与验证','验证开始2024-03-27；可用标签的最后信号日2024-09-23；这些标签最晚在2024-09-30结束。验证12,100条。'),
+('早停','固定参数训练LightGBM，验证集决定最佳树轮数，本轮143轮。训练窗内已选定40个因子身份。'),
+('上线前重拟合','保持40个因子身份和143轮，以训练起点至测试前、标签已成熟的历史合并重拟合，共60,363条。'),
+('外层测试','2024-10-08至2024-12-31；每天产生评分，当前季度不再按测试成绩改参数。下一季度滚动前移。')],[1.05,4.95])
+h('名义窗口与实际样本数为什么不同')
+p('训练名义504日，剔除末端5日跨入验证的标签后，第一轮实际有499个训练信号日。验证名义126日，剔除末端5日后有121个有效标签日。有效股票数也会因缺失标签变化，因此不能简单把504×100当成实际训练条数。')
+p('原版最终重拟合使用约630日范围内已经成熟的样本；新版季度模型上线时改用最近504日成熟样本。两版最终拟合窗口不同，不能用新版的504日描述原图的最终拟合。[N1]')
+p('“程序按时间做外层预测”与“这段历史从未被研究者看过”是两件事。这段历史已被多轮研究查看，后续新增方案属于回顾性验证，不能再称独立、从未触碰的最终测试。')
+
+page('03  原图8轮实际日期与树轮数')
+p('下表训练、验证均列出实际有成熟标签的信号日期；跨界剔除已反映在结束日期中。日期来自原始fold.json和模型面板复核。[O3]')
+tab(['测试季度','训练信号范围','验证信号范围','测试信号范围','树轮数'],[
+ [f['quarter'],f['train_first'][:10]+'\n'+f['train_last'][:10],f['validation_start'][:10]+'\n'+f['validation_last_signal'][:10],f['test_first'][:10]+'\n'+f['test_last'][:10],f['best_iteration']] for f in F],[.8,1.45,1.45,1.45,.6],9.5)
+h('以最后一轮说明测试前都知道什么')
+p('2026Q3测试从7月1日开始。筛因子用2023-11-21至2025-12-10的训练信号，最晚标签在2025-12-17结束；验证从2025-12-18开始，有标签的最后信号为2026-06-23，标签结束于6月30日。测试前最终重拟合62,466条，最佳树轮数20。')
+p('测试预测可以一直保存到9月29日，但5日收益需要随后行情才能知道。旧面板末尾未成熟标签不能参与IC，因此2026Q3实际IC天数为59，并非全部64个预测日期。')
+h('最新项目的覆盖变化')
+p('最新版行情截止10月9日，预测期限1、2、5、10、20日，各有9个季度块。2026Q4仅刚开始，较长期限标签尚未成熟；稳定性比较应使用完整或已成熟的窗口，不能把一个未成熟小窗口当成完整季度。')
+
+page('04  LightGBM参数怎么确定')
+p('原40因子曲线对应LightGBM回归模型，学习的是每日股票未来收益的横截面排名，目标target=收益百分位排名−0.5。模型输出用于选股排序，不是直接预测收益百分数。[O1]')
+tab(['参数','原图设置','实际作用与选择方式'],[
+('num_leaves / max_depth','15 / 5','事先设定树复杂度；并未从完整网格寻优。'),('learning_rate','0.03','固定每轮更新步长；没有做学习率搜索。'),
+('n_estimators','上限400','验证期连续35轮无改善就早停，保存最佳轮数，再重拟合。'),('min_child_samples','200','限制叶节点样本数。'),
+('reg_lambda / reg_alpha','5 / 0.1','树叶权重的L2/L1正则固定设置，与Ridge alpha=10不是同一参数。'),
+('目标 / 验证指标','平方误差 / l2','未另指定eval_metric，使用该回归目标的默认l2；早停没有直接优化净值或回撤。'),
+('随机性 / 并行','seed=20260930；4线程','deterministic=True，force_col_wise=True；原主配置没有启用80%行列抽样。')],[1.65,1.35,3],9.5)
+p('后续10月8日扩展比较了20/40/60/80/100个因子、叶子数7/15/31，以及80%行列抽样的种子17/29。每季度按此前验证期平均每日Rank IC选择数量或叶子设置，数量相同时采用确定性规则；测试期最高收益方案只作为事后对照。[O4]')
+p('早停的验证l2与选择因子数量的验证Rank IC不是同一个指标。若要让选择标准完全一致，下一轮应预先声明验证主指标，并将早停监控和候选比较如何配合写入协议。不能说此前所有参数都已经由统一目标调到最优。')
+p('最新版主LightGBM另设180轮、学习率0.035、叶子15、深度5、最小叶样本160、L2=12、列抽样0.8；没有沿用旧版400轮+35轮早停。模型文件和图表应注明版本，不能混用参数解释。[N1；S2—S3]')
+
+page('05  Ridge的实现、正则和共线性')
+h('实际拟合目标')
+p('对当轮选出的相同40个输入，旧版拟合带截距的线性模型：预测分数=b+Σβj·xj。优化目标为Σ(y−b−Xβ)²+10Σβj²，截距不受此项惩罚。alpha=10为固定研究基线，未通过RidgeCV或验证网格证明最优。[O1；S1]')
+p('输入在每个交易日股票池内先转成百分位排名−0.5；Ridge将缺值填0作为中性近似，LightGBM原版保留缺失值。这里没有另外拟合StandardScaler；代码导入的StandardScaler用于HMM。0也不是每一天、每一列严格精确的样本均值。')
+h('为什么要正则，以及它没有解决什么')
+p('对中心化后的矩阵，β=(XᵀX+αI)⁻¹Xᵀy。给对角线加α可以缓解相关输入导致的系数不稳定；Ridge通常不会把全部冗余因子系数直接变为0。先做相关性去重，再做L2收缩，仍不等于消除了所有共线性、行业暴露或市场风险。')
+rc=load('ridge_condition.json')
+tab(['2026Q3实际核对','数值与解释'],[
+('最终重拟合样本',f"{rc['refit_rows']:,}条；40维输入；缺失比例{pc(rc['missing_fraction'])}。"),
+('Gram矩阵条件数',f"未加正则{rc['gram_condition']:.2f}；加10I后{rc['ridge_gram_condition']:.2f}。本轮改善有限，不能夸大正则效果。"),
+('截距',n(load('ridge_2026Q3.json')['intercept'],8)),
+('两个系数例子',f"GT046：{n(Q[0]['ridge_coefficient'],6)}；GT067：{n(Q[1]['ridge_coefficient'],6)}。系数由联合拟合决定，不等于单因子IC。")],[1.65,4.35])
+p('这里的条件数为中心化、缺值填0后的XᵀX最大与最小特征值之比，是本次对已存数据的描述性诊断。下一轮可在每个训练/验证窗口内比较alpha候选，并冻结选择；不能在最终测试回撤变大后反复调整alpha再重报同一测试。')
+p('最新版主Ridge使用最多60因子、alpha=180；月度短窗扩展比较alpha=20/180。这些配置均不能替代对原图alpha=10的解释。[N1—N2]')
+
+page('06  40因子筛选：输入与每日评分')
+h('候选库究竟有多少')
+p('原北交所模型候选共304项：供应商Alpha101的101项（c01）+Alpha191的191项（c02）+本地12项价格/流动性特征。没有把因子字典里的2,447个数值字段全部放入这次模型。字典可识别字段与已具备可用历史面板的训练字段不是同一集合。[O1—O2]')
+p('12项本地特征为mom5、mom10、mom20、mom60、vol10、vol20、vol60、adv20、amount_ratio、range20、log_illiq、observed_days。x_前缀表示该特征经过当日横截面排名变换。')
+h('先决定在哪些股票上评价')
+p('每天用过去20日平均成交额选择最多100只；要求至少60个有效成交历史日、近20日至少16日有效成交，以及当日有效正价格/成交额/成交量。这是每日动态股票池。现有文件能覆盖的证券范围仍存在历史退市与证券主表不完整的限制。')
+h('每个因子的每日Rank IC')
+p('在该日股票池中，对每个因子和未来收益使用共同有效的股票样本重新排名，再算排名之间的Pearson相关，即Spearman Rank IC。共同样本少于30只时当天记缺失。旧标签为r(t)=原始收盘价(t+5)/原始开盘价(t+1)−1。')
+p('例如IC=−0.13表示因子值较高的股票往往对应较低的未来收益排名，是可反向使用的信号；它不表示亏损13%、胜率13%，也不能单独决定组合收益。')
+h('只汇总当前训练窗口')
+p('对当前训练期每天的IC等权平均，得到mean_ic；计算IC标准差、ICIR=mean_ic/std(IC)、正IC天数比例、有效IC天数。覆盖率按训练股票日行计算：非缺失行数/全部训练行数。先计算全历史IC文件仅为缓存，筛选时只截取本轮训练日期。')
+p('因子排序既不用当前季度测试收益，也不用最终全样本特征重要性。LightGBM重要性是在筛选和拟合之后保存的解释产物，不是选出这40项的入口。')
+
+page('07  40因子筛选：门槛、去重与统计')
+tab(['顺序','实际代码规则'],[
+('质量过滤','覆盖率≥70%；有效IC天数≥100；平均IC非空。缺失或常数导致无有效IC的特征不能入选。'),
+('排序与候选预算','按|mean_ic|降序，再按覆盖率降序；截取前100项。强负IC也会靠前。'),
+('估计相关性','每个训练日，对候选因子两两共同有效股票计算Spearman相关；至少30对；再对每日有符号相关取平均。'),
+('贪心去重','按候选排序扫描。若与任一已选因子满足|平均相关|≥0.85，则删除当前因子，记录最先阻挡它的因子。'),
+('数量上限','未被相关性阻挡且当前不足40项时入选；满40后的非冗余项标为预算排除。可能少于40，本次8轮均足额。'),
+('模型拟合','因子身份在训练窗内确定；验证用于早停/后续数量选择；测试前按已冻结配置重拟合。')],[1.2,4.8],10)
+h('统计指标算了，但哪些真正参与筛选')
+p('旧代码对IC序列使用5阶Bartlett权重的HAC标准误，并计算双侧正态近似p值；再按304项做Benjamini–Yekutieli型FDR修正。q值、ICIR和正IC天数比例均保存，但没有进入入选判断。真正的排序指标是平均IC的绝对值。')
+p('复核发现：2024Q4选中40项中，只有30项的q<0.05；2025Q1为39项，此后6轮为40项。所以“每轮40项都通过显著性门槛”不成立。即使某轮全过，也不是因为代码把q<0.05设为门槛，更不能说明多轮策略搜索已经完成全族校正。')
+p('去重用的是|每日相关的平均值|，不是每日绝对相关的平均值；正负相关随阶段切换时可能互相抵消。它也只排除成对高相关，不能排除多个因子的线性组合共线性。这是下一轮需要评估的具体局限。')
+
+page('08  实例：2026Q3如何一步步留下40项')
+p('该轮仅用2023-11-21至2025-12-10的训练信号计算筛选成绩，最晚标签在2025-12-17结束。304项中296项合格，取前100，扫描后40项入选、25项被相关性阻挡、35项因预算排除。')
+tab(['候选顺位','因子','训练平均IC','判定与具体证据'],[
+('1','GT046','+0.15849','入选第1项；无已选项需要比较。'),('2','GT063','−0.15041','与GT046平均相关−0.91485；绝对值超过0.85，删除。'),
+('3','GT079','−0.14961','与GT046相关−0.85310；删除。'),('4','GT067','−0.14840','与已选项最大绝对相关0.70752；入选第2项。'),
+('9','GT019','−0.13409','与已选项相关未达门槛；入选第4项。'),('11','mom5','−0.13378','与GT019相关+0.98796；虽有较强IC仍删除。'),
+('14','GT066','−0.13066','与已选GT065相关−0.99996；删除。')],[.75,.8,1.15,3.3],9.5)
+p('8项未过质量过滤：A071、A079、A088、A094、A097覆盖率低于70%；GT165、GT166、GT183无有效训练值。排序前100之外的合格因子也会被挡在本轮预算外，并不表示这些因子被证明无效。')
+p('本轮40项构成为：30项Alpha191、7项Alpha101、3项本地动量；其中22项平均IC为负。40项全都q<0.05只是该轮事后核对结果，不能替代前述真实选择条件。')
+p('10月8日扩展不再只取前100，而是对全部296项合格因子排序去重，本轮留下221项，再比较前20/40/60/80/100。前40与旧版完全相同；8轮都有程序核对。它把可选数量扩展了，并没有证明40最优。')
+p('下面两页列出该轮最终40项，顺序就是贪心筛选入选顺序。完整精度、p/q值、有效天数、去留记录及8轮名单均保存在同目录附件。')
+
+for chunk in range(2):
+    page(f'09.{chunk+1}  2026Q3最终40因子明细（{chunk*20+1}—{chunk*20+20}）')
+    p('GTnnn = x_c02_gtalphannn；Annn = x_c01_Alphannn；momN = x_momN。覆盖率和IC来自训练期，β来自测试前最终重拟合。','Caption')
+    tab(['顺位','因子','覆盖率','平均IC','ICIR','Ridge β'],[
+      [int(float(r['selected_order'])),short(r['feature']),pc(r['coverage']),n(r['mean_ic']),n(r['icir'],3),n(r['ridge_coefficient'],6)]
+      for r in Q[chunk*20:(chunk+1)*20]],[.6,1.15,1.0,1.05,1.0,1.2],10,compact=True)
+    if chunk==0:
+        p('β由40项联合拟合决定，可能与单因子IC方向不同。LightGBM直接学习非线性关系，没有先把所有负IC因子乘−1；旧版单因子基线才直接使用IC方向符号。')
+    else:
+        p('mom10/20/60的旧版原始定义为C(t)/C(t−N)−1，再做当日截面排名。供应商字典只提供Alpha系列名称，尚缺完整版本化公式；网上同编号公式不能自动代表本地实现。')
+        p('例如GT046的训练IC为+0.15849、覆盖率99.90%、有效IC天数499；HAC标准误0.01419，q≈5.45×10⁻²⁶。上述统计建立在历史标签和当前供应商快照假设上，不能证明真实发布时间已无偏。','Caption')
+
+page('10  为什么两算法的回撤趋势不同')
+p('老师图中的纵轴是负回撤：越接近0越好。数据确实显示本段LightGBM从20到100因子的回撤总体缩小，而Ridge总体增大；中间也并非严格单调。统一15bp每边、同一旧股票池及执行规则下，实际数字如下。[O4—O5]')
+tab(['因子数','LGB回撤','Ridge回撤','LGB平均IC','Ridge平均IC'],[
+ [k,pc(D[f'count_{k}']['max_drawdown']),pc(D[f'ridge_{k}']['max_drawdown']),n(D[f'count_{k}']['mean_ic']),n(D[f'ridge_{k}']['mean_ic'])] for k in [20,40,60,80,100]],[.7,1.2,1.2,1.4,1.5])
+h('可以合理解释的机制，但尚未完成因果归因')
+p('新增因子会改变两类模型的使用方式：树模型可在不同分支选择不同变量及阈值；Ridge把所有变量线性相加，更多弱信号或同类暴露会改变联合系数。固定alpha并不会自动为每个因子数量匹配相同的有效复杂度。这些都是待检验机制，不能直接断言图形已经证明它们。')
+p('回撤又取决于持仓、市场方向、流动性约束和历史净值峰值；它不是IC的单调函数。Ridge100全期累计收益113.79%，高于Ridge40的88.24%，但最大回撤47.80%也更大；收益更高不代表风险更小。')
+p('最具体的证据是两个最大回撤的起点不同：LGB100从2026-03-03峰值跌到7月24日；Ridge100从2025-08-25峰值跌到2026-07-20。不能把这两条曲线当成同一时间区间下的受控因果比较。')
+p('下一轮用相同日期、相同持仓约束做比较，再检查新增因子的组别、样本外增量IC、系数/重要性漂移、行业与风格暴露，并在验证窗内选择正则。不能仅因100项在本段更好就宣布它是通用最优数量。')
+
+page('11  回撤究竟发生在哪里')
+p('本次直接读取旧账户逐日净值，定位历史峰值与最低点，没有重新挑选模型。最大回撤按1−谷值净值/此前峰值净值计算。原图可复现的4个关键账户为：')
+tab(['模型','峰值日','谷值日','最大回撤','同期北证50'],[
+ [label,D[k]['peak_date'],D[k]['trough_date'],pc(abs(float(D[k]['max_drawdown']))),pc(D[k]['benchmark_return_same_drawdown_window'])]
+ for k,label in [('count_40','LGB40'),('ridge_40','Ridge40'),('count_100','LGB100'),('ridge_100','Ridge100')]],[.8,1.3,1.3,1.15,1.25],9.5)
+p('LGB40由2,666,775.90元降至1,457,961.32元，对应45.33%；同期北证50价格指数下跌35.06%。这支持“市场下跌是背景之一”，但两者相差的回撤不能简单相减就称作选股损失，峰值、仓位、交易路径均需对齐。')
+tab(['统一区间：2026-01-23至07-24','LGB40','LGB100','Ridge40','Ridge100'],[
+ ['区间净值变化']+[pc(D[k]['return_common_20260123_20260724']) for k in ['count_40','count_100','ridge_40','ridge_100']]],[2.15,1,1,1,1],9)
+p('统一时间后，差异仍存在，但数值与各自最大回撤不同。原40因子LGB平均股票仓位67.27%，Ridge为68.18%；它们仍有明显多头市场暴露。整段IC为正也可能在大盘下跌时持续亏钱。')
+h('价格错误排查具体怎么做')
+p('逐一核对大亏损日、持仓股和收益贡献：重复日期、缺价/零价、OHLC次序、异常跳变、复权因子突变、停牌恢复、股票代码映射及公司行为。当前已识别旧LGB40最差单日为2025-04-07，约−17.39%，应优先还原当日个股持仓及原始来源，而不能看到市场下跌就停止查错。')
+p('现有项目已有重复键、价格正值、连续资金与复权对照检查；尚未完成全部回撤窗口逐股票、逐事件的外部行情交叉核验，也没有完整历史证券主表。因此本文不作“价格错误已全部排除”的结论。')
+
+page('12  调仓、持有、标签与本次成本口径')
+h('旧版实际是每日开新批次')
+p('原账户每天收盘评分，下一交易日开盘买入Top5；每天新批次预算不超过净值20%，单股总上限10%，买入受过去20日成交额1%约束。该批次计划在信号日t+5收盘卖出，受T+1和不可成交条件影响时延期。季度重训、每日评分、每日开批次与5日标签是不同频率。')
+h('老师写的IC(5)与旧代码差一个交易日')
+tab(['口径','预测/评价收益'],[
+('旧版及新版h=5','close(t+5) / open(t+1) − 1；新版使用后复权价格形成标签。'),
+('老师PDF字面公式','close(t+5+1) / open(t+1)，即close(t+6) / open(t+1)；写成收益再减1。'),
+('IC定义','每个信号日按股票截面算Spearman(s(t), r(t))；减不减常数1不改变Rank IC。')],[1.8,4.2])
+p('t按市场交易日序号计算，不是自然日。本次后续协议按老师明确给出的t+6标签登记，不能把现有t+5结果当作已满足。同样叫“5日”，起算方式必须在字段里写出。')
+p('还要说明一个执行边界：若严格每隔5个交易日发一次信号，新批次会在t+6开盘进入，而上一批在t+6收盘退出，存在同日重叠。若全仓且不融资，不能假定早盘已有晚间卖出现金。后续账户须预留现金/分批；如另做不重叠开盘换仓，标签也须改为相同开盘端点，作为单独预登记对照。')
+h('按最新要求统一研究成本与研究范围')
+p('老师明确“万分之一、双边收取”：买入与卖出各0.0001，即每边1bp；10万元买入收10元、同额卖出再收10元。后续基准不另加滑点。这与旧图15bp、新版5bp均不同；1bp情景曾有局部测试，也不能代替按新标签、新持有制度重新训练和回测。')
+p('先报告因子IC、分层收益和简单选股账户；HMM、分钟执行、单独分红到账模块暂缓。已有相关研究作为背景归档，不混入本次选股模型验收。')
+
+page('13  后复权数据与数据错误如何处理')
+h('已完成的改动')
+p('旧图价格标签未复权，公司行为可能制造虚假涨跌。10月8日已经做过后复权标签与部分价格特征对照；最新版prepare_data.py用供应商后复权开/收盘构造多期限标签，动量、波动等本地价格特征也改由复权价格计算。供应商Alpha的具体复权实现仍需版本化公式和发布时间核对。[O6；N1]')
+tab(['已存旧版对照','累计收益','最大回撤','它能说明什么'],[
+('原40因子','64.47%','45.33%','原始价格账户基线。'),('仅改后复权标签','93.49%','42.97%','标签口径影响预测，但未消除大回撤。'),
+('后复权标签+部分特征','55.39%','45.33%','不能假定换成复权数据就自动降低风险。')],[1.75,.85,.85,2.55],9.5)
+p('上表对照保留原入选因子身份，且仍用原始价格记账以隔离预测变化；它们不是按老师10月12日新协议完整重筛、重训的结果。不可据此提前宣布新口径通过。')
+h('本次简化研究如何避免重复计算分红')
+p('因子检验和收益分层统一使用后复权开/收盘之比；若在简化研究账户里也直接使用这个连续收益口径，就不再额外把同一次分红现金加回。实际现金/股数账户只能用真实成交价格，后续若恢复该模块，再单独还原到账日、送转可卖日和税费。')
+p('后复权价格代表连续研究价格，不是当日券商成交报价；也不能仅凭它就认定所有历史资料具有point-in-time属性。当前供应商快照、证券退市范围、因子计算版本和行情修订都需要单列。')
+h('回撤归因的执行顺序')
+p('先冻结数据和日历，列异常清单；再定位回撤峰谷与最差日，按股票核验收益贡献；最后比较相同价格口径下的股票池、行业/风格对照。未定位原始原因前，不靠删掉亏损日期或反复调参让曲线变好。核验后若确属错误，应修正输入、记录原因并重跑全部受影响方案。')
+
+page('14  市场、行业和风格中性化方案')
+h('当前状态：尚未完成老师要求的完整中性化')
+p('原40因子筛选进行了相关性去重；这与行业中性、市值中性和市场beta控制不同。最新版的HMM和低仓位也不能替代中性化。当前没有已核验的完整历史申万行业生效区间，不能把今天的行业标签直接填回过去。')
+h('先对因子去掉可观测暴露')
+p('每个交易日、每个候选因子，在当时可得股票池上做截面回归：factor = 截距 + 行业哑变量 + log(流通市值) + 过去窗口beta + 波动/动量风格 + 残差。用残差重新排名，再在训练窗内计算IC和筛选。行业截距编码需避免虚拟变量陷阱，小样本行业要预先定合并规则。')
+p('市值和股本应使用公布/可得日；beta只用过去收益，例如过去252日且有效日不少于126日。风格集合与处理顺序预先固定，不依据当季测试好坏增删。若可得时点缺失，应明确标为探索性近似，不能宣称PIT中性化已完成。')
+h('再约束实际持仓')
+p('因子残差中性不保证TopN持仓中性。组合需要独立约束单股、行业与风格偏离，约束参照可采用当日可得股票池权重，并单独与北证50行业结构比较。候选约束应在训练/验证阶段设定或选择；不把某组尚未验证的行业上限直接称作最优方案。')
+p('纯多头且不做股指/其他对冲时，通常只能控制市场暴露，无法承诺严格的零市场beta；若做残差收益目标或行业相对排名，也不等于实际账户完全市场中性。该约束必须与可交易工具和仓位条件一致。')
+h('需要补齐哪些字段，如何验收')
+p('至少需要stock_id、industry_code、industry_level、effective_from/to、published_at、available_at、数据版本；以及历史流通股本、市值、证券状态和代码沿革。用当时可得记录做as-of关联。对照原始因子、行业残差、行业+风格残差、组合约束四组，统一标签、费率、数据和测试窗口；同时报告IC、净收益、回撤、换手与暴露偏离。')
+
+page('15  下一轮嵌套滚动实验的严格协议')
+p('以下是按老师新要求拟定的实现协议，尚未执行成一组新的验收结果。采用固定长度滚动窗：名义训练504日、验证126日、测试为随后一个自然月内的交易日；锚点每月前移，拼接互不重叠的测试预测。扩展窗作为另一个预先声明的对照。')
+tab(['环节','必须落实的边界'],[
+('固定定义','冻结股票池、复权版本、标签端点、信号间隔、手续费1bp/边、比较模型与选择指标。'),
+('训练窗','所有清洗参数、候选因子筛选、IC方向和中性化训练相关统计只用该训练窗；不得全样本先筛。'),
+('隔离/标签剔除','同时检查train→val和val→test：样本的label_exit必须严格早于下一段开始。若标签为t+6，末端需按6日偏移处理，不能机械沿用5日。'),
+('验证窗','只用于早停、因子数与正则/树复杂度的预登记选择。选择指标和同分规则固定，保存全部候选。'),
+('最终拟合','固定已选择的因子身份和参数，用测试起点前已成熟的历史重拟合；不拿测试损失做早停。'),
+('测试月','保存一次不可变预测及输入哈希；评估后不回头重选这段的配置。其已成熟数据将来可自然进入后续训练窗。'),
+('汇总','只在拼接的OOS段上计算IC/ICIR、分层收益、成本后账户和窗口稳定性；记录所有失败窗口。')],[1.15,4.85],9.5)
+p('代码现状是按标签实际结束日剔除跨界样本，没有一个对所有实验统一硬编码的“20日隔离”参数。若某方案预测t+20，边界按20日；若统一采用老师t+h+1规则，h=20的标签最晚在t+21，检查也要随之变化。')
+p('“每窗只评一次”意味着不利用其结果回头改本窗，并不禁止该月过去之后作为后续模型的历史训练数据。为防止研究者反复试同一历史，应保留当前数据之前的探索标记，并从方案冻结后积累真正新增、未看的数据作为后续检验。')
+
+page('16  重训频率、超参数锁定与40是否最优')
+h('为什么建议月度，而不直接改成每日重训')
+p('重训可适应市场变化，也会增加估计噪声和计算成本。原图是季度重训，最新主模型同样按季度；另有1/5/20日预测、63/126/252日训练窗、月度更新的短窗研究，使用Ridge、浅树和IC加权。这组不能直接称作老师新协议结果，因为成本、标签与验证结构并不完全相同。[N2]')
+p('该480组短窗组合的完整历史有41组达到此前指标，但近一年达标0组、近半年0组、三个区间同时达标0组。月度更新已经尝试过，也没有证据支持“只要更频繁重训就能解决近期退化”。')
+h('下一轮的可复核选择规则')
+p('固定每月一次作为基线，参数仅在当轮验证集内选择，或在首轮内层搜索后冻结。每日只更新特征和评分，不把当天回测不佳当作任意换模型的理由。若另做触发式重训，应预先定义监测窗口、阈值、冷却期和可得标签，保存触发日志。')
+p('因子数候选可沿用20/40/60/80/100；Ridge正则候选与树复杂度采用有限、预先登记的集合。先按验证Rank IC和稳定性筛选，再按预登记的净收益/回撤约束决定可用组合。具体优先级和同分规则必须在测试前确定。')
+h('40的定位应怎样向老师表述')
+p('40是旧基线的维度预算，便于控制复杂度和解释；当前没有理论证明或独立新测试证明它最优。20到40收益提高，40到60又变差，因子数与效果并非单调关系。10月8日的验证选数量方案可以作为方法演示，但其测试历史已被查看，不应拿同一段历史反复寻找“最佳40”。')
+p(f"旧8轮相邻名单的重合数依次为{S['adjacent_overlap']}，每轮分母40；累计{S['total_distinct_selected']}项，始终入选{len(S['always_selected'])}项。这种名单变化说明筛选随训练窗更新，也提示需要报告因子选择稳定性和换手影响。")
+
+page('17  补充：滚动窗口之间是否稳定')
+p('本次从已保存的逐日IC重算了分季度结果。旧40因子基线的平均IC在2026Q2明显减弱；全期平均值掩盖了这个窗口。以下均为原标签口径，未改成老师新的t+6标签。')
+tab(['季度','LGB40平均IC','Ridge40平均IC','有效IC天数'],[
+ [f['quarter'],n(IC['old','count_40',f['quarter']]['mean_ic']),n(IC['old','ridge_40',f['quarter']]['mean_ic']),IC['old','count_40',f['quarter']]['n_days']] for f in F],[1,1.8,1.8,1.4])
+tab(['指标：8个季度等权统计','旧LGB40','旧Ridge40','新版h5自动选择'],[
+ ['季度IC均值']+[n(ST[key]['mean_of_fold_ic']) for key in [('old','count_40'),('old','ridge_40'),('latest_h5','score')]],
+ ['季度均值的标准差']+[n(ST[key]['std_of_fold_ic']) for key in [('old','count_40'),('old','ridge_40'),('latest_h5','score')]],
+ ['最差季度 / 均值']+['2026Q2 / '+n(ST[key]['worst_fold_ic']) for key in [('old','count_40'),('old','ridge_40'),('latest_h5','score')]],
+ ['正IC季度数']+[ST[key]['positive_folds']+'/8' for key in [('old','count_40'),('old','ridge_40'),('latest_h5','score')]]],[2.1,1.15,1.15,1.6],9.5)
+p('这里的标准差是“8个季度平均IC之间”的标准差，和“所有逐日IC的标准差”不同；季度等权平均与按有效天数加权的全期日均IC也不同。原LGB40全期日均IC0.15313、日频ICIR0.86329；本表季度均值0.15286。')
+p('新版按同样8个季度汇总以避免未成熟的2026Q4混入，h5自动选择最差季度IC也只有0.00859。原Ridge40该季度为−0.00844。能保持全期正IC，并不代表每个阶段都有效，更不代表多头账户每季获利。')
+
+page('18  最新版做到哪里，本次还要改什么')
+tab(['事项','最新项目现状','对老师新要求的结论'],[
+('输入规模','335项=292供应商+19本地价格+24本地提出的公式因子','不能把最新版仍称为统一40因子模型。'),
+('主要筛选','覆盖率≥70%；训练期日内相关评分；零填后的全样本相关0.92去重；最多100项','与旧版“每日Spearman均值0.85、前100选40”不同，需独立标版本。'),
+('模型维度','Ridge等多为前60项；LGB为前100项；短窗方案选40项','原40名单只解释原图；新版分别按期限与训练窗选择。'),
+('复权','已用于新标签和本地价格特征','仍需核验历史版本与来源一致性。'),
+('成本 / 标签','主要5bp/边；h=5退出t+5','需按1bp/边、老师t+6端点另跑。'),
+('中性化','无完整PIT行业/风格中性化验收','需要数据补齐与同口径对照。'),
+('滚动验证','季度主模型；另有月度探索','需按本次固定月度嵌套协议跑完整流程。'),
+('稳定达标','部分全历史探索候选达标，近期窗口失败','未完成稳定Sharpe>1、Calmar>2的验收。')],[1,2.3,2.7],9.5)
+h('执行优先级')
+p('先完成口径固定与价格异常核验；再做简单IC排序、Ridge与LightGBM的月度嵌套比较；随后做PIT行业/风格残差和组合约束对照；最后汇总每窗IC、分层收益、换手、最大回撤与原因。HMM等扩展放在这个基础通过之后单列验证。')
+p('现有新版h5自动验证选择账户的全期最大回撤约23.87%、Sharpe（rf=1.5%）1.040、Calmar0.943；它尚未达到Calmar>2。本文没有用低仓位探索候选覆盖这个主要验证结果。')
+
+page('附录A  每轮40项的构成与统计门槛核对')
+tab(['季度','101项数','191项数','价格项数','q<0.05项数','最佳树轮数'],[
+ [f['quarter'],f['alpha101_count'],f['alpha191_count'],f['price_count'],str(f['selected_q_below05'])+'/40',f['best_iteration']] for f in F],[1,.9,.9,.9,1.3,1])
+h('8轮始终入选的14项')
+p('、'.join(short(s) for s in S['always_selected'])+'。')
+h('每个因子能追溯到哪些证据')
+p('selected40_all_quarters.csv保留8轮共320条入选记录及完整统计；selected40_2026Q3_details.csv另列最后一轮Ridge系数和供应商名称。全部候选去留见all_factor_cards_8folds.csv；前100项的扫描顺序、相关值与阻挡因子见selection_trace_2026Q3.csv。')
+p('quality_or_candidate_budget这个原始字段合并了质量不合格与未进前100两类，需结合覆盖率、IC天数和排序解释。供应商公式版本仍未完整核验，详见第09.2节。')
+h('本次核对的边界')
+p('16项一致性检查覆盖8轮原名单重建、8轮扩展前40与原名单相同。它证明说明与已存筛选产物一致；相关矩阵来自既有训练期输出，本次没有重新下载上游数据或重估每一个历史相关系数。资金表现和真实因果有效性须另行验证。')
+
+page('附录B  来源、复核方法与交付说明')
+refs=[
+('T0','1012老师提出的新问题.pdf，全部3页；本次手工逐页核读。'),
+('O1','tools/research_20260930/train.py：CONFIG、daily_ic、factor_selection、fit_lgb、rolling。'),
+('O2','tools/research_20260930/prepare.py：PRICE_FEATURES、prices、build_panel。'),
+('O3','training_runs/teacher9_20260930/bj_folds.json；bj/各季度/fold.json、factor_cards.csv、mean_daily_spearman.csv、ridge.npz。'),
+('O4','tools/research_20261008/experiments.py；training_runs/teacher9_20261008/bj/各季度/selection.json。'),
+('O5','training_runs/teacher9_20261008/extension_results.csv、各模型_account.csv与_daily_ic.csv。'),
+('O6','training_runs/teacher9_20261008/hfq_results.json；tools/research_20260930/accounts.py。'),
+('N1','tools/research_20261011/prepare_data.py、train_models.py、ledger.py；同轮h5/predictions.parquet、selected_metrics.json。'),
+('N2','tools/research_20261011/short_windows.py；training_runs/research_20261011/short_windows/summary.json。'),
+('A1','tools/teacher_answers_20261012/audit_evidence.py：本次名单重建、回撤窗口、季度IC复核；结果位于training_runs/teacher_answers_20261012。')]
+tab(['编号','本地证据（路径相对于项目根目录）'],refs,[.6,5.4],9)
+p('软件原理仅参考下列官方文档；历史具体参数以本地代码和模型记录为准，不从当前在线默认值反推旧实验。','Caption')
+link('S1  scikit-learn：Ridge目标函数与alpha定义','https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html')
+link('S2  LightGBM：LGBMRegressor参数与回归指标','https://lightgbm.readthedocs.io/en/stable/pythonapi/lightgbm.LGBMRegressor.html')
+link('S3  LightGBM：early_stopping与最佳轮数','https://lightgbm.readthedocs.io/en/stable/pythonapi/lightgbm.early_stopping.html')
+p('本次新计算仅为既有实验的证据复核，未按老师新费率、新标签重训。来源哈希与问题覆盖表随文件保存；可检索版与Word使用同一份内容生成。')
+
+name='1012老师新问题逐项解答与40因子筛选详解.docx';dest=OUT/name
+if '--markdown-only' not in sys.argv:doc.save(dest)
+(OUT/'解答_可检索版.md').write_text('\n\n'.join(transcript),encoding='utf-8')
+(OUT/'问题覆盖表.json').write_text(json.dumps(questions,ensure_ascii=False,indent=2),encoding='utf-8')
+for filename in ['selected40_all_quarters.csv','selected40_2026Q3_details.csv','all_factor_cards_8folds.csv','selection_trace_2026Q3.csv','original_folds.json','quarterly_ic.csv','quarterly_ic_stability.csv','drawdown_diagnostics.csv','source_hashes.json','checks.json']:
+    shutil.copyfile(RUN/filename,OUT/filename)
+manifest={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in OUT.iterdir() if p.is_file() and p.name!='delivery_manifest.json'}
+(OUT/'delivery_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+print(dest)
