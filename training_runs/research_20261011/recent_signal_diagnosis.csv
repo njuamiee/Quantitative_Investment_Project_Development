@@ -1,0 +1,7 @@
+horizon,period,model,mean_daily_rank_ic,mean_top_label_return,mean_pool_label_return,top_minus_pool,days,scope
+1,first_year,ridge60,0.13173756864490935,0.006275915310053227,0.0022669685664753105,0.0040089467435779165,242,"Overlapping forecast labels, before costs/actual fills; not portfolio returns or independent observations"
+1,recent_year,ridge60,0.12425209472045688,0.00039489997375235906,-0.001856524451942847,0.0022514244256952058,239,"Overlapping forecast labels, before costs/actual fills; not portfolio returns or independent observations"
+5,first_year,ic,0.20106992008936872,0.02809608700222898,0.014794429143892682,0.013301657858336292,239,"Overlapping forecast labels, before costs/actual fills; not portfolio returns or independent observations"
+5,recent_year,ic,0.12013029199545044,-0.004553632962084709,-0.007964791541165913,0.0034111585790812045,236,"Overlapping forecast labels, before costs/actual fills; not portfolio returns or independent observations"
+20,first_year,conditional_ic,0.21959111331529352,0.07282757410804085,0.046056264662508666,0.026771309445532184,224,"Overlapping forecast labels, before costs/actual fills; not portfolio returns or independent observations"
+20,recent_year,conditional_ic,0.15179508790563223,-0.025670704944966465,-0.03421714505517304,0.008546440110206567,221,"Overlapping forecast labels, before costs/actual fills; not portfolio returns or independent observations"

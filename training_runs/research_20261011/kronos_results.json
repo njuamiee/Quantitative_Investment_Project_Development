@@ -1,0 +1,49 @@
+{
+  "status": "local inference completed",
+  "checkpoint_revisions": {
+    "NeoQuasar/Kronos-mini": "f4e68697d9d5aed55cef5c96aabc3376bcad9f81",
+    "NeoQuasar/Kronos-Tokenizer-2k": "26966d0035065a0cae0ebad7af8ece35bc1fb51c"
+  },
+  "model": "Kronos-mini",
+  "context": 128,
+  "sampling_paths": 1,
+  "repository_commit": "67b630e67f6a18c9e9be918d9b4337c960db1e9a",
+  "results": [
+    {
+      "horizon": 1,
+      "mean_rank_ic": 0.00047474291872064297,
+      "dates": 9,
+      "stocks_per_date": 91.22222222222223,
+      "diagnostic_only": true
+    },
+    {
+      "horizon": 2,
+      "mean_rank_ic": 0.013468961222189694,
+      "dates": 9,
+      "stocks_per_date": 91.22222222222223,
+      "diagnostic_only": true
+    },
+    {
+      "horizon": 5,
+      "mean_rank_ic": 0.0740570911562678,
+      "dates": 9,
+      "stocks_per_date": 91.22222222222223,
+      "diagnostic_only": true
+    },
+    {
+      "horizon": 10,
+      "mean_rank_ic": 0.08346880326145673,
+      "dates": 9,
+      "stocks_per_date": 91.22222222222223,
+      "diagnostic_only": true
+    },
+    {
+      "horizon": 20,
+      "mean_rank_ic": 0.20033388364981505,
+      "dates": 9,
+      "stocks_per_date": 91.22222222222223,
+      "diagnostic_only": true
+    }
+  ],
+  "limits": "Sparse weekly cross-section diagnostic, no full portfolio gate; checkpoint training data vintage not independently verified; no fine-tuning"
+}

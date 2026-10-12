@@ -1,0 +1,12 @@
+﻿remote,rows,first_date,last_date,sha256,scope
+/home/quant/day-data/前复权/000001-平安银行.csv,8463,1991-04-03,2026-08-21,5f40a588991398a07859ce55e24b4339f184c59575477387c3c85db6be62fc15,representative sample only
+/home/quant/day-data/前复权/600000-浦发银行.csv,6373,1999-11-10,2026-08-21,0fba203360bde53be846501a53eb0ba482a81f64fb3b13af3ced4dfbd14a58ca,representative sample only
+/home/quant/day-data/前复权/920002-万达轴承.csv,543,2024-05-30,2026-08-21,d363d7ecb04e66df2032c1d6de422531f5b8db0b6efcd3f6b4320c62e152a368,representative sample only
+/home/quant/day-data/不复权/000001-平安银行.csv,8463,1991-04-03,2026-08-21,06e279c3bfb20a38b3ced4bceeb99ba3a4355356ee73470be0eab8443c0e9708,representative sample only
+/home/quant/day-data/不复权/600000-浦发银行.csv,6373,1999-11-10,2026-08-21,7934c7a75d95a6cb4d870c2b1346dcd269a0a830aad87fc874a2c543c6cc7ca1,representative sample only
+/home/quant/day-data/不复权/920002-万达轴承.csv,543,2024-05-30,2026-08-21,78d1bb7da902df1c37a9e7772b8bc30c21312f2121b1c242ad1b07e39f3aea9c,representative sample only
+/home/quant/day-data/后复权/000001-平安银行.csv,8463,1991-04-03,2026-08-21,06b4b826ab39b59bd1680db93dde9c49312851e2fc4786104ff399af574fac12,representative sample only
+/home/quant/day-data/后复权/600000-浦发银行.csv,6373,1999-11-10,2026-08-21,d0b1c7c2110931e46eb81e3f74399618c258e5d5b2ac2f24f98721d945a63f29,representative sample only
+/home/quant/day-data/后复权/920002-万达轴承.csv,543,2024-05-30,2026-08-21,f84502885b3ac6f4ba5d2eb62004310e11dd43fb3eceaecc235f8712752168f9,representative sample only
+/home/quant/factors/factor_lib/Alpha001.parquet,1263791,2016-01-04 00:00:00,2026-09-30 00:00:00,4a646fc077db9a226930d3710586d5fdbf784364c4ede62ee97bbd8944431769,sampled factor library file
+/home/quant/factors/factor_lib/0_1.parquet,978497,2017-07-10 00:00:00,2026-09-30 00:00:00,ab552937ccd62ff611848021497d9375658a6bce24cc1aa0f3bbbf9574db0de0,sampled factor library file

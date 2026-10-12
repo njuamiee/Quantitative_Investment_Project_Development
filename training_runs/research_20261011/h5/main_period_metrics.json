@@ -1,0 +1,21 @@
+{
+  "total_return": 0.4922623822045027,
+  "annual_return": 0.22446372207785714,
+  "sharpe": 1.0984066072742296,
+  "sharpe_rf15": 1.0275287846296906,
+  "max_drawdown": 0.23867923803438396,
+  "calmar": 0.9404409194800641,
+  "pass_target": false,
+  "mean_exposure": 0.2779172355395927,
+  "cash_days_fraction": 0.07216494845360824,
+  "turnover_sum": 70.04657095869638,
+  "total_cost": 51638.584795500006,
+  "days": 485,
+  "start": "2024-10-08 00:00:00",
+  "end": "2026-09-30 00:00:00",
+  "worst_day": -0.16439705674053462,
+  "horizon": 5,
+  "model": "validation_selected",
+  "label": "Retrospective walk-forward through 2026Q3; previously inspected history",
+  "cumulative_return_over_mdd": 2.0624432449947228
+}

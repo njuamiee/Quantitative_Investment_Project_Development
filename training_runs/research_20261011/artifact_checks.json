@@ -1,0 +1,57 @@
+[
+  {
+    "horizon": 1,
+    "cash_identity_error": 5.820766091346741e-10,
+    "capacity_overrun_max": -5183.737500000001,
+    "same_day_sales": 0,
+    "duplicate_predictions": 0,
+    "purged_folds": 9,
+    "ledger_rows": 487,
+    "orders": 11920,
+    "passed": true
+  },
+  {
+    "horizon": 2,
+    "cash_identity_error": 5.675246939063072e-10,
+    "capacity_overrun_max": -161703.208,
+    "same_day_sales": 0,
+    "duplicate_predictions": 0,
+    "purged_folds": 9,
+    "ledger_rows": 487,
+    "orders": 7197,
+    "passed": true
+  },
+  {
+    "horizon": 5,
+    "cash_identity_error": 5.766196409240365e-10,
+    "capacity_overrun_max": -168718.16050000003,
+    "same_day_sales": 0,
+    "duplicate_predictions": 0,
+    "purged_folds": 9,
+    "ledger_rows": 487,
+    "orders": 4884,
+    "passed": true
+  },
+  {
+    "horizon": 10,
+    "cash_identity_error": 4.656612873077393e-10,
+    "capacity_overrun_max": -6488.257500000001,
+    "same_day_sales": 0,
+    "duplicate_predictions": 0,
+    "purged_folds": 9,
+    "ledger_rows": 487,
+    "orders": 5211,
+    "passed": true
+  },
+  {
+    "horizon": 20,
+    "cash_identity_error": 5.820766091346741e-10,
+    "capacity_overrun_max": -160516.1965,
+    "same_day_sales": 0,
+    "duplicate_predictions": 0,
+    "purged_folds": 9,
+    "ledger_rows": 487,
+    "orders": 3750,
+    "passed": true
+  }
+]

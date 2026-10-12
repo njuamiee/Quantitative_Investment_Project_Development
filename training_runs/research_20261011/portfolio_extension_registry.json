@@ -1,0 +1,31 @@
+{
+  "status": "exploratory extension after aligned 20-day candidate failed Calmar",
+  "forecast_horizons": [
+    20,
+    10
+  ],
+  "models": [
+    "ic",
+    "conditional_ic",
+    "ridge60"
+  ],
+  "topn": [
+    10,
+    20
+  ],
+  "holding_periods": [
+    5,
+    10,
+    20
+  ],
+  "policies": [
+    "hmm2_defensive",
+    "hmm3_defensive",
+    "hmm3_growth"
+  ],
+  "risk_scales": [
+    0.25,
+    0.5
+  ],
+  "selection": "lowest drawdown among numeric passers; no assertion of untouched holdout"
+}

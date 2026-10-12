@@ -1,0 +1,65 @@
+[
+  {
+    "prediction": "h1_w126",
+    "months": 25,
+    "rows": 48700,
+    "purge_pass": true,
+    "unique": true
+  },
+  {
+    "prediction": "h1_w252",
+    "months": 25,
+    "rows": 48700,
+    "purge_pass": true,
+    "unique": true
+  },
+  {
+    "prediction": "h1_w63",
+    "months": 25,
+    "rows": 48700,
+    "purge_pass": true,
+    "unique": true
+  },
+  {
+    "prediction": "h20_w126",
+    "months": 25,
+    "rows": 48700,
+    "purge_pass": true,
+    "unique": true
+  },
+  {
+    "prediction": "h20_w252",
+    "months": 25,
+    "rows": 48700,
+    "purge_pass": true,
+    "unique": true
+  },
+  {
+    "prediction": "h20_w63",
+    "months": 25,
+    "rows": 48700,
+    "purge_pass": true,
+    "unique": true
+  },
+  {
+    "prediction": "h5_w126",
+    "months": 25,
+    "rows": 48700,
+    "purge_pass": true,
+    "unique": true
+  },
+  {
+    "prediction": "h5_w252",
+    "months": 25,
+    "rows": 48700,
+    "purge_pass": true,
+    "unique": true
+  },
+  {
+    "prediction": "h5_w63",
+    "months": 25,
+    "rows": 48700,
+    "purge_pass": true,
+    "unique": true
+  }
+]

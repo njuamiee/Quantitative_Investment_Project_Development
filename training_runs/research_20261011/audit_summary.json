@@ -1,0 +1,84 @@
+{
+  "date_gaps": 7329,
+  "factor_tables": 120,
+  "downloaded_manifest_files": 1083,
+  "failed_downloads": 0,
+  "revision_counts": {
+    "changed": 1068,
+    "new_to_snapshot": 10,
+    "same": 5
+  },
+  "ashare_directory_counts": {
+    "/home/quant/day-data/前复权": 5868,
+    "/home/quant/day-data/不复权": 5868,
+    "/home/quant/day-data/后复权": 5868
+  },
+  "minute_archive_members": 1184,
+  "minute_archive_example": [
+    {
+      "name": "BJ/2021/20211115.parquet",
+      "bytes": 313064,
+      "compressed_bytes": 313064,
+      "timestamp": [
+        2026,
+        9,
+        28,
+        3,
+        25,
+        18
+      ]
+    },
+    {
+      "name": "BJ/2021/20211116.parquet",
+      "bytes": 284764,
+      "compressed_bytes": 284764,
+      "timestamp": [
+        2026,
+        9,
+        28,
+        3,
+        25,
+        18
+      ]
+    },
+    {
+      "name": "BJ/2021/20211117.parquet",
+      "bytes": 247973,
+      "compressed_bytes": 247973,
+      "timestamp": [
+        2026,
+        9,
+        28,
+        3,
+        25,
+        18
+      ]
+    },
+    {
+      "name": "BJ/2021/20211118.parquet",
+      "bytes": 233316,
+      "compressed_bytes": 233316,
+      "timestamp": [
+        2026,
+        9,
+        28,
+        3,
+        25,
+        20
+      ]
+    },
+    {
+      "name": "BJ/2021/20211119.parquet",
+      "bytes": 223067,
+      "compressed_bytes": 223067,
+      "timestamp": [
+        2026,
+        9,
+        28,
+        3,
+        25,
+        20
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "exploratory after seeing initial h5 fixed comparisons",
+  "models": [
+    "ic",
+    "conditional_ic",
+    "ridge60"
+  ],
+  "policies": [
+    "hmm2_defensive",
+    "hmm3_defensive",
+    "hmm3_growth"
+  ],
+  "risk_scales": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "guards": [
+    "none",
+    "drawdown",
+    "cppi"
+  ],
+  "topn": 20,
+  "decision_rule": "among numeric passers prefer lowest drawdown, then highest Calmar; historical candidate only"
+}

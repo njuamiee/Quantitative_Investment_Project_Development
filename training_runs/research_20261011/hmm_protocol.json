@@ -1,0 +1,20 @@
+{
+  "emission_features": [
+    "market_return",
+    "log_vol",
+    "trend_strength",
+    "liquidity",
+    "dispersion"
+  ],
+  "max_states": 3,
+  "window": 504,
+  "refit": "monthly",
+  "inference": "forward filtering and one-step prediction only",
+  "states_labeled_by": "training conditional market volatility",
+  "failures": "explicit fallback to volatility control",
+  "missing_observations": [
+    "historical macro vintages",
+    "bid ask spread",
+    "complete financing series"
+  ]
+}

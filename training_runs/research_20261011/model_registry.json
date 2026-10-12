@@ -1,0 +1,89 @@
+{
+  "models": [
+    "ridge60",
+    "lgbm100",
+    "ranker60",
+    "catboost60",
+    "xgboost60",
+    "extra60",
+    "llm_ridge",
+    "conditional_ic",
+    "ic",
+    "ensemble"
+  ],
+  "profiles": [
+    [
+      "none",
+      "none"
+    ],
+    [
+      "fixed50",
+      "none"
+    ],
+    [
+      "fixed75",
+      "none"
+    ],
+    [
+      "vol12",
+      "none"
+    ],
+    [
+      "vol20",
+      "none"
+    ],
+    [
+      "trend_vol",
+      "none"
+    ],
+    [
+      "hmm2_defensive",
+      "none"
+    ],
+    [
+      "hmm2_volatility",
+      "none"
+    ],
+    [
+      "hmm3_defensive",
+      "none"
+    ],
+    [
+      "hmm3_volatility",
+      "none"
+    ],
+    [
+      "hmm3_growth",
+      "none"
+    ],
+    [
+      "vol20",
+      "drawdown"
+    ],
+    [
+      "hmm3_volatility",
+      "drawdown"
+    ],
+    [
+      "vol20",
+      "cppi"
+    ],
+    [
+      "none",
+      "stop8"
+    ]
+  ],
+  "topn": [
+    10,
+    20
+  ],
+  "shortlist": "top three validation mean daily rank IC",
+  "selection": "maximize min(validation Sharpe_rf1.5, validation Calmar/2); annual return tie break",
+  "training_sessions": 504,
+  "validation_sessions": 126,
+  "refit": "quarterly",
+  "max_features": 100,
+  "dedup_absolute_correlation": 0.92,
+  "min_feature_coverage": 0.7,
+  "seed": 20261011
+}
