@@ -1,0 +1,66 @@
+{
+  "delivered": "2026-10-12",
+  "input_cutoff": "2026-10-09",
+  "files": [
+    {
+      "file": "candidate_summary.csv",
+      "bytes": 3979,
+      "sha256": "14fae7c66db60b7ea9602a7f885891e452348d03b9c7ed4797cf3d300608ba33"
+    },
+    {
+      "file": "factor_catalog.csv",
+      "bytes": 93148,
+      "sha256": "ca477d3aa8aaf457e1ba066cdbc7cbb63ec8f59555348ec484ff62d6a226bdaa"
+    },
+    {
+      "file": "missing_fields_and_documents.csv",
+      "bytes": 1596,
+      "sha256": "ff27197061d713782a45b441234bc04ca58fd8f1d8ab7c2114b67a2b533aa880"
+    },
+    {
+      "file": "missing_files.csv",
+      "bytes": 1274526,
+      "sha256": "30a61a9f30138b2bf3c4458af3eb516a62f507ab77ddab95a945a4bbd016990f"
+    },
+    {
+      "file": "requirements_matrix.csv",
+      "bytes": 7820,
+      "sha256": "b344b35594cfb55dcf0735f86b951ac257abe1bda1d418d087e0b4a3afc9fbf0"
+    },
+    {
+      "file": "sources.md",
+      "bytes": 3534,
+      "sha256": "d4c9616b88bc8bb004dad30ede20f937e60fc8ac7655fbc61f0446cf8ffe55b5"
+    },
+    {
+      "file": "validation_selected_summary.csv",
+      "bytes": 2085,
+      "sha256": "2cf4089f9d0051c266a6ef2d1132523d4e7db8820691f0646e19de2c7ec27a39"
+    },
+    {
+      "file": "十分钟汇报稿.md",
+      "bytes": 1330,
+      "sha256": "0b948e358517f4832368bd6a7071125a7072cd06e7b0e91512186e408eae9259"
+    },
+    {
+      "file": "多期限选股项目_完整研究报告_20261012.docx",
+      "bytes": 544841,
+      "sha256": "d2fbfa3708269544df4fd940eaec1dab4efd21c662dba0796b51b3ff9740feeb"
+    },
+    {
+      "file": "多期限选股项目_完整研究报告_20261012.pdf",
+      "bytes": 1489892,
+      "sha256": "7851732e9bc8c6d4e9ec331ce15baeadf9747e17051106afd6f009319d6c3334"
+    },
+    {
+      "file": "短窗口月度更新_全部480组.csv",
+      "bytes": 368154,
+      "sha256": "9a6540c7ed08af74b0a93655f417612e5d53ee4760284283d4bdc93a6ca1c460"
+    },
+    {
+      "file": "项目说明_可检索版.md",
+      "bytes": 39787,
+      "sha256": "79729a047e670d1240174440e603fb782390b9e2cda66c7011e0ca8fc68e3dfc"
+    }
+  ]
+}
