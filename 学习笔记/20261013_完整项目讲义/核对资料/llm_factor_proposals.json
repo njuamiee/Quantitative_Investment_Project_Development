@@ -1,0 +1,194 @@
+[
+  {
+    "id": "llm_risk_adjusted_momentum20",
+    "expression": "mom20 / (vol20 + 0.001)",
+    "hypothesis": "Trend strength scaled by observable volatility",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_risk_adjusted_momentum60",
+    "expression": "mom60 / (vol60 + 0.001)",
+    "hypothesis": "Medium horizon trend risk adjustment",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_short_reversal",
+    "expression": "-mom2",
+    "hypothesis": "Short term overreaction hypothesis",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_reversal_liquid",
+    "expression": "-mom5 * amount_ratio",
+    "hypothesis": "Volume conditioned short term reversal",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_quiet_trend",
+    "expression": "mom20 / (range_today + 0.01)",
+    "hypothesis": "Trend in relatively quiet price ranges",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_momentum_acceleration",
+    "expression": "mom5 - mom20 / 4",
+    "hypothesis": "Change in recent trend speed",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_momentum_curvature",
+    "expression": "mom20 - mom60 / 3",
+    "hypothesis": "Intermediate trend acceleration",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_low_downside",
+    "expression": "-downside20",
+    "hypothesis": "Lower historical downside risk",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_low_volatility",
+    "expression": "-vol20",
+    "hypothesis": "Lower historical total volatility",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_volatility_expansion",
+    "expression": "vol5 / (vol20 + 0.001)",
+    "hypothesis": "Changes in short term volatility",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_drawdown_recovery",
+    "expression": "mom5 - drawdown60",
+    "hypothesis": "Recovery relative to trailing drawdown",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_close_pressure",
+    "expression": "close_location * amount_ratio",
+    "hypothesis": "Price location and volume pressure",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_overnight_reversal",
+    "expression": "-overnight_ret",
+    "hypothesis": "Gap reversal hypothesis",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_intraday_strength",
+    "expression": "intraday_ret / (range_today + 0.01)",
+    "hypothesis": "Within-day buying pressure",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_trend_break",
+    "expression": "ma5 / ma20 - 1",
+    "hypothesis": "Recent versus intermediate moving average",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_medium_trend",
+    "expression": "ma20 / ma60 - 1",
+    "hypothesis": "Intermediate versus long moving average",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_volume_momentum",
+    "expression": "mom10 * amount_ratio",
+    "hypothesis": "Trend with volume confirmation",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_liquidity_stability",
+    "expression": "-log_illiq",
+    "hypothesis": "Amihud based liquidity",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_downside_adjusted_momentum",
+    "expression": "mom20 / (downside20 + 0.001)",
+    "hypothesis": "Trend adjusted for downside volatility",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_gap_pressure",
+    "expression": "overnight_ret - intraday_ret",
+    "hypothesis": "Gap versus intraday price pressure",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_reversal_in_trend",
+    "expression": "mom60 - mom5",
+    "hypothesis": "Longer trend following with short reversal",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_range_reversal",
+    "expression": "-intraday_ret * range_today",
+    "hypothesis": "Large range overreaction",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_trend_drawdown",
+    "expression": "mom20 + drawdown60",
+    "hypothesis": "Penalize trend with persistent drawdowns",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  },
+  {
+    "id": "llm_momentum_balance",
+    "expression": "mom5 / (vol5 + 0.001) - mom20 / (vol20 + 0.001)",
+    "hypothesis": "Change in risk-adjusted trend",
+    "proposed_by": "Codex during this research turn; not imported RD-Agent output",
+    "information_cutoff": "close t",
+    "screening": "training-period only, future-window purge"
+  }
+]

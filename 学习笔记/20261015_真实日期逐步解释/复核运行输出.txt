@@ -1,0 +1,860 @@
+{
+  "signal_date": "2026-04-01 00:00:00",
+  "universe_file_count": 350,
+  "ever_observed_by_day": 304,
+  "observed_today": 303,
+  "eligible": 286,
+  "pool": 100,
+  "excluded": {
+    "成交额排名在100名以后": 186,
+    "入选": 100,
+    "有效交易记录不足60天": 63,
+    "最近20日有效交易不足16天": 1
+  },
+  "pool_cutoff_examples": [
+    {
+      "stockid": "BJ920786",
+      "name": "骑士乳业",
+      "adv20": 39189633.2,
+      "amount_rank": 98.0
+    },
+    {
+      "stockid": "BJ920879",
+      "name": "基康技术",
+      "adv20": 37231031.15,
+      "amount_rank": 99.0
+    },
+    {
+      "stockid": "BJ920008",
+      "name": "成电光信",
+      "adv20": 37221716.6,
+      "amount_rank": 100.0
+    },
+    {
+      "stockid": "BJ920953",
+      "name": "国子软件",
+      "adv20": 36662615.7,
+      "amount_rank": 101.0
+    },
+    {
+      "stockid": "BJ920914",
+      "name": "远航精密",
+      "adv20": 36535425.3,
+      "amount_rank": 102.0
+    },
+    {
+      "stockid": "BJ920247",
+      "name": "华密新材",
+      "adv20": 36321744.95,
+      "amount_rank": 103.0
+    }
+  ],
+  "excluded_examples": [
+    {
+      "stockid": "BJ920000",
+      "name": "安徽凤凰",
+      "observed_days": 1061,
+      "active20": 20.0,
+      "adv20": 11691398.75,
+      "sequential_reason": "成交额排名在100名以后"
+    },
+    {
+      "stockid": "BJ920003",
+      "name": "中诚咨询",
+      "observed_days": 96,
+      "active20": 20.0,
+      "adv20": 9977834.8,
+      "sequential_reason": "成交额排名在100名以后"
+    },
+    {
+      "stockid": "BJ920011",
+      "name": "晨光电机",
+      "observed_days": 0,
+      "active20": 0.0,
+      "adv20": 0.0,
+      "sequential_reason": "有效交易记录不足60天"
+    },
+    {
+      "stockid": "BJ920012",
+      "name": "创达新材",
+      "observed_days": 0,
+      "active20": 0.0,
+      "adv20": 0.0,
+      "sequential_reason": "有效交易记录不足60天"
+    },
+    {
+      "stockid": "BJ920680",
+      "name": "广道退(退)",
+      "observed_days": 915,
+      "active20": 0.0,
+      "adv20": 0.0,
+      "sequential_reason": "最近20日有效交易不足16天"
+    }
+  ],
+  "top10": [
+    {
+      "stockid": "BJ920249",
+      "name": "利尔达",
+      "rank": 1,
+      "lgbm100": 0.0994158253,
+      "ensemble": 1.0,
+      "score": 1.0,
+      "label_5": -0.0139758621
+    },
+    {
+      "stockid": "BJ920008",
+      "name": "成电光信",
+      "rank": 2,
+      "lgbm100": 0.0657241067,
+      "ensemble": 0.975,
+      "score": 0.975,
+      "label_5": -0.0118110236
+    },
+    {
+      "stockid": "BJ920351",
+      "name": "华光源海",
+      "rank": 3,
+      "lgbm100": 0.059853443,
+      "ensemble": 0.9525,
+      "score": 0.9525,
+      "label_5": 0.0110794214
+    },
+    {
+      "stockid": "BJ920876",
+      "name": "慧为智能",
+      "rank": 4,
+      "lgbm100": 0.0901677026,
+      "ensemble": 0.95,
+      "score": 0.95,
+      "label_5": 0.0203212272
+    },
+    {
+      "stockid": "BJ920019",
+      "name": "铜冠矿建",
+      "rank": 5,
+      "lgbm100": 0.0708618906,
+      "ensemble": 0.9475,
+      "score": 0.9475,
+      "label_5": -0.0055944987
+    },
+    {
+      "stockid": "BJ920662",
+      "name": "方盛股份",
+      "rank": 6,
+      "lgbm100": 0.0634019609,
+      "ensemble": 0.9425,
+      "score": 0.9425,
+      "label_5": 0.0285713267
+    },
+    {
+      "stockid": "BJ920139",
+      "name": "华岭股份",
+      "rank": 7,
+      "lgbm100": 0.0627334534,
+      "ensemble": 0.94,
+      "score": 0.94,
+      "label_5": 0.0011825729
+    },
+    {
+      "stockid": "BJ920833",
+      "name": "美心翼申",
+      "rank": 8,
+      "lgbm100": 0.069033317,
+      "ensemble": 0.91,
+      "score": 0.91,
+      "label_5": -0.0286068059
+    },
+    {
+      "stockid": "BJ920770",
+      "name": "艾能聚",
+      "rank": 9,
+      "lgbm100": 0.0614174145,
+      "ensemble": 0.8925,
+      "score": 0.8925,
+      "label_5": -0.0482165754
+    },
+    {
+      "stockid": "BJ920402",
+      "name": "硅烷科技",
+      "rank": 10,
+      "lgbm100": 0.053241947,
+      "ensemble": 0.8875,
+      "score": 0.8875,
+      "label_5": 0.012445252
+    }
+  ],
+  "feature_example": [
+    {
+      "stockid": "BJ920249",
+      "x_c02_gtalpha046": 0.4898989797,
+      "x_c02_gtalpha063": -0.4797979891,
+      "x_mom5": -0.3799999952
+    },
+    {
+      "stockid": "BJ920008",
+      "x_c02_gtalpha046": 0.277777791,
+      "x_c02_gtalpha063": -0.3686868548,
+      "x_mom5": -0.0900000036
+    },
+    {
+      "stockid": "BJ920351",
+      "x_c02_gtalpha046": 0.3888888955,
+      "x_c02_gtalpha063": -0.1969697028,
+      "x_mom5": 0.0199999996
+    },
+    {
+      "stockid": "BJ920876",
+      "x_c02_gtalpha046": 0.2171717137,
+      "x_c02_gtalpha063": -0.055555556,
+      "x_mom5": -0.2099999934
+    },
+    {
+      "stockid": "BJ920019",
+      "x_c02_gtalpha046": 0.055555556,
+      "x_c02_gtalpha063": -0.0353535339,
+      "x_mom5": 0.0799999982
+    }
+  ],
+  "factor_trace_first15": [
+    {
+      "rank": 1.0,
+      "factor": "x_c02_gtalpha046",
+      "mean_ic": 0.1522504779,
+      "ic_std": 0.1853486259,
+      "coverage": 0.9986968986,
+      "icir": 0.821427605,
+      "screen_score": 0.1522504779,
+      "selected": true,
+      "max_abs_correlation": 0.0,
+      "closest_selected": "",
+      "reason": "入选"
+    },
+    {
+      "rank": 2.0,
+      "factor": "x_c02_gtalpha063",
+      "mean_ic": -0.148190302,
+      "ic_std": 0.1757818866,
+      "coverage": 0.9986968986,
+      "icir": -0.8430351093,
+      "screen_score": 0.148190302,
+      "selected": true,
+      "max_abs_correlation": 0.9183411874,
+      "closest_selected": "x_c02_gtalpha046",
+      "reason": "入选"
+    },
+    {
+      "rank": 3.0,
+      "factor": "x_c02_gtalpha079",
+      "mean_ic": -0.1457322458,
+      "ic_std": 0.1772547633,
+      "coverage": 0.9986968986,
+      "icir": -0.8221626492,
+      "screen_score": 0.1457322458,
+      "selected": true,
+      "max_abs_correlation": 0.9111686005,
+      "closest_selected": "x_c02_gtalpha063",
+      "reason": "入选"
+    },
+    {
+      "rank": 4.0,
+      "factor": "x_c02_gtalpha067",
+      "mean_ic": -0.1451912614,
+      "ic_std": 0.1723725177,
+      "coverage": 0.9986968986,
+      "icir": -0.8423109635,
+      "screen_score": 0.1451912614,
+      "selected": false,
+      "max_abs_correlation": 0.9241059937,
+      "closest_selected": "x_c02_gtalpha079",
+      "reason": "与已入选因子过于相似"
+    },
+    {
+      "rank": 5.0,
+      "factor": "x_c02_gtalpha031",
+      "mean_ic": -0.1438024333,
+      "ic_std": 0.184560169,
+      "coverage": 0.9986968986,
+      "icir": -0.7791628824,
+      "screen_score": 0.1438024333,
+      "selected": false,
+      "max_abs_correlation": 0.928858239,
+      "closest_selected": "x_c02_gtalpha046",
+      "reason": "与已入选因子过于相似"
+    },
+    {
+      "rank": 6.0,
+      "factor": "x_c02_gtalpha034",
+      "mean_ic": 0.1437819632,
+      "ic_std": 0.1845615792,
+      "coverage": 0.9986968986,
+      "icir": 0.7790460175,
+      "screen_score": 0.1437819632,
+      "selected": false,
+      "max_abs_correlation": 0.9288485878,
+      "closest_selected": "x_c02_gtalpha046",
+      "reason": "与已入选因子过于相似"
+    },
+    {
+      "rank": 7.0,
+      "factor": "x_c02_gtalpha071",
+      "mean_ic": -0.1379875813,
+      "ic_std": 0.1932137115,
+      "coverage": 0.9986968986,
+      "icir": -0.7141707503,
+      "screen_score": 0.1379875813,
+      "selected": true,
+      "max_abs_correlation": 0.8986256819,
+      "closest_selected": "x_c02_gtalpha079",
+      "reason": "入选"
+    },
+    {
+      "rank": 8.0,
+      "factor": "x_mom5",
+      "mean_ic": -0.1347161963,
+      "ic_std": 0.1690248674,
+      "coverage": 0.9999599046,
+      "icir": -0.7970199795,
+      "screen_score": 0.1347161963,
+      "selected": true,
+      "max_abs_correlation": 0.7644569963,
+      "closest_selected": "x_c02_gtalpha046",
+      "reason": "入选"
+    },
+    {
+      "rank": 9.0,
+      "factor": "x_c02_gtalpha019",
+      "mean_ic": -0.1343338201,
+      "ic_std": 0.1691931211,
+      "coverage": 0.9986768509,
+      "icir": -0.7939673862,
+      "screen_score": 0.1343338201,
+      "selected": false,
+      "max_abs_correlation": 0.9967911299,
+      "closest_selected": "x_mom5",
+      "reason": "与已入选因子过于相似"
+    },
+    {
+      "rank": 10.0,
+      "factor": "x_c02_gtalpha018",
+      "mean_ic": -0.1341613411,
+      "ic_std": 0.1690540222,
+      "coverage": 0.9986768509,
+      "icir": -0.7936004086,
+      "screen_score": 0.1341613411,
+      "selected": false,
+      "max_abs_correlation": 0.99782449,
+      "closest_selected": "x_mom5",
+      "reason": "与已入选因子过于相似"
+    },
+    {
+      "rank": 11.0,
+      "factor": "x_c02_gtalpha020",
+      "mean_ic": -0.1301122037,
+      "ic_std": 0.1733774632,
+      "coverage": 0.9986568032,
+      "icir": -0.7504562664,
+      "screen_score": 0.1301122037,
+      "selected": true,
+      "max_abs_correlation": 0.8254054444,
+      "closest_selected": "x_mom5",
+      "reason": "入选"
+    },
+    {
+      "rank": 12.0,
+      "factor": "x_c02_gtalpha150",
+      "mean_ic": -0.129990717,
+      "ic_std": 0.1811907985,
+      "coverage": 0.9986968986,
+      "icir": -0.7174244947,
+      "screen_score": 0.129990717,
+      "selected": true,
+      "max_abs_correlation": 0.5342976793,
+      "closest_selected": "x_c02_gtalpha079",
+      "reason": "入选"
+    },
+    {
+      "rank": 13.0,
+      "factor": "x_c02_gtalpha066",
+      "mean_ic": -0.1285673205,
+      "ic_std": 0.1684342226,
+      "coverage": 0.9986968986,
+      "icir": -0.7633087771,
+      "screen_score": 0.1285673205,
+      "selected": true,
+      "max_abs_correlation": 0.8306943851,
+      "closest_selected": "x_mom5",
+      "reason": "入选"
+    },
+    {
+      "rank": 14.0,
+      "factor": "x_c02_gtalpha065",
+      "mean_ic": 0.1285511596,
+      "ic_std": 0.1684473206,
+      "coverage": 0.9986968986,
+      "icir": 0.7631534843,
+      "screen_score": 0.1285511596,
+      "selected": false,
+      "max_abs_correlation": 0.999937312,
+      "closest_selected": "x_c02_gtalpha066",
+      "reason": "与已入选因子过于相似"
+    },
+    {
+      "rank": 15.0,
+      "factor": "x_c02_gtalpha014",
+      "mean_ic": -0.1253211754,
+      "ic_std": 0.1672162624,
+      "coverage": 0.9986768509,
+      "icir": -0.7494556666,
+      "screen_score": 0.1253211754,
+      "selected": true,
+      "max_abs_correlation": 0.8919142404,
+      "closest_selected": "x_mom5",
+      "reason": "入选"
+    }
+  ],
+  "old_factors_example": [
+    {
+      "feature": "x_c02_gtalpha046",
+      "coverage": 0.9991580467,
+      "mean_ic": 0.1466614332,
+      "icir": 0.756126387,
+      "positive_fraction": 0.7595190381,
+      "n_ic_days": 499,
+      "hac_se": 0.0148932995,
+      "hac_t": 9.8474775941,
+      "p": 7.028575359e-23,
+      "by_fdr_q": 1.345233977e-19,
+      "abs_ic": 0.1466614332,
+      "decision": "selected",
+      "direction": 1.0
+    },
+    {
+      "feature": "x_c02_gtalpha063",
+      "coverage": 0.9991580467,
+      "mean_ic": -0.1364060759,
+      "icir": -0.735670508,
+      "positive_fraction": 0.248496994,
+      "n_ic_days": 499,
+      "hac_se": 0.0140301,
+      "hac_t": -9.7223880015,
+      "p": 2.420374245e-22,
+      "by_fdr_q": 2.316237291e-19,
+      "abs_ic": 0.1364060759,
+      "decision": "redundant_with:x_c02_gtalpha046",
+      "direction": -1.0
+    },
+    {
+      "feature": "x_c02_gtalpha067",
+      "coverage": 0.9991580467,
+      "mean_ic": -0.1364432691,
+      "icir": -0.7210204843,
+      "positive_fraction": 0.254509018,
+      "n_ic_days": 499,
+      "hac_se": 0.0150015047,
+      "hac_t": -9.0953055442,
+      "p": 9.432088587e-20,
+      "by_fdr_q": 1.504378601e-17,
+      "abs_ic": 0.1364432691,
+      "decision": "selected",
+      "direction": -1.0
+    }
+  ],
+  "boundaries": [
+    {
+      "horizon": 1,
+      "inner_start": "2023-08-21T00:00:00.000",
+      "inner_last_signal": "2025-09-12T00:00:00.000",
+      "inner_last_exit": "2025-09-16T00:00:00.000",
+      "inner_rows": 50190,
+      "inner_signal_days": 502,
+      "validation_start": "2025-09-17T00:00:00.000",
+      "validation_end": "2026-03-31T00:00:00.000",
+      "validation_last_mature_signal": "2026-03-27T00:00:00.000",
+      "validation_mature_days": 124,
+      "outer_start": "2024-03-01T00:00:00.000",
+      "outer_last_signal": "2026-03-27T00:00:00.000",
+      "outer_last_exit": "2026-03-31T00:00:00.000",
+      "outer_days": 502,
+      "outer_rows": 50191
+    },
+    {
+      "horizon": 2,
+      "inner_start": "2023-08-21T00:00:00.000",
+      "inner_last_signal": "2025-09-12T00:00:00.000",
+      "inner_last_exit": "2025-09-16T00:00:00.000",
+      "inner_rows": 50190,
+      "inner_signal_days": 502,
+      "validation_start": "2025-09-17T00:00:00.000",
+      "validation_end": "2026-03-31T00:00:00.000",
+      "validation_last_mature_signal": "2026-03-27T00:00:00.000",
+      "validation_mature_days": 124,
+      "outer_start": "2024-03-01T00:00:00.000",
+      "outer_last_signal": "2026-03-27T00:00:00.000",
+      "outer_last_exit": "2026-03-31T00:00:00.000",
+      "outer_days": 502,
+      "outer_rows": 50191
+    },
+    {
+      "horizon": 5,
+      "inner_start": "2023-08-21T00:00:00.000",
+      "inner_last_signal": "2025-09-09T00:00:00.000",
+      "inner_last_exit": "2025-09-16T00:00:00.000",
+      "inner_rows": 49884,
+      "inner_signal_days": 499,
+      "validation_start": "2025-09-17T00:00:00.000",
+      "validation_end": "2026-03-31T00:00:00.000",
+      "validation_last_mature_signal": "2026-03-24T00:00:00.000",
+      "validation_mature_days": 121,
+      "outer_start": "2024-03-01T00:00:00.000",
+      "outer_last_signal": "2026-03-24T00:00:00.000",
+      "outer_last_exit": "2026-03-31T00:00:00.000",
+      "outer_days": 499,
+      "outer_rows": 49881
+    },
+    {
+      "horizon": 10,
+      "inner_start": "2023-08-21T00:00:00.000",
+      "inner_last_signal": "2025-09-02T00:00:00.000",
+      "inner_last_exit": "2025-09-16T00:00:00.000",
+      "inner_rows": 49381,
+      "inner_signal_days": 494,
+      "validation_start": "2025-09-17T00:00:00.000",
+      "validation_end": "2026-03-31T00:00:00.000",
+      "validation_last_mature_signal": "2026-03-17T00:00:00.000",
+      "validation_mature_days": 116,
+      "outer_start": "2024-03-01T00:00:00.000",
+      "outer_last_signal": "2026-03-17T00:00:00.000",
+      "outer_last_exit": "2026-03-31T00:00:00.000",
+      "outer_days": 494,
+      "outer_rows": 49375
+    },
+    {
+      "horizon": 20,
+      "inner_start": "2023-08-21T00:00:00.000",
+      "inner_last_signal": "2025-08-19T00:00:00.000",
+      "inner_last_exit": "2025-09-16T00:00:00.000",
+      "inner_rows": 48380,
+      "inner_signal_days": 484,
+      "validation_start": "2025-09-17T00:00:00.000",
+      "validation_end": "2026-03-31T00:00:00.000",
+      "validation_last_mature_signal": "2026-03-03T00:00:00.000",
+      "validation_mature_days": 106,
+      "outer_start": "2024-03-01T00:00:00.000",
+      "outer_last_signal": "2026-03-03T00:00:00.000",
+      "outer_last_exit": "2026-03-31T00:00:00.000",
+      "outer_days": 484,
+      "outer_rows": 48366
+    }
+  ],
+  "label_dates": [
+    {
+      "date": "2024-01-02T00:00:00.000",
+      "stockid": "BJ920001",
+      "label_exit_1": "2024-01-04T00:00:00.000",
+      "label_exit_2": "2024-01-04T00:00:00.000",
+      "label_exit_5": "2024-01-09T00:00:00.000",
+      "label_exit_10": "2024-01-16T00:00:00.000",
+      "label_exit_20": "2024-01-30T00:00:00.000"
+    },
+    {
+      "date": "2024-01-03T00:00:00.000",
+      "stockid": "BJ920001",
+      "label_exit_1": "2024-01-05T00:00:00.000",
+      "label_exit_2": "2024-01-05T00:00:00.000",
+      "label_exit_5": "2024-01-10T00:00:00.000",
+      "label_exit_10": "2024-01-17T00:00:00.000",
+      "label_exit_20": "2024-01-31T00:00:00.000"
+    },
+    {
+      "date": "2024-01-04T00:00:00.000",
+      "stockid": "BJ920001",
+      "label_exit_1": "2024-01-08T00:00:00.000",
+      "label_exit_2": "2024-01-08T00:00:00.000",
+      "label_exit_5": "2024-01-11T00:00:00.000",
+      "label_exit_10": "2024-01-18T00:00:00.000",
+      "label_exit_20": "2024-02-01T00:00:00.000"
+    },
+    {
+      "date": "2024-12-31T00:00:00.000",
+      "stockid": "BJ920001",
+      "label_exit_1": "2025-01-03T00:00:00.000",
+      "label_exit_2": "2025-01-03T00:00:00.000",
+      "label_exit_5": "2025-01-08T00:00:00.000",
+      "label_exit_10": "2025-01-15T00:00:00.000",
+      "label_exit_20": "2025-02-06T00:00:00.000"
+    },
+    {
+      "date": "2025-01-02T00:00:00.000",
+      "stockid": "BJ920001",
+      "label_exit_1": "2025-01-06T00:00:00.000",
+      "label_exit_2": "2025-01-06T00:00:00.000",
+      "label_exit_5": "2025-01-09T00:00:00.000",
+      "label_exit_10": "2025-01-16T00:00:00.000",
+      "label_exit_20": "2025-02-07T00:00:00.000"
+    },
+    {
+      "date": "2026-03-24T00:00:00.000",
+      "stockid": "BJ920001",
+      "label_exit_1": "2026-03-26T00:00:00.000",
+      "label_exit_2": "2026-03-26T00:00:00.000",
+      "label_exit_5": "2026-03-31T00:00:00.000",
+      "label_exit_10": "2026-04-08T00:00:00.000",
+      "label_exit_20": "2026-04-22T00:00:00.000"
+    },
+    {
+      "date": "2026-03-25T00:00:00.000",
+      "stockid": "BJ920001",
+      "label_exit_1": "2026-03-27T00:00:00.000",
+      "label_exit_2": "2026-03-27T00:00:00.000",
+      "label_exit_5": "2026-04-01T00:00:00.000",
+      "label_exit_10": "2026-04-09T00:00:00.000",
+      "label_exit_20": "2026-04-23T00:00:00.000"
+    },
+    {
+      "date": "2026-03-31T00:00:00.000",
+      "stockid": "BJ920001",
+      "label_exit_1": "2026-04-02T00:00:00.000",
+      "label_exit_2": "2026-04-02T00:00:00.000",
+      "label_exit_5": "2026-04-08T00:00:00.000",
+      "label_exit_10": "2026-04-15T00:00:00.000",
+      "label_exit_20": "2026-04-29T00:00:00.000"
+    },
+    {
+      "date": "2026-04-01T00:00:00.000",
+      "stockid": "BJ920001",
+      "label_exit_1": "2026-04-03T00:00:00.000",
+      "label_exit_2": "2026-04-03T00:00:00.000",
+      "label_exit_5": "2026-04-09T00:00:00.000",
+      "label_exit_10": "2026-04-16T00:00:00.000",
+      "label_exit_20": "2026-04-30T00:00:00.000"
+    }
+  ],
+  "factor_count": 330,
+  "selected_count": 100,
+  "reloaded_prediction_max_difference": 0.0,
+  "first_tree_split": {
+    "feature": "x_c02_gtalpha046",
+    "threshold": -0.19598484784364698,
+    "decision_type": "<="
+  },
+  "lgbm_tree_count": 180,
+  "lgbm_first_tree_output_BJ920249": 0.007197719130375686,
+  "lgbm_sum_tree_outputs_BJ920249": 0.09941582534072053,
+  "training_first5": [
+    {
+      "date": "2024-03-01T00:00:00.000",
+      "stockid": "BJ920001",
+      "x_c02_gtalpha046": -0.150000006,
+      "x_c02_gtalpha063": 0.1199999973,
+      "x_mom5": 0.1700000018,
+      "label_5": -0.1686061984,
+      "target_5": -0.49
+    },
+    {
+      "date": "2024-03-01T00:00:00.000",
+      "stockid": "BJ920021",
+      "x_c02_gtalpha046": 0.1700000018,
+      "x_c02_gtalpha063": -0.1000000015,
+      "x_mom5": -0.3400000036,
+      "label_5": -0.0772555375,
+      "target_5": 0.13
+    },
+    {
+      "date": "2024-03-01T00:00:00.000",
+      "stockid": "BJ920026",
+      "x_c02_gtalpha046": 0.4799999893,
+      "x_c02_gtalpha063": -0.4399999976,
+      "x_mom5": 0.1599999964,
+      "label_5": -0.1344751031,
+      "target_5": -0.42
+    },
+    {
+      "date": "2024-03-01T00:00:00.000",
+      "stockid": "BJ920030",
+      "x_c02_gtalpha046": 0.4199999869,
+      "x_c02_gtalpha063": -0.4099999964,
+      "x_mom5": -0.2700000107,
+      "label_5": -0.0988699262,
+      "target_5": -0.13
+    },
+    {
+      "date": "2024-03-01T00:00:00.000",
+      "stockid": "BJ920039",
+      "x_c02_gtalpha046": 0.2099999934,
+      "x_c02_gtalpha063": -0.0799999982,
+      "x_mom5": 0.1099999994,
+      "label_5": -0.0817996681,
+      "target_5": 0.09
+    }
+  ],
+  "single_day_ic": 0.39693278183288866,
+  "single_day_ic_stocks": 99,
+  "single_day_label_exit": "2026-03-31 00:00:00",
+  "single_day_code_ic": 0.39213954632602105,
+  "code_ic_mean": 0.15225047696310498,
+  "code_ic_std": 0.18534862490088744,
+  "factor_ic_mean_pairwise": 0.1524108130625471,
+  "factor_ic_std_pairwise": 0.18552595994315346,
+  "factor_ic_days": 499,
+  "account_metrics": {
+    "total_return": 0.5013995593495029,
+    "annual_return": 0.22514581482855567,
+    "sharpe": 1.1111054470376145,
+    "sharpe_rf15": 1.04009137502903,
+    "max_drawdown": 0.23867923803438396,
+    "calmar": 0.9432986994709667,
+    "pass_target": false,
+    "mean_exposure": 0.277198302408844,
+    "cash_days_fraction": 0.07392197125256673,
+    "turnover_sum": 70.31388045777238,
+    "total_cost": 51838.9576505,
+    "days": 487,
+    "start": "2024-10-08 00:00:00",
+    "end": "2026-10-09 00:00:00",
+    "worst_day": -0.16439705674053462
+  },
+  "mean_daily_return": 0.0009244371199871541,
+  "daily_return_sd": 0.013207553227592022,
+  "maxdd_peak_date": "2025-03-18 00:00:00",
+  "maxdd_peak_value": 1426399.371154998,
+  "maxdd_trough_date": "2025-04-07 00:00:00",
+  "maxdd_trough_value": 1085947.4561149986,
+  "april1_risk_cap": 0.1228174468385745,
+  "april2_buys": [],
+  "april1_account": [
+    {
+      "date": "2026-04-01T00:00:00.000",
+      "cash": 1402343.4863185035,
+      "market_value": 215937.69,
+      "equity": 1618281.1763185037,
+      "exposure": 0.1334364467,
+      "target_cap": 0.1327109798,
+      "turnover": 0.1110946556,
+      "cost": 89.891195,
+      "gross_dividend_cash": 0.0,
+      "lots": 22,
+      "daily_return": 0.0013971139,
+      "historical_peak": 1727622.9382335013,
+      "drawdown": -0.063290293
+    }
+  ],
+  "h5_folds": [
+    {
+      "quarter": "2024Q4",
+      "horizon": 5,
+      "training_start": "2022-09-01 00:00:00",
+      "training_last_signal": "2024-09-23 00:00:00",
+      "training_last_label_exit": "2024-09-30 00:00:00",
+      "test_start": "2024-10-08 00:00:00",
+      "test_end": "2024-12-31 00:00:00",
+      "training_rows": 49831,
+      "model": "ensemble",
+      "topn": 10,
+      "policy": "vol12"
+    },
+    {
+      "quarter": "2025Q1",
+      "horizon": 5,
+      "training_start": "2022-12-05 00:00:00",
+      "training_last_signal": "2024-12-24 00:00:00",
+      "training_last_label_exit": "2024-12-31 00:00:00",
+      "test_start": "2025-01-02 00:00:00",
+      "test_end": "2025-03-31 00:00:00",
+      "training_rows": 49889,
+      "model": "extra60",
+      "topn": 10,
+      "policy": "fixed50"
+    },
+    {
+      "quarter": "2025Q2",
+      "horizon": 5,
+      "training_start": "2023-03-02 00:00:00",
+      "training_last_signal": "2025-03-24 00:00:00",
+      "training_last_label_exit": "2025-03-31 00:00:00",
+      "test_start": "2025-04-01 00:00:00",
+      "test_end": "2025-06-30 00:00:00",
+      "training_rows": 49889,
+      "model": "conditional_ic",
+      "topn": 10,
+      "policy": "fixed75"
+    },
+    {
+      "quarter": "2025Q3",
+      "horizon": 5,
+      "training_start": "2023-05-31 00:00:00",
+      "training_last_signal": "2025-06-23 00:00:00",
+      "training_last_label_exit": "2025-06-30 00:00:00",
+      "test_start": "2025-07-01 00:00:00",
+      "test_end": "2025-09-30 00:00:00",
+      "training_rows": 49886,
+      "model": "ic",
+      "topn": 10,
+      "policy": "trend_vol"
+    },
+    {
+      "quarter": "2025Q4",
+      "horizon": 5,
+      "training_start": "2023-09-04 00:00:00",
+      "training_last_signal": "2025-09-23 00:00:00",
+      "training_last_label_exit": "2025-09-30 00:00:00",
+      "test_start": "2025-10-09 00:00:00",
+      "test_end": "2025-12-31 00:00:00",
+      "training_rows": 49880,
+      "model": "lgbm100",
+      "topn": 10,
+      "policy": "hmm2_defensive"
+    },
+    {
+      "quarter": "2026Q1",
+      "horizon": 5,
+      "training_start": "2023-12-05 00:00:00",
+      "training_last_signal": "2025-12-24 00:00:00",
+      "training_last_label_exit": "2025-12-31 00:00:00",
+      "test_start": "2026-01-05 00:00:00",
+      "test_end": "2026-03-31 00:00:00",
+      "training_rows": 49886,
+      "model": "catboost60",
+      "topn": 10,
+      "policy": "hmm3_defensive"
+    },
+    {
+      "quarter": "2026Q2",
+      "horizon": 5,
+      "training_start": "2024-03-01 00:00:00",
+      "training_last_signal": "2026-03-24 00:00:00",
+      "training_last_label_exit": "2026-03-31 00:00:00",
+      "test_start": "2026-04-01 00:00:00",
+      "test_end": "2026-06-30 00:00:00",
+      "training_rows": 49881,
+      "model": "ensemble",
+      "topn": 10,
+      "policy": "hmm3_defensive"
+    },
+    {
+      "quarter": "2026Q3",
+      "horizon": 5,
+      "training_start": "2024-05-31 00:00:00",
+      "training_last_signal": "2026-06-23 00:00:00",
+      "training_last_label_exit": "2026-06-30 00:00:00",
+      "test_start": "2026-07-01 00:00:00",
+      "test_end": "2026-09-30 00:00:00",
+      "training_rows": 49872,
+      "model": "lgbm100",
+      "topn": 10,
+      "policy": "trend_vol"
+    },
+    {
+      "quarter": "2026Q4",
+      "horizon": 5,
+      "training_start": "2024-09-02 00:00:00",
+      "training_last_signal": "2026-09-22 00:00:00",
+      "training_last_label_exit": "2026-09-30 00:00:00",
+      "test_start": "2026-10-08 00:00:00",
+      "test_end": "2026-10-09 00:00:00",
+      "training_rows": 49872,
+      "model": "xgboost60",
+      "topn": 10,
+      "policy": "none"
+    }
+  ]
+}
