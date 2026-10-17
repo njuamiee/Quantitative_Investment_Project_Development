@@ -1,0 +1,1450 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "name": "unique_sorted_dates",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no_negative_cash",
+      "pass": true,
+      "detail": 78.28237000009267
+    },
+    {
+      "name": "cash_plus_market_value_equals_equity",
+      "pass": true,
+      "detail": 9.313225746154785e-10
+    },
+    {
+      "name": "each_day_cash_flow_reconciles",
+      "pass": true,
+      "detail": 1.456726295145927e-09
+    },
+    {
+      "name": "saved_total_return_matches_daily",
+      "pass": true,
+      "detail": [
+        1.7479497968705,
+        1.7479497968705
+      ]
+    },
+    {
+      "name": "saved_mean_exposure_matches_daily",
+      "pass": true,
+      "detail": [
+        0.5054353822280563,
+        0.5054353822280563
+      ]
+    },
+    {
+      "name": "saved_total_cost_matches_daily",
+      "pass": true,
+      "detail": [
+        159501.9701295,
+        159501.9701295
+      ]
+    },
+    {
+      "name": "all_fill_amounts_within_request",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "buy_only_at_open",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "completed_sales_never_same_day_as_entry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "buy_orders_follow_signal_by_one_session",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bought_lot_ids_unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "each_buy_lot_sold_once_by_period_end",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "daily_buy_value_matches_fills",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "daily_sell_value_matches_fills",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "daily_fees_match_fills",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "lot_holding_interval_matches_trade_dates",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "holding_inclusive_equals_intervals_plus_one",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "scheduled_exit_is_fifth_session_close",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "stop_exit_occurs_at_open",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "overdue_exit_occurs_at_open",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "holdings_sum_to_market_value",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "signals_are_five_sessions_apart",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "effective_rule_matches_registered_schedule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "strategy_summary_return_matches_account",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "strategy_summary_mdd_matches_account",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "strategy_summary_sharpe_matches_account",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "strategy_summary_calmar_matches_account",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "period_comparison_full_return_matches_account",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "thirteen_registered_curves_present",
+      "pass": true,
+      "detail": 13
+    },
+    {
+      "name": "bj50_price_index_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bj50_price_index_total_return_matches_curve",
+      "pass": true,
+      "detail": 8.326672684688674e-17
+    },
+    {
+      "name": "bj50_price_index_annual_return_matches_curve",
+      "pass": true,
+      "detail": 6.938893903907228e-17
+    },
+    {
+      "name": "bj50_price_index_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "bj50_price_index_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "bj50_price_index_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "bj50_price_index_calmar_matches_curve",
+      "pass": true,
+      "detail": 4.163336342344337e-17
+    },
+    {
+      "name": "equal_buy_hold_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "equal_buy_hold_total_return_matches_curve",
+      "pass": true,
+      "detail": 8.326672684688674e-17
+    },
+    {
+      "name": "equal_buy_hold_annual_return_matches_curve",
+      "pass": true,
+      "detail": 6.938893903907228e-17
+    },
+    {
+      "name": "equal_buy_hold_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "equal_buy_hold_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_buy_hold_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 1.1102230246251565e-16
+    },
+    {
+      "name": "equal_buy_hold_calmar_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_pool_5day_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "equal_pool_5day_total_return_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "equal_pool_5day_annual_return_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "equal_pool_5day_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_pool_5day_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_pool_5day_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_pool_5day_calmar_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_main_monthly_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new_main_monthly_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_main_monthly_annual_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_main_monthly_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_main_monthly_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_main_monthly_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_main_monthly_calmar_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new_monthly_diversified_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_annual_return_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_monthly_diversified_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_calmar_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new_monthly_equal_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_annual_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_calmar_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_stop10_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new_monthly_stop10_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_stop10_annual_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_stop10_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_stop10_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_stop10_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_stop10_calmar_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_equal_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new_quarterly_equal_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_equal_annual_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_equal_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_quarterly_equal_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 2.220446049250313e-16
+    },
+    {
+      "name": "new_quarterly_equal_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_equal_calmar_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_same_risk_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new_quarterly_same_risk_total_return_matches_curve",
+      "pass": true,
+      "detail": 4.440892098500626e-16
+    },
+    {
+      "name": "new_quarterly_same_risk_annual_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_same_risk_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_same_risk_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 2.220446049250313e-16
+    },
+    {
+      "name": "new_quarterly_same_risk_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_same_risk_calmar_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "old_lgbm_same_execution_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_annual_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_calmar_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_main_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "old_main_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_main_annual_return_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "old_main_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "old_main_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_main_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_main_calmar_matches_curve",
+      "pass": true,
+      "detail": 1.1102230246251565e-16
+    },
+    {
+      "name": "simple_ic20_equal_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "simple_ic20_equal_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_annual_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_calmar_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_same_risk_dates_match_main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "simple_ic20_same_risk_total_return_matches_curve",
+      "pass": true,
+      "detail": 4.440892098500626e-16
+    },
+    {
+      "name": "simple_ic20_same_risk_annual_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_same_risk_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_same_risk_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_same_risk_mean_exposure_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_same_risk_calmar_matches_curve",
+      "pass": true,
+      "detail": 4.440892098500626e-16
+    },
+    {
+      "name": "new_main_monthly_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_main_monthly_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_main_monthly_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_main_monthly_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "new_main_monthly_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 8.326672684688674e-17
+    },
+    {
+      "name": "new_main_monthly_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_main_monthly_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 1.0408340855860843e-17
+    },
+    {
+      "name": "new_main_monthly_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_main_monthly_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_quarterly_same_risk_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 4.440892098500626e-16
+    },
+    {
+      "name": "new_quarterly_same_risk_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_same_risk_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 2.220446049250313e-16
+    },
+    {
+      "name": "new_quarterly_same_risk_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 4.163336342344337e-17
+    },
+    {
+      "name": "new_quarterly_same_risk_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_quarterly_same_risk_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_same_risk_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 5.4643789493269423e-17
+    },
+    {
+      "name": "new_quarterly_same_risk_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_same_risk_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "new_monthly_equal_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_monthly_equal_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_monthly_equal_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_equal_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_equal_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_equal_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_quarterly_equal_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 2.220446049250313e-16
+    },
+    {
+      "name": "new_quarterly_equal_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_equal_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_quarterly_equal_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_equal_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_quarterly_equal_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_quarterly_equal_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 4.440892098500626e-16
+    },
+    {
+      "name": "new_monthly_stop10_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_stop10_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_stop10_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_stop10_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_monthly_stop10_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_stop10_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 2.220446049250313e-16
+    },
+    {
+      "name": "new_monthly_stop10_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_stop10_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_monthly_stop10_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "new_monthly_diversified_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "new_monthly_diversified_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "simple_ic20_equal_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_equal_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_same_risk_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 4.440892098500626e-16
+    },
+    {
+      "name": "simple_ic20_same_risk_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_same_risk_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_same_risk_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 4.163336342344337e-17
+    },
+    {
+      "name": "simple_ic20_same_risk_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 2.7755575615628914e-17
+    },
+    {
+      "name": "simple_ic20_same_risk_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_same_risk_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 5.204170427930421e-17
+    },
+    {
+      "name": "simple_ic20_same_risk_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "simple_ic20_same_risk_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_pool_5day_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "equal_pool_5day_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_pool_5day_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_pool_5day_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 8.326672684688674e-17
+    },
+    {
+      "name": "equal_pool_5day_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_pool_5day_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 2.220446049250313e-16
+    },
+    {
+      "name": "equal_pool_5day_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "equal_pool_5day_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "equal_pool_5day_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_buy_hold_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 8.326672684688674e-17
+    },
+    {
+      "name": "equal_buy_hold_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "equal_buy_hold_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_buy_hold_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_buy_hold_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_buy_hold_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 2.220446049250313e-16
+    },
+    {
+      "name": "equal_buy_hold_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_buy_hold_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "equal_buy_hold_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "old_lgbm_same_execution_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_lgbm_same_execution_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_main_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_main_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "old_main_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_main_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_main_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 4.163336342344337e-17
+    },
+    {
+      "name": "old_main_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_main_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "old_main_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 4.163336342344337e-17
+    },
+    {
+      "name": "old_main_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "bj50_price_index_full_total_return_matches_curve",
+      "pass": true,
+      "detail": 8.326672684688674e-17
+    },
+    {
+      "name": "bj50_price_index_full_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "bj50_price_index_full_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "bj50_price_index_recent_year_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "bj50_price_index_recent_year_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "bj50_price_index_recent_year_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "bj50_price_index_recent_half_total_return_matches_curve",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "bj50_price_index_recent_half_max_drawdown_matches_curve",
+      "pass": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "bj50_price_index_recent_half_sharpe_rf15_matches_curve",
+      "pass": true,
+      "detail": 2.220446049250313e-16
+    },
+    {
+      "name": "equal_buy_hold_cash_constraints",
+      "pass": true,
+      "detail": [
+        10838.496414999689,
+        4.656612873077393e-10,
+        1.0174971976084635e-10
+      ]
+    },
+    {
+      "name": "equal_pool_5day_cash_constraints",
+      "pass": true,
+      "detail": [
+        980.64669399782,
+        6.984919309616089e-10,
+        1.956777850864455e-09
+      ]
+    },
+    {
+      "name": "new_main_monthly_cash_constraints",
+      "pass": true,
+      "detail": [
+        78.28237000009267,
+        9.313225746154785e-10,
+        1.456726295145927e-09
+      ]
+    },
+    {
+      "name": "new_monthly_diversified_cash_constraints",
+      "pass": true,
+      "detail": [
+        79.42229499999667,
+        6.984919309616089e-10,
+        1.034209162753541e-09
+      ]
+    },
+    {
+      "name": "new_monthly_equal_cash_constraints",
+      "pass": true,
+      "detail": [
+        79.10371500005567,
+        1.3969838619232178e-09,
+        2.211436367360875e-09
+      ]
+    },
+    {
+      "name": "new_monthly_stop10_cash_constraints",
+      "pass": true,
+      "detail": [
+        85.19047000013234,
+        6.984919309616089e-10,
+        1.103217073250562e-09
+      ]
+    },
+    {
+      "name": "new_quarterly_equal_cash_constraints",
+      "pass": true,
+      "detail": [
+        79.10371500005567,
+        9.313225746154785e-10,
+        1.7032562027452514e-09
+      ]
+    },
+    {
+      "name": "new_quarterly_same_risk_cash_constraints",
+      "pass": true,
+      "detail": [
+        78.28237000009267,
+        1.3969838619232178e-09,
+        1.7380443750880659e-09
+      ]
+    },
+    {
+      "name": "old_lgbm_same_execution_cash_constraints",
+      "pass": true,
+      "detail": [
+        108.85427499993966,
+        6.402842700481415e-10,
+        1.5013483789516613e-09
+      ]
+    },
+    {
+      "name": "simple_ic20_equal_cash_constraints",
+      "pass": true,
+      "detail": [
+        101.30946999987646,
+        9.313225746154785e-10,
+        1.8046648619929329e-09
+      ]
+    },
+    {
+      "name": "simple_ic20_same_risk_cash_constraints",
+      "pass": true,
+      "detail": [
+        99.80975500024395,
+        9.313225746154785e-10,
+        1.263060767087154e-09
+      ]
+    },
+    {
+      "name": "signal_date_exposure_cap_matches_past_returns",
+      "pass": true,
+      "detail": 1.554312234475219e-14
+    },
+    {
+      "name": "diversified_buy_attempts_exist",
+      "pass": true,
+      "detail": 480
+    },
+    {
+      "name": "diversified_buys_have_known_industry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "diversified_buys_have_known_size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "industry_planned_weight_within_entry_limit",
+      "pass": true,
+      "detail": [
+        0.28500000000000003,
+        0.3
+      ]
+    },
+    {
+      "name": "size_tertile_planned_weight_within_entry_limit",
+      "pass": true,
+      "detail": [
+        0.475,
+        0.5
+      ]
+    },
+    {
+      "name": "momentum_tertile_planned_weight_within_entry_limit",
+      "pass": true,
+      "detail": [
+        0.475,
+        0.5
+      ]
+    },
+    {
+      "name": "volatility_tertile_planned_weight_within_entry_limit",
+      "pass": true,
+      "detail": [
+        0.475,
+        0.5
+      ]
+    },
+    {
+      "name": "main_flat_after_2026_04_01_close",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "days": 485,
+  "first": "2024-10-08",
+  "last": "2026-09-30",
+  "account": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261017\\accounts\\new_main_monthly",
+  "total_return": 1.7479497968705,
+  "mean_exposure": 0.5054353822280563,
+  "minimum_cash": 78.28237000009267,
+  "maximum_cash_identity_error": 9.313225746154785e-10,
+  "maximum_daily_cash_flow_error": 1.456726295145927e-09,
+  "buy_fills": 1439,
+  "sell_parts": 1439,
+  "mean_holding_session_intervals": 3.9409312022237666,
+  "mean_holding_sessions_inclusive": 4.940931202223767,
+  "scheduled_exit_parts": 1351,
+  "stopped_exit_parts": 88,
+  "overdue_exit_parts": 0,
+  "blocked_cohort_days": 0,
+  "all_curve_metrics_max_error": 4.440892098500626e-16,
+  "all_period_metrics_max_error": 4.440892098500626e-16,
+  "all_account_cash_checks": {
+    "equal_buy_hold": {
+      "minimum_cash": 10838.496414999689,
+      "max_identity_error": 4.656612873077393e-10,
+      "max_flow_error": 1.0174971976084635e-10
+    },
+    "equal_pool_5day": {
+      "minimum_cash": 980.64669399782,
+      "max_identity_error": 6.984919309616089e-10,
+      "max_flow_error": 1.956777850864455e-09
+    },
+    "new_main_monthly": {
+      "minimum_cash": 78.28237000009267,
+      "max_identity_error": 9.313225746154785e-10,
+      "max_flow_error": 1.456726295145927e-09
+    },
+    "new_monthly_diversified": {
+      "minimum_cash": 79.42229499999667,
+      "max_identity_error": 6.984919309616089e-10,
+      "max_flow_error": 1.034209162753541e-09
+    },
+    "new_monthly_equal": {
+      "minimum_cash": 79.10371500005567,
+      "max_identity_error": 1.3969838619232178e-09,
+      "max_flow_error": 2.211436367360875e-09
+    },
+    "new_monthly_stop10": {
+      "minimum_cash": 85.19047000013234,
+      "max_identity_error": 6.984919309616089e-10,
+      "max_flow_error": 1.103217073250562e-09
+    },
+    "new_quarterly_equal": {
+      "minimum_cash": 79.10371500005567,
+      "max_identity_error": 9.313225746154785e-10,
+      "max_flow_error": 1.7032562027452514e-09
+    },
+    "new_quarterly_same_risk": {
+      "minimum_cash": 78.28237000009267,
+      "max_identity_error": 1.3969838619232178e-09,
+      "max_flow_error": 1.7380443750880659e-09
+    },
+    "old_lgbm_same_execution": {
+      "minimum_cash": 108.85427499993966,
+      "max_identity_error": 6.402842700481415e-10,
+      "max_flow_error": 1.5013483789516613e-09
+    },
+    "simple_ic20_equal": {
+      "minimum_cash": 101.30946999987646,
+      "max_identity_error": 9.313225746154785e-10,
+      "max_flow_error": 1.8046648619929329e-09
+    },
+    "simple_ic20_same_risk": {
+      "minimum_cash": 99.80975500024395,
+      "max_identity_error": 9.313225746154785e-10,
+      "max_flow_error": 1.263060767087154e-09
+    }
+  },
+  "signal_target_cap_max_error": 1.554312234475219e-14,
+  "max_diversified_planned_group_weights": {
+    "industry": 0.28500000000000003,
+    "size_tertile": 0.475,
+    "momentum_tertile": 0.475,
+    "volatility_tertile": 0.475
+  },
+  "max_actual_group_weight_during_diversified_period": {
+    "industry": 0.2879225265183727,
+    "momentum_group": 0.6928170835022428,
+    "size_group": 0.6134708481155956,
+    "volatility_group": 0.7968636636239468
+  },
+  "recent_half_total_return": 0.01062580173199379
+}

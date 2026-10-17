@@ -1,0 +1,13 @@
+{
+  "prediction_rows": 48500,
+  "prediction_dates": 485,
+  "daily_score_rows": 1455,
+  "quarterly_score_rows": 24,
+  "pca_trace_rows": 28,
+  "factor_turnover_quarters": 8,
+  "horizon_comparison_rows": 30,
+  "recent_h5_rows": 30,
+  "no_model_training_or_outer_selection": true,
+  "answer_last_exit_for_ic": "2026-09-30",
+  "factor_cutoff_exclusive": "2026-04-01"
+}

@@ -1,0 +1,206 @@
+{
+  "overall": {
+    "days": 485,
+    "mean_target_cap": 0.36020038595303305,
+    "mean_actual_exposure": 0.2779172355395927,
+    "mean_target_minus_actual": 0.08228315041344036,
+    "median_target_cap": 0.1866312853380726,
+    "median_actual_exposure": 0.1631714633876603,
+    "target_gt_actual_days": 406,
+    "target_lt_actual_days": 79,
+    "mean_cash": 1056380.845387257,
+    "min_cash": 321014.1022735016,
+    "max_exposure": 0.805693044469152,
+    "cash_identity_error": 4.656612873077393e-10,
+    "mean_lots": 21.8659793814433
+  },
+  "quarters": [
+    {
+      "quarter": "2024Q4",
+      "days": 61,
+      "mean_target_cap": 0.1602769722928717,
+      "mean_actual_exposure": 0.113236553981746,
+      "mean_target_minus_actual": 0.04704041831112573,
+      "mean_cash_fraction": 0.8867634460182541,
+      "schedule": [
+        {
+          "policy": "vol12",
+          "guard": "none",
+          "topn": 10,
+          "days": 61
+        }
+      ]
+    },
+    {
+      "quarter": "2025Q1",
+      "days": 57,
+      "mean_target_cap": 0.4955954320192703,
+      "mean_actual_exposure": 0.39817853640462364,
+      "mean_target_minus_actual": 0.09741689561464668,
+      "mean_cash_fraction": 0.6018214635953764,
+      "schedule": [
+        {
+          "policy": "fixed50",
+          "guard": "none",
+          "topn": 10,
+          "days": 57
+        }
+      ]
+    },
+    {
+      "quarter": "2025Q2",
+      "days": 60,
+      "mean_target_cap": 0.7458333333333333,
+      "mean_actual_exposure": 0.5967612262980905,
+      "mean_target_minus_actual": 0.1490721070352428,
+      "mean_cash_fraction": 0.4032387737019095,
+      "schedule": [
+        {
+          "policy": "fixed75",
+          "guard": "none",
+          "topn": 10,
+          "days": 60
+        }
+      ]
+    },
+    {
+      "quarter": "2025Q3",
+      "days": 66,
+      "mean_target_cap": 0.6165819553027124,
+      "mean_actual_exposure": 0.448497349983471,
+      "mean_target_minus_actual": 0.1680846053192415,
+      "mean_cash_fraction": 0.5515026500165289,
+      "schedule": [
+        {
+          "policy": "trend_vol",
+          "guard": "none",
+          "topn": 10,
+          "days": 66
+        }
+      ]
+    },
+    {
+      "quarter": "2025Q4",
+      "days": 60,
+      "mean_target_cap": 0.13022388763474016,
+      "mean_actual_exposure": 0.10300903248181782,
+      "mean_target_minus_actual": 0.027214855152922355,
+      "mean_cash_fraction": 0.8969909675181821,
+      "schedule": [
+        {
+          "policy": "hmm2_defensive",
+          "guard": "none",
+          "topn": 10,
+          "days": 60
+        }
+      ]
+    },
+    {
+      "quarter": "2026Q1",
+      "days": 56,
+      "mean_target_cap": 0.1178313360958895,
+      "mean_actual_exposure": 0.09514021997394294,
+      "mean_target_minus_actual": 0.022691116121946554,
+      "mean_cash_fraction": 0.904859780026057,
+      "schedule": [
+        {
+          "policy": "hmm3_defensive",
+          "guard": "none",
+          "topn": 10,
+          "days": 56
+        }
+      ]
+    },
+    {
+      "quarter": "2026Q2",
+      "days": 60,
+      "mean_target_cap": 0.3049226772130296,
+      "mean_actual_exposure": 0.24010831897359264,
+      "mean_target_minus_actual": 0.06481435823943703,
+      "mean_cash_fraction": 0.7598916810264073,
+      "schedule": [
+        {
+          "policy": "hmm3_defensive",
+          "guard": "none",
+          "topn": 10,
+          "days": 60
+        }
+      ]
+    },
+    {
+      "quarter": "2026Q3",
+      "days": 65,
+      "mean_target_cap": 0.2849168383083454,
+      "mean_actual_exposure": 0.21330555055526892,
+      "mean_target_minus_actual": 0.07161128775307644,
+      "mean_cash_fraction": 0.786694449444731,
+      "schedule": [
+        {
+          "policy": "trend_vol",
+          "guard": "none",
+          "topn": 10,
+          "days": 65
+        }
+      ]
+    }
+  ],
+  "trades": {
+    "buy_orders": 2730,
+    "sell_orders": 2825,
+    "buy_notional": 51420737.3,
+    "sell_notional": 51856432.29099999,
+    "completed_sales": 2825,
+    "held_sessions_median": 4.0,
+    "held_sessions_mean": 3.8421238938053097,
+    "held_sessions_share_weighted_mean": 3.832526229898008,
+    "held_sessions_distribution": {
+      "1": 65,
+      "2": 93,
+      "3": 86,
+      "4": 2577,
+      "5": 2,
+      "13": 1,
+      "14": 1
+    },
+    "reason_distribution": {
+      "scheduled": 2436,
+      "risk_budget": 389
+    },
+    "same_day_sales": 0
+  },
+  "metadata_correction": {
+    "selected_metrics_topn_field": 5,
+    "selected_metrics_policy_field": "none",
+    "actual_schedule_topn_values": [
+      10
+    ],
+    "actual_schedule_policies": [
+      "fixed50",
+      "fixed75",
+      "hmm2_defensive",
+      "hmm3_defensive",
+      "trend_vol",
+      "vol12"
+    ],
+    "explanation": "selected_metrics.json topn=5 and policy=none are run() defaults; daily schedule overrides them based on prior day. HMM was active in 2025Q4, 2026Q1, and 2026Q2."
+  },
+  "example_2026_04_01": {
+    "prior_close_cash": 1582215.767513503,
+    "prior_close_stock_value": 33807.64,
+    "prior_close_equity": 1616023.4075135032,
+    "next_day_target_cap": 0.1327109797924957,
+    "buy_count": 10,
+    "buy_notional": 179782.39,
+    "sell_count": 0,
+    "sell_notional": 0.0,
+    "fees": 89.891195,
+    "dividend": 0.0,
+    "cash_change": -179872.28119499958,
+    "cash_change_reconciled": -179872.28119500002,
+    "close_cash": 1402343.4863185035,
+    "close_stock_value": 215937.69000000003,
+    "close_equity": 1618281.1763185037,
+    "close_actual_exposure": 0.1334364467436035,
+    "policy_applied_from_prior_day": "hmm3_defensive"
+  }
+}

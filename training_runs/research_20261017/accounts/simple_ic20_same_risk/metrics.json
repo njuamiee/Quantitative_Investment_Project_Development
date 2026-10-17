@@ -1,0 +1,103 @@
+{
+  "start": "2024-10-08",
+  "end": "2026-09-30",
+  "days": 485,
+  "total_return": 1.9006779163374996,
+  "annual_return": 0.7138476908886917,
+  "max_drawdown": 0.2892981028046637,
+  "sharpe_rf15": 1.581074624844563,
+  "sharpe_rf0": 1.6194232964381392,
+  "calmar": 2.4675159773539446,
+  "mean_exposure": 0.5056457977562447,
+  "total_cost": 165063.4486625,
+  "turnover": 124.81676902480443,
+  "end_equity": 2900677.9163374994,
+  "cash_days_fraction": 0.40824742268041236,
+  "rule": "quarterly_validation_selected",
+  "topn": [
+    20
+  ],
+  "schedule_applied": true,
+  "schedule": {
+    "2024Q4": {
+      "name": "rank_stop10",
+      "topn": 20,
+      "weighting": "rank",
+      "stop": 0.1,
+      "diversify": false,
+      "exposure": "full",
+      "buy_hold": false
+    },
+    "2025Q1": {
+      "name": "equal",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": false,
+      "exposure": "full",
+      "buy_hold": false
+    },
+    "2025Q2": {
+      "name": "equal",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": false,
+      "exposure": "full",
+      "buy_hold": false
+    },
+    "2025Q3": {
+      "name": "diversified_trend",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.1,
+      "diversify": true,
+      "exposure": "trend",
+      "buy_hold": false
+    },
+    "2025Q4": {
+      "name": "equal",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": false,
+      "exposure": "full",
+      "buy_hold": false
+    },
+    "2026Q1": {
+      "name": "diversified_vol12",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.1,
+      "diversify": true,
+      "exposure": "vol12",
+      "buy_hold": false
+    },
+    "2026Q2": {
+      "name": "cash",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": false,
+      "exposure": "cash",
+      "buy_hold": false
+    },
+    "2026Q3": {
+      "name": "cash",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": false,
+      "exposure": "cash",
+      "buy_hold": false
+    }
+  },
+  "cost_bp": 5.0,
+  "signal_delay": 0,
+  "completed_sale_parts": 1440,
+  "mean_holding_intervals": 3.9381944444444446,
+  "mean_holding_sessions_inclusive": 4.938194444444444,
+  "trade_win_rate": 0.5013888888888889,
+  "ending_open_lots": 0,
+  "cash_identity_max_error": 4.656612873077393e-10
+}
