@@ -1,0 +1,276 @@
+{
+  "operation": "deleted",
+  "date": "2026-10-19T09:07:01+08:00",
+  "target_count": 52,
+  "file_count": 899,
+  "bytes": 267344240,
+  "preserved": [
+    "training_data",
+    "all experiment ledgers",
+    "authored PPT sources",
+    "node_modules junctions",
+    "virtual environments"
+  ],
+  "targets": [
+    {
+      "path": ".chart-data-99UQmw",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": ".chart-data-bN9fDl",
+      "files": 2,
+      "bytes": 278228
+    },
+    {
+      "path": ".chart-data-cjvhKg",
+      "files": 2,
+      "bytes": 278241
+    },
+    {
+      "path": ".chart-data-g0IZxc",
+      "files": 2,
+      "bytes": 124564
+    },
+    {
+      "path": ".chart-data-JuC1Cz",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": ".chart-data-LpmPA9",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": ".chart-data-o9srfo",
+      "files": 2,
+      "bytes": 268309
+    },
+    {
+      "path": ".chart-data-xGWwqs",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": ".ppt_build_20261016/candidate.pptx",
+      "files": 1,
+      "bytes": 266441
+    },
+    {
+      "path": ".ppt_build_20261016/candidate.pptx.inspect.ndjson",
+      "files": 1,
+      "bytes": 169672
+    },
+    {
+      "path": ".ppt_build_20261016/final_slides",
+      "files": 64,
+      "bytes": 5143137
+    },
+    {
+      "path": ".ppt_build_20261016/slides",
+      "files": 64,
+      "bytes": 5143165
+    },
+    {
+      "path": ".ppt_teacher_20261016/candidate.pptx",
+      "files": 1,
+      "bytes": 122977
+    },
+    {
+      "path": ".ppt_teacher_20261016/candidate.pptx.inspect.ndjson",
+      "files": 1,
+      "bytes": 83762
+    },
+    {
+      "path": ".ppt_teacher_20261016/final_slides",
+      "files": 25,
+      "bytes": 2280789
+    },
+    {
+      "path": ".ppt_teacher_20261016/slides",
+      "files": 25,
+      "bytes": 2280789
+    },
+    {
+      "path": ".ppt_teacher_20261016/source_slides",
+      "files": 19,
+      "bytes": 1514432
+    },
+    {
+      "path": ".ppt_teacher_20261016/visual_revision/final_slides",
+      "files": 25,
+      "bytes": 2337009
+    },
+    {
+      "path": ".ppt_teacher_20261016/visual_revision/slides",
+      "files": 25,
+      "bytes": 2337314
+    },
+    {
+      "path": ".ppt_teacher_20261016/visual_revision/with_notes/notes_only_candidate.pptx",
+      "files": 1,
+      "bytes": 291866
+    },
+    {
+      "path": "tools/__pycache__",
+      "files": 1,
+      "bytes": 24729
+    },
+    {
+      "path": "tools/beginner_20261001/__pycache__",
+      "files": 2,
+      "bytes": 178904
+    },
+    {
+      "path": "tools/research_20260930/__pycache__",
+      "files": 7,
+      "bytes": 119175
+    },
+    {
+      "path": "tools/research_20261008/__pycache__",
+      "files": 2,
+      "bytes": 68477
+    },
+    {
+      "path": "tools/research_20261011/__pycache__",
+      "files": 25,
+      "bytes": 356985
+    },
+    {
+      "path": "tools/research_20261017/__pycache__",
+      "files": 7,
+      "bytes": 181840
+    },
+    {
+      "path": "tools/research_20261018/__pycache__",
+      "files": 10,
+      "bytes": 215993
+    },
+    {
+      "path": "training_runs/beginner_guide_20261002/docx_qa_final",
+      "files": 36,
+      "bytes": 19222387
+    },
+    {
+      "path": "training_runs/beginner_guide_20261002/docx_qa_v1",
+      "files": 51,
+      "bytes": 19760920
+    },
+    {
+      "path": "training_runs/beginner_guide_20261002/docx_qa_v2",
+      "files": 37,
+      "bytes": 19205744
+    },
+    {
+      "path": "training_runs/beginner_guide_20261008/docx_qa_final",
+      "files": 63,
+      "bytes": 31802384
+    },
+    {
+      "path": "training_runs/learning_20261013/complete_final_0",
+      "files": 9,
+      "bytes": 2918710
+    },
+    {
+      "path": "training_runs/learning_20261013/complete_final_1",
+      "files": 52,
+      "bytes": 19328618
+    },
+    {
+      "path": "training_runs/learning_20261013/complete_qa_0",
+      "files": 9,
+      "bytes": 2919106
+    },
+    {
+      "path": "training_runs/learning_20261013/complete_qa_1",
+      "files": 54,
+      "bytes": 19403778
+    },
+    {
+      "path": "training_runs/learning_20261013/qa_global",
+      "files": 6,
+      "bytes": 2660270
+    },
+    {
+      "path": "training_runs/learning_20261013/qa_lesson1",
+      "files": 9,
+      "bytes": 3969623
+    },
+    {
+      "path": "training_runs/research_20261011/document_draft",
+      "files": 10,
+      "bytes": 1968972
+    },
+    {
+      "path": "training_runs/research_20261011/docx_qa",
+      "files": 31,
+      "bytes": 10720955
+    },
+    {
+      "path": "training_runs/research_20261011/docx_qa_draft2",
+      "files": 31,
+      "bytes": 14260717
+    },
+    {
+      "path": "training_runs/research_20261011/docx_qa_final",
+      "files": 25,
+      "bytes": 11316968
+    },
+    {
+      "path": "training_runs/research_20261011/docx_qa_release",
+      "files": 25,
+      "bytes": 11320031
+    },
+    {
+      "path": "training_runs/teacher_answers_20261012/docx_qa_final",
+      "files": 23,
+      "bytes": 10810411
+    },
+    {
+      "path": "training_runs/teacher_answers_20261012/docx_qa_v1",
+      "files": 27,
+      "bytes": 11133779
+    },
+    {
+      "path": "training_runs/teacher9_20260930/docx_qa",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": "training_runs/teacher9_20260930/docx_qa_final",
+      "files": 13,
+      "bytes": 6808811
+    },
+    {
+      "path": "training_runs/teacher9_20260930/docx_qa_v2",
+      "files": 20,
+      "bytes": 7339746
+    },
+    {
+      "path": "training_runs/teacher9_20260930/docx_qa_v3",
+      "files": 15,
+      "bytes": 7012977
+    },
+    {
+      "path": "training_runs/teacher9_20260930/docx_qa_verified",
+      "files": 12,
+      "bytes": 6722560
+    },
+    {
+      "path": ".ppt_teacher_20261016/visual_revision/with_notes/candidate.pptx",
+      "files": 1,
+      "bytes": 215276
+    },
+    {
+      "path": ".ppt_teacher_20261016/visual_revision/with_notes/candidate.pptx.inspect.ndjson",
+      "files": 1,
+      "bytes": 117690
+    },
+    {
+      "path": ".ppt_teacher_20261016/visual_revision/with_notes/final_slides",
+      "files": 25,
+      "bytes": 2337009
+    }
+  ]
+}

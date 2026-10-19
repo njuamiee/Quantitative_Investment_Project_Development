@@ -1,0 +1,94 @@
+{
+  "code_sha256": {
+    "execution.py": "8d2ff872be4782e2263c95c9ad925a594bb84c6e038a708a4a72e43d426f3ee8",
+    "experiment.py": "baec69d93709eeffe801c3ef11bb85e818a315ee24c494cd5c96afef798ba960",
+    "fetch_industry.py": "ac67e9819ac32fe391eaa115353ba4baf5d16b74965fd9d642a77b91353db957",
+    "inspect_industry.py": "6088834b1b96b3172cc85812d560693d886dc6a531ce27303c80d5db4c732601",
+    "models.py": "3cdc863a19aa2c27e7466bfa3bd3a6b6f3dbfb4bd2a4f82827bd02061c9e98f5",
+    "parse_industry.py": "2799de287f4d2026c3a6361136f252f3f424e03ef10b7206e654aed836ea2201",
+    "report.py": "c63112209e80606c88c2dc9898d358cd992952ed2848369e27e5bba4c76b3ad2",
+    "risk_metadata.py": "aa1a104d4d5f3926879bf30137701ce357aa777162effec2f1492e17ea34b012",
+    "test_execution.py": "31f427c650d3fe2be208a53de636d29405244f040fcee2a8e6d52f4678e46dca",
+    "test_models.py": "1c1ab8c2aa740e292fc4cf8e8eb6964f8e6e5e354e0234dfa1082bb3febecd61"
+  },
+  "input_sha256": {
+    "daily_predictions.parquet": "3657f582d8f7f2f5504b48e7190ceb9828a178c91bc06527e4e64860e6c07212",
+    "risk_metadata.parquet": "4503fdcbe334dea736547bad0c8c137a84da48a47f603ee7ae94d2e9a9ef78e3"
+  },
+  "period": [
+    "2024-10-08",
+    "2026-09-30"
+  ],
+  "accounts": [
+    "new_main_monthly",
+    "new_quarterly_same_risk",
+    "new_monthly_equal",
+    "new_quarterly_equal",
+    "new_monthly_stop10",
+    "new_monthly_diversified",
+    "simple_ic20_equal",
+    "simple_ic20_same_risk",
+    "equal_pool_5day",
+    "equal_buy_hold",
+    "old_lgbm_same_execution",
+    "old_main",
+    "bj50_price_index"
+  ],
+  "rules": [
+    {
+      "name": "equal",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": false,
+      "exposure": "full",
+      "buy_hold": false
+    },
+    {
+      "name": "stop10",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.1,
+      "diversify": false,
+      "exposure": "full",
+      "buy_hold": false
+    },
+    {
+      "name": "rank_stop10",
+      "topn": 20,
+      "weighting": "rank",
+      "stop": 0.1,
+      "diversify": false,
+      "exposure": "full",
+      "buy_hold": false
+    },
+    {
+      "name": "diversified_stop10",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.1,
+      "diversify": true,
+      "exposure": "full",
+      "buy_hold": false
+    },
+    {
+      "name": "diversified_trend",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.1,
+      "diversify": true,
+      "exposure": "trend",
+      "buy_hold": false
+    },
+    {
+      "name": "diversified_vol12",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.1,
+      "diversify": true,
+      "exposure": "vol12",
+      "buy_hold": false
+    }
+  ],
+  "warning": "retrospective inspected history; no real trades; corporate-action and price-limit proxies documented"
+}

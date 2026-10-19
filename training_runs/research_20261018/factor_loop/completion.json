@@ -1,0 +1,24 @@
+{
+  "selection_sha256": "0f336892fb797a11db8fb3594201bd9ee9b7298ab1a95e6224ad5ac07369420d",
+  "formula_count": 3,
+  "evaluation_start": "2026-01-05",
+  "evaluation_end": "2026-09-30",
+  "test_rows": 18100,
+  "mature_test_rows": 17586,
+  "model_comparison": [
+    {
+      "model": "baseline",
+      "features": 100,
+      "rounds": 172,
+      "test_rank_ic": 0.11632619103996779
+    },
+    {
+      "model": "augmented",
+      "features": 103,
+      "rounds": 172,
+      "test_rank_ic": 0.11571645835134788
+    }
+  ],
+  "same_rounds_and_inputs_except_added_factors": true,
+  "third_round_after_test": false
+}

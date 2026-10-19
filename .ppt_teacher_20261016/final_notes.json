@@ -1,0 +1,127 @@
+[
+  {
+    "page": 1,
+    "source": 1,
+    "notes": "主报告\n主报告建议25至35分钟。详细公式、中文伪代码和老师问题逐项回应放在附录。所有收益是历史模拟。主流程、事后候选和新计算的诊断分别说明。\n\n来源与计算口径\n"
+  },
+  {
+    "page": 2,
+    "source": 2,
+    "notes": "主报告\n先说明进步和失败。后续搜索的赢家不能说成原计划一次测试成功。本报告夏普主口径扣除年化1.5%无风险收益，另有注明的无风险0对照。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\validation_selected_summary.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\candidate_summary.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\h5\\candidate_subperiods.json"
+  },
+  {
+    "page": 3,
+    "source": 3,
+    "notes": "主报告\n当天信息用于当天输入，结束价格出现后才补答案。逐交易日清单详见16号文档。最初内部训练在验证起点之前完成，首次正式输出之前经历内部选型。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\16_从第一天到最后一天逐日动作.md"
+  },
+  {
+    "page": 4,
+    "source": 4,
+    "notes": "主报告\n批量读取不决定是否泄漏，关键是筛选、拟合和预测到底接收哪些时间的数据。季度边界重训先于本季度评分。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\ledger.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\prepare_data.py\n\n补充说明\n每日历史不够时只积累数据。内部验证与正式使用分别调用该阶段此前建立的模型。答辩备用页\n这是信息顺序伪代码，不是原程序逐行复制。原程序按季度批量拟合和推理，季度边界模型在当季评分前拟合。每日数据变化与季度参数更新是两件事。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\prepare_data.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\16_从第一天到最后一天逐日动作.md"
+  },
+  {
+    "page": 5,
+    "source": 5,
+    "notes": "主报告\n先确定模型使用日期，再定义未来。筛因子也执行同样边界。这里验证日期规则，不代表因子发布时间、修订或开盘可交易性已经全面核验。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\核实结果.json"
+  },
+  {
+    "page": 6,
+    "source": 6,
+    "notes": "主报告\n504是候选历史交易日窗，删除跨界与缺答案后剩499个输入日期。内部训练49,884行。内部验证用于选型，不是独立新考试。历史已被多轮查看，应称回顾性历史测试。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\08_20260401训练和内部考试完整边界.csv\n\n补充说明\n实际选择模型的流程：10种方法算验证期逐日排名IC，取前3；每种配10或20只股票及15种仓位风控规则，共90账户；最大化min(Sharpe_rf1.5,Calmar/2)，同分比年化收益。2026Q2五天选ensemble、top10、hmm3_defensive，验证夏普0.548、卡玛1.519，均未同时达标但代码仍选最高者。4月1日再次用最新成熟历史筛列并拟合。"
+  },
+  {
+    "page": 7,
+    "source": 7,
+    "notes": "主报告\n缺额填0，滚动窗口须满20天。并列用稳定原始股票顺序。60天是样本内有效历史，非官方上市年龄。流动性筛选有利容量，但不保证次日开盘可以成交。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20260930\\prepare.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\核实结果.json\n\n补充说明\n2026-04-01池第100名成电光信，adv20为37,221,716.60；第101名国子软件36,662,615.70，后者剔除。文件集合并非完整历史证券主表，历史ST、上市退市及可投资状态还需核验。"
+  },
+  {
+    "page": 8,
+    "source": 8,
+    "notes": "主报告\nx_llm列来自本地提案，不代表LLM已发现有效因子。供应商文件历史有值不保证当时已经发布或没有修订。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\prepare_data.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\factor_catalog.csv"
+  },
+  {
+    "page": 9,
+    "source": 9,
+    "notes": "主报告\nIC不是收益百分比、胜率或因果关系。只做多时可以优先买低因子股票，负相关不要求卖空。树模型可学条件关系，不强制全部区间单调。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\核实结果.json\n\n补充说明\nIC详细实现：先按日期计算x−当日列均值、y−当日答案均值，再算Σab/√(Σa²Σb²)，最后按日期平均。原实现缺失值并非统一成双方共同有效股票集合，不能直接等同标准Spearman。答辩备用页\n无缺失时对应秩相关。缺失时各列集合不同，不能说严格标准Spearman。正确口径应先取共同有效股票，再在该集合内重排。原结果保留。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\18_筛选与训练的完整中文伪代码.md"
+  },
+  {
+    "page": 10,
+    "source": 10,
+    "notes": "主报告\n同分按列名。去重用训练面板填0后列间Pearson相关绝对值，不是每日Spearman平均。现有筛选IC缺失集合有口径问题，附录说明，原结果未修改。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\18_筛选与训练的完整中文伪代码.md\n\n补充说明\n完整去重规则：同分按列名；训练输入空值填0后计算跨全部训练行的列间Pearson相关绝对值；与任意已选列>=.92跳过；取足100停止。日期和股票代码只用于对齐，训练答案单独传入。答辩备用页\n按顺序贪心筛选非穷举最优组合。因子更少不自动更好，更多不自动更好，必须在验证中检查。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\18_筛选与训练的完整中文伪代码.md"
+  },
+  {
+    "page": 11,
+    "source": 11,
+    "notes": "主报告\n旧40列版本用另一去重规则和0.85阈值。不能把旧版剔除063决定套到新版本。本次先保留更高绝对IC者，是按顺序的筛选，非全局最优组合。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\02_2026Q2五天模型全部因子筛选过程.csv"
+  },
+  {
+    "page": 12,
+    "source": "input",
+    "notes": "横截面是同一天不同股票的比较。训练表把不同交易日的这些行叠起来。输入每列分别使用当日非空股票排名，平均名次处理并列。缺失输入在筛选后填0；收益答案缺失的整行剔除。第一行实际五天收益−16.8606%，因为名次最低而得到−0.49。第二只虽亏7.7256%，排第63，答案仍是+0.13。分数不是涨幅或上涨概率。数据中每行保留日期用来划分窗口和计算IC，但fit(X,y)中的X不含日期。输入只能使用当时可得数据，供应商发布时点仍需独立核验。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\05_训练表前五行含答案.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_data\\research_20261011\\model_panel.parquet\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nhttps://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMRegressor.html"
+  },
+  {
+    "page": 13,
+    "source": "fit",
+    "notes": "分组比较公式：S左²/(n左+12)+S右²/(n右+12)−S总²/(n总+12)，S为当前误差加总，n为行数。选择改善最多的合法分裂，最大改善不大于0即停止分裂。目标为总体平方误差与叶子惩罚之和，不能保证每一行都改善。真实首分界为046<=−0.1959848478，左右14957/34924行，误差和±960.687507，改善88.0729。真实末端组9945行、误差和624.677870，加入0.0021958145。参数12抑制过大修正，0.035控制步长。真实180轮后平方误差和由4156.3276降至3761.9716，这只证明更贴合训练历史。有限输入、有限树和有限叶值给出有限预测；本模型输出的保守叶值范围为−0.597453到+0.553512，不是可以任猜无穷大。模型金融假设是历史输入与相对收益的关系能在下一段时间延续，优化公式本身不证明该假设成立。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\18_筛选与训练的完整中文伪代码.md\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nhttps://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMRegressor.html"
+  },
+  {
+    "page": 14,
+    "source": 19,
+    "notes": "答辩备用页\n不包括另行拟合的内部验证模型。Q4只有10月8、9日数据，答案未成熟，不能报这些预测准确率。06号CSV含全部五个期限45组。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\06_所有季度所有期限训练时间表.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\核实结果.json"
+  },
+  {
+    "page": 15,
+    "source": 12,
+    "notes": "主报告\n区分信号预测1日还是20日，以及关系在下个月是否延续。主项目季度模型没有自动逐因子衰减机制，补充月度短窗实验只检验一个改进方向。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\short_windows.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\regimes.py\n\n补充说明\n该重合数由h5各季度deployment_factors.csv中selected列集合交集得到。关系变化后即使因子名不变，树的分界和叶值仍可变化；反过来，仅换因子也不保证改善。HMM每月更新是市场仓位层面，不会自动更新LightGBM参数。"
+  },
+  {
+    "page": 16,
+    "source": "drift",
+    "notes": "图是各季度保存的LightGBM正式预测与实际五天标签，在双方共同有效股票上重排名后逐日相关，再按季度平均。Q1/Q2/Q3分别56/60/62个有答案的日期。三个季度分别经过重训，不能从图中反推单一固定模型的参数变化，更不能用Q3结果决定4月1日参数。漂移包括输入分布变化、输入与答案的关系变化；这里讨论老师重点提出的后者。季度数据也受市场、样本、噪声和重训影响。所有历史行等权且日期不进X，所以排序行本身不会让GBDT变成时间递推模型。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\h5\\predictions.parquet\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\.ppt_build_20261016\\h5_lgbm_daily_ic_groups.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py"
+  },
+  {
+    "page": 17,
+    "source": "decay",
+    "notes": "延迟检验建议（尚未执行）：令d=0、1、5，标签=复权收盘(t+d+5)/复权开盘(t+d+1)−1，均按交易日，保持持有跨度相同，只移动买卖时间。先统一老师的五日标签定义后相应整体调整终点。不能把1、5、20日不同跨度的IC直接称为信号寿命，也不能假定衰减必定单调。日历老化检验保持预测期限不变，方向需在此前训练期确定，观察后续成熟IC的符号和强度。046窗口数字从原实现逐日IC复算，继承原缺失集合问题，未重训或替换原筛选结果。499日输入2024-03-01到2026-03-24；63日2025-12-16到2026-03-24；21日2026-02-24到2026-03-24。相邻五天标签重叠，21天不等于21个独立样本，不能凭一次下降机械删因子。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\学习笔记\\20261015_真实日期逐步解释\\10_用于选因子的每一天IC.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\prepare_data.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py"
+  },
+  {
+    "page": 18,
+    "source": "adapt",
+    "notes": "伪代码：对预先固定的(W,B,R)方案，若今天到达更新日，则取此前W个交易日且label_exit<今天的行；每列覆盖率至少70%；在共同有效股票集合上算日IC；筛选分数=abs(sum(u_t*IC_t)/sum(u_t))，日期方向保留，不把负相关删除；同分按列名；填0后算训练内列间相关，abs>=.92跳过，最多100列。每条路径独立筛因子。给训练行的权重先取u_t/当天训练行数，再整体缩放至平均1，使日期权重和惩罚尺度可比。调用LGBMRegressor.fit(X,y,sample_weight=w)，替换旧模型而非无限追加旧树。为只比较窗口/权重/频率，初步保持180树等其他参数固定；若短窗需更强约束，必须作为预登记的单独方案。按日期距今计算权重，而非按误差好坏事后决定权重。B不是已经测得的因子半衰期，只是候选记忆长度。若不同因子需要不同节奏，先由两套路径各自筛选，不能假称一个sample_weight可按列加权。可进一步做逐因子监测，但触发阈值需验证和冻结，当前未实现。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\short_windows.py\nhttps://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMRegressor.html"
+  },
+  {
+    "page": 19,
+    "source": "validate",
+    "notes": "W/B/R及100列、树深等设置只能在内部时间验证中比较。外层例子仍是4月1日前选择，4至6月评价；验证日期本身也逐日模拟其当时可得信息。允许在下一更新日利用已经成熟的早期测试答案，这是预先规定的前推更新，不是拿未来答案回填更早的预测。每次筛因子都在该次训练窗口内做，不能用整段历史先选好因子再切分。内层可沿用min(Sharpe_rf15,Calmar/2)并与现基线比较，但拒绝使用、阈值、回退策略须事先约定。相邻五天收益重叠，评估不把每行当独立样本。已有480组的短窗模型参数为120树、7叶、深3，40列，候选库含2024Q4初选100及本地价格/表达式，因此它不是对主流程仅改频率的严格单变量实验。该探索在近期失败后开展，不能当成从未查看的验证。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\short_windows.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\short_windows\\summary.json\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\short_windows\\registry.json\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py"
+  },
+  {
+    "page": 20,
+    "source": 13,
+    "notes": "主报告\n每季度先按IC挑3种方法，再比较90个账户。流程没有全部不达标就拒绝交易的硬门槛。历史已查看，不能称无污染测试。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\validation_selected_summary.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\PROTOCOL.md\n\n补充说明\n夏普=(日收益平均−日无风险收益)/日收益样本标准差×√252，日无风险收益=1.015^(1/252)−1。最大回撤=每日资产相对之前最高资产的最大跌幅，包含现金和费用。卡玛=年化收益/最大回撤。年化按实际日历天数365.25折算。1bp=万分之一，每边5bp表示买与卖各收0.05%。"
+  },
+  {
+    "page": 21,
+    "source": 14,
+    "notes": "主报告\n全区间累计25.5952%，年化12.0605%，夏普1.4612，卡玛2.2968。前一年盈利掩盖后一年的亏损。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\h5\\candidate_subperiods.json\n\n补充说明\n候选模型为ic，base_policy=hmm3_growth，risk_scale=.25，平均股票仓位约7.01%，每边5bp。此候选经全历史查看后选出，因此不能当成外层测试前预选结果。最近一年股票池等权账户约−24.80%、北证50价格指数约−31.99%，两者仓位不同，只能辅助说明市场环境，不作等风险因果归因。"
+  },
+  {
+    "page": 22,
+    "source": "loss_time",
+    "notes": "全部为selected_daily连续资金账本，每段以段前一个交易日收盘资产作分母。2026-03-31资产1616023.4075135032，9月30日1492262.3822045026，相差−123761.02530900063。Q2持仓均值24.01%，Q3为21.33%。最大回撤从2025-03-18的1426399.371154998降至4月7日1085947.4561149986，13个持有日内跌23.8679%；4月7日单日−16.4397%。最大回撤段价格损益−338645.45、费用1806.46504、分红0，可对账。2026Q2主流程评分模型ensemble由Ridge/LightGBM/CatBoost/XGBoost四个名次平均，前10只、hmm3_defensive仓位；Q3为lgbm100前10、trend_vol仓位。不能把主账户全部结果归因于单一LightGBM。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\h5\\selected_daily.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\h5\\2026Q2_selection.json\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\h5\\2026Q3_selection.json\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\.ppt_teacher_20261016\\evidence.json"
+  },
+  {
+    "page": 23,
+    "source": "loss_stock",
+    "notes": "股票价格损益=期末持仓市值−期初持仓市值+期间卖出金额−期间买入金额。它包含已实现和未实现变化，避免只加已卖出交易而漏掉持仓浮亏。全股票合计再加gross_dividend_cash、减cost，与现金加持仓总资产的变化核对至0.001元内。样例买入费用16.31273，卖出费用14.812945，共31.125675，损益−3030.695675。920575半年累计价格损益−40077.40、费用241.52907，当前公司行为文件该段没有分红送转记录。其4月1日成交额排名109而不入池，后续日期入池后才可能买入，说明股票池会变。池筛选未包含基于历史生效时间的ST条件；今天简称不能回填过去。当前归因只证明损益落点，不证明是漂移所致；还要逐日核对评分、成交、价格和公司行为。前三只价格损失合计74079.23元，其他股票净价格损益−38966.062元；末两位差异来自原账本送转后非整数股数。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\h5\\selected_daily.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\h5\\selected_holdings.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\h5\\selected_orders.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_data\\research_20261011\\actions.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\.ppt_teacher_20261016\\attribution_2026-03-31_2026-09-30.csv"
+  },
+  {
+    "page": 24,
+    "source": 15,
+    "notes": "主报告\n487天、5bp、相同组合与top20。HMM每月拟合504天，市场平均收益、波动、趋势、流动性和分散度为输入。只用前向过滤，没有用未来观测反推过去状态。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\h5\\fixed_comparisons.csv\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\regimes.py"
+  },
+  {
+    "page": 25,
+    "source": "conclude",
+    "notes": "IC是相对排序能力，绝对收益受整体市场、持有时段、费用、买卖约束、仓位影响。当前尚不能断言亏损全部来自参数漂移。老师明确要求先做简单选股基线。原代码缺失集合的IC分母不同，仍待修复；开盘可成交判断使用observed，而observed含当日收盘和全天量额，严格时点有问题；供应商历史发布时间、回补、历史证券主表及公司行为实际到账时间仍未独立验证。快慢路径与加权方案本次只说明，没有新增可声称的盈利结果。\n\n来源与计算口径\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\1012老师提出的新问题.pdf\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\ledger.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\prepare_data.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\tools\\research_20261011\\train_models.py\nC:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261011\\missing_fields_and_documents.csv"
+  }
+]

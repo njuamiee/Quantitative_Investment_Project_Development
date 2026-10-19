@@ -1,3 +1,16 @@
 # Keep published artifact bytes consistent with delivery_manifest.json.
 /学习笔记/20261012_多期限选股项目/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 /training_runs/research_20261011/**/*.joblib binary
+
+# Published evidence and manifests must retain their original bytes on every OS.
+/新项目_20261017/** -text
+/新项目_20261018_深入实验/** -text
+/历史学习资料/** -text
+/学习笔记/20261013_完整项目讲义/** -text
+/学习笔记/20261015_真实日期逐步解释/** -text
+/training_runs/research_20261017/** -text
+/training_runs/research_20261018/** -text
+/tools/research_20261017/** -text
+/tools/research_20261018/** -text
+*.parquet binary
+*.joblib binary

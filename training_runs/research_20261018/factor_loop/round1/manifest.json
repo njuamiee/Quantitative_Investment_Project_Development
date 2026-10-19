@@ -1,0 +1,45 @@
+{
+  "protocol": {
+    "train_start": "2023-01-01",
+    "valid_start": "2025-07-01",
+    "test_start": "2026-01-01",
+    "test_end": "2026-10-01",
+    "min_stocks_per_day": 10,
+    "min_days": 15,
+    "min_coverage": 0.7,
+    "min_train_abs_ic": 0.02,
+    "min_valid_signed_ic": 0.01,
+    "max_parent_abs_corr": 0.995
+  },
+  "segment_counts": {
+    "train": {
+      "rows": 59586,
+      "days": 596,
+      "first_signal": "2023-01-03",
+      "last_signal": "2025-06-23",
+      "last_label_exit": "2025-06-30"
+    },
+    "validation": {
+      "rows": 12089,
+      "days": 121,
+      "first_signal": "2025-07-01",
+      "last_signal": "2025-12-24",
+      "last_label_exit": "2025-12-31"
+    },
+    "independent_test": {
+      "rows": 0,
+      "days": 0,
+      "first_signal": null,
+      "last_signal": null,
+      "last_label_exit": null
+    }
+  },
+  "proposals_sha256": "980c0eb379d94dd32fe64b6dd48a9ccc7260673c0889a29a6817d6a1635a503b",
+  "panel_sha256": "43409666b797332d31605d37f1786585b8a21797b0e89e6c0de0fbe2544c4765",
+  "proposal_count": 6,
+  "valid_formula_count": 6,
+  "accepted_before_independent_test": 2,
+  "llm_invocation_in_this_cli": false,
+  "independent_test_evaluated": false,
+  "scope": "factor-screening research; no trading or LightGBM retrain"
+}

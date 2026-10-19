@@ -1,0 +1,171 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "name": "unique_sorted_dates",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no_negative_cash",
+      "pass": true,
+      "detail": 78.28237000009267
+    },
+    {
+      "name": "cash_plus_market_value_equals_equity",
+      "pass": true,
+      "detail": 9.313225746154785e-10
+    },
+    {
+      "name": "each_day_cash_flow_reconciles",
+      "pass": true,
+      "detail": 1.456726295145927e-09
+    },
+    {
+      "name": "saved_total_return_matches_daily",
+      "pass": true,
+      "detail": [
+        1.7479497968705,
+        1.7479497968705
+      ]
+    },
+    {
+      "name": "saved_mean_exposure_matches_daily",
+      "pass": true,
+      "detail": [
+        0.5054353822280563,
+        0.5054353822280563
+      ]
+    },
+    {
+      "name": "saved_total_cost_matches_daily",
+      "pass": true,
+      "detail": [
+        159501.9701295,
+        159501.9701295
+      ]
+    },
+    {
+      "name": "all_fill_amounts_within_request",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "buy_only_at_open",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "completed_sales_never_same_day_as_entry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "buy_orders_follow_signal_by_one_session",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bought_lot_ids_unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "daily_buy_value_matches_fills",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "daily_sell_value_matches_fills",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "daily_fees_match_fills",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "lot_holding_interval_matches_trade_dates",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "holding_inclusive_equals_intervals_plus_one",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "scheduled_exit_is_fifth_session_close",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "stop_exit_occurs_at_open",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "overdue_exit_occurs_at_open",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "holdings_sum_to_market_value",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "signals_are_five_sessions_apart",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "effective_rule_matches_registered_schedule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "strategy_summary_return_matches_account",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "strategy_summary_mdd_matches_account",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "strategy_summary_sharpe_matches_account",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "strategy_summary_calmar_matches_account",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "period_comparison_full_return_matches_account",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "days": 485,
+  "first": "2024-10-08",
+  "last": "2026-09-30",
+  "account": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\research_20261017\\accounts\\new_main_monthly",
+  "total_return": 1.7479497968705,
+  "mean_exposure": 0.5054353822280563,
+  "minimum_cash": 78.28237000009267,
+  "maximum_cash_identity_error": 9.313225746154785e-10,
+  "maximum_daily_cash_flow_error": 1.456726295145927e-09,
+  "buy_fills": 1439,
+  "sell_parts": 1439,
+  "mean_holding_session_intervals": 3.9409312022237666,
+  "mean_holding_sessions_inclusive": 4.940931202223767,
+  "scheduled_exit_parts": 1351,
+  "stopped_exit_parts": 88,
+  "overdue_exit_parts": 0,
+  "blocked_cohort_days": 0
+}

@@ -1,0 +1,1531 @@
+[
+  {
+    "page": 1,
+    "id": "y90nupkv",
+    "shapes": [
+      {
+        "id": "4",
+        "text": "量化选股项目",
+        "position": {
+          "left": 60,
+          "top": 165,
+          "width": 1160,
+          "height": 96
+        }
+      },
+      {
+        "id": "2",
+        "text": "因子筛选、模型训练与新项目结果",
+        "position": {
+          "left": 60,
+          "top": 285,
+          "width": 1160,
+          "height": 100
+        }
+      },
+      {
+        "id": "3",
+        "text": "组会汇报  2026年10月16日\n数据截至2026年10月9日",
+        "position": {
+          "left": 60,
+          "top": 450,
+          "width": 1160,
+          "height": 110
+        }
+      }
+    ],
+    "tables": []
+  },
+  {
+    "page": 2,
+    "id": "hwbqtkby",
+    "shapes": [
+      {
+        "id": "7",
+        "text": "当前结果与结论",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "2",
+        "text": "已实现：每日更新股票池，预测1、2、5、10、20个交易日的相对表现，每季度重新筛因子和训练模型。",
+        "position": {
+          "left": 60,
+          "top": 142,
+          "width": 1160,
+          "height": 82.88000000000001
+        }
+      },
+      {
+        "id": "3",
+        "text": "主流程按此前验证期选策略。五个期限的连续账户均未同时达到夏普大于1、卡玛大于2。",
+        "position": {
+          "left": 60,
+          "top": 241.88,
+          "width": 1160,
+          "height": 42
+        }
+      },
+      {
+        "id": "4",
+        "text": "后续历史搜索找到了全区间达标候选，但五天候选最近一年收益为−1.90%。",
+        "position": {
+          "left": 60,
+          "top": 300.88,
+          "width": 1160,
+          "height": 42
+        }
+      },
+      {
+        "id": "5",
+        "text": "项目已有可核对的训练、评分和资金记录，稳定达标与严格的历史可得数据核验仍未完成。",
+        "position": {
+          "left": 60,
+          "top": 359.88,
+          "width": 1160,
+          "height": 42
+        }
+      },
+      {
+        "id": "6",
+        "text": "02",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": []
+  },
+  {
+    "page": 3,
+    "id": "ofy9wn61",
+    "shapes": [
+      {
+        "id": "5",
+        "text": "数据第一天到首次预测，分别做什么",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "3",
+        "text": "每天新增记录，不等于每天重新训练。历史不够或未来答案未出现时，不能造出训练样本。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "4",
+        "text": "05",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "2"
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "id": "jyx0ra1s",
+    "shapes": [
+      {
+        "id": "13",
+        "text": "每日运行的中文逻辑",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "2",
+        "text": "对每个交易日：",
+        "position": {
+          "left": 64,
+          "top": 142,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "3",
+        "text": "    如果是新季度首日：用昨天及以前已知答案重筛因子、重训",
+        "position": {
+          "left": 64,
+          "top": 175,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "4",
+        "text": "    开盘时：按上个交易日的名单，检查资金与约束后买卖",
+        "position": {
+          "left": 64,
+          "top": 208,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "5",
+        "text": "    收盘后：记录今天行情，更新各股票历史记录",
+        "position": {
+          "left": 64,
+          "top": 241,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "6",
+        "text": "    按今天及以前的数据，重新确定今天的股票池",
+        "position": {
+          "left": 64,
+          "top": 274,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "7",
+        "text": "    计算335列候选指标，取本季度已选好的输入列",
+        "position": {
+          "left": 64,
+          "top": 307,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "8",
+        "text": "    用本季度保存的模型评分，保存今天的股票排序",
+        "position": {
+          "left": 64,
+          "top": 340,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "9",
+        "text": "    如果旧记录所需结束价格今天出现：补齐那条记录的答案",
+        "position": {
+          "left": 64,
+          "top": 373,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "10",
+        "text": "    新答案存入历史库，等待下次训练或用于评价旧预测",
+        "position": {
+          "left": 64,
+          "top": 406,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "11",
+        "text": "这是历史重演的信息先后顺序。现有代码为了效率，会批量读取与计算一段数据。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "12",
+        "text": "06",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": []
+  },
+  {
+    "page": 5,
+    "id": "i107q5of",
+    "shapes": [
+      {
+        "id": "13",
+        "text": "判断能否训练，先检查答案何时出现",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "2",
+        "text": "2026年4月1日启用模型，只能学习4月1日以前已经知道的答案",
+        "position": {
+          "left": 60,
+          "top": 142,
+          "width": 1160,
+          "height": 72
+        }
+      },
+      {
+        "id": "3",
+        "text": "对每条历史股票记录：",
+        "position": {
+          "left": 64,
+          "top": 228,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "4",
+        "text": "    如果输入日期不在允许的历史窗口：丢弃",
+        "position": {
+          "left": 64,
+          "top": 261,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "5",
+        "text": "    否则，如果收益结束日期 >= 2026-04-01：丢弃",
+        "position": {
+          "left": 64,
+          "top": 294,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "6",
+        "text": "    否则，如果答案为空：丢弃",
+        "position": {
+          "left": 64,
+          "top": 327,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "7",
+        "text": "    否则：允许参与筛因子和训练",
+        "position": {
+          "left": 64,
+          "top": 360,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "8",
+        "text": "",
+        "position": {
+          "left": 64,
+          "top": 393,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "9",
+        "text": "3月24日的五天答案在3月31日收盘已知，可以使用",
+        "position": {
+          "left": 64,
+          "top": 426,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "10",
+        "text": "3月25日的五天答案在4月1日收盘才知，本次不能使用",
+        "position": {
+          "left": 64,
+          "top": 459,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "11",
+        "text": "一次学习两年的已知历史可以符合边界。用它回头冒充预测那两年，才会把答案带回过去。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "12",
+        "text": "09",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": []
+  },
+  {
+    "page": 6,
+    "id": "x8f69ofe",
+    "shapes": [
+      {
+        "id": "5",
+        "text": "4月1日模型的训练、验证和使用范围",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "3",
+        "text": "正式重训有49,881行。4、5、6月的未来收益不参加这次正式筛选或拟合。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "4",
+        "text": "10",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "2"
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "id": "gnmp4jqx",
+    "shapes": [
+      {
+        "id": "15",
+        "text": "股票池筛选的if/else",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "2",
+        "text": "对今天有文件的每只股票：",
+        "position": {
+          "left": 64,
+          "top": 142,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "3",
+        "text": "    有效交易 = 量、额都 > 0，且开、高、低、收价格都 > 0",
+        "position": {
+          "left": 64,
+          "top": 175,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "4",
+        "text": "    如果截至今天的有效交易记录少于60天：剔除",
+        "position": {
+          "left": 64,
+          "top": 208,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "5",
+        "text": "    否则，如果最近20天有效交易少于16天：剔除",
+        "position": {
+          "left": 64,
+          "top": 241,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "6",
+        "text": "    否则，如果今天不是有效交易：剔除",
+        "position": {
+          "left": 64,
+          "top": 274,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "7",
+        "text": "    否则，如果最近20天平均成交额 <= 0：剔除",
+        "position": {
+          "left": 64,
+          "top": 307,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "8",
+        "text": "    否则：加入候选股票名单",
+        "position": {
+          "left": 64,
+          "top": 340,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "9",
+        "text": "",
+        "position": {
+          "left": 64,
+          "top": 373,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "10",
+        "text": "按最近20天平均成交额，从大到小排序候选股票",
+        "position": {
+          "left": 64,
+          "top": 406,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "11",
+        "text": "如果排名 <= 100：今天入池",
+        "position": {
+          "left": 64,
+          "top": 439,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "12",
+        "text": "否则：今天不入池",
+        "position": {
+          "left": 64,
+          "top": 472,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "13",
+        "text": "20天平均成交额 = 最近20个交易日成交额之和 ÷ 20。收盘后选池，可包含当天成交额。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "14",
+        "text": "11",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": []
+  },
+  {
+    "page": 8,
+    "id": "fu1gfa1s",
+    "shapes": [
+      {
+        "id": "5",
+        "text": "335列候选指标的来源",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "3",
+        "text": "旧版是292个供应商因子加12个价量特征，共304列。392不是核实过的供应商列数。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "4",
+        "text": "13",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "2"
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "id": "udsvah03",
+    "shapes": [
+      {
+        "id": "8",
+        "text": "因子正相关、负相关，分别怎样使用",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "2",
+        "text": "IC回答：同一天里，因子数值排得越高的股票，后来的收益是否也排得越高？",
+        "position": {
+          "left": 60,
+          "top": 142,
+          "width": 1160,
+          "height": 42
+        }
+      },
+      {
+        "id": "3",
+        "text": "因子名次[1,2,3]，收益名次[1,2,3]，完全同向，IC为+1。",
+        "position": {
+          "left": 60,
+          "top": 201,
+          "width": 1160,
+          "height": 42
+        }
+      },
+      {
+        "id": "4",
+        "text": "因子名次[1,2,3]，收益名次[3,2,1]，完全反向，IC为−1。\n此时因子越小，后来的相对表现越好。",
+        "position": {
+          "left": 60,
+          "top": 260,
+          "width": 1160,
+          "height": 82.88000000000001
+        }
+      },
+      {
+        "id": "5",
+        "text": "本次046平均IC为+0.1523，063为−0.1482。筛选按绝对值比较，因此负相关也能留下。",
+        "position": {
+          "left": 60,
+          "top": 359.88,
+          "width": 1160,
+          "height": 42
+        }
+      },
+      {
+        "id": "6",
+        "text": "简单IC加权给负IC因子负权重。LightGBM直接学if/else，无需预先把每个负IC输入乘−1。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "7",
+        "text": "17",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": []
+  },
+  {
+    "page": 10,
+    "id": "m90b6t0r",
+    "shapes": [
+      {
+        "id": "15",
+        "text": "335列筛成100列的中文逻辑",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "2",
+        "text": "只使用本次允许训练的49,881行：",
+        "position": {
+          "left": 64,
+          "top": 142,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "3",
+        "text": "    对每个候选列，算有数值的行数 ÷ 49,881",
+        "position": {
+          "left": 64,
+          "top": 175,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "4",
+        "text": "    如果比例 < 70%：剔除",
+        "position": {
+          "left": 64,
+          "top": 208,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "5",
+        "text": "    否则：逐日计算IC，再对每天的IC求平均",
+        "position": {
+          "left": 64,
+          "top": 241,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "6",
+        "text": "",
+        "position": {
+          "left": 64,
+          "top": 274,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "7",
+        "text": "剩余列按“平均IC绝对值”从大到小排序",
+        "position": {
+          "left": 64,
+          "top": 307,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "8",
+        "text": "已选列 = 空",
+        "position": {
+          "left": 64,
+          "top": 340,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "9",
+        "text": "按顺序逐列检查：",
+        "position": {
+          "left": 64,
+          "top": 373,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "10",
+        "text": "    如果与任意已选列的相关系数绝对值 >= 0.92：跳过",
+        "position": {
+          "left": 64,
+          "top": 406,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "11",
+        "text": "    否则：加入已选列",
+        "position": {
+          "left": 64,
+          "top": 439,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "12",
+        "text": "    如果已选数量达到100：停止",
+        "position": {
+          "left": 64,
+          "top": 472,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "13",
+        "text": "本次覆盖不足先剔除5列，剩330列再排序去重。ICIR、夏普、最大回撤没有用于这一步设门槛。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "14",
+        "text": "18",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": []
+  },
+  {
+    "page": 11,
+    "id": "jetc3ut0",
+    "shapes": [
+      {
+        "id": "5",
+        "text": "实际筛选：063留下，067跳过",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "3",
+        "text": "相似度是两列相关系数的绝对值。接近1，说明它们提供高度重复或方向相反的相同信息。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "4",
+        "text": "19",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "2"
+      }
+    ]
+  },
+  {
+    "page": 12,
+    "id": "8f2psfyx",
+    "shapes": [
+      {
+        "id": "5",
+        "text": "新答案每天出现，模型何时再学习",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "3",
+        "text": "“关系漂移”指同一种输入与收益的关系随月份变化。固定模型不会因新答案出现而自动改参数。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "4",
+        "text": "26",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "2"
+      }
+    ]
+  },
+  {
+    "page": 13,
+    "id": "hgzapcr6",
+    "shapes": [
+      {
+        "id": "6",
+        "text": "主流程五个期限均未同时达到双门槛",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "2",
+        "text": "统一到2026-09-30，共485个交易日。每边5bp，无风险年收益1.5%",
+        "position": {
+          "left": 60,
+          "top": 142,
+          "width": 1160,
+          "height": 72
+        }
+      },
+      {
+        "id": "4",
+        "text": "验收同时要求：夏普 > 1 且卡玛 > 2。只满足一个不算通过。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "5",
+        "text": "31",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "3"
+      }
+    ]
+  },
+  {
+    "page": 14,
+    "id": "6lsnupw7",
+    "shapes": [
+      {
+        "id": "5",
+        "text": "五天候选的盈利主要来自前一年",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "3",
+        "text": "最近半年包含在最近一年内。全历史达标会掩盖最近区间失效，不能据此宣称稳定盈利。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "4",
+        "text": "33",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "2"
+      }
+    ]
+  },
+  {
+    "page": 15,
+    "id": "vaxsvy10",
+    "shapes": [
+      {
+        "id": "6",
+        "text": "HMM调整仓位，效果是否总会更好",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "2",
+        "text": "HMM给不同市场环境估计概率，再调整股票仓位。\n对照区间2024-10-08至2026-10-09，每边5bp",
+        "position": {
+          "left": 60,
+          "top": 142,
+          "width": 1160,
+          "height": 72
+        }
+      },
+      {
+        "id": "4",
+        "text": "市场状态用过去数据训练、逐日前推。不同规则改善不一致，降低仓位也会损失上涨收益。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "5",
+        "text": "36",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "3"
+      }
+    ]
+  },
+  {
+    "page": 16,
+    "id": "gny5sjyp",
+    "shapes": [
+      {
+        "id": "14",
+        "text": "附录：每日动作与是否训练的判断",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "2",
+        "text": "每天收盘后：",
+        "position": {
+          "left": 64,
+          "top": 142,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "3",
+        "text": "    更新历史，按同样的if/else重算股票池",
+        "position": {
+          "left": 64,
+          "top": 175,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "4",
+        "text": "    计算只依赖今天及以前数据的候选列",
+        "position": {
+          "left": 64,
+          "top": 208,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "5",
+        "text": "    如果历史不足：只存数据，不生成正式模型输出",
+        "position": {
+          "left": 64,
+          "top": 241,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "6",
+        "text": "    否则，如果是内部验证阶段：用内部训练模型评分",
+        "position": {
+          "left": 64,
+          "top": 274,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "7",
+        "text": "    否则，如果是新季度首个交易日：",
+        "position": {
+          "left": 64,
+          "top": 307,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "8",
+        "text": "        选此前504个交易日的历史行",
+        "position": {
+          "left": 64,
+          "top": 340,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "9",
+        "text": "        删除答案结束日不早于当前日期的行，以及缺答案行",
+        "position": {
+          "left": 64,
+          "top": 373,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "10",
+        "text": "        重新筛列，创建新模型，训练并保存",
+        "position": {
+          "left": 64,
+          "top": 406,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "11",
+        "text": "    用该阶段已保存模型，给今天每只入池股票评分",
+        "position": {
+          "left": 64,
+          "top": 439,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "12",
+        "text": "    补齐今天刚成熟的旧答案，供下次训练或评价使用",
+        "position": {
+          "left": 64,
+          "top": 472,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "13",
+        "text": "41",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": []
+  },
+  {
+    "page": 17,
+    "id": "14bup87q",
+    "shapes": [
+      {
+        "id": "14",
+        "text": "附录：训练期间因子IC的现有实现",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "2",
+        "text": "对每个候选列：",
+        "position": {
+          "left": 64,
+          "top": 142,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "3",
+        "text": "    覆盖率 = 该列非空训练行数 ÷ 全部训练行数",
+        "position": {
+          "left": 64,
+          "top": 175,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "4",
+        "text": "    如果覆盖率 < 0.70：剔除",
+        "position": {
+          "left": 64,
+          "top": 208,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "5",
+        "text": "    否则，对每个训练日期：",
+        "position": {
+          "left": 64,
+          "top": 241,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "6",
+        "text": "        a = 各股票的因子名次输入 − 当天该列均值",
+        "position": {
+          "left": 64,
+          "top": 274,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "7",
+        "text": "        b = 各股票的收益名次答案 − 当天答案均值",
+        "position": {
+          "left": 64,
+          "top": 307,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "8",
+        "text": "        当天IC = 加总(a×b) ÷ √[加总(a²)×加总(b²)]",
+        "position": {
+          "left": 64,
+          "top": 340,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "9",
+        "text": "        分母为0：该天IC无效，不进入平均",
+        "position": {
+          "left": 64,
+          "top": 373,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "10",
+        "text": "    平均IC = 有效日IC的平均",
+        "position": {
+          "left": 64,
+          "top": 406,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "11",
+        "text": "    排序分数 = 平均IC的绝对值",
+        "position": {
+          "left": 64,
+          "top": 439,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "12",
+        "text": "现有实现分别跳过空值，没有统一双方共同有效的股票集合。后页列出实际影响。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "13",
+        "text": "42",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": []
+  },
+  {
+    "page": 18,
+    "id": "y5wne50z",
+    "shapes": [
+      {
+        "id": "14",
+        "text": "附录：去掉重复信息的完整逻辑",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "2",
+        "text": "合格列按平均IC绝对值降序排列，同分按列名排序",
+        "position": {
+          "left": 64,
+          "top": 142,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "3",
+        "text": "仅取训练行，把这些列的空值填成0",
+        "position": {
+          "left": 64,
+          "top": 175,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "4",
+        "text": "计算每两列的相关系数绝对值，得到列间相似度表",
+        "position": {
+          "left": 64,
+          "top": 208,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "5",
+        "text": "已选 = []",
+        "position": {
+          "left": 64,
+          "top": 241,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "6",
+        "text": "对排序后的每一列：",
+        "position": {
+          "left": 64,
+          "top": 274,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "7",
+        "text": "    如果已选为空：加入",
+        "position": {
+          "left": 64,
+          "top": 307,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "8",
+        "text": "    否则，如果与任意已选列的相似度 >= 0.92：跳过",
+        "position": {
+          "left": 64,
+          "top": 340,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "9",
+        "text": "    否则：加入",
+        "position": {
+          "left": 64,
+          "top": 373,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "10",
+        "text": "    如果已选数量 == 100：停止",
+        "position": {
+          "left": 64,
+          "top": 406,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "11",
+        "text": "取出100列，空值填0，组成输入表",
+        "position": {
+          "left": 64,
+          "top": 439,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "12",
+        "text": "答案单独交给模型，日期和股票代码只负责对齐行",
+        "position": {
+          "left": 64,
+          "top": 472,
+          "width": 1150,
+          "height": 33
+        }
+      },
+      {
+        "id": "13",
+        "text": "43",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": []
+  },
+  {
+    "page": 19,
+    "id": "nid43ytk",
+    "shapes": [
+      {
+        "id": "5",
+        "text": "附录：五天模型每个季度何时重新训练",
+        "position": {
+          "left": 60,
+          "top": 42,
+          "width": 1160,
+          "height": 82
+        }
+      },
+      {
+        "id": "3",
+        "text": "每次重新筛列并创建新模型，最后答案日均早于启用日。季度内每天沿用该季度参数。",
+        "position": {
+          "left": 60,
+          "top": 615,
+          "width": 1130,
+          "height": 64
+        }
+      },
+      {
+        "id": "4",
+        "text": "52",
+        "position": {
+          "left": 1160,
+          "top": 680,
+          "width": 60,
+          "height": 24
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "2"
+      }
+    ]
+  }
+]

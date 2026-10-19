@@ -29,3 +29,28 @@ __pycache__/
 
 # Microsoft Office local lock files
 ~$*
+
+# Local app configuration and regenerated presentation previews
+.workbuddy/
+/.chart-data-*/
+node_modules/
+/.ppt_*/slides/
+/.ppt_*/final_slides/
+/.ppt_*/source_slides/
+/.ppt_*/**/slides/
+/.ppt_*/**/final_slides/
+/.ppt_*/**/source_slides/
+/.ppt_*/**/*.inspect.ndjson
+/.ppt_*/candidate.pptx
+/.ppt_*/**/candidate.pptx
+/.ppt_*/**/notes_only_candidate.pptx
+/training_runs/learning_20261013/complete_*/
+/training_runs/learning_20261013/qa_*/
+
+# Rebuildable model/prediction caches; keep final reports, daily accounts and audits
+/training_runs/research_20261017/risk_metadata.parquet
+/training_runs/research_20261017/models/**/*.parquet
+/training_runs/research_20261017/models/**/*.joblib
+/training_runs/research_20261018/**/predictions.parquet
+/training_runs/research_20261018/**/*predictions.parquet
+/training_runs/research_20261018/**/*.joblib

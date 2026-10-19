@@ -1,0 +1,26 @@
+[
+  {
+    "name": "2026Q3_saved_predictions_reproduced",
+    "passed": true
+  },
+  {
+    "name": "2026Q3_daily_equals_batch_inference",
+    "passed": true
+  },
+  {
+    "name": "2026Q3_dates_identifiers_and_labels_not_features",
+    "passed": true
+  },
+  {
+    "name": "2026Q4_saved_predictions_reproduced",
+    "passed": true
+  },
+  {
+    "name": "2026Q4_daily_equals_batch_inference",
+    "passed": true
+  },
+  {
+    "name": "2026Q4_dates_identifiers_and_labels_not_features",
+    "passed": true
+  }
+]

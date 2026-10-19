@@ -1,0 +1,8 @@
+{
+  "folds": 8,
+  "rows": 48500,
+  "dates": 485,
+  "unique_date_stockid": true,
+  "all_labels_mature_before_each_fit": true,
+  "all_scores_finite": true
+}

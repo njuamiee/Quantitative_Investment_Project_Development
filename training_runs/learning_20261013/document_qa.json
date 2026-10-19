@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-13",
+  "documents": [
+    {
+      "path": "学习笔记/20261013_从零学习当前项目/01_从零读懂量化项目_全局导读.docx",
+      "sha256": "25718be6f1c8f074875c66778617866cc9b5b1fa1aa8934f8a77fe561c69e61d",
+      "pages": 5,
+      "table_count": 5,
+      "visual_review": "All pages viewed. Revised pages viewed again; unchanged pages verified by image hashes.",
+      "page_image_sha256": {
+        "page-1.png": "236ab711fce4a3f8c2d8238ee55448d599d47274a693f9b50f744c8d042cc300",
+        "page-2.png": "cc79aa4237837a74cb9c0ef0391d27f49739a31b93b8bdf37b23c0df85d15a44",
+        "page-3.png": "bae5e58cc845f496a156c7624f440b268b24aff719966ad71d0b48fb96faf83c",
+        "page-4.png": "5c23d0fc3c1b2dbfc1c49bdb25d8331882a0676cdc2e2c608cf3e99e05f4c1e4",
+        "page-5.png": "bbdecf8fe27604ecb8d3876fe439fe35b146e620238ecb58e62cf55e4365493c"
+      }
+    },
+    {
+      "path": "学习笔记/20261013_从零学习当前项目/02_从零讲义_第1课_样本与时间轴.docx",
+      "sha256": "1b90bb1baa5a41ec0edb6d6deb3ecd9af5ccc20a2592c6e222ab357000f0ed38",
+      "pages": 8,
+      "table_count": 7,
+      "visual_review": "All pages viewed. Revised pages viewed again; unchanged pages verified by image hashes.",
+      "page_image_sha256": {
+        "page-1.png": "f47f9273875519a5e9d6684bb35d3fa9e12897b55524d02a8a87ace124c879aa",
+        "page-2.png": "0b1ef389b9e4028973b791334024be9442e120cfcfc5a82a04cc50bda95424a1",
+        "page-3.png": "29804876ddd4717c70526df175492f963e68c7a280e4385831b951f30dbd5330",
+        "page-4.png": "6b2d803c27de9e1211a6a47917a1df54d0e90c722e87b11bf0beb5a6256ea8f3",
+        "page-5.png": "60bd5d2e2785d3fd73b4f190aaf2a5f96b420d1e01836842b67f27ce39d5da82",
+        "page-6.png": "5f07cd54b48d293087e094b987720aae4b984dfb958f2932d81b1639a4c550bb",
+        "page-7.png": "cb1cca969d750d54c7aabaacaa466c8ff6b00b74875fd3ea1c5e3aeb0761cd2e",
+        "page-8.png": "6d28ce619440abfa08c2c78ea4a7bd173c24b2aa227ecc4f833ff72396a70cd9"
+      }
+    }
+  ],
+  "archived_files_verified": 33,
+  "source_files_unchanged": 35,
+  "delivery_files_verified": 17,
+  "entry_links_checked": 22,
+  "inference_checks_passed": 6,
+  "research_retrained": false,
+  "failures": [],
+  "passed": true
+}

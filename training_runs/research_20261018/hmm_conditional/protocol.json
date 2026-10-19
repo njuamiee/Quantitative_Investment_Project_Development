@@ -1,0 +1,24 @@
+{
+  "window_sessions": 504,
+  "factor_count": 20,
+  "refit": "monthly",
+  "states": [
+    2,
+    3
+  ],
+  "shrink_state_mean_toward_global_days": 60,
+  "period": [
+    "2024-10-08",
+    "2026-09-30"
+  ],
+  "labels_mature_strictly_before_month_start": true,
+  "test_used_to_select_hyperparameters": false,
+  "history_previously_inspected": true,
+  "probabilities": "existing monthly past-only forward filter then next-step prediction; states ordered by training volatility",
+  "account_rules": [
+    "equal",
+    "fixed50",
+    "hmm3_gate"
+  ],
+  "cost_per_side": 0.0005
+}

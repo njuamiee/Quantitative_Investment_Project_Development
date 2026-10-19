@@ -1,0 +1,128 @@
+[
+  {
+    "id": "Q01",
+    "source": "第1页",
+    "question": "是否以2024/10一次切成前训后测",
+    "answer_section": "02—03"
+  },
+  {
+    "id": "Q02",
+    "source": "第1页",
+    "question": "LightGBM的train/val/test具体哪段",
+    "answer_section": "02—03"
+  },
+  {
+    "id": "Q03",
+    "source": "第1页",
+    "question": "num_leaves、learning_rate、n_estimators如何定",
+    "answer_section": "04"
+  },
+  {
+    "id": "Q04",
+    "source": "第1页",
+    "question": "Ridge做法和正则权重",
+    "answer_section": "05"
+  },
+  {
+    "id": "Q05",
+    "source": "第1页",
+    "question": "是否考虑共线性",
+    "answer_section": "05、07"
+  },
+  {
+    "id": "Q06",
+    "source": "第1页",
+    "question": "调仓频率是多少",
+    "answer_section": "12"
+  },
+  {
+    "id": "Q07",
+    "source": "第1页",
+    "question": "两算法回撤趋势为何相反",
+    "answer_section": "10—11"
+  },
+  {
+    "id": "Q08",
+    "source": "第1页",
+    "question": "先做选因子选股，暂缓其他模块",
+    "answer_section": "12、18"
+  },
+  {
+    "id": "Q09",
+    "source": "第1页",
+    "question": "每边万分之一手续费、暂不算滑点",
+    "answer_section": "12"
+  },
+  {
+    "id": "Q10",
+    "source": "第1页",
+    "question": "持有周期与IC(5)标签对齐",
+    "answer_section": "12"
+  },
+  {
+    "id": "Q11",
+    "source": "第2页",
+    "question": "使用后复权价格",
+    "answer_section": "13"
+  },
+  {
+    "id": "Q12",
+    "source": "第2页",
+    "question": "检查回撤及个别价格错误",
+    "answer_section": "11、13"
+  },
+  {
+    "id": "Q13",
+    "source": "第2页",
+    "question": "市场、行业中性化及风格权重",
+    "answer_section": "14"
+  },
+  {
+    "id": "Q14",
+    "source": "第2页",
+    "question": "嵌套滚动train/val/test、拼接OOS",
+    "answer_section": "15"
+  },
+  {
+    "id": "Q15",
+    "source": "第3页",
+    "question": "隔离带不短于标签期限",
+    "answer_section": "15"
+  },
+  {
+    "id": "Q16",
+    "source": "第3页",
+    "question": "超参锁定，不从测试结果回头改",
+    "answer_section": "15"
+  },
+  {
+    "id": "Q17",
+    "source": "第3页",
+    "question": "重训是否必要、频率怎么取",
+    "answer_section": "16"
+  },
+  {
+    "id": "Q18",
+    "source": "第3页",
+    "question": "每轮重新做训练窗内因子筛选",
+    "answer_section": "06—07、15"
+  },
+  {
+    "id": "Q19",
+    "source": "第3页",
+    "question": "申万行业等数据的point-in-time属性",
+    "answer_section": "14"
+  },
+  {
+    "id": "Q20",
+    "source": "第3页",
+    "question": "各滚动窗IC均值、标准差、最差轮次",
+    "answer_section": "17"
+  },
+  {
+    "id": "Q21",
+    "source": "补充提问",
+    "question": "40个因子从哪里来、每个步骤如何执行",
+    "answer_section": "06—09、附录"
+  }
+]

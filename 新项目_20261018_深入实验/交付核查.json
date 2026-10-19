@@ -1,0 +1,50 @@
+{
+  "report": "深入实验_完整结果与解释.html",
+  "account_experiments": 96,
+  "period_rows": 278,
+  "charts": 10,
+  "csi_comparison_complete": false,
+  "stable_recent_targets_met": false,
+  "source_files": {
+    "training_runs\\research_20261018\\evidence\\all_periods_with_excess.csv": "f89e921eaf40fc7b2aedc799f121e7f0762a6353cfdb3690e5d1188eb0a5637d",
+    "training_runs\\research_20261018\\deep_risk\\independent_audit.json": "f5263a2b8b39af88e0546c60de0789704d33f9b12fb61e1d8a5e45717ac2b500",
+    "training_runs\\research_20261018\\evidence\\supplemental_audit.json": "ec304c4a370bc51cc9185e98b6477162f6b974c50ba200124109423ea029cf45",
+    "training_runs\\research_20261018\\factor_loop\\frozen_selection.json": "0f336892fb797a11db8fb3594201bd9ee9b7298ab1a95e6224ad5ac07369420d"
+  },
+  "verified_html": [
+    "01_任务逐项答复.html",
+    "02_实验方法_按真实日期解释.html",
+    "03_中证2000对比_真实数据缺口.html",
+    "04_最新研究_实际采用了什么.html",
+    "05_分钟因子_实际训练和结果.html",
+    "深入实验_完整结果与解释.html"
+  ],
+  "embedded_png_verified": 10,
+  "local_links_verified": true,
+  "tests_passed": 12,
+  "code_sha256": {
+    "adaptive_execution.py": "7f4242913c24b2ad8ec5af528221476ab7fc560549d4fec0e66d78ed24181ccc",
+    "assemble_evidence.py": "c8abe0bcb1fa98a5dde1480c7bb52fcdeadbb62a50db9d237aaaa41e57286ec6",
+    "audit_deep_risk.py": "958098de4d4f304d3e78edd58b2c7ceffe25b058e9f04c6823e8b11a398ad306",
+    "audit_market_coverage.py": "b90456aaf87979a3651607c312cf7f775d299b586d088c9cef30aa1fa771baeb",
+    "audit_supplemental.py": "60e627f5052dfab0baba55247397f8392885c2638dcd6e5405da4219fdbbc15d",
+    "auto_factor_lab.py": "8d7cf66498043be2708d768c76c2c4e53c70de1e674588ac7a95a51f1294d26b",
+    "build_delivery.py": "0eeed73795522a6095b975cb45297565e859b769261b673fa35c90ab6e28ecbe",
+    "deep_risk_experiment.py": "b982264505368b77309861f6080d51bf8a84bdc315ea21622bd9cf8e66864fd0",
+    "download_csi2000_index.py": "abcf727e33560a81ec66f80f6be05b45ea1168b6292a31bd8a41cdbb744c5c21",
+    "explain_new_model.py": "cc126321e20bc537b8736d133ba0f36aa3a66605e0014b53855def3d100b1e49",
+    "factor_loop_experiment.py": "43cf1d225903c197f369e4e069220bd4bb4ffc2bd3c900b3dac55be2e2bcee51",
+    "hmm_conditional_experiment.py": "0fdf6168c02ac76f5f872baf027bfd13be77c59a54801506b1a1555e09a3fb7a",
+    "inspect_csi_public_site.py": "d8b4203dcc5860b201cfb47ea7f11233574d6dee99ae79139457a4599ce48e75",
+    "minute_incremental_experiment.py": "35cf26deb41d2607917527138df4f4458f88848f3cd5d926a08d08c7ac79996b",
+    "probe_remote.py": "9fd8d31a4ca316ba37ce32b53432de8f362da4bf66ab0ed74a3d6d86d1b28cbc",
+    "sync_market.py": "a864e16ef8f3d9c21090e9299135a982da11468efc093c19cd2555c7f177ed6d",
+    "test_adaptive_execution.py": "58803ac1f4ec9f28dec0845208f66e586a43fa992cb314356a4ddb23b005a19d",
+    "test_auto_factor_lab.py": "8f6d19f0d446b8130307da9d5603c7c13bc64e657625c0ca057300b182469a51",
+    "test_market_parser.py": "170436fc354dd257e550c55dc024797390b6480d0e0286ba4efe744c6eaf9f60",
+    "test_minute_incremental_experiment.py": "f793793ad33b8dbffc7e1fab7a6430b651d26cb2a04503c58001be7b4849cce9",
+    "verify_delivery.py": "8a461b1d4071d1863ffe2588ae87ceea782a6b8e6cd3051f9014c2aee98672aa"
+  },
+  "data_coverage_audit_sha256": "314445c488c3bc086504264d0b05abab58166c914bc99c91ddaf1a39329c131a",
+  "main_report_sha256": "a5be1bdda7d0efb85fc91cc4675ab91f9c361e3c5ab768acce466b73dccbe0f5"
+}

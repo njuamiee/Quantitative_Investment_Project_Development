@@ -1,0 +1,26 @@
+{
+  "strategies": 80,
+  "period_rows": 240,
+  "account_folders": 80,
+  "daily_rows_checked": 38800,
+  "orders_checked": 215996,
+  "sales_checked": 107210,
+  "cash_identity_max_error": 1.3969838619232178e-09,
+  "cash_flow_max_error": 2.3278232674783794e-09,
+  "holdings_value_max_error": 1.3969838619232178e-09,
+  "order_cash_max_error": 1.1641532182693481e-09,
+  "metrics_disagreements": [],
+  "invariant_errors": [],
+  "timing_errors": [],
+  "circuit_events": 95,
+  "circuit_early_recoveries": [],
+  "stop_attempts": 6195,
+  "stop_condition_mismatches": [],
+  "rule_outcome_counts": {
+    "full_all_three_targets": 1,
+    "recent_year_all_three_targets": 0,
+    "recent_half_all_three_targets": 0
+  },
+  "validation_choice_past_only": true,
+  "status": "pass"
+}

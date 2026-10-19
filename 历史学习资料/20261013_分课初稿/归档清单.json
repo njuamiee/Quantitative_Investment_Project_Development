@@ -1,0 +1,92 @@
+[
+  {
+    "relative": "01_从零读懂量化项目_全局导读.docx",
+    "sha256": "25718be6f1c8f074875c66778617866cc9b5b1fa1aa8934f8a77fe561c69e61d",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\01_从零读懂量化项目_全局导读.docx"
+  },
+  {
+    "relative": "01_从零读懂量化项目_全局导读.md",
+    "sha256": "ea80c25bde04668ebdc30528c723860654636e551f9e055de704381d6d0b5341",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\01_从零读懂量化项目_全局导读.md"
+  },
+  {
+    "relative": "02_从零讲义_第1课_样本与时间轴.docx",
+    "sha256": "1b90bb1baa5a41ec0edb6d6deb3ecd9af5ccc20a2592c6e222ab357000f0ed38",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\02_从零讲义_第1课_样本与时间轴.docx"
+  },
+  {
+    "relative": "02_从零讲义_第1课_样本与时间轴.md",
+    "sha256": "7bb4ef2bc6a93566fe754f1119eede740adbcf46d5900590bf00a67fe39f7df2",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\02_从零讲义_第1课_样本与时间轴.md"
+  },
+  {
+    "relative": "课程进度.md",
+    "sha256": "4cf109453b52be93a12d86552309eb833f2a3ad13268dbebe27101f067cac9f0",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\课程进度.md"
+  },
+  {
+    "relative": "delivery_manifest.json",
+    "sha256": "01bed7f3dd3da8ea716e5155bc2475b8bfd68cb3fe7ae694133ab12a9174ca57",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\delivery_manifest.json"
+  },
+  {
+    "relative": "核对资料\\2026Q3_daily_predictions.csv",
+    "sha256": "202923fcb206619914061b9a27c8079af11c81b974ac04dcb84499004e03007e",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\核对资料\\2026Q3_daily_predictions.csv"
+  },
+  {
+    "relative": "核对资料\\2026Q4_daily_predictions.csv",
+    "sha256": "711fc2776925b4e445306a117cda8a1b61d68c8e4deef775da481f0247ba52ed",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\核对资料\\2026Q4_daily_predictions.csv"
+  },
+  {
+    "relative": "核对资料\\代码索引.md",
+    "sha256": "e5682b5d86e9d11c6cfa3c60ed17fccb75bde82cc34ac2503efc74d9c6fa995a",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\核对资料\\代码索引.md"
+  },
+  {
+    "relative": "核对资料\\研究口径待改进.md",
+    "sha256": "e4bdb5055fd41dcb2372607ba576abd9c23f2c9bc6377014e5cf7e456582d68b",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\核对资料\\研究口径待改进.md"
+  },
+  {
+    "relative": "核对资料\\artifact_hashes.json",
+    "sha256": "5e4c0871339466f2c52de40dfaab17f3a71869af52adcb5a45837d2bf78bf351",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\核对资料\\artifact_hashes.json"
+  },
+  {
+    "relative": "核对资料\\inference_checks.json",
+    "sha256": "3a5dad478b49293f8507025c49a43a26cad49971f1acd372d586b1ba4473374b",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\核对资料\\inference_checks.json"
+  },
+  {
+    "relative": "核对资料\\model_examples.json",
+    "sha256": "6c7ace6475151aec672ceca8cb5f59e094b8763a0e1f8efe287359573052775f",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\核对资料\\model_examples.json"
+  },
+  {
+    "relative": "核对资料\\old_table_answer.json",
+    "sha256": "ec932d627884805b910c4cdb907d01a07055d78e247b5918a570e1055c6dea04",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\核对资料\\old_table_answer.json"
+  },
+  {
+    "relative": "核对资料\\source_index.json",
+    "sha256": "daffea14220bde7dad3b6ae8c3ad64dbbd99ef550a88c26db3f0a21d5690e791",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\核对资料\\source_index.json"
+  },
+  {
+    "relative": "配图\\全局数据流.png",
+    "sha256": "ef5ca53da5422f7b5b9919bd1e40259b892820e62e8c1a83226b680e98566b46",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\配图\\全局数据流.png"
+  },
+  {
+    "relative": "配图\\五日批次时间线.png",
+    "sha256": "4408f8c200e033a9525015b98f3473cbe7bb14eaf312897185039d47c820100d",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\配图\\五日批次时间线.png"
+  },
+  {
+    "relative": "配图\\训练与预测.png",
+    "sha256": "371305c184d1c24235ba6bdc19b5cd4273a45e2be7069cc4d0407d5c412fb421",
+    "archived": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\历史学习资料\\20261013_分课初稿\\20261013_从零学习当前项目\\配图\\训练与预测.png"
+  }
+]

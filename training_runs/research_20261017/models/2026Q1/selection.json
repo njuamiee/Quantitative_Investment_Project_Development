@@ -1,0 +1,116 @@
+{
+  "quarter": "2026Q1",
+  "cutoff": "2026-01-05",
+  "valid_start": "2025-07-01",
+  "valid_end": "2025-12-31",
+  "valid_last_mature_exit": "2025-12-31",
+  "selected_name": "raw_252_100_half63",
+  "selected_valid_rank_ic": 0.17073399405537562,
+  "selected_best_iteration": 35,
+  "candidate_ranking": [
+    {
+      "candidate": "raw_252_100_half63",
+      "valid_rank_ic": 0.17073399405537562,
+      "valid_days": 121,
+      "train_rows": 24697,
+      "valid_rows": 12089,
+      "train_last_exit": "2025-06-30",
+      "best_iteration": 35,
+      "feature_count": 100,
+      "pca_variance_cumulative": null
+    },
+    {
+      "candidate": "raw_504_100_equal",
+      "valid_rank_ic": 0.1695251127341265,
+      "valid_days": 121,
+      "train_rows": 49886,
+      "valid_rows": 12089,
+      "train_last_exit": "2025-06-30",
+      "best_iteration": 137,
+      "feature_count": 100,
+      "pca_variance_cumulative": null
+    },
+    {
+      "candidate": "pca_lgbm_252_100_half63",
+      "valid_rank_ic": 0.16929609875388493,
+      "valid_days": 121,
+      "train_rows": 24697,
+      "valid_rows": 12089,
+      "train_last_exit": "2025-06-30",
+      "best_iteration": 62,
+      "feature_count": 100,
+      "pca_variance_cumulative": 0.8545193672180176
+    },
+    {
+      "candidate": "raw_504_40_equal",
+      "valid_rank_ic": 0.16744995322246642,
+      "valid_days": 121,
+      "train_rows": 49886,
+      "valid_rows": 12089,
+      "train_last_exit": "2025-06-30",
+      "best_iteration": 96,
+      "feature_count": 40,
+      "pca_variance_cumulative": null
+    },
+    {
+      "candidate": "raw_504_100_half126",
+      "valid_rank_ic": 0.16737232764845308,
+      "valid_days": 121,
+      "train_rows": 49886,
+      "valid_rows": 12089,
+      "train_last_exit": "2025-06-30",
+      "best_iteration": 66,
+      "feature_count": 100,
+      "pca_variance_cumulative": null
+    },
+    {
+      "candidate": "pca_lgbm_504_100_equal",
+      "valid_rank_ic": 0.16479639157418838,
+      "valid_days": 121,
+      "train_rows": 49886,
+      "valid_rows": 12089,
+      "train_last_exit": "2025-06-30",
+      "best_iteration": 100,
+      "feature_count": 100,
+      "pca_variance_cumulative": 0.8653835654258728
+    },
+    {
+      "candidate": "raw_252_40_half63",
+      "valid_rank_ic": 0.15944413531289592,
+      "valid_days": 121,
+      "train_rows": 24697,
+      "valid_rows": 12089,
+      "train_last_exit": "2025-06-30",
+      "best_iteration": 34,
+      "feature_count": 40,
+      "pca_variance_cumulative": null
+    },
+    {
+      "candidate": "pca_ridge_504_100_equal",
+      "valid_rank_ic": 0.15918648652441644,
+      "valid_days": 121,
+      "train_rows": 49886,
+      "valid_rows": 12089,
+      "train_last_exit": "2025-06-30",
+      "best_iteration": null,
+      "feature_count": 100,
+      "pca_variance_cumulative": 0.8653835654258728
+    },
+    {
+      "candidate": "signed_ic20_504_equal",
+      "valid_rank_ic": 0.15634367338760793,
+      "valid_days": 121,
+      "train_rows": 49886,
+      "valid_rows": 12089,
+      "train_last_exit": "2025-06-30",
+      "best_iteration": null,
+      "feature_count": 20,
+      "pca_variance_cumulative": null
+    }
+  ],
+  "why_selected": "highest mean daily validation RankIC; tie broken by fixed name order",
+  "valid_label_rule": "predictions cover all 126 days; labels only if label_exit_5 < quarter cutoff; target re-ranked among matured labels",
+  "train_label_rule": "label_exit_5 < validation first signal day",
+  "test_start": "2026-01-05",
+  "test_end": "2026-03-31"
+}

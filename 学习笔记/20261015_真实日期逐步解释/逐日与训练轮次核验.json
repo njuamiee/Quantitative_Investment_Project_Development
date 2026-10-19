@@ -1,0 +1,10 @@
+{
+  "first_date": "2021-11-15",
+  "last_date": "2026-10-09",
+  "dates": 1187,
+  "earliest_pool": "2022-02-14",
+  "trees": 180,
+  "max_prediction_difference": 0.0,
+  "initial_inner_rows": 48071,
+  "outer_training_rows": 50136
+}

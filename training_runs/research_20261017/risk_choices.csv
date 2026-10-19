@@ -1,0 +1,9 @@
+﻿quarter,valid_start,valid_end,selected_rule,validation_objective,reason,model
+2024Q4,2024-03-27,2024-09-30,rank_stop10,1.2531143029829057,positive_validation_return_max_min_sharpe_calmar,pca_lgbm_252_100_half63
+2025Q1,2024-06-28,2024-12-31,equal,2.9899918943472708,positive_validation_return_max_min_sharpe_calmar,raw_504_100_half126
+2025Q2,2024-09-19,2025-03-31,equal,3.5683231036116125,positive_validation_return_max_min_sharpe_calmar,raw_252_100_half63
+2025Q3,2024-12-19,2025-06-30,diversified_trend,2.7476778102594124,positive_validation_return_max_min_sharpe_calmar,raw_252_100_half63
+2025Q4,2025-04-01,2025-09-30,equal,0.27544440903504513,positive_validation_return_max_min_sharpe_calmar,raw_504_100_half126
+2026Q1,2025-07-01,2025-12-31,diversified_vol12,0.20686596393681037,positive_validation_return_max_min_sharpe_calmar,raw_252_100_half63
+2026Q2,2025-09-17,2026-03-31,cash,,no_positive_validation_candidate_cash,raw_252_100_half63
+2026Q3,2025-12-18,2026-06-30,cash,,no_positive_validation_candidate_cash,raw_252_40_half63

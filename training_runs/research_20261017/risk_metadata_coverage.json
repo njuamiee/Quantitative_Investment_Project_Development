@@ -1,0 +1,31 @@
+{
+  "price_source": "training_data\\research_20261011\\bj_prices.parquet",
+  "capital_source": "training_data\\research_20260930\\bj_share_capital.parquet",
+  "rows": 415450,
+  "pool_rows": 110410,
+  "dates": 1187,
+  "first_date": "2021-11-15",
+  "last_date": "2026-10-09",
+  "stocks": 350,
+  "capital_max_age_calendar_days": 30,
+  "size_valid_rows": 236532,
+  "size_valid_pool_rows": 103368,
+  "size_valid_pool_fraction": 0.9362195453310389,
+  "capital_ordering_warning_pool_rows": 7018,
+  "momentum_group_pool_fraction": 0.9993116565528485,
+  "volatility_group_pool_fraction": 0.9997735712344896,
+  "industry_source": "training_data\\research_20261017\\industry\\industry_history.parquet",
+  "industry_known_rows": 129417,
+  "industry_known_pool_rows": 46921,
+  "industry_known_pool_fraction": 0.42497056426048363,
+  "industry_known_research_pool_fraction": 0.9634702258726899,
+  "strict_point_in_time_capital_verified": false,
+  "signal_timing": "Date d descriptors use d closing price and capital snapshot dated strictly before d; usable for d+1 trading only.",
+  "limitations": [
+    "Supplier snapshot historical release/revision times are unverified; 18:00 timestamp is an assumption.",
+    "Total shares may lag corporate events. A 30-calendar-day age limit is imposed; no future backfill.",
+    "Industry comes from five dated CAPCO PDFs, activated only the trading day after publication; uncovered stocks remain unknown.",
+    "Historical listing/delisting and ST changes remain unavailable; industry classification alone does not solve those issues.",
+    "Official 2025 old/new-code conversion is used only for company identity alignment; see source and parser checks."
+  ]
+}

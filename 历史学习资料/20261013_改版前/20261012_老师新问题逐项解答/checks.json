@@ -1,0 +1,66 @@
+[
+  {
+    "check": "2024Q4_reconstruct_original40",
+    "passed": true
+  },
+  {
+    "check": "2024Q4_extension_same40",
+    "passed": true
+  },
+  {
+    "check": "2025Q1_reconstruct_original40",
+    "passed": true
+  },
+  {
+    "check": "2025Q1_extension_same40",
+    "passed": true
+  },
+  {
+    "check": "2025Q2_reconstruct_original40",
+    "passed": true
+  },
+  {
+    "check": "2025Q2_extension_same40",
+    "passed": true
+  },
+  {
+    "check": "2025Q3_reconstruct_original40",
+    "passed": true
+  },
+  {
+    "check": "2025Q3_extension_same40",
+    "passed": true
+  },
+  {
+    "check": "2025Q4_reconstruct_original40",
+    "passed": true
+  },
+  {
+    "check": "2025Q4_extension_same40",
+    "passed": true
+  },
+  {
+    "check": "2026Q1_reconstruct_original40",
+    "passed": true
+  },
+  {
+    "check": "2026Q1_extension_same40",
+    "passed": true
+  },
+  {
+    "check": "2026Q2_reconstruct_original40",
+    "passed": true
+  },
+  {
+    "check": "2026Q2_extension_same40",
+    "passed": true
+  },
+  {
+    "check": "2026Q3_reconstruct_original40",
+    "passed": true
+  },
+  {
+    "check": "2026Q3_extension_same40",
+    "passed": true
+  }
+]

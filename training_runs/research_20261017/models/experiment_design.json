@@ -1,0 +1,85 @@
+{
+  "input_panel": "training_data\\research_20261011\\model_panel.parquet",
+  "panel_sha256": "43409666b797332d31605d37f1786585b8a21797b0e89e6c0de0fbe2544c4765",
+  "feature_columns": 335,
+  "output_start": "2024-10-08",
+  "output_end": "2026-09-30",
+  "validation_sessions": 126,
+  "candidates": [
+    {
+      "name": "raw_504_40_equal",
+      "kind": "lgbm",
+      "sessions": 504,
+      "features": 40,
+      "half_life": null
+    },
+    {
+      "name": "raw_504_100_equal",
+      "kind": "lgbm",
+      "sessions": 504,
+      "features": 100,
+      "half_life": null
+    },
+    {
+      "name": "raw_252_40_half63",
+      "kind": "lgbm",
+      "sessions": 252,
+      "features": 40,
+      "half_life": 63
+    },
+    {
+      "name": "raw_252_100_half63",
+      "kind": "lgbm",
+      "sessions": 252,
+      "features": 100,
+      "half_life": 63
+    },
+    {
+      "name": "raw_504_100_half126",
+      "kind": "lgbm",
+      "sessions": 504,
+      "features": 100,
+      "half_life": 126
+    },
+    {
+      "name": "pca_lgbm_504_100_equal",
+      "kind": "pca_lgbm",
+      "sessions": 504,
+      "features": 100,
+      "half_life": null
+    },
+    {
+      "name": "pca_lgbm_252_100_half63",
+      "kind": "pca_lgbm",
+      "sessions": 252,
+      "features": 100,
+      "half_life": 63
+    },
+    {
+      "name": "signed_ic20_504_equal",
+      "kind": "signed_ic",
+      "sessions": 504,
+      "features": 20,
+      "half_life": null
+    },
+    {
+      "name": "pca_ridge_504_100_equal",
+      "kind": "pca_ridge",
+      "sessions": 504,
+      "features": 100,
+      "half_life": null
+    }
+  ],
+  "maximum_lgbm_rounds": 300,
+  "early_stop_no_improve_rounds": 30,
+  "selection_metric": "mean daily Spearman correlation with mature 5-session target",
+  "pca_components": 20,
+  "factor_min_coverage": 0.7,
+  "factor_max_abs_pairwise_correlation": 0.92,
+  "pca_factor_rule": "top 100 by training-only abs daily IC after coverage>=0.70, without correlation deletion",
+  "raw_factor_rule": "top 40/100 by training-only abs daily IC after coverage>=0.70 and abs correlation<0.92",
+  "feature_screen_uses_only_prevalidation_or_predeployment_mature_labels": true,
+  "quarterly_model_settings_fixed_until_next_quarter": true,
+  "monthly_model_uses_quarterly_selected_candidate_and_round_count": true,
+  "signal_available_after_close": true
+}

@@ -1,0 +1,66 @@
+{
+  "pass": true,
+  "max_drawdown": {
+    "peak_date": "2025-03-17",
+    "trough_date": "2025-04-07",
+    "fraction": 0.2826331142900723,
+    "tag": "max_drawdown",
+    "baseline_date": "2025-03-17",
+    "start_date": "2025-03-18",
+    "end_date": "2025-04-07",
+    "stock_rows": 63,
+    "start_equity": 2784054.8015100006,
+    "end_equity": 1997188.722605,
+    "equity_change": -786866.0789050006,
+    "attribution_sum": -786866.0789049999,
+    "cash_delta": 33.38109499945131,
+    "cash_flow_recomputed": 33.38109499962775,
+    "market_value_delta": -786899.46,
+    "buy_notional": 7342279.2299999995,
+    "sell_notional": 7349658.579999999,
+    "fees": 7345.968905,
+    "dividends": 0.0,
+    "max_per_stock_column_difference": 2.9103830456733704e-11
+  },
+  "recent_half_attribution": {
+    "tag": "recent_half",
+    "baseline_date": "2026-03-31",
+    "start_date": "2026-04-01",
+    "end_date": "2026-09-30",
+    "stock_rows": 20,
+    "start_equity": 2719057.6296004998,
+    "end_equity": 2747949.7968705,
+    "equity_change": 28892.167270000093,
+    "attribution_sum": 28892.167269999994,
+    "cash_delta": 1388770.7272700006,
+    "cash_flow_recomputed": 1388770.7272700001,
+    "market_value_delta": -1359878.5599999998,
+    "buy_notional": 0.0,
+    "sell_notional": 1389465.4600000002,
+    "fees": 694.73273,
+    "dividends": 0.0,
+    "max_per_stock_column_difference": 7.275957614183426e-12
+  },
+  "recent_period_anchors": [
+    {
+      "period": "recent_year",
+      "first_included_date": "2025-10-09",
+      "baseline_date": "2025-09-30",
+      "baseline_equity": 3032846.436630504,
+      "end_equity": 2747949.7968705,
+      "return_recomputed": -0.09393704749407783,
+      "return_table": -0.0939370474940777
+    },
+    {
+      "period": "recent_half",
+      "first_included_date": "2026-04-01",
+      "baseline_date": "2026-03-31",
+      "baseline_equity": 2719057.6296004998,
+      "end_equity": 2747949.7968705,
+      "return_recomputed": 0.01062580173199379,
+      "return_table": 0.010625801731994
+    }
+  ],
+  "maximum_excess_arithmetic_error": 8.881784197001252e-16,
+  "method": "Independent reads of account daily/holdings/orders and corporate actions; no call to report.stock_attribution()."
+}

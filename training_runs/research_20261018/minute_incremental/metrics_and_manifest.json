@@ -1,0 +1,218 @@
+{
+  "protocol": "minute Ridge alpha100 fitted solely to mature 2025Q4 five-session labels; Q4 December validates mix; frozen Q3",
+  "daily_baseline_timing": {
+    "2025Q4": {
+      "last_training_signal": "2025-09-23",
+      "last_mature_label_exit": "2025-09-30",
+      "first_test_cutoff": "2025-10-01",
+      "deployment_info_sha256": "cc2cf799dbb16fe8d7ddadab3702bcaf72ec8d3730c6f64f1d146855ac0ca26e"
+    },
+    "2026Q3": {
+      "last_training_signal": "2026-06-23",
+      "last_mature_label_exit": "2026-06-30",
+      "first_test_cutoff": "2026-07-01",
+      "deployment_info_sha256": "6f7d3e0ac532319ad68931cbbbcf6036a18a060e118219ef18d52f50fdcd904e"
+    }
+  },
+  "features": [
+    "minute_return",
+    "late_return",
+    "realized_vol",
+    "downside_vol",
+    "return_skew",
+    "volume_concentration",
+    "late_volume_share",
+    "close_vwap_gap",
+    "afternoon_minus_morning",
+    "price_volume_corr"
+  ],
+  "candidate_weights": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "chosen_minute_weight": 0.0,
+  "q4_initial_fit": {
+    "rows": 3126,
+    "days": 32,
+    "first_signal": "2025-10-09 00:00:00",
+    "last_signal": "2025-11-21 00:00:00",
+    "last_label_exit": "2025-11-28 00:00:00"
+  },
+  "q4_validation": {
+    "rows": 1738,
+    "days": 18,
+    "first_signal": "2025-12-01 00:00:00",
+    "last_signal": "2025-12-24 00:00:00",
+    "last_label_exit": "2025-12-31 00:00:00"
+  },
+  "q4_final_fit": {
+    "rows": 5354,
+    "days": 55,
+    "first_signal": "2025-10-09 00:00:00",
+    "last_signal": "2025-12-24 00:00:00",
+    "last_label_exit": "2025-12-31 00:00:00"
+  },
+  "q3": {
+    "days": 65,
+    "common_stock_rows": 6042,
+    "daily_pool_rows": 6500,
+    "first_signal": "2026-07-01 00:00:00",
+    "last_signal": "2026-09-30 00:00:00",
+    "mean_common_fraction": 0.9295384615384615
+  },
+  "old_minute_prediction_check": {
+    "common_rows": 6042,
+    "spearman": 0.9994781092002631,
+    "max_absolute_raw_score_difference": 0.004311540378435383
+  },
+  "backtests": {
+    "daily": {
+      "start": "2026-07-01",
+      "end": "2026-09-30",
+      "days": 65,
+      "total_return": -0.16393733662999976,
+      "annual_return": -0.5125981546239751,
+      "max_drawdown": 0.25145703913227735,
+      "sharpe_rf15": -1.7211557892874128,
+      "sharpe_rf0": -1.6810688036625872,
+      "calmar": -2.038511852334053,
+      "mean_exposure": 0.7966408736455753,
+      "total_cost": 10788.91663,
+      "turnover": 24.95984016889056,
+      "end_equity": 836062.6633700002,
+      "cash_days_fraction": 0.2,
+      "rule": "daily",
+      "topn": 20,
+      "schedule_applied": false,
+      "schedule": null,
+      "cost_bp": 5.0,
+      "signal_delay": 0,
+      "completed_sale_parts": 239,
+      "mean_holding_intervals": 4.0,
+      "mean_holding_sessions_inclusive": 5.0,
+      "trade_win_rate": 0.40585774058577406,
+      "ending_open_lots": 20,
+      "cash_identity_max_error": 1.1641532182693481e-10
+    },
+    "daily_plus_minute": {
+      "start": "2026-07-01",
+      "end": "2026-09-30",
+      "days": 65,
+      "total_return": -0.16393733662999976,
+      "annual_return": -0.5125981546239751,
+      "max_drawdown": 0.25145703913227735,
+      "sharpe_rf15": -1.7211557892874128,
+      "sharpe_rf0": -1.6810688036625872,
+      "calmar": -2.038511852334053,
+      "mean_exposure": 0.7966408736455753,
+      "total_cost": 10788.91663,
+      "turnover": 24.95984016889056,
+      "end_equity": 836062.6633700002,
+      "cash_days_fraction": 0.2,
+      "rule": "daily_plus_minute",
+      "topn": 20,
+      "schedule_applied": false,
+      "schedule": null,
+      "cost_bp": 5.0,
+      "signal_delay": 0,
+      "completed_sale_parts": 239,
+      "mean_holding_intervals": 4.0,
+      "mean_holding_sessions_inclusive": 5.0,
+      "trade_win_rate": 0.40585774058577406,
+      "ending_open_lots": 20,
+      "cash_identity_max_error": 1.1641532182693481e-10
+    },
+    "daily_plus_minute_fixed25": {
+      "start": "2026-07-01",
+      "end": "2026-09-30",
+      "days": 65,
+      "total_return": -0.141697922165,
+      "annual_return": -0.45843683288672965,
+      "max_drawdown": 0.22392698920274723,
+      "sharpe_rf15": -1.478103582897746,
+      "sharpe_rf0": -1.4373451794955745,
+      "calmar": -2.0472602901459696,
+      "mean_exposure": 0.7966683704459636,
+      "total_cost": 11106.342165,
+      "turnover": 24.9628544381551,
+      "end_equity": 858302.077835,
+      "cash_days_fraction": 0.2,
+      "rule": "daily_plus_minute_fixed25",
+      "topn": 20,
+      "schedule_applied": false,
+      "schedule": null,
+      "cost_bp": 5.0,
+      "signal_delay": 0,
+      "completed_sale_parts": 239,
+      "mean_holding_intervals": 4.0,
+      "mean_holding_sessions_inclusive": 5.0,
+      "trade_win_rate": 0.41841004184100417,
+      "ending_open_lots": 20,
+      "cash_identity_max_error": 1.1641532182693481e-10
+    }
+  },
+  "net_return_difference_percentage_points": 0.0,
+  "fixed25_return_difference_percentage_points": 2.2239414464999774,
+  "end_relative_wealth_gain": 0.0,
+  "fixed25_end_relative_wealth_gain": 0.026600176564944622,
+  "q3_label_ic_diagnostic_only": [
+    {
+      "signal": "score_augmented",
+      "mean_daily_rank_ic": 0.07670208084644482,
+      "sd_daily_rank_ic": 0.13683205497856488,
+      "labelled_days": 60,
+      "labelled_stock_rows": 5616,
+      "rank_ic_ir": 0.5605563759051957
+    },
+    {
+      "signal": "score_daily",
+      "mean_daily_rank_ic": 0.07670208084644482,
+      "sd_daily_rank_ic": 0.13683205497856488,
+      "labelled_days": 60,
+      "labelled_stock_rows": 5616,
+      "rank_ic_ir": 0.5605563759051957
+    },
+    {
+      "signal": "score_fixed25",
+      "mean_daily_rank_ic": 0.10529241621860634,
+      "sd_daily_rank_ic": 0.1288774841978791,
+      "labelled_days": 60,
+      "labelled_stock_rows": 5616,
+      "rank_ic_ir": 0.8169962105788772
+    },
+    {
+      "signal": "score_minute",
+      "mean_daily_rank_ic": 0.16006914710719633,
+      "sd_daily_rank_ic": 0.17475985079487596,
+      "labelled_days": 60,
+      "labelled_stock_rows": 5616,
+      "rank_ic_ir": 0.9159377647619829
+    }
+  ],
+  "sha256": {
+    "training_runs\\research_20261017\\models\\daily_predictions.parquet": "3657f582d8f7f2f5504b48e7190ceb9828a178c91bc06527e4e64860e6c07212",
+    "training_data\\research_20261011\\minute_factors.parquet": "0beca91a6a126c679a10c238f987d61e43806b1315407b81c8cafa5481084575",
+    "training_runs\\research_20261011\\minute_factor_h5_predictions.parquet": "9383c1461914c1e1a11c287a891b309e61bf80985687ed80e315abba7a9c8ca9",
+    "training_data\\research_20261011\\prices.parquet": "fb8689a7e5cc58c5ae6a5a35f5da29491ab179e2b960ee24d5aca2298f1e327e",
+    "training_data\\research_20261011\\actions.csv": "ea9ac859172e929a5bca531a7eaebac0d4dfdb6eaacef02c94695c1913eba39c"
+  },
+  "rule": {
+    "name": "daily_plus_minute",
+    "topn": 20,
+    "weighting": "equal",
+    "stop": 0.0,
+    "diversify": false,
+    "exposure": "full",
+    "buy_hold": false,
+    "allocation": 1.0,
+    "market_gate": "none",
+    "volatility_target": 0.0,
+    "circuit_drawdown": 0.0,
+    "cooldown_sessions": 5
+  },
+  "cost_bp_each_trade_side": 5.0,
+  "note": "Q3 answers are used only after freezing final minute coefficients and mixing weight. The daily baseline is an earlier quarterly-frozen daily model, not trained solely on Q4. Fixed25 was in the predeclared Q4 grid but Q4 did not select it, so Q3 fixed25 is sensitivity only."
+}

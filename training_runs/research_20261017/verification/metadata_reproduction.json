@@ -1,0 +1,263 @@
+{
+  "equal": true,
+  "same_column_order": true,
+  "same_row_count": true,
+  "same_date_stock_keys_in_order": true,
+  "fresh_rows": 415450,
+  "frozen_rows": 415450,
+  "fresh_columns": [
+    "date",
+    "stockid",
+    "in_pool",
+    "observed",
+    "close",
+    "total_shares",
+    "capital_date",
+    "capital_age_days",
+    "capital_ordering_warning",
+    "snapshot_available_at_assumption",
+    "size_valid",
+    "market_cap_yuan",
+    "size_tertile",
+    "mom20",
+    "momentum_tertile",
+    "vol20",
+    "volatility_tertile",
+    "industry",
+    "industry_source_status",
+    "industry_available_at",
+    "industry_publication_date",
+    "industry_source_period",
+    "industry_raw_official_code"
+  ],
+  "frozen_columns": [
+    "date",
+    "stockid",
+    "in_pool",
+    "observed",
+    "close",
+    "total_shares",
+    "capital_date",
+    "capital_age_days",
+    "capital_ordering_warning",
+    "snapshot_available_at_assumption",
+    "size_valid",
+    "market_cap_yuan",
+    "size_tertile",
+    "mom20",
+    "momentum_tertile",
+    "vol20",
+    "volatility_tertile",
+    "industry",
+    "industry_source_status",
+    "industry_available_at",
+    "industry_publication_date",
+    "industry_source_period",
+    "industry_raw_official_code"
+  ],
+  "frozen_sha256": "4503fdcbe334dea736547bad0c8c137a84da48a47f603ee7ae94d2e9a9ef78e3",
+  "coverage_build": {
+    "price_source": "training_data\\research_20261011\\bj_prices.parquet",
+    "capital_source": "training_data\\research_20260930\\bj_share_capital.parquet",
+    "rows": 415450,
+    "pool_rows": 110410,
+    "dates": 1187,
+    "first_date": "2021-11-15",
+    "last_date": "2026-10-09",
+    "stocks": 350,
+    "capital_max_age_calendar_days": 30,
+    "size_valid_rows": 236532,
+    "size_valid_pool_rows": 103368,
+    "size_valid_pool_fraction": 0.9362195453310389,
+    "capital_ordering_warning_pool_rows": 7018,
+    "momentum_group_pool_fraction": 0.9993116565528485,
+    "volatility_group_pool_fraction": 0.9997735712344896,
+    "industry_source": "training_data\\research_20261017\\industry\\industry_history.parquet",
+    "industry_known_rows": 129417,
+    "industry_known_pool_rows": 46921,
+    "industry_known_pool_fraction": 0.42497056426048363,
+    "industry_known_research_pool_fraction": 0.9634702258726899,
+    "strict_point_in_time_capital_verified": false,
+    "signal_timing": "Date d descriptors use d closing price and capital snapshot dated strictly before d; usable for d+1 trading only.",
+    "limitations": [
+      "Supplier snapshot historical release/revision times are unverified; 18:00 timestamp is an assumption.",
+      "Total shares may lag corporate events. A 30-calendar-day age limit is imposed; no future backfill.",
+      "Industry comes from five dated CAPCO PDFs, activated only the trading day after publication; uncovered stocks remain unknown.",
+      "Historical listing/delisting and ST changes remain unavailable; industry classification alone does not solve those issues.",
+      "Official 2025 old/new-code conversion is used only for company identity alignment; see source and parser checks."
+    ]
+  },
+  "columns": {
+    "capital_age_days": {
+      "kind": "numeric",
+      "dtype_fresh": "float64",
+      "dtype_frozen": "float64",
+      "null_mismatch": 0,
+      "value_mismatch": 0,
+      "max_abs_difference": 0.0
+    },
+    "capital_date": {
+      "kind": "datetime",
+      "dtype_fresh": "datetime64[ns]",
+      "dtype_frozen": "datetime64[ns]",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "capital_ordering_warning": {
+      "kind": "string_or_object",
+      "dtype_fresh": "object",
+      "dtype_frozen": "object",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "close": {
+      "kind": "numeric",
+      "dtype_fresh": "float64",
+      "dtype_frozen": "float64",
+      "null_mismatch": 0,
+      "value_mismatch": 0,
+      "max_abs_difference": 0.0
+    },
+    "date": {
+      "kind": "datetime",
+      "dtype_fresh": "datetime64[ns]",
+      "dtype_frozen": "datetime64[ns]",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "in_pool": {
+      "kind": "numeric",
+      "dtype_fresh": "bool",
+      "dtype_frozen": "bool",
+      "null_mismatch": 0,
+      "value_mismatch": 0,
+      "max_abs_difference": 0.0
+    },
+    "industry": {
+      "kind": "string_or_object",
+      "dtype_fresh": "object",
+      "dtype_frozen": "object",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "industry_available_at": {
+      "kind": "datetime",
+      "dtype_fresh": "datetime64[ns]",
+      "dtype_frozen": "datetime64[ns]",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "industry_publication_date": {
+      "kind": "datetime",
+      "dtype_fresh": "datetime64[ns]",
+      "dtype_frozen": "datetime64[ns]",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "industry_raw_official_code": {
+      "kind": "string_or_object",
+      "dtype_fresh": "object",
+      "dtype_frozen": "object",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "industry_source_period": {
+      "kind": "string_or_object",
+      "dtype_fresh": "object",
+      "dtype_frozen": "object",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "industry_source_status": {
+      "kind": "string_or_object",
+      "dtype_fresh": "object",
+      "dtype_frozen": "object",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "market_cap_yuan": {
+      "kind": "numeric",
+      "dtype_fresh": "float64",
+      "dtype_frozen": "float64",
+      "null_mismatch": 0,
+      "value_mismatch": 0,
+      "max_abs_difference": 0.0
+    },
+    "mom20": {
+      "kind": "numeric",
+      "dtype_fresh": "float64",
+      "dtype_frozen": "float64",
+      "null_mismatch": 0,
+      "value_mismatch": 0,
+      "max_abs_difference": 0.0
+    },
+    "momentum_tertile": {
+      "kind": "string_or_object",
+      "dtype_fresh": "string",
+      "dtype_frozen": "string",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "observed": {
+      "kind": "numeric",
+      "dtype_fresh": "bool",
+      "dtype_frozen": "bool",
+      "null_mismatch": 0,
+      "value_mismatch": 0,
+      "max_abs_difference": 0.0
+    },
+    "size_tertile": {
+      "kind": "string_or_object",
+      "dtype_fresh": "string",
+      "dtype_frozen": "string",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "size_valid": {
+      "kind": "numeric",
+      "dtype_fresh": "bool",
+      "dtype_frozen": "bool",
+      "null_mismatch": 0,
+      "value_mismatch": 0,
+      "max_abs_difference": 0.0
+    },
+    "snapshot_available_at_assumption": {
+      "kind": "datetime",
+      "dtype_fresh": "datetime64[ns]",
+      "dtype_frozen": "datetime64[ns]",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "stockid": {
+      "kind": "string_or_object",
+      "dtype_fresh": "object",
+      "dtype_frozen": "object",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    },
+    "total_shares": {
+      "kind": "numeric",
+      "dtype_fresh": "float64",
+      "dtype_frozen": "float64",
+      "null_mismatch": 0,
+      "value_mismatch": 0,
+      "max_abs_difference": 0.0
+    },
+    "vol20": {
+      "kind": "numeric",
+      "dtype_fresh": "float64",
+      "dtype_frozen": "float64",
+      "null_mismatch": 0,
+      "value_mismatch": 0,
+      "max_abs_difference": 0.0
+    },
+    "volatility_tertile": {
+      "kind": "string_or_object",
+      "dtype_fresh": "string",
+      "dtype_frozen": "string",
+      "null_mismatch": 0,
+      "value_mismatch": 0
+    }
+  },
+  "operation": "risk_metadata.build() in memory; original parquet read only; risk_metadata.main() not called"
+}

@@ -1,0 +1,29 @@
+{
+  "total_distinct_selected": 77,
+  "always_selected": [
+    "x_c01_Alpha004",
+    "x_c02_gtalpha008",
+    "x_c02_gtalpha009",
+    "x_c02_gtalpha012",
+    "x_c02_gtalpha019",
+    "x_c02_gtalpha024",
+    "x_c02_gtalpha026",
+    "x_c02_gtalpha041",
+    "x_c02_gtalpha046",
+    "x_c02_gtalpha052",
+    "x_c02_gtalpha061",
+    "x_c02_gtalpha070",
+    "x_c02_gtalpha110",
+    "x_c02_gtalpha150"
+  ],
+  "adjacent_overlap": [
+    29,
+    34,
+    28,
+    36,
+    34,
+    35,
+    37
+  ],
+  "q3_q_significant": 40
+}

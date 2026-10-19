@@ -1,0 +1,362 @@
+[
+  {
+    "file": "tools/research_20261011/run_local.ps1",
+    "line": 17,
+    "needle": "Run-Stage 'prepare_data.py'"
+  },
+  {
+    "file": "tools/research_20261011/ledger.py",
+    "line": 38,
+    "needle": "def run("
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 106,
+    "needle": "panel=panel.merge"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 129,
+    "needle": "chosen,grid,ics=choose"
+  },
+  {
+    "file": "tools/research_20261011/common.py",
+    "line": 7,
+    "needle": "HORIZONS"
+  },
+  {
+    "file": "tools/research_20260930/prepare.py",
+    "line": 76,
+    "needle": "x['eligible']="
+  },
+  {
+    "file": "tools/research_20261011/prepare_data.py",
+    "line": 15,
+    "needle": "prices=legacy.prices"
+  },
+  {
+    "file": "tools/research_20261011/prepare_data.py",
+    "line": 23,
+    "needle": "prices=prices.merge"
+  },
+  {
+    "file": "tools/research_20261011/prepare_data.py",
+    "line": 116,
+    "needle": "a['dividend']="
+  },
+  {
+    "file": "tools/research_20261011/prepare_data.py",
+    "line": 97,
+    "needle": "causal="
+  },
+  {
+    "file": "tools/research_20261011/prepare_data.py",
+    "line": 41,
+    "needle": "proposals=["
+  },
+  {
+    "file": "tools/research_20260930/train.py",
+    "line": 36,
+    "needle": "def daily_ic"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 36,
+    "needle": "def ic_value"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 20,
+    "needle": "def screening"
+  },
+  {
+    "file": "tools/research_20260930/train.py",
+    "line": 56,
+    "needle": "def factor_selection"
+  },
+  {
+    "file": "tools/research_20260930/train.py",
+    "line": 48,
+    "needle": "def hac_summary"
+  },
+  {
+    "file": "tools/research_20261011/prepare_data.py",
+    "line": 100,
+    "needle": "ranked=panel[cols]"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 29,
+    "needle": "corr=x[rank.factor.tolist()]"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 134,
+    "needle": "cols,card=screening(outer_train"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 69,
+    "needle": "x=train[cols].fillna(0).to_numpy(dtype=np.float32)"
+  },
+  {
+    "file": "tools/research_20261011/prepare_data.py",
+    "line": 71,
+    "needle": "for h in HORIZONS:"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 121,
+    "needle": "cutoff=test.date.min()"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 133,
+    "needle": "outer_train=panel"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 57,
+    "needle": "common={'n_estimators'"
+  },
+  {
+    "file": "tools/research_20260930/train.py",
+    "line": 88,
+    "needle": "def fit_lgb"
+  },
+  {
+    "file": "tools/research_20260930/train.py",
+    "line": 136,
+    "needle": "ridge=Ridge(alpha=10)"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 60,
+    "needle": "'ridge60':Ridge"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 59,
+    "needle": "definitions={"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 70,
+    "needle": "if name=='ranker60':"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 79,
+    "needle": "ranked=pd.DataFrame"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 84,
+    "needle": "def choose"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 153,
+    "needle": "schedule=pd.DataFrame"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 72,
+    "needle": "predictions[name]=m.predict(z)"
+  },
+  {
+    "file": "tools/research_20261011/ledger.py",
+    "line": 55,
+    "needle": "cash=float(capital)"
+  },
+  {
+    "file": "tools/research_20261011/ledger.py",
+    "line": 81,
+    "needle": "def sell("
+  },
+  {
+    "file": "tools/research_20261011/ledger.py",
+    "line": 124,
+    "needle": "due=prev+"
+  },
+  {
+    "file": "tools/research_20261011/ledger.py",
+    "line": 126,
+    "needle": "budget=max(0,min"
+  },
+  {
+    "file": "tools/research_20261011/ledger.py",
+    "line": 72,
+    "needle": "def fillable"
+  },
+  {
+    "file": "tools/research_20261011/ledger.py",
+    "line": 86,
+    "needle": "available=max(0,adv*.01-used"
+  },
+  {
+    "file": "tools/research_20261011/evaluate_models.py",
+    "line": 51,
+    "needle": "for fee in [0,1,2,5,15]"
+  },
+  {
+    "file": "tools/research_20261011/regimes.py",
+    "line": 28,
+    "needle": "o['cap_vol12']"
+  },
+  {
+    "file": "tools/research_20261011/ledger.py",
+    "line": 106,
+    "needle": "if dayguard=='drawdown':"
+  },
+  {
+    "file": "tools/research_20261011/regimes.py",
+    "line": 11,
+    "needle": "def filtered"
+  },
+  {
+    "file": "tools/research_20261011/regimes.py",
+    "line": 47,
+    "needle": "accepted=bool"
+  },
+  {
+    "file": "tools/research_20261011/regimes.py",
+    "line": 70,
+    "needle": "pred=prob@m.transmat_"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 43,
+    "needle": "def conditional_weights"
+  },
+  {
+    "file": "tools/research_20261011/evaluate_models.py",
+    "line": 64,
+    "needle": "matched=[]"
+  },
+  {
+    "file": "tools/research_20261011/ledger.py",
+    "line": 6,
+    "needle": "def metrics"
+  },
+  {
+    "file": "tools/research_20261011/evaluate_models.py",
+    "line": 46,
+    "needle": "mainperiod=selected"
+  },
+  {
+    "file": "tools/research_20261011/risk_refinement.py",
+    "line": 30,
+    "needle": "passing=result[result.pass_target]"
+  },
+  {
+    "file": "tools/research_20261011/evaluate_models.py",
+    "line": 11,
+    "needle": "def block_interval"
+  },
+  {
+    "file": "tools/research_20261011/recent_diagnosis.py",
+    "line": 7,
+    "needle": "def main"
+  },
+  {
+    "file": "tools/research_20261011/short_windows.py",
+    "line": 14,
+    "needle": "def main"
+  },
+  {
+    "file": "tools/research_20261011/short_windows.py",
+    "line": 60,
+    "needle": "all_periods_pass"
+  },
+  {
+    "file": "tools/research_20261011/intraday.py",
+    "line": 32,
+    "needle": "good=(endtime-x.datetime)"
+  },
+  {
+    "file": "tools/research_20261011/intraday.py",
+    "line": 65,
+    "needle": "model=Ridge(alpha=100)"
+  },
+  {
+    "file": "tools/research_20261008/minute_account.py",
+    "line": 11,
+    "needle": "def minute_simulate"
+  },
+  {
+    "file": "tools/research_20261011/factor_timing.py",
+    "line": 15,
+    "needle": "factor_returns=[]"
+  },
+  {
+    "file": "tools/research_20261011/factor_timing.py",
+    "line": 29,
+    "needle": "cov=LedoitWolf()"
+  },
+  {
+    "file": "tools/research_20261011/factor_dsl.py",
+    "line": 6,
+    "needle": "def evaluate"
+  },
+  {
+    "file": "tools/research_20261011/prepare_data.py",
+    "line": 68,
+    "needle": "registry=["
+  },
+  {
+    "file": "tools/research_20261011/jev_adapter.py",
+    "line": 36,
+    "needle": "def build_request"
+  },
+  {
+    "file": "tools/research_20261011/jev_adapter.py",
+    "line": 53,
+    "needle": "def validate_response"
+  },
+  {
+    "file": "tools/research_20261011/jev_adapter.py",
+    "line": 85,
+    "needle": "def evaluate_probabilities"
+  },
+  {
+    "file": "tools/research_20261011/kronos_probe.py",
+    "line": 24,
+    "needle": "dates=calendar"
+  },
+  {
+    "file": "tools/research_20261011/kronos_probe.py",
+    "line": 22,
+    "needle": "predictor=KronosPredictor"
+  },
+  {
+    "file": "tools/research_20261011/audit_sync.py",
+    "line": 36,
+    "needle": "def inventory"
+  },
+  {
+    "file": "tools/research_20261011/requirements_matrix.py",
+    "line": 38,
+    "needle": "def main"
+  },
+  {
+    "file": "tools/research_20261011/PROTOCOL.md",
+    "line": 12,
+    "needle": "The 2024Q4"
+  },
+  {
+    "file": "tools/research_20261011/train_models.py",
+    "line": 124,
+    "needle": "valid.loc[valid"
+  },
+  {
+    "file": "tools/research_20261011/verify.py",
+    "line": 18,
+    "needle": "class FinancialTests"
+  },
+  {
+    "file": "tools/research_20261011/final_checks.py",
+    "line": 8,
+    "needle": "def main"
+  }
+]

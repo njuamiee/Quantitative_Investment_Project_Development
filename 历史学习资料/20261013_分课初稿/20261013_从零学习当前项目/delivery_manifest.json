@@ -1,0 +1,19 @@
+{
+  "01_从零读懂量化项目_全局导读.docx": "25718be6f1c8f074875c66778617866cc9b5b1fa1aa8934f8a77fe561c69e61d",
+  "01_从零读懂量化项目_全局导读.md": "ea80c25bde04668ebdc30528c723860654636e551f9e055de704381d6d0b5341",
+  "02_从零讲义_第1课_样本与时间轴.docx": "1b90bb1baa5a41ec0edb6d6deb3ecd9af5ccc20a2592c6e222ab357000f0ed38",
+  "02_从零讲义_第1课_样本与时间轴.md": "7bb4ef2bc6a93566fe754f1119eede740adbcf46d5900590bf00a67fe39f7df2",
+  "课程进度.md": "4cf109453b52be93a12d86552309eb833f2a3ad13268dbebe27101f067cac9f0",
+  "核对资料/2026Q3_daily_predictions.csv": "202923fcb206619914061b9a27c8079af11c81b974ac04dcb84499004e03007e",
+  "核对资料/2026Q4_daily_predictions.csv": "711fc2776925b4e445306a117cda8a1b61d68c8e4deef775da481f0247ba52ed",
+  "核对资料/artifact_hashes.json": "5e4c0871339466f2c52de40dfaab17f3a71869af52adcb5a45837d2bf78bf351",
+  "核对资料/inference_checks.json": "3a5dad478b49293f8507025c49a43a26cad49971f1acd372d586b1ba4473374b",
+  "核对资料/model_examples.json": "6c7ace6475151aec672ceca8cb5f59e094b8763a0e1f8efe287359573052775f",
+  "核对资料/old_table_answer.json": "ec932d627884805b910c4cdb907d01a07055d78e247b5918a570e1055c6dea04",
+  "核对资料/source_index.json": "daffea14220bde7dad3b6ae8c3ad64dbbd99ef550a88c26db3f0a21d5690e791",
+  "核对资料/代码索引.md": "e5682b5d86e9d11c6cfa3c60ed17fccb75bde82cc34ac2503efc74d9c6fa995a",
+  "核对资料/研究口径待改进.md": "e4bdb5055fd41dcb2372607ba576abd9c23f2c9bc6377014e5cf7e456582d68b",
+  "配图/五日批次时间线.png": "4408f8c200e033a9525015b98f3473cbe7bb14eaf312897185039d47c820100d",
+  "配图/全局数据流.png": "ef5ca53da5422f7b5b9919bd1e40259b892820e62e8c1a83226b680e98566b46",
+  "配图/训练与预测.png": "371305c184d1c24235ba6bdc19b5cd4273a45e2be7069cc4d0407d5c412fb421"
+}
