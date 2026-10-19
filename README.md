@@ -1,5 +1,24 @@
 # 量化选股项目：当前入口
 
+## 仓库与双远程配置
+
+本项目同时托管在两个远程仓库，内容保持一致：
+
+| 远程名 | 地址 |
+| --- | --- |
+| `origin` | https://github.com/njuamiee/Quantitative_Investment_Project_Development |
+| `origin-gitlab` | https://git.nju.edu.cn/amieenju/Quantitative_Investment_Project_Development |
+
+一条命令同时推送两边：
+
+```bash
+git push origin main && git push origin-gitlab main
+```
+
+`origin-gitlab` 的 `main` 为受保护分支，不允许强制推送。历史重建后新的提交历史已推送为 GitLab 分支 `main-history-20261019`，如需同步需在 GitLab 网页端合并或解除保护后强推。重建前的原始历史保留在本地分支 `backup-before-github-20261019`。
+
+---
+
 本次仓库交付包含新项目代码、实验协议、最终报告、资金曲线、逐日账户与审计证据。原始行情、模型缓存、虚拟环境和连接凭据留在本地；完整重跑前请按[本地输入说明](tools/research_20261018/DATA_INPUTS.md)准备数据，并使用[已核对的依赖版本](tools/research_20261018/requirements.txt)。已删除的预览、候选PPT和Python缓存记录在[清理清单](tools/maintenance/cleanup_20261018.json)，用户修改过的PPT和仍在使用的历史模块保留。
 
 ## 2026年10月18日：新增96组深入实验与完整超额比较
