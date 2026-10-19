@@ -1,0 +1,22 @@
+# Versions observed in the project's Python 3.11.8 research environment.
+# Core 2026-10-17/18 modelling, ledgers, Parquet and report generation.
+numpy==1.26.3
+pandas==2.1.4
+pyarrow==19.0.1
+scipy==1.15.2
+scikit-learn==1.6.1
+lightgbm==4.7.0
+joblib==1.4.2
+threadpoolctl==3.5.0
+matplotlib==3.6.1
+Markdown==3.7
+beautifulsoup4==4.13.3
+PyMuPDF==1.27.2.3
+Pillow==11.1.0
+requests==2.32.3
+
+# Used by the upstream 2026-10-11 regime builder when rebuilding HMM inputs.
+hmmlearn==0.3.3
+
+# Used only by the authorised-server input-sync path.
+paramiko==5.0.0

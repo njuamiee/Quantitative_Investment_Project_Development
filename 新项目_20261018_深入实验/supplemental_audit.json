@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "accounts": 22,
+  "days": 6746,
+  "orders": 58552,
+  "max_daily_identity_error": 1.862645149230957e-09,
+  "excess_rows": 278,
+  "reconciled_drawdown_intervals": 5,
+  "errors": [],
+  "scope": "Independent saved-ledger reconciliation; not source publication/vintage verification."
+}

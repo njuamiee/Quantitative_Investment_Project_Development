@@ -1,0 +1,104 @@
+{
+  "max_sum_error": 1.6653345369377348e-16,
+  "examples": [
+    {
+      "date": "2026-01-05",
+      "stockid": "BJ920575",
+      "base_score": 0.0050289201313381895,
+      "model_score": 0.13655721940552995,
+      "top_contributions": [
+        {
+          "factor": "x_drawdown60",
+          "contribution": 0.019520886953496717,
+          "input_value": -0.49000000953674316
+        },
+        {
+          "factor": "x_c02_gtalpha046",
+          "contribution": 0.0180550062921627,
+          "input_value": 0.46000000834465027
+        },
+        {
+          "factor": "x_c02_gtalpha070",
+          "contribution": 0.015687409518420837,
+          "input_value": -0.4099999964237213
+        },
+        {
+          "factor": "x_mom120",
+          "contribution": 0.014263244835137828,
+          "input_value": -0.4897959232330322
+        },
+        {
+          "factor": "x_c02_gtalpha055",
+          "contribution": 0.011632050884885045,
+          "input_value": -0.4300000071525574
+        },
+        {
+          "factor": "x_c02_gtalpha187",
+          "contribution": 0.009631935778712134,
+          "input_value": -0.49000000953674316
+        },
+        {
+          "factor": "x_c02_gtalpha122",
+          "contribution": -0.007904205388488031,
+          "input_value": -0.49000000953674316
+        },
+        {
+          "factor": "x_c01_Alpha032",
+          "contribution": -0.0060182745751869195,
+          "input_value": 0.3947368562221527
+        }
+      ],
+      "all_contributions_sum": 0.13152829927419174
+    },
+    {
+      "date": "2026-09-30",
+      "stockid": "BJ920699",
+      "base_score": 0.0050289201313381895,
+      "model_score": 0.09050618828892487,
+      "top_contributions": [
+        {
+          "factor": "x_mom120",
+          "contribution": -0.02079646568803784,
+          "input_value": 0.47727271914482117
+        },
+        {
+          "factor": "x_c01_Alpha005",
+          "contribution": 0.013523817840018831,
+          "input_value": 0.47647058963775635
+        },
+        {
+          "factor": "x_c02_gtalpha046",
+          "contribution": 0.012062450653635183,
+          "input_value": 0.47999998927116394
+        },
+        {
+          "factor": "x_c02_gtalpha001",
+          "contribution": 0.010601027283199175,
+          "input_value": 0.46000000834465027
+        },
+        {
+          "factor": "x_drawdown60",
+          "contribution": 0.008519341947225907,
+          "input_value": -0.44999998807907104
+        },
+        {
+          "factor": "x_c02_gtalpha055",
+          "contribution": 0.007166546389334613,
+          "input_value": -0.49000000953674316
+        },
+        {
+          "factor": "x_c01_Alpha047",
+          "contribution": 0.006341206490473314,
+          "input_value": 0.4176470637321472
+        },
+        {
+          "factor": "x_c02_gtalpha065",
+          "contribution": 0.005800073085329397,
+          "input_value": 0.46000000834465027
+        }
+      ],
+      "all_contributions_sum": 0.08547726815758677
+    }
+  ],
+  "meaning": "Contributions to predicted within-day rank score; neither future return percentages nor causal profit explanations."
+}

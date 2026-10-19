@@ -1,0 +1,38 @@
+[
+  {
+    "id": "short_reversal_activity",
+    "expression": "x_mom5 * x_amount_ratio",
+    "hypothesis": "短期涨跌的作用可能随成交活跃程度改变；检验二者相乘，方向只由训练决定。",
+    "proposed_by": "Codex提出；2026-10-18第1轮；未调用另一个本地LLM"
+  },
+  {
+    "id": "overnight_intraday_gap",
+    "expression": "x_overnight_ret - x_intraday_ret",
+    "hypothesis": "隔夜跳涨与盘中涨幅不同步，可能表示买盘持续性不同。",
+    "proposed_by": "Codex提出；2026-10-18第1轮；未调用另一个本地LLM"
+  },
+  {
+    "id": "trend_downside_penalty",
+    "expression": "x_mom60 - x_downside20",
+    "hypothesis": "中期趋势强但下跌波动小的股票可能更稳；检验训练方向而非预设上涨。",
+    "proposed_by": "Codex提出；2026-10-18第1轮；未调用另一个本地LLM"
+  },
+  {
+    "id": "liquidity_reversal",
+    "expression": "x_log_illiq * x_mom2",
+    "hypothesis": "两日涨跌在难成交和易成交股票中的后续表现可能不同。",
+    "proposed_by": "Codex提出；2026-10-18第1轮；未调用另一个本地LLM"
+  },
+  {
+    "id": "volatility_acceleration",
+    "expression": "x_vol5 - x_vol60",
+    "hypothesis": "短期波动突然超过长期水平可能是风险变化信号。",
+    "proposed_by": "Codex提出；2026-10-18第1轮；未调用另一个本地LLM"
+  },
+  {
+    "id": "close_strength_drawdown",
+    "expression": "x_close_location * x_drawdown60",
+    "hypothesis": "经历回撤后的收盘强弱可能提示不同的后续走势。",
+    "proposed_by": "Codex提出；2026-10-18第1轮；未调用另一个本地LLM"
+  }
+]

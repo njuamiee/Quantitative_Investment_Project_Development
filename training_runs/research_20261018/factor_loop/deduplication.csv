@@ -1,0 +1,7 @@
+﻿id,max_corr_to_selected,reason
+gap_minus_short_trend,0.0,selected
+overnight_intraday_gap,0.8792490418731945,selected
+gap_with_activity,0.8772487584995209,selected
+gap_volatility_scaling,0.9808029156932265,after_maximum_3
+trend_downside_penalty,0.19615466205831728,after_maximum_3
+trend_downside_activity,0.20480714977951248,after_maximum_3

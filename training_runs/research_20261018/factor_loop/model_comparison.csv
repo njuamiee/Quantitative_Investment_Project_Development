@@ -1,0 +1,3 @@
+﻿model,features,rounds,test_rank_ic
+baseline,100,172,0.11632619103996779
+augmented,103,172,0.11571645835134788

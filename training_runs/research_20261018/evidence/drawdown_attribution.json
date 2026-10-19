@@ -1,0 +1,317 @@
+[
+  {
+    "strategy": "deep_risk__quarterly__past_validation_selected",
+    "peak_date": "2025-03-18",
+    "trough_date": "2025-05-23",
+    "peak_equity": 1648126.7067338016,
+    "trough_equity": 1401941.9109168018,
+    "max_drawdown": 0.14937249351712778,
+    "equity_loss": -246184.79581699986,
+    "attribution_sum": -246184.79581700015,
+    "identity_error": -2.9103830456733704e-10,
+    "worst_stocks": [
+      {
+        "stockid": "BJ920680",
+        "initial_value": 0.0,
+        "final_value": 0.0,
+        "buy_value": 150532.8,
+        "sell_value": 123987.75,
+        "fee": 137.260275,
+        "dividend": 0.0,
+        "net_pnl": -26682.31027499999
+      },
+      {
+        "stockid": "BJ920207",
+        "initial_value": 0.0,
+        "final_value": 68748.84999999999,
+        "buy_value": 224985.4,
+        "sell_value": 143224.55,
+        "fee": 184.104975,
+        "dividend": 0.0,
+        "net_pnl": -13196.10497500003
+      },
+      {
+        "stockid": "BJ920367",
+        "initial_value": 79146.08,
+        "final_value": 0.0,
+        "buy_value": 76314.06,
+        "sell_value": 144248.46,
+        "fee": 110.28126,
+        "dividend": 0.0,
+        "net_pnl": -11321.961260000007
+      },
+      {
+        "stockid": "BJ920806",
+        "initial_value": 80962.35,
+        "final_value": 0.0,
+        "buy_value": 74208.4,
+        "sell_value": 144292.0,
+        "fee": 109.2502,
+        "dividend": 0.0,
+        "net_pnl": -10988.0002
+      },
+      {
+        "stockid": "BJ920061",
+        "initial_value": 0.0,
+        "final_value": 68467.05,
+        "buy_value": 150759.47999999998,
+        "sell_value": 72209.07,
+        "fee": 111.484275,
+        "dividend": 0.0,
+        "net_pnl": -10194.844274999987
+      }
+    ]
+  },
+  {
+    "strategy": "deep_risk__simple__hmm3_gate",
+    "peak_date": "2025-03-18",
+    "trough_date": "2025-04-24",
+    "peak_equity": 2240738.4356349986,
+    "trough_equity": 1797278.1282999974,
+    "max_drawdown": 0.19790810934580583,
+    "equity_loss": -443460.3073350012,
+    "attribution_sum": -443460.3073350001,
+    "identity_error": 1.1059455573558807e-09,
+    "worst_stocks": [
+      {
+        "stockid": "BJ920680",
+        "initial_value": 0.0,
+        "final_value": 0.0,
+        "buy_value": 203239.19,
+        "sell_value": 162915.22,
+        "fee": 183.07720500000002,
+        "dividend": 0.0,
+        "net_pnl": -40507.047205
+      },
+      {
+        "stockid": "BJ920415",
+        "initial_value": 116891.25,
+        "final_value": 0.0,
+        "buy_value": 203213.49,
+        "sell_value": 294146.31,
+        "fee": 248.6799,
+        "dividend": 0.0,
+        "net_pnl": -26207.109899999992
+      },
+      {
+        "stockid": "BJ920092",
+        "initial_value": 108802.2,
+        "final_value": 0.0,
+        "buy_value": 203173.44,
+        "sell_value": 286158.5,
+        "fee": 244.66597000000002,
+        "dividend": 0.0,
+        "net_pnl": -26061.805970000016
+      },
+      {
+        "stockid": "BJ920368",
+        "initial_value": 0.0,
+        "final_value": 88626.63,
+        "buy_value": 286941.27,
+        "sell_value": 179628.9,
+        "fee": 233.285085,
+        "dividend": 0.0,
+        "net_pnl": -18919.02508499999
+      },
+      {
+        "stockid": "BJ920876",
+        "initial_value": 0.0,
+        "final_value": 0.0,
+        "buy_value": 203206.26,
+        "sell_value": 187312.2,
+        "fee": 195.25923,
+        "dividend": 0.0,
+        "net_pnl": -16089.319229999997
+      }
+    ]
+  },
+  {
+    "strategy": "deep_risk__monthly__breadth",
+    "peak_date": "2025-07-01",
+    "trough_date": "2026-08-24",
+    "peak_equity": 3309254.1058374983,
+    "trough_equity": 2581418.6536124973,
+    "max_drawdown": 0.21993942711776193,
+    "equity_loss": -727835.4522250011,
+    "attribution_sum": -727835.4522250002,
+    "identity_error": 8.149072527885437e-10,
+    "worst_stocks": [
+      {
+        "stockid": "BJ920885",
+        "initial_value": 0.0,
+        "final_value": 0.0,
+        "buy_value": 860556.7,
+        "sell_value": 821115.3300000001,
+        "fee": 840.8360150000001,
+        "dividend": 0.0,
+        "net_pnl": -40282.20601499988
+      },
+      {
+        "stockid": "BJ920405",
+        "initial_value": 0.0,
+        "final_value": 0.0,
+        "buy_value": 284659.29000000004,
+        "sell_value": 250381.34,
+        "fee": 267.520315,
+        "dividend": 0.0,
+        "net_pnl": -34545.47031500004
+      },
+      {
+        "stockid": "BJ920300",
+        "initial_value": 168105.28,
+        "final_value": 0.0,
+        "buy_value": 601244.4,
+        "sell_value": 736172.56,
+        "fee": 668.70848,
+        "dividend": 0.0,
+        "net_pnl": -33845.82848
+      },
+      {
+        "stockid": "BJ920199",
+        "initial_value": 187444.62,
+        "final_value": 0.0,
+        "buy_value": 298875.17000000004,
+        "sell_value": 455123.93999999994,
+        "fee": 376.999555,
+        "dividend": 0.0,
+        "net_pnl": -31572.84955500009
+      },
+      {
+        "stockid": "BJ920002",
+        "initial_value": 0.0,
+        "final_value": 0.0,
+        "buy_value": 765501.71,
+        "sell_value": 736227.65,
+        "fee": 750.86468,
+        "dividend": 0.0,
+        "net_pnl": -30024.92467999994
+      }
+    ]
+  },
+  {
+    "strategy": "factor_loop__augmented__equal",
+    "peak_date": "2026-01-23",
+    "trough_date": "2026-07-24",
+    "peak_equity": 1137706.4028200004,
+    "trough_equity": 634409.7679749997,
+    "max_drawdown": 0.44237830919953836,
+    "equity_loss": -503296.6348450007,
+    "attribution_sum": -503296.63484500005,
+    "identity_error": 6.402842700481415e-10,
+    "worst_stocks": [
+      {
+        "stockid": "BJ920405",
+        "initial_value": 0.0,
+        "final_value": 0.0,
+        "buy_value": 325593.93,
+        "sell_value": 297938.04000000004,
+        "fee": 311.765985,
+        "dividend": 0.0,
+        "net_pnl": -27967.655984999954
+      },
+      {
+        "stockid": "BJ920522",
+        "initial_value": 0.0,
+        "final_value": 0.0,
+        "buy_value": 391762.18,
+        "sell_value": 364240.08,
+        "fee": 378.00113,
+        "dividend": 91.5,
+        "net_pnl": -27808.601129999977
+      },
+      {
+        "stockid": "BJ920885",
+        "initial_value": 57278.44,
+        "final_value": 33843.64,
+        "buy_value": 426334.76,
+        "sell_value": 429405.14,
+        "fee": 427.86995,
+        "dividend": 183.23999999999998,
+        "net_pnl": -20609.049949999982
+      },
+      {
+        "stockid": "BJ920227",
+        "initial_value": 0.0,
+        "final_value": 0.0,
+        "buy_value": 298248.89,
+        "sell_value": 279739.33999999997,
+        "fee": 288.994115,
+        "dividend": 0.0,
+        "net_pnl": -18798.544115000048
+      },
+      {
+        "stockid": "BJ920284",
+        "initial_value": 0.0,
+        "final_value": 32129.76,
+        "buy_value": 415237.96,
+        "sell_value": 366515.32,
+        "fee": 390.87664,
+        "dividend": 0.0,
+        "net_pnl": -16983.756640000003
+      }
+    ]
+  },
+  {
+    "strategy": "hmm_conditional__hmm3__hmm3_gate",
+    "peak_date": "2025-03-18",
+    "trough_date": "2025-04-24",
+    "peak_equity": 2172156.965780003,
+    "trough_equity": 1743981.1353200024,
+    "max_drawdown": 0.1971201148008409,
+    "equity_loss": -428175.83046000055,
+    "attribution_sum": -428175.8304600002,
+    "identity_error": 3.4924596548080444e-10,
+    "worst_stocks": [
+      {
+        "stockid": "BJ920680",
+        "initial_value": 0.0,
+        "final_value": 0.0,
+        "buy_value": 196714.87,
+        "sell_value": 157626.86,
+        "fee": 177.170865,
+        "dividend": 0.0,
+        "net_pnl": -39265.18086500001
+      },
+      {
+        "stockid": "BJ920415",
+        "initial_value": 112877.45,
+        "final_value": 0.0,
+        "buy_value": 196722.41,
+        "sell_value": 284506.03,
+        "fee": 240.61422000000002,
+        "dividend": 0.0,
+        "net_pnl": -25334.444219999987
+      },
+      {
+        "stockid": "BJ920092",
+        "initial_value": 105046.7,
+        "final_value": 0.0,
+        "buy_value": 196702.56,
+        "sell_value": 276787.28,
+        "fee": 236.74492,
+        "dividend": 0.0,
+        "net_pnl": -25198.724919999982
+      },
+      {
+        "stockid": "BJ920368",
+        "initial_value": 0.0,
+        "final_value": 85718.19,
+        "buy_value": 277385.71,
+        "sell_value": 173606.7,
+        "fee": 225.496205,
+        "dividend": 0.0,
+        "net_pnl": -18286.316205000006
+      },
+      {
+        "stockid": "BJ920876",
+        "initial_value": 0.0,
+        "final_value": 0.0,
+        "buy_value": 196734.34,
+        "sell_value": 181362.62,
+        "fee": 189.04848,
+        "dividend": 0.0,
+        "net_pnl": -15560.76848
+      }
+    ]
+  }
+]

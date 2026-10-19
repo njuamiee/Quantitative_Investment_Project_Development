@@ -1,0 +1,66 @@
+<!doctype html><meta charset="utf-8"><style>body{max-width:1050px;margin:40px auto;font:16px/1.9 Microsoft YaHei}table{border-collapse:collapse}td,th{border:1px solid #aaa;padding:8px}pre{white-space:pre-wrap;background:#eee;padding:16px}img{max-width:100%}</style><h1>最近研究与开源项目：哪些进入了实验，效果怎样</h1>
+<p>检索核查日期：2026-10-18。新闻和论文只是提出方法的来源，效果必须由本项目对照实验回答。以下明确区分“借鉴思想”“实际跑了本地实现”和“尚未复现原项目”，不把所有名称都写成已经使用。</p>
+<table>
+<thead>
+<tr>
+<th>来源及日期</th>
+<th>用通俗话说是什么意思</th>
+<th>本项目实际改动</th>
+<th>本次证据与结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/microsoft/RD-Agent/releases">Microsoft RD-Agent官方版本记录</a>，v0.8.0为2025-11-03，v1.0.0为2026-09-23；<a href="https://arxiv.org/abs/2505.15155">研究论文</a></td>
+<td>AI先提出可计算的想法，程序检验，失败原因再反馈给提出者，重复有限轮次。新版本发布本身并不代表新金融收益。</td>
+<td>增加受限表达式、完整拒绝记录、只含训练/验证的反馈、两轮10个提案、冻结3列后做增量训练与账本。</td>
+<td>全仓少亏2.17个百分点，过滤后多亏0.17个百分点；不能证明稳定提升。提案由本对话Codex完成，没有运行原版RD-Agent或另一台本地LLM。</td>
+</tr>
+<tr>
+<td><a href="https://www.msci.com/research-and-insights/blog-post/transparency-and-insights-into-nonlinear-factor-effects-through-market-regimes">MSCI：非线性因子在不同市场状态下的解释</a>，2026-03-27</td>
+<td>同一个因子在不同市场环境中可能作用不同；需要把模型判断拆开，看到哪些输入推高或压低分数。</td>
+<td>新增2/3状态条件因子权重，并用LightGBM自身的树贡献计算解释两天的实际预测；所有贡献相加还原模型分数。</td>
+<td>3状态权重和相同开关的全期表现略优于统一权重，但近期仍亏。BJ920575在2026-01-05分数0.136557，可由基准值与各输入贡献精确相加得到；它不是收益率。没有复制MSCI的私有数据/模型。</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2306.09862">DoubleAdapt论文</a>，2023-06-16提出、2024-04-07修订；<a href="https://github.com/SJTU-DMTai/DoubleAdapt">作者代码</a></td>
+<td>旧数据和新市场不一样时，只把新数据继续塞进旧模型未必有效，需要处理变化。</td>
+<td>本项目用明确的季度/月度重新训练、历史窗口和近期权重选择，以及状态条件权重来做可解释的漂移对照。</td>
+<td>月度更新并非总比季度好；分钟Q4与Q3的优劣顺序反转也是实证。这里没有实现论文的两个可学习适配器，不能命名为DoubleAdapt复现。</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2010.01265">DoubleEnsemble论文</a>，2020；<a href="https://github.com/microsoft/qlib/blob/main/qlib/contrib/model/double_ensemble.py">Qlib实现</a></td>
+<td>不同模型的错误可能不同，组合有机会稳定，但也可能只把错误混在一起。</td>
+<td>固定将季度树排名与简单IC排名各占50%，与各自单独评分在19种相同退出规则下比较。</td>
+<td>混合组也保留全部结果，未成为稳定达标方案。固定50:50是轻量对照，不是论文完整双重集成训练算法。</td>
+</tr>
+<tr>
+<td><a href="https://github.com/microsoft/qlib/blob/main/docs/advanced/PIT.rst">Qlib历史可得性说明</a>、<a href="https://github.com/microsoft/qlib/blob/main/docs/component/strategy.rst">策略与执行分层</a></td>
+<td>今天查到的历史值，不一定就是过去当天能拿到的版本；预测得分和买卖兑现必须分开。</td>
+<td>每轮检查标签结束日；行业版本按公布后可用时点；当期指数名单拒绝倒填；训练输出单独存，执行保留现金、持仓和拒单。</td>
+<td>96组有完整连续账；历史供应商修订/公布时点仍有缺口，文件哈希只冻结本次版本，不证明过去可得。</td>
+</tr>
+<tr>
+<td><a href="https://www.man.com/insights/h2-2026-technology-outlook?language_content_entity=en-gb">Man Group：2026下半年科技展望</a>，2026-07-10；<a href="https://www.aqr.com/Insights/Research/White-Papers/Academic-Alpha">AQR Academic Alpha</a>，2026-08-19</td>
+<td>机构研究会提示市场集中、拥挤和变化，但不是可以直接贴到本项目上的买卖信号。</td>
+<td>继续保留历史行业/规模/动量/波动分散对照，新增账户暂停、广度开关，单列近期结果和相对基准曲线。</td>
+<td>这些是研究启发，而非声称新闻在历史当日已作为因子使用；没有把2026年文章倒放进2024年预测。</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2508.02739">Kronos论文</a>与<a href="https://github.com/shiyu-coder/Kronos">官方仓库</a>，2025-08</td>
+<td>用大量价格序列预训练模型，再输入过去开高低收量，产生未来序列或分布。</td>
+<td>核查输入形式和预训练时间边界；本轮没有把不明训练截止的权重加入严格历史收益表。</td>
+<td>无法证明权重没见过2024—2025被测行情时，漂亮历史结果也可能不是有效外测。因此暂不以它宣称业绩提升。</td>
+</tr>
+</tbody>
+</table>
+<h2>本地新增代码和产物对应</h2>
+<ul>
+<li>风险规则及80组账户：<code>tools/research_20261018/adaptive_execution.py</code>、<code>deep_risk_experiment.py</code>；结果在<code>training_runs/research_20261018/deep_risk/</code>。</li>
+<li>两轮因子闭环：<code>auto_factor_lab.py</code>、<code>loop_round1.json</code>、<code>loop_round2.json</code>、<code>loop_feedback.md</code>、<code>factor_loop_experiment.py</code>；冻结时刻、因子名单和哈希在<code>factor_loop/frozen_selection.json</code>。</li>
+<li>状态条件因子：<code>hmm_conditional_experiment.py</code>；每个月、每种状态的每个因子权重全部写入<code>conditional_factor_weights.csv</code>。</li>
+<li>分钟增量：<code>minute_incremental_experiment.py</code>；权重选择、覆盖、每条账户结果均在<code>minute_incremental/</code>。</li>
+<li>树预测解释：<code>explain_new_model.py</code>；两天200条实际预测的逐因子贡献在<code>factor_loop/example_prediction_contributions.csv</code>。</li>
+<li>独立核查：<code>audit_deep_risk.py</code>、<code>audit_supplemental.py</code>；前者复核80组，后者复核另外16组和6个基准。</li>
+</ul>
+<p>本轮结论并不是“越新、越复杂越好”。新方法必须同时经得起同数据、同买卖规则的比较和近期检验；没有改善的模块应保留为研究证据，而不是硬塞进正式策略。</p>

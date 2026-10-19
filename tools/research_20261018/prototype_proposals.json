@@ -1,0 +1,20 @@
+[
+  {
+    "id": "medium_trend_minus_short",
+    "expression": "x_mom20 - x_mom5",
+    "hypothesis": "Intermediate trend may matter more when the very recent move is weaker.",
+    "proposed_by": "Codex offline static proposal on 2026-10-18; no separate local LLM run"
+  },
+  {
+    "id": "trend_with_volume",
+    "expression": "x_mom20 * x_amount_ratio",
+    "hypothesis": "A trend associated with unusual trading activity may behave differently.",
+    "proposed_by": "Codex offline static proposal on 2026-10-18; no separate local LLM run"
+  },
+  {
+    "id": "trend_minus_volatility",
+    "expression": "x_mom20 - x_vol20",
+    "hypothesis": "A trend with lower recent volatility may rank differently.",
+    "proposed_by": "Codex offline static proposal on 2026-10-18; no separate local LLM run"
+  }
+]

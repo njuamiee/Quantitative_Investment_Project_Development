@@ -1,0 +1,934 @@
+[
+  {
+    "path": "tools/research_20261011/audit_sync.py",
+    "lines": 156,
+    "sha256": "8030248b2493f27706a7282adaa28e090f806be1eb1486d0b79d215fbed1e002",
+    "functions": [
+      {
+        "name": "dump",
+        "line": 15,
+        "end": 17
+      },
+      {
+        "name": "listing",
+        "line": 19,
+        "end": 24
+      },
+      {
+        "name": "dated_scan",
+        "line": 26,
+        "end": 34
+      },
+      {
+        "name": "inventory",
+        "line": 36,
+        "end": 89
+      },
+      {
+        "name": "write_csv",
+        "line": 91,
+        "end": 95
+      },
+      {
+        "name": "download_one",
+        "line": 97,
+        "end": 113
+      },
+      {
+        "name": "sync",
+        "line": 115,
+        "end": 147
+      }
+    ],
+    "from_imports": [
+      "__future__",
+      "pathlib",
+      "datetime",
+      "audit_server_inventory"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/build_report.py",
+    "lines": 323,
+    "sha256": "e90c3638c6e5a5d23229e9f036310cca32e63b928a82b9f1db1c4452192d6d70",
+    "functions": [
+      {
+        "name": "load",
+        "line": 19,
+        "end": 19
+      },
+      {
+        "name": "readcsv",
+        "line": 20,
+        "end": 20
+      },
+      {
+        "name": "pct",
+        "line": 21,
+        "end": 21
+      },
+      {
+        "name": "num",
+        "line": 22,
+        "end": 22
+      },
+      {
+        "name": "p",
+        "line": 35,
+        "end": 36
+      },
+      {
+        "name": "page",
+        "line": 37,
+        "end": 38
+      },
+      {
+        "name": "sub",
+        "line": 39,
+        "end": 39
+      },
+      {
+        "name": "table",
+        "line": 40,
+        "end": 59
+      },
+      {
+        "name": "fig",
+        "line": 60,
+        "end": 60
+      },
+      {
+        "name": "link",
+        "line": 61,
+        "end": 63
+      },
+      {
+        "name": "short_window_section",
+        "line": 160,
+        "end": 178
+      }
+    ],
+    "from_imports": [
+      "pathlib",
+      "docx",
+      "docx.shared",
+      "docx.oxml",
+      "docx.oxml.ns",
+      "docx.enum.text",
+      "docx.enum.table",
+      "docx.opc.constants",
+      "table_geometry"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/common.py",
+    "lines": 12,
+    "sha256": "9dd42ba9e1bef5c79dbf5183eca8a95f40352c6332e09c63aa19b7291597c6ac",
+    "functions": [
+      {
+        "name": "dump",
+        "line": 9,
+        "end": 11
+      },
+      {
+        "name": "sha",
+        "line": 12,
+        "end": 12
+      }
+    ],
+    "from_imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/evaluate_models.py",
+    "lines": 89,
+    "sha256": "f2a490f8b54a21dd5bf619fb5d1bdb1bfe5989556081e8bb336381681359898f",
+    "functions": [
+      {
+        "name": "block_interval",
+        "line": 11,
+        "end": 22
+      },
+      {
+        "name": "period_metrics",
+        "line": 24,
+        "end": 29
+      },
+      {
+        "name": "main",
+        "line": 31,
+        "end": 86
+      }
+    ],
+    "from_imports": [
+      "common",
+      "ledger",
+      "train_models",
+      "prepare"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/factor_dsl.py",
+    "lines": 17,
+    "sha256": "437d418279156c03f97524d0d01ad293c8012997de363817aa00d2cb3f996736",
+    "functions": [
+      {
+        "name": "evaluate",
+        "line": 6,
+        "end": 17
+      }
+    ],
+    "from_imports": []
+  },
+  {
+    "path": "tools/research_20261011/factor_timing.py",
+    "lines": 57,
+    "sha256": "342b89d1105817c67230b015dc2864501cf3c21042b1c3e90aa4f64f5cdb8164",
+    "functions": [
+      {
+        "name": "main",
+        "line": 10,
+        "end": 54
+      }
+    ],
+    "from_imports": [
+      "sklearn.covariance",
+      "threadpoolctl",
+      "common",
+      "ledger"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/final_checks.py",
+    "lines": 60,
+    "sha256": "25532dfe3746e171577edb3da2a7a44535f9ca726af95ca3d5bf1e763c6fe9d4",
+    "functions": [
+      {
+        "name": "main",
+        "line": 8,
+        "end": 57
+      }
+    ],
+    "from_imports": [
+      "common",
+      "ledger"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/inspect_supplement.py",
+    "lines": 35,
+    "sha256": "0f0918ac9d134e618ed97241fe979e32afe505067a5ef5596a5798a5150ec017",
+    "functions": [
+      {
+        "name": "main",
+        "line": 8,
+        "end": 33
+      }
+    ],
+    "from_imports": [
+      "pathlib",
+      "audit_sync",
+      "common"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/intraday.py",
+    "lines": 76,
+    "sha256": "534acc848a9b59cfe70a57a0d6582025dde2aabb1d374049477c53e6c3f09802",
+    "functions": [
+      {
+        "name": "main",
+        "line": 9,
+        "end": 73
+      }
+    ],
+    "from_imports": [
+      "sklearn.linear_model",
+      "common",
+      "ledger"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/jev_adapter.py",
+    "lines": 109,
+    "sha256": "df9261f867215871f118e603620d7932531ecb7a6b74ccab3a2a43a6cca48afb",
+    "functions": [
+      {
+        "name": "utc",
+        "line": 21,
+        "end": 24
+      },
+      {
+        "name": "Evidence",
+        "line": 27,
+        "end": 34
+      },
+      {
+        "name": "build_request",
+        "line": 36,
+        "end": 42
+      },
+      {
+        "name": "_probabilities",
+        "line": 44,
+        "end": 51
+      },
+      {
+        "name": "validate_response",
+        "line": 53,
+        "end": 74
+      },
+      {
+        "name": "call_jev",
+        "line": 76,
+        "end": 83
+      },
+      {
+        "name": "evaluate_probabilities",
+        "line": 85,
+        "end": 100
+      }
+    ],
+    "from_imports": [
+      "dataclasses",
+      "datetime",
+      "common"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/kronos_probe.py",
+    "lines": 60,
+    "sha256": "9e3dd52a8385c0bbecf100ab571f8cd1578609e441ca7f1816fb035c8fff55d5",
+    "functions": [
+      {
+        "name": "main",
+        "line": 15,
+        "end": 55
+      }
+    ],
+    "from_imports": [
+      "huggingface_hub",
+      "common",
+      "model"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/ledger.py",
+    "lines": 156,
+    "sha256": "9709055dc251f79acf3a19a17a41e2a50bd6de4f82006022b527626b8b775bcd",
+    "functions": [
+      {
+        "name": "metrics",
+        "line": 6,
+        "end": 23
+      },
+      {
+        "name": "Market",
+        "line": 25,
+        "end": 156
+      },
+      {
+        "name": "Market.__init__",
+        "line": 26,
+        "end": 36
+      },
+      {
+        "name": "Market.run",
+        "line": 38,
+        "end": 156
+      }
+    ],
+    "from_imports": []
+  },
+  {
+    "path": "tools/research_20261011/legacy_extensions.py",
+    "lines": 31,
+    "sha256": "051a68559fc8f7496e5aebc53ef2fd2f9dc6aa052dc88a1198e3fd1e41dae911",
+    "functions": [
+      {
+        "name": "main",
+        "line": 10,
+        "end": 29
+      }
+    ],
+    "from_imports": [
+      "common",
+      "minute_account"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/period_audit.py",
+    "lines": 22,
+    "sha256": "f43a0426c8e942880f65ab2812f2883c849d8ce3f836668af86e66c12000dd05",
+    "functions": [
+      {
+        "name": "main",
+        "line": 6,
+        "end": 20
+      }
+    ],
+    "from_imports": [
+      "common",
+      "ledger"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/portfolio_extension.py",
+    "lines": 55,
+    "sha256": "379ce32e46857bed84aa9efc46dc02404cf874c159d66d1a6b96057e2a0085a9",
+    "functions": [
+      {
+        "name": "main",
+        "line": 11,
+        "end": 52
+      }
+    ],
+    "from_imports": [
+      "common",
+      "ledger",
+      "evaluate_models"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/prepare_data.py",
+    "lines": 127,
+    "sha256": "80f58cae049e88bdb7eb63541ee6e3ba630354ac59e11065520cc947700b7532",
+    "functions": [
+      {
+        "name": "main",
+        "line": 9,
+        "end": 125
+      }
+    ],
+    "from_imports": [
+      "common",
+      "factor_dsl"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/PROTOCOL.md",
+    "lines": 65,
+    "sha256": "e4a02eb9c0f53a2898edabb599b41ad1f8a78cc1e30f472512eba16742aa3de4",
+    "functions": [],
+    "from_imports": []
+  },
+  {
+    "path": "tools/research_20261011/README.md",
+    "lines": 60,
+    "sha256": "11ab222bedc8c4c4c409332988870ed1c0e3b42f757ccd9cc3825a9427664626",
+    "functions": [],
+    "from_imports": []
+  },
+  {
+    "path": "tools/research_20261011/recent_diagnosis.py",
+    "lines": 34,
+    "sha256": "4ada3d77197642dbd9ff91ca1d17c0a027b613d74ce24c12cfc49ecfe6dd5a68",
+    "functions": [
+      {
+        "name": "main",
+        "line": 7,
+        "end": 32
+      }
+    ],
+    "from_imports": [
+      "common",
+      "ledger"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/refresh_minute_accounts.py",
+    "lines": 18,
+    "sha256": "e31aba2d9adfb813bd5a78709b228a256671c1e58090463acf4b7764f4d8ca17",
+    "functions": [
+      {
+        "name": "main",
+        "line": 7,
+        "end": 16
+      }
+    ],
+    "from_imports": [
+      "common",
+      "ledger"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/regimes.py",
+    "lines": 92,
+    "sha256": "9ef3e58d4d97b581912aef522a7479111d51884709130f9f7d0ef8b961fc3ff7",
+    "functions": [
+      {
+        "name": "filtered",
+        "line": 11,
+        "end": 16
+      },
+      {
+        "name": "main",
+        "line": 18,
+        "end": 87
+      }
+    ],
+    "from_imports": [
+      "scipy.special",
+      "sklearn.preprocessing",
+      "hmmlearn.hmm",
+      "threadpoolctl",
+      "common"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/report_assets.py",
+    "lines": 48,
+    "sha256": "003c2974f48b429e4b74cdfae234d3b664ac3e8341a3e5e0aa5aed0f876c599e",
+    "functions": [
+      {
+        "name": "main",
+        "line": 11,
+        "end": 46
+      }
+    ],
+    "from_imports": [
+      "matplotlib.ticker",
+      "common"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/requirements-observed.txt",
+    "lines": 20,
+    "sha256": "a6a29da0721870cc04d4db5431bc67845b1484ee353cdb84c342bfe59f055736",
+    "functions": [],
+    "from_imports": []
+  },
+  {
+    "path": "tools/research_20261011/requirements_matrix.py",
+    "lines": 59,
+    "sha256": "af3d2385c10eed969df3b7925c9846da5f89847d5d20671371c015f27f2b97e0",
+    "functions": [
+      {
+        "name": "main",
+        "line": 38,
+        "end": 57
+      }
+    ],
+    "from_imports": [
+      "common"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/risk_refinement.py",
+    "lines": 53,
+    "sha256": "e86b4758483a888110255188fe681e3456a878455aa91a4710a1a10d73e00726",
+    "functions": [
+      {
+        "name": "main",
+        "line": 12,
+        "end": 50
+      }
+    ],
+    "from_imports": [
+      "common",
+      "ledger",
+      "evaluate_models"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/run_local.ps1",
+    "lines": 37,
+    "sha256": "15cb664b0e3932ce2578d37bf4b573eaa9f1fba03398922c28cc6466db00af04",
+    "functions": [],
+    "from_imports": []
+  },
+  {
+    "path": "tools/research_20261011/short_windows.py",
+    "lines": 69,
+    "sha256": "4c056f59a4dbbf38880c3efd0a1f2ed95178dec95db8708d288718b10495b3a7",
+    "functions": [
+      {
+        "name": "main",
+        "line": 14,
+        "end": 66
+      }
+    ],
+    "from_imports": [
+      "sklearn.linear_model",
+      "lightgbm",
+      "threadpoolctl",
+      "common",
+      "train_models",
+      "ledger"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/supplement_audit.py",
+    "lines": 76,
+    "sha256": "2c7d89921ec8555f2e7527365496e21b6baf58ba5e84a35159930adb3b08ef10",
+    "functions": [
+      {
+        "name": "inspect_path",
+        "line": 8,
+        "end": 11
+      },
+      {
+        "name": "main",
+        "line": 13,
+        "end": 74
+      }
+    ],
+    "from_imports": [
+      "pathlib",
+      "audit_sync",
+      "common"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/train_models.py",
+    "lines": 163,
+    "sha256": "a75f08490a6ad753c4291a35b1f374715eaf0a8002e4cb25c953e511043c1ba3",
+    "functions": [
+      {
+        "name": "screening",
+        "line": 20,
+        "end": 34
+      },
+      {
+        "name": "ic_value",
+        "line": 36,
+        "end": 41
+      },
+      {
+        "name": "conditional_weights",
+        "line": 43,
+        "end": 53
+      },
+      {
+        "name": "fit_predict",
+        "line": 55,
+        "end": 82
+      },
+      {
+        "name": "choose",
+        "line": 84,
+        "end": 96
+      },
+      {
+        "name": "main",
+        "line": 98,
+        "end": 158
+      }
+    ],
+    "from_imports": [
+      "sklearn.linear_model",
+      "sklearn.ensemble",
+      "lightgbm",
+      "catboost",
+      "xgboost",
+      "threadpoolctl",
+      "common",
+      "ledger"
+    ]
+  },
+  {
+    "path": "tools/research_20261011/verify.py",
+    "lines": 85,
+    "sha256": "142cc67992a160b433077836def80904ecfbfc071e578120a1789535861e8b75",
+    "functions": [
+      {
+        "name": "fixture",
+        "line": 11,
+        "end": 16
+      },
+      {
+        "name": "FinancialTests",
+        "line": 18,
+        "end": 80
+      },
+      {
+        "name": "FinancialTests.test_t1_and_cash",
+        "line": 19,
+        "end": 25
+      },
+      {
+        "name": "FinancialTests.test_capacity_shared_and_missing_bar",
+        "line": 26,
+        "end": 33
+      },
+      {
+        "name": "FinancialTests.test_split_no_phantom_loss",
+        "line": 34,
+        "end": 38
+      },
+      {
+        "name": "FinancialTests.test_prefix_execution_causality",
+        "line": 39,
+        "end": 44
+      },
+      {
+        "name": "FinancialTests.test_initial_capital_drawdown",
+        "line": 45,
+        "end": 48
+      },
+      {
+        "name": "FinancialTests.test_hmm_filter_prefix",
+        "line": 49,
+        "end": 55
+      },
+      {
+        "name": "FinancialTests.test_dsl_rejects_execution",
+        "line": 56,
+        "end": 60
+      },
+      {
+        "name": "FinancialTests.test_jev_time_gate_and_network_disabled",
+        "line": 61,
+        "end": 64
+      },
+      {
+        "name": "FinancialTests.test_jev_contract_and_probability_evaluation",
+        "line": 65,
+        "end": 80
+      }
+    ],
+    "from_imports": [
+      "ledger",
+      "regimes",
+      "factor_dsl",
+      "jev_adapter",
+      "common"
+    ]
+  },
+  {
+    "path": "tools/research_20260930/prepare.py",
+    "lines": 197,
+    "sha256": "440cce8815d249b125370eba61621fe4903501be534b4f1578691e0dcf0af0dc",
+    "functions": [
+      {
+        "name": "dump",
+        "line": 16,
+        "end": 18
+      },
+      {
+        "name": "read_csv",
+        "line": 20,
+        "end": 20
+      },
+      {
+        "name": "read_zip",
+        "line": 22,
+        "end": 31
+      },
+      {
+        "name": "prices",
+        "line": 33,
+        "end": 101
+      },
+      {
+        "name": "latest_quality",
+        "line": 103,
+        "end": 120
+      },
+      {
+        "name": "factor_panel",
+        "line": 122,
+        "end": 154
+      },
+      {
+        "name": "build_panel",
+        "line": 156,
+        "end": 179
+      },
+      {
+        "name": "main",
+        "line": 181,
+        "end": 195
+      }
+    ],
+    "from_imports": [
+      "__future__",
+      "pathlib",
+      "audit_server_inventory"
+    ]
+  },
+  {
+    "path": "tools/research_20260930/train.py",
+    "lines": 210,
+    "sha256": "f2cc7ecbb50cb0d69abdf8825361faca085afbbe2fec1badc4ba4ad57ecf0871",
+    "functions": [
+      {
+        "name": "corr_columns",
+        "line": 26,
+        "end": 34
+      },
+      {
+        "name": "daily_ic",
+        "line": 36,
+        "end": 46
+      },
+      {
+        "name": "hac_summary",
+        "line": 48,
+        "end": 54
+      },
+      {
+        "name": "factor_selection",
+        "line": 56,
+        "end": 86
+      },
+      {
+        "name": "fit_lgb",
+        "line": 88,
+        "end": 97
+      },
+      {
+        "name": "model_metrics",
+        "line": 99,
+        "end": 111
+      },
+      {
+        "name": "rolling",
+        "line": 113,
+        "end": 164
+      },
+      {
+        "name": "hmm",
+        "line": 166,
+        "end": 204
+      },
+      {
+        "name": "main",
+        "line": 206,
+        "end": 208
+      }
+    ],
+    "from_imports": [
+      "__future__",
+      "scipy.special",
+      "scipy.stats",
+      "sklearn.linear_model",
+      "sklearn.preprocessing",
+      "hmmlearn.hmm",
+      "fast_correlation",
+      "prepare"
+    ]
+  },
+  {
+    "path": "tools/research_20260930/accounts.py",
+    "lines": 149,
+    "sha256": "dc06e7c1c2d006953a0c59aa08122e769e6d6d594cd56a9faf38690b8d3ff7b6",
+    "functions": [
+      {
+        "name": "metrics",
+        "line": 11,
+        "end": 16
+      },
+      {
+        "name": "simulate",
+        "line": 18,
+        "end": 110
+      },
+      {
+        "name": "benchmark",
+        "line": 112,
+        "end": 116
+      },
+      {
+        "name": "run_market",
+        "line": 118,
+        "end": 146
+      }
+    ],
+    "from_imports": [
+      "__future__",
+      "prepare"
+    ]
+  },
+  {
+    "path": "tools/research_20261008/minute_account.py",
+    "lines": 97,
+    "sha256": "2c0d6fcb12df3624e037683a2579ee87fedadf311eceda87bfc2fcda28c96892",
+    "functions": [
+      {
+        "name": "minute_simulate",
+        "line": 11,
+        "end": 81
+      },
+      {
+        "name": "main",
+        "line": 83,
+        "end": 95
+      }
+    ],
+    "from_imports": [
+      "pathlib",
+      "prepare",
+      "accounts"
+    ]
+  },
+  {
+    "path": "tools/teacher_answers_20261012/build_answer.py",
+    "lines": 354,
+    "sha256": "d885c1d04b812da04d29b26cd5305719dd807b76f501bff24597fee507feed60",
+    "functions": [
+      {
+        "name": "load",
+        "line": 18,
+        "end": 18
+      },
+      {
+        "name": "rows",
+        "line": 19,
+        "end": 19
+      },
+      {
+        "name": "pc",
+        "line": 20,
+        "end": 20
+      },
+      {
+        "name": "n",
+        "line": 21,
+        "end": 21
+      },
+      {
+        "name": "short",
+        "line": 22,
+        "end": 22
+      },
+      {
+        "name": "p",
+        "line": 43,
+        "end": 43
+      },
+      {
+        "name": "h",
+        "line": 44,
+        "end": 44
+      },
+      {
+        "name": "page",
+        "line": 45,
+        "end": 46
+      },
+      {
+        "name": "tab",
+        "line": 47,
+        "end": 70
+      },
+      {
+        "name": "link",
+        "line": 71,
+        "end": 74
+      }
+    ],
+    "from_imports": [
+      "pathlib",
+      "docx",
+      "docx.shared",
+      "docx.enum.text",
+      "docx.enum.table",
+      "docx.oxml",
+      "docx.oxml.ns",
+      "docx.opc.constants",
+      "table_geometry"
+    ]
+  }
+]
