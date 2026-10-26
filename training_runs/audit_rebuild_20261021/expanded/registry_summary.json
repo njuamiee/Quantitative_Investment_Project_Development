@@ -1,0 +1,10 @@
+{
+  "tables": 120,
+  "fields": 2445,
+  "sample_dates": 154,
+  "rows": 15400,
+  "primary_fields": 1601,
+  "publication_sensitive": 340,
+  "relationship_sensitive": 504,
+  "warning": "No whole-period quality statistic used for feature selection; quarterly training screens own all selection."
+}

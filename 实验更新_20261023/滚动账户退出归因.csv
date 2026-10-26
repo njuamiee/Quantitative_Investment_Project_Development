@@ -1,0 +1,4 @@
+﻿reason,成交部分数,平均持有交易日,已实现盈亏
+scheduled_fifth_session,600,5.0,-134135.49
+stop_previous_close,2,2.0,252.62
+take_profit_previous_close,2,5.0,7883.78

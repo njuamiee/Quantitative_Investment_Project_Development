@@ -1,0 +1,9 @@
+{
+  "strategy": "original_monthly__div20__cost5__delay0",
+  "max_stock_weight": 0.09447773313093828,
+  "median_effective_holdings": 19.979238589265897,
+  "max_industry_weight": 0.3304448244332597,
+  "cash_identity_error": 4.656612873077393e-10,
+  "latency_sessions": 0,
+  "warning": "Delay5 moves forecasts by one 5-session rebalance cycle, not one session."
+}

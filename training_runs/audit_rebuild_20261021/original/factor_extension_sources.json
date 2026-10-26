@@ -1,0 +1,50 @@
+[
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c01/2026/20261012.zip",
+    "sha256": "73391741171e783e4bf357591eadbf275ec4a27876d0ee5fa575ff7230205e59"
+  },
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c01/2026/20261013.zip",
+    "sha256": "a4ace6cef093d642c7a565cdd6cd39227237e94f544d195b691cc26891e60c8e"
+  },
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c01/2026/20261014.zip",
+    "sha256": "da3dd812098b893e7c801d9365c6bc945160a82b9eec3237d93dd4d0f7c95429"
+  },
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c01/2026/20261015.zip",
+    "sha256": "40ef3a716cc227f410a5b93e46fa4deb61f120c5341a841625e4e6457ca970be"
+  },
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c01/2026/20261016.zip",
+    "sha256": "ca4220c5fa5f0cb7ce67a9356e8f8c1451a3518fd6c054f8442d8e62bdabc907"
+  },
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c01/2026/20261019.zip",
+    "sha256": "a7666c576909b9d8853b966177bbbef0f954d9e0e58aad9bf2439ed2e622ba5c"
+  },
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c02/2026/20261012.zip",
+    "sha256": "f6bbab4037484c4de98aadebe77d2cf06e72cf241a0e1752ecf1c1a34a9008e3"
+  },
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c02/2026/20261013.zip",
+    "sha256": "4d598eea818f29bbd4c2b2876d193f607ada51e097b346f71239cb032c258c9d"
+  },
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c02/2026/20261014.zip",
+    "sha256": "8a46f69ef4bb1d2926d80ed96db17147333bc4ce98d1abdcd5a668119c660868"
+  },
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c02/2026/20261015.zip",
+    "sha256": "f4e7bc9d37625893bdea0dbe7f97574ec51b87273db9844b5df36c62e7311b8a"
+  },
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c02/2026/20261016.zip",
+    "sha256": "4e2cda2d232f08c2385fad639404765ce6b40ce06f921b81d3908693bc95992f"
+  },
+  {
+    "remote": "/home/quant/factors/kyzqsh11/ts_stockfactordata_c02/2026/20261019.zip",
+    "sha256": "6656e5110cbdcce4518c7e40bfb7c7ddcbf2fe1a9e494ed4ccf68bb0a2a04552"
+  }
+]

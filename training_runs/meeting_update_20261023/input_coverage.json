@@ -1,0 +1,13 @@
+{
+  "industry_known": 0.9509872611464968,
+  "size_known": 0.9757643312101911,
+  "factor_fields": 2445,
+  "primary_fields": 1601,
+  "data_end": "2026-10-19",
+  "factor_prediction_start": {
+    "original_monthly": "2025-07-02",
+    "alpha101_lgbm": "2025-07-03",
+    "expanded_lgbm": "2025-07-03",
+    "expanded_ridge_all": "2025-07-03"
+  }
+}

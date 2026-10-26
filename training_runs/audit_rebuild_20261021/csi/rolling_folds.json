@@ -1,0 +1,618 @@
+[
+  {
+    "fold": 0,
+    "mode": "rolling",
+    "train_start": "2023-08-11 00:00:00",
+    "train_end": "2024-08-23 00:00:00",
+    "val_start": "2024-09-03 00:00:00",
+    "val_end": "2024-12-09 00:00:00",
+    "predict_start": "2024-12-18 00:00:00",
+    "predict_end": "2025-01-16 00:00:00",
+    "actual_train_label_max": "2024-09-02 00:00:00",
+    "actual_val_label_max": "2024-12-17 00:00:00",
+    "train_rows": 491959,
+    "val_rows": 124140,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.11060654167490658
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.11063047482993844
+      }
+    ],
+    "rounds": {
+      "lgbm31": 37,
+      "lgbm15_transfer": 91
+    }
+  },
+  {
+    "fold": 1,
+    "mode": "rolling",
+    "train_start": "2023-09-11 00:00:00",
+    "train_end": "2024-09-25 00:00:00",
+    "val_start": "2024-10-11 00:00:00",
+    "val_end": "2025-01-08 00:00:00",
+    "predict_start": "2025-01-17 00:00:00",
+    "predict_end": "2025-02-24 00:00:00",
+    "actual_train_label_max": "2024-10-10 00:00:00",
+    "actual_val_label_max": "2025-01-16 00:00:00",
+    "train_rows": 492523,
+    "val_rows": 124326,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.10856330693211316
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.10859151197592984
+      }
+    ],
+    "rounds": {
+      "lgbm31": 61,
+      "lgbm15_transfer": 141
+    }
+  },
+  {
+    "fold": 2,
+    "mode": "rolling",
+    "train_start": "2023-10-18 00:00:00",
+    "train_end": "2024-10-31 00:00:00",
+    "val_start": "2024-11-11 00:00:00",
+    "val_end": "2025-02-14 00:00:00",
+    "predict_start": "2025-02-25 00:00:00",
+    "predict_end": "2025-03-25 00:00:00",
+    "actual_train_label_max": "2024-11-08 00:00:00",
+    "actual_val_label_max": "2025-02-24 00:00:00",
+    "train_rows": 492740,
+    "val_rows": 124509,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.0856651897684061
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.0856848647841369
+      }
+    ],
+    "rounds": {
+      "lgbm31": 53,
+      "lgbm15_transfer": 86
+    }
+  },
+  {
+    "fold": 3,
+    "mode": "rolling",
+    "train_start": "2023-11-16 00:00:00",
+    "train_end": "2024-11-29 00:00:00",
+    "val_start": "2024-12-10 00:00:00",
+    "val_end": "2025-03-17 00:00:00",
+    "predict_start": "2025-03-26 00:00:00",
+    "predict_end": "2025-04-24 00:00:00",
+    "actual_train_label_max": "2024-12-09 00:00:00",
+    "actual_val_label_max": "2025-03-25 00:00:00",
+    "train_rows": 492757,
+    "val_rows": 124500,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.06471131694218449
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.06473168304917745
+      }
+    ],
+    "rounds": {
+      "lgbm31": 21,
+      "lgbm15_transfer": 39
+    }
+  },
+  {
+    "fold": 4,
+    "mode": "rolling",
+    "train_start": "2023-12-15 00:00:00",
+    "train_end": "2024-12-30 00:00:00",
+    "val_start": "2025-01-09 00:00:00",
+    "val_end": "2025-04-16 00:00:00",
+    "predict_start": "2025-04-25 00:00:00",
+    "predict_end": "2025-05-28 00:00:00",
+    "actual_train_label_max": "2025-01-08 00:00:00",
+    "actual_val_label_max": "2025-04-24 00:00:00",
+    "train_rows": 492766,
+    "val_rows": 124655,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.06357152959091696
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.06360771187503747
+      }
+    ],
+    "rounds": {
+      "lgbm31": 30,
+      "lgbm15_transfer": 60
+    }
+  },
+  {
+    "fold": 5,
+    "mode": "rolling",
+    "train_start": "2024-01-16 00:00:00",
+    "train_end": "2025-02-06 00:00:00",
+    "val_start": "2025-02-17 00:00:00",
+    "val_end": "2025-05-20 00:00:00",
+    "predict_start": "2025-05-29 00:00:00",
+    "predict_end": "2025-06-27 00:00:00",
+    "actual_train_label_max": "2025-02-14 00:00:00",
+    "actual_val_label_max": "2025-05-28 00:00:00",
+    "train_rows": 493648,
+    "val_rows": 124693,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.06814733105853275
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.0681749381210662
+      }
+    ],
+    "rounds": {
+      "lgbm31": 51,
+      "lgbm15_transfer": 166
+    }
+  },
+  {
+    "fold": 6,
+    "mode": "rolling",
+    "train_start": "2024-02-22 00:00:00",
+    "train_end": "2025-03-07 00:00:00",
+    "val_start": "2025-03-18 00:00:00",
+    "val_end": "2025-06-19 00:00:00",
+    "predict_start": "2025-06-30 00:00:00",
+    "predict_end": "2025-07-28 00:00:00",
+    "actual_train_label_max": "2025-03-17 00:00:00",
+    "actual_val_label_max": "2025-06-27 00:00:00",
+    "train_rows": 494493,
+    "val_rows": 124777,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.038639193084090126
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.03864482039539156
+      }
+    ],
+    "rounds": {
+      "lgbm31": 38,
+      "lgbm15_transfer": 117
+    }
+  },
+  {
+    "fold": 7,
+    "mode": "rolling",
+    "train_start": "2024-03-22 00:00:00",
+    "train_end": "2025-04-08 00:00:00",
+    "val_start": "2025-04-17 00:00:00",
+    "val_end": "2025-07-18 00:00:00",
+    "predict_start": "2025-07-29 00:00:00",
+    "predict_end": "2025-08-26 00:00:00",
+    "actual_train_label_max": "2025-04-16 00:00:00",
+    "actual_val_label_max": "2025-07-28 00:00:00",
+    "train_rows": 495215,
+    "val_rows": 124587,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.09761948206675411
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.0976278624106856
+      }
+    ],
+    "rounds": {
+      "lgbm31": 26,
+      "lgbm15_transfer": 216
+    }
+  },
+  {
+    "fold": 8,
+    "mode": "rolling",
+    "train_start": "2024-04-24 00:00:00",
+    "train_end": "2025-05-12 00:00:00",
+    "val_start": "2025-05-21 00:00:00",
+    "val_end": "2025-08-18 00:00:00",
+    "predict_start": "2025-08-27 00:00:00",
+    "predict_end": "2025-09-24 00:00:00",
+    "actual_train_label_max": "2025-05-20 00:00:00",
+    "actual_val_label_max": "2025-08-26 00:00:00",
+    "train_rows": 495731,
+    "val_rows": 124534,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.07523816795563162
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.07524863387737159
+      }
+    ],
+    "rounds": {
+      "lgbm31": 8,
+      "lgbm15_transfer": 77
+    }
+  },
+  {
+    "fold": 9,
+    "mode": "rolling",
+    "train_start": "2024-05-28 00:00:00",
+    "train_end": "2025-06-11 00:00:00",
+    "val_start": "2025-06-20 00:00:00",
+    "val_end": "2025-09-16 00:00:00",
+    "predict_start": "2025-09-25 00:00:00",
+    "predict_end": "2025-10-31 00:00:00",
+    "actual_train_label_max": "2025-06-19 00:00:00",
+    "actual_val_label_max": "2025-09-24 00:00:00",
+    "train_rows": 496189,
+    "val_rows": 124534,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.0682056757157735
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.06821547225006608
+      }
+    ],
+    "rounds": {
+      "lgbm31": 6,
+      "lgbm15_transfer": 49
+    }
+  },
+  {
+    "fold": 10,
+    "mode": "rolling",
+    "train_start": "2024-06-27 00:00:00",
+    "train_end": "2025-07-10 00:00:00",
+    "val_start": "2025-07-21 00:00:00",
+    "val_end": "2025-10-23 00:00:00",
+    "predict_start": "2025-11-03 00:00:00",
+    "predict_end": "2025-12-01 00:00:00",
+    "actual_train_label_max": "2025-07-18 00:00:00",
+    "actual_val_label_max": "2025-10-31 00:00:00",
+    "train_rows": 496531,
+    "val_rows": 124767,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.05966108167959159
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.05966389298620094
+      }
+    ],
+    "rounds": {
+      "lgbm31": 5,
+      "lgbm15_transfer": 30
+    }
+  },
+  {
+    "fold": 11,
+    "mode": "rolling",
+    "train_start": "2024-07-26 00:00:00",
+    "train_end": "2025-08-08 00:00:00",
+    "val_start": "2025-08-19 00:00:00",
+    "val_end": "2025-11-21 00:00:00",
+    "predict_start": "2025-12-02 00:00:00",
+    "predict_end": "2025-12-30 00:00:00",
+    "actual_train_label_max": "2025-08-18 00:00:00",
+    "actual_val_label_max": "2025-12-01 00:00:00",
+    "train_rows": 497295,
+    "val_rows": 124952,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.07095185355355485
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.07095517777170554
+      }
+    ],
+    "rounds": {
+      "lgbm31": 27,
+      "lgbm15_transfer": 66
+    }
+  },
+  {
+    "fold": 12,
+    "mode": "rolling",
+    "train_start": "2024-08-26 00:00:00",
+    "train_end": "2025-09-08 00:00:00",
+    "val_start": "2025-09-17 00:00:00",
+    "val_end": "2025-12-22 00:00:00",
+    "predict_start": "2025-12-31 00:00:00",
+    "predict_end": "2026-01-30 00:00:00",
+    "actual_train_label_max": "2025-09-16 00:00:00",
+    "actual_val_label_max": "2025-12-30 00:00:00",
+    "train_rows": 497812,
+    "val_rows": 124906,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.06322332773498322
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.06322491114322674
+      }
+    ],
+    "rounds": {
+      "lgbm31": 41,
+      "lgbm15_transfer": 99
+    }
+  },
+  {
+    "fold": 13,
+    "mode": "rolling",
+    "train_start": "2024-09-26 00:00:00",
+    "train_end": "2025-10-15 00:00:00",
+    "val_start": "2025-10-24 00:00:00",
+    "val_end": "2026-01-22 00:00:00",
+    "predict_start": "2026-02-02 00:00:00",
+    "predict_end": "2026-03-10 00:00:00",
+    "actual_train_label_max": "2025-10-23 00:00:00",
+    "actual_val_label_max": "2026-01-30 00:00:00",
+    "train_rows": 498237,
+    "val_rows": 124542,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.07320657366913653
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.07321541341695666
+      }
+    ],
+    "rounds": {
+      "lgbm31": 24,
+      "lgbm15_transfer": 172
+    }
+  },
+  {
+    "fold": 14,
+    "mode": "rolling",
+    "train_start": "2024-11-01 00:00:00",
+    "train_end": "2025-11-13 00:00:00",
+    "val_start": "2025-11-24 00:00:00",
+    "val_end": "2026-03-02 00:00:00",
+    "predict_start": "2026-03-11 00:00:00",
+    "predict_end": "2026-04-09 00:00:00",
+    "actual_train_label_max": "2025-11-21 00:00:00",
+    "actual_val_label_max": "2026-03-10 00:00:00",
+    "train_rows": 498587,
+    "val_rows": 124157,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.0670180242095497
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.06701906762523951
+      }
+    ],
+    "rounds": {
+      "lgbm31": 5,
+      "lgbm15_transfer": 35
+    }
+  },
+  {
+    "fold": 15,
+    "mode": "rolling",
+    "train_start": "2024-12-02 00:00:00",
+    "train_end": "2025-12-12 00:00:00",
+    "val_start": "2025-12-23 00:00:00",
+    "val_end": "2026-03-31 00:00:00",
+    "predict_start": "2026-04-10 00:00:00",
+    "predict_end": "2026-05-13 00:00:00",
+    "actual_train_label_max": "2025-12-22 00:00:00",
+    "actual_val_label_max": "2026-04-09 00:00:00",
+    "train_rows": 498835,
+    "val_rows": 124106,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.06602422578444181
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.06603466417935011
+      }
+    ],
+    "rounds": {
+      "lgbm31": 19,
+      "lgbm15_transfer": 65
+    }
+  },
+  {
+    "fold": 16,
+    "mode": "rolling",
+    "train_start": "2024-12-31 00:00:00",
+    "train_end": "2026-01-14 00:00:00",
+    "val_start": "2026-01-23 00:00:00",
+    "val_end": "2026-04-30 00:00:00",
+    "predict_start": "2026-05-14 00:00:00",
+    "predict_end": "2026-06-11 00:00:00",
+    "actual_train_label_max": "2026-01-22 00:00:00",
+    "actual_val_label_max": "2026-05-13 00:00:00",
+    "train_rows": 498565,
+    "val_rows": 124357,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.06058705787704734
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.0605841731594188
+      }
+    ],
+    "rounds": {
+      "lgbm31": 12,
+      "lgbm15_transfer": 20
+    }
+  },
+  {
+    "fold": 17,
+    "mode": "rolling",
+    "train_start": "2025-02-07 00:00:00",
+    "train_end": "2026-02-12 00:00:00",
+    "val_start": "2026-03-03 00:00:00",
+    "val_end": "2026-06-03 00:00:00",
+    "predict_start": "2026-06-12 00:00:00",
+    "predict_end": "2026-07-13 00:00:00",
+    "actual_train_label_max": "2026-03-02 00:00:00",
+    "actual_val_label_max": "2026-06-11 00:00:00",
+    "train_rows": 498416,
+    "val_rows": 124836,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.03961256828644138
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.03961171418976852
+      }
+    ],
+    "rounds": {
+      "lgbm31": 3,
+      "lgbm15_transfer": 4
+    }
+  },
+  {
+    "fold": 18,
+    "mode": "rolling",
+    "train_start": "2025-03-10 00:00:00",
+    "train_end": "2026-03-23 00:00:00",
+    "val_start": "2026-04-01 00:00:00",
+    "val_end": "2026-07-03 00:00:00",
+    "predict_start": "2026-07-14 00:00:00",
+    "predict_end": "2026-08-11 00:00:00",
+    "actual_train_label_max": "2026-03-31 00:00:00",
+    "actual_val_label_max": "2026-07-13 00:00:00",
+    "train_rows": 498308,
+    "val_rows": 125021,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.009208923479912054
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.009206274600731144
+      }
+    ],
+    "rounds": {
+      "lgbm31": 1,
+      "lgbm15_transfer": 1
+    }
+  },
+  {
+    "fold": 19,
+    "mode": "rolling",
+    "train_start": "2025-04-09 00:00:00",
+    "train_end": "2026-04-22 00:00:00",
+    "val_start": "2026-05-06 00:00:00",
+    "val_end": "2026-08-03 00:00:00",
+    "predict_start": "2026-08-12 00:00:00",
+    "predict_end": "2026-09-09 00:00:00",
+    "actual_train_label_max": "2026-04-30 00:00:00",
+    "actual_val_label_max": "2026-08-11 00:00:00",
+    "train_rows": 498300,
+    "val_rows": 125141,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.011858332378704919
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.011866111421967527
+      }
+    ],
+    "rounds": {
+      "lgbm31": 74,
+      "lgbm15_transfer": 62
+    }
+  },
+  {
+    "fold": 20,
+    "mode": "rolling",
+    "train_start": "2025-05-13 00:00:00",
+    "train_end": "2026-05-26 00:00:00",
+    "val_start": "2026-06-04 00:00:00",
+    "val_end": "2026-09-01 00:00:00",
+    "predict_start": "2026-09-10 00:00:00",
+    "predict_end": "2026-10-16 00:00:00",
+    "actual_train_label_max": "2026-06-03 00:00:00",
+    "actual_val_label_max": "2026-09-09 00:00:00",
+    "train_rows": 498427,
+    "val_rows": 125040,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": 0.004376411474438878
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": 0.004390049193569256
+      }
+    ],
+    "rounds": {
+      "lgbm31": 36,
+      "lgbm15_transfer": 119
+    }
+  },
+  {
+    "fold": 21,
+    "mode": "rolling",
+    "train_start": "2025-06-12 00:00:00",
+    "train_end": "2026-06-25 00:00:00",
+    "val_start": "2026-07-06 00:00:00",
+    "val_end": "2026-10-08 00:00:00",
+    "predict_start": "2026-10-19 00:00:00",
+    "predict_end": "2026-10-19 00:00:00",
+    "actual_train_label_max": "2026-07-03 00:00:00",
+    "actual_val_label_max": "2026-10-16 00:00:00",
+    "train_rows": 498534,
+    "val_rows": 125079,
+    "ridge": [
+      {
+        "alpha": 1.0,
+        "val_ic": -0.07884250874512606
+      },
+      {
+        "alpha": 100.0,
+        "val_ic": -0.07884305196871981
+      }
+    ],
+    "rounds": {
+      "lgbm31": 1,
+      "lgbm15_transfer": 79
+    }
+  }
+]

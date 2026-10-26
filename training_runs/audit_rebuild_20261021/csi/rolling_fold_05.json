@@ -1,0 +1,28 @@
+{
+  "fold": 5,
+  "mode": "rolling",
+  "train_start": "2024-01-16 00:00:00",
+  "train_end": "2025-02-06 00:00:00",
+  "val_start": "2025-02-17 00:00:00",
+  "val_end": "2025-05-20 00:00:00",
+  "predict_start": "2025-05-29 00:00:00",
+  "predict_end": "2025-06-27 00:00:00",
+  "actual_train_label_max": "2025-02-14 00:00:00",
+  "actual_val_label_max": "2025-05-28 00:00:00",
+  "train_rows": 493648,
+  "val_rows": 124693,
+  "ridge": [
+    {
+      "alpha": 1.0,
+      "val_ic": 0.06814733105853275
+    },
+    {
+      "alpha": 100.0,
+      "val_ic": 0.0681749381210662
+    }
+  ],
+  "rounds": {
+    "lgbm31": 51,
+    "lgbm15_transfer": 166
+  }
+}

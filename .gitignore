@@ -54,3 +54,14 @@ node_modules/
 /training_runs/research_20261018/**/predictions.parquet
 /training_runs/research_20261018/**/*predictions.parquet
 /training_runs/research_20261018/**/*.joblib
+
+# Local build previews and rebuildable October 21 matrices/predictions
+/tmp/
+/training_runs/audit_rebuild_20261021/**/*.npy
+/training_runs/audit_rebuild_20261021/**/*.npz
+/training_runs/audit_rebuild_20261021/csi/meta.parquet
+/training_runs/audit_rebuild_20261021/csi/*pred*.parquet
+/training_runs/audit_rebuild_20261021/expanded/*pred*.parquet
+/training_runs/audit_rebuild_20261021/original/*pred*.parquet
+/training_runs/audit_rebuild_20261021/original/risk_metadata.parquet
+/training_runs/research_20261021/*.parquet

@@ -1,0 +1,9 @@
+{
+  "strategy": "expanded_ridge_all__div40_combined__cost5__delay0",
+  "max_stock_weight": 0.02417966216390342,
+  "median_effective_holdings": 38.9256086547555,
+  "max_industry_weight": 0.1111974513439298,
+  "cash_identity_error": 1.1641532182693481e-10,
+  "latency_sessions": 0,
+  "warning": "Delay5 moves forecasts by one 5-session rebalance cycle, not one session."
+}

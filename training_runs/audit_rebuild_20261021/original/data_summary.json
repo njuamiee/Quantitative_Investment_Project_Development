@@ -1,0 +1,19 @@
+{
+  "last_date": "2026-10-19",
+  "price_stocks": 353,
+  "pool_rows": 23300,
+  "features": 335,
+  "llm_proposals": 24,
+  "horizons": [
+    1,
+    2,
+    5,
+    10,
+    20
+  ],
+  "label_rule": "h>=2: open t+1 to close t+h; h=1: open t+1 to open t+2 (T+1)",
+  "factor_vintage": "current supplier files; historical release times and revisions not verified",
+  "execution": "raw prices; ex-date immediate gross cash/share scenario separately identified",
+  "panel_sha256": "62fe0d40f141788e121305d2c3ff1fa8cee974251e5ac2c3b2a034577f28dc40",
+  "prices_sha256": "6bb5ce9dde8cf4b008f6e6c78e37dad821d06ee2aaf829efc2f3a10d40cf3891"
+}

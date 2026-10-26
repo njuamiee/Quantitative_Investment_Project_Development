@@ -1,0 +1,9 @@
+{
+  "strategy": "alpha101_icir__equal20__cost5__delay0",
+  "max_stock_weight": 0.07159696017044007,
+  "median_effective_holdings": 19.9670233637323,
+  "max_industry_weight": 0.30453611129690394,
+  "cash_identity_error": 1.1641532182693481e-10,
+  "latency_sessions": 0,
+  "warning": "Delay5 moves forecasts by one 5-session rebalance cycle, not one session."
+}

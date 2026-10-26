@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-21",
+  "factor_tables": 120,
+  "factor_zip_files": 18112,
+  "factor_zip_bytes": 9112612423,
+  "fields": 2445,
+  "original_reproduction": {
+    "max_historical_equity_error": 4.656612873077393e-10,
+    "q4_rule": "cash"
+  },
+  "tests_log": "test_actual_corrected_labels_match_full_calendar (__main__.Invariants.test_actual_corrected_labels_match_full_calendar) ... ok\ntest_drawdown_includes_initial_capital (__main__.Invariants.test_drawdown_includes_initial_capital) ... ok\ntest_every_new_fold_purges_actual_label_end (__main__.Invariants.test_every_new_fold_purges_actual_label_end) ... ok\ntest_factor_downloads_have_hashes_and_no_unresolved_transfer_errors (__main__.Invariants.test_factor_downloads_have_hashes_and_no_unresolved_transfer_errors) ... ok\ntest_future_labels_never_change_holdings (__main__.Invariants.test_future_labels_never_change_holdings) ... ok\ntest_future_market_changes_do_not_change_past_risk_target (__main__.Invariants.test_future_market_changes_do_not_change_past_risk_target) ... ok\ntest_missing_entry_keeps_cash_without_hindsight_replacement (__main__.Invariants.test_missing_entry_keeps_cash_without_hindsight_replacement) ... ok\ntest_open_to_open_uses_exact_five_intervals (__main__.Invariants.test_open_to_open_uses_exact_five_intervals) ... ok\ntest_original_history_reproduced (__main__.Invariants.test_original_history_reproduced) ... ok\ntest_unsellable_residual_does_not_freeze_other_cash (__main__.Invariants.test_unsellable_residual_does_not_freeze_other_cash) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.562s\n\nOK\n",
+  "output_sha256": {
+    "01_原实验延长测试.csv": "3d3686d2c3f31417a4ca4415cf1090ba21bfcb4ecf5f0ab568b66a6d7e794c0c",
+    "02_修正执行后的风控全部结果.csv": "ac6acb1bc54ced254e1774bb0290ffeb2446382ae4cb1d1b358531399777aa15",
+    "03_中证2000修正实验全部结果.csv": "3f0a6cef978d35b168f8cc4b9ec91a0b076fce94b0171c4dc3fa8a89335a9cfa",
+    "04_2445字段审查目录.csv": "bf66ed7490685ac18978dd7467abdf8aabc5069b93ac2a9211093c07372e1000",
+    "05_扩因子增益不确定性.csv": "bdad9469377ecc12484e5c4d14769f09d508cf7377e93aed3274e450ed9bbf93",
+    "06_旧执行残留锁仓诊断.csv": "3cf4a3581f42cc22d2246bf3a50415ba9f0e680975cbcff62a5f03438941310d",
+    "复盘报告.html": "54f55ade90d6ccdc5fc106f57fed100fad112a8fec20689cd0a292ecac690e89",
+    "复盘报告.md": "492770930620afdf4428a9cb1ebadd74ef6147b2f07b27010c4a335a493c3c01",
+    "图\\01_北交所净值与仓位.png": "494866b0b40efa437324920d1f47814faee68f5f3df1a6832535080149cced76",
+    "图\\02_中证2000修正净值.png": "43598b1d8eb635e532341895c6ad24ebbd77d11eb41ba6e73fb1f2674a77192f",
+    "图\\03_风险收益权衡.png": "e95164f01a1027460816843318c0aacab6b6af967e664f2f3a52aefea4769b4d"
+  },
+  "code_sha256": {
+    "audit_old.py": "877d5ce7c1f87ee38006e003669652c0a8d8ea1c23af600283cda689df530929",
+    "build_report.py": "32f69c0ca74d0df3ede5e632bdd953e9fc6a7ff10d8b2f4259577df842c9986c",
+    "build_risk_engine.py": "4ca87c1f88195f85391ca01e47e8d760f6b494c265dd31a5bda285ab08491e18",
+    "csi_rebuild.py": "9c30f40b8a9c61c347cba8543e1c12d632c2bbecf5addc65393768d84e99efac",
+    "expanded_factors.py": "4fc4157c8e002152cca5a4936610736ba4db5bedcf4d7e7485eeb9506bab6847",
+    "fetch_library.py": "ebc1ad3939185331c266ea95f90288d53971e198aacb10e68953b03956d07ca4",
+    "fetch_prices.py": "8e22b09aebbbda3d7b485315255622479ebdb13836d9ac604be123cd50d8eb05",
+    "inspect_sources.py": "8688548010986af502eaa8db5c413b3d7da8ee0cca571861cc95ad4ea0c5f57c",
+    "original_extension.py": "154d74556376a2991e78311160eb33b6582c3a4fd9b707f5ab75e99d6b312035",
+    "PROTOCOL.md": "d82cf4874d44ea42336eb82f339f8ac6cac6d1935dccd3ff5bbe3a5a4714d022",
+    "risk_execution.py": "e06137e6a0da1adb81130ef1db0ce79376e3805672f39c975b1fc77c90c2f778",
+    "risk_experiments.py": "bfc783dfb0f98c9564e58fc1ca3ea8774ed3d5048403538a3937b5f32cd508c1",
+    "test_invariants.py": "bc52e850da5474a6e70f213ef31216d08ab32a46213808e1901664db34fc8b30"
+  }
+}

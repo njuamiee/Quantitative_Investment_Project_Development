@@ -1,0 +1,173 @@
+{
+  "accounts": 44,
+  "fixed_candidates": 36,
+  "selection_windows": 13,
+  "expanded_model_fold_rows_checked": 105,
+  "rolling_buy_order_scores_verified": 1820,
+  "checks": "passed",
+  "data_end": "2026-10-19",
+  "candidate_specs": [
+    {
+      "name": "equal20",
+      "topn": 20,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": false,
+      "exposure": "full",
+      "buy_hold": false,
+      "allow_residual": true,
+      "take_profit": 0.0,
+      "cooldown": 0,
+      "stop_basis": "entry",
+      "group_keys": [
+        "industry",
+        "size_group"
+      ]
+    },
+    {
+      "name": "equal40",
+      "topn": 40,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": false,
+      "exposure": "full",
+      "buy_hold": false,
+      "allow_residual": true,
+      "take_profit": 0.0,
+      "cooldown": 0,
+      "stop_basis": "entry",
+      "group_keys": [
+        "industry",
+        "size_group"
+      ]
+    },
+    {
+      "name": "industry_size40",
+      "topn": 40,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": true,
+      "exposure": "full",
+      "buy_hold": false,
+      "allow_residual": true,
+      "take_profit": 0.0,
+      "cooldown": 0,
+      "stop_basis": "entry",
+      "group_keys": [
+        "industry",
+        "size_group"
+      ]
+    },
+    {
+      "name": "fixed25",
+      "topn": 40,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": true,
+      "exposure": "fixed25",
+      "buy_hold": false,
+      "allow_residual": true,
+      "take_profit": 0.0,
+      "cooldown": 0,
+      "stop_basis": "entry",
+      "group_keys": [
+        "industry",
+        "size_group"
+      ]
+    },
+    {
+      "name": "fixed50",
+      "topn": 40,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": true,
+      "exposure": "fixed50",
+      "buy_hold": false,
+      "allow_residual": true,
+      "take_profit": 0.0,
+      "cooldown": 0,
+      "stop_basis": "entry",
+      "group_keys": [
+        "industry",
+        "size_group"
+      ]
+    },
+    {
+      "name": "ma20",
+      "topn": 40,
+      "weighting": "equal",
+      "stop": 0.0,
+      "diversify": true,
+      "exposure": "ma20",
+      "buy_hold": false,
+      "allow_residual": true,
+      "take_profit": 0.0,
+      "cooldown": 0,
+      "stop_basis": "entry",
+      "group_keys": [
+        "industry",
+        "size_group"
+      ]
+    },
+    {
+      "name": "stop5_ban10",
+      "topn": 40,
+      "weighting": "equal",
+      "stop": 0.05,
+      "diversify": true,
+      "exposure": "full",
+      "buy_hold": false,
+      "allow_residual": true,
+      "take_profit": 0.0,
+      "cooldown": 10,
+      "stop_basis": "entry",
+      "group_keys": [
+        "industry",
+        "size_group"
+      ]
+    },
+    {
+      "name": "stop10_take20_ban10",
+      "topn": 40,
+      "weighting": "equal",
+      "stop": 0.1,
+      "diversify": true,
+      "exposure": "full",
+      "buy_hold": false,
+      "allow_residual": true,
+      "take_profit": 0.2,
+      "cooldown": 10,
+      "stop_basis": "entry",
+      "group_keys": [
+        "industry",
+        "size_group"
+      ]
+    },
+    {
+      "name": "ma20_stop5_ban10",
+      "topn": 40,
+      "weighting": "equal",
+      "stop": 0.05,
+      "diversify": true,
+      "exposure": "ma20",
+      "buy_hold": false,
+      "allow_residual": true,
+      "take_profit": 0.0,
+      "cooldown": 10,
+      "stop_basis": "entry",
+      "group_keys": [
+        "industry",
+        "size_group"
+      ]
+    }
+  ],
+  "selection": {
+    "lookback": 60,
+    "gap": 10,
+    "step": 20,
+    "minimum_days": 40,
+    "objective": "historical_daily_sharpe_rf0",
+    "cash_candidate": false
+  },
+  "warning": "Historical exploratory protocol; no independent unseen test or live order integration."
+}

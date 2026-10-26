@@ -1,0 +1,28 @@
+{
+  "fold": 3,
+  "mode": "rolling",
+  "train_start": "2023-11-16 00:00:00",
+  "train_end": "2024-11-29 00:00:00",
+  "val_start": "2024-12-10 00:00:00",
+  "val_end": "2025-03-17 00:00:00",
+  "predict_start": "2025-03-26 00:00:00",
+  "predict_end": "2025-04-24 00:00:00",
+  "actual_train_label_max": "2024-12-09 00:00:00",
+  "actual_val_label_max": "2025-03-25 00:00:00",
+  "train_rows": 492757,
+  "val_rows": 124500,
+  "ridge": [
+    {
+      "alpha": 1.0,
+      "val_ic": 0.06471131694218449
+    },
+    {
+      "alpha": 100.0,
+      "val_ic": 0.06473168304917745
+    }
+  ],
+  "rounds": {
+    "lgbm31": 21,
+    "lgbm15_transfer": 39
+  }
+}

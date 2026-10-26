@@ -1,0 +1,143 @@
+{
+  "validation": {
+    "ret_icir": {
+      "batches": 43,
+      "total_return": 0.28078712153775576,
+      "annual_return": 0.33651237912963516,
+      "max_drawdown": 0.15091344016031383,
+      "sharpe": 1.4147559140406156,
+      "calmar": 2.2298370428250887,
+      "win_rate": 0.5581395348837209
+    },
+    "ret_ridge": {
+      "batches": 43,
+      "total_return": 0.7360762344959026,
+      "annual_return": 0.9089603573802743,
+      "max_drawdown": 0.10787899673722423,
+      "sharpe": 2.8211716600407115,
+      "calmar": 8.425739809152606,
+      "win_rate": 0.627906976744186
+    },
+    "ret_lgbm": {
+      "batches": 43,
+      "total_return": 0.7650000590049977,
+      "annual_return": 0.9462909794574075,
+      "max_drawdown": 0.18767979112147948,
+      "sharpe": 2.513343335826945,
+      "calmar": 5.042050472258368,
+      "win_rate": 0.6046511627906976
+    },
+    "bench_equal_members": {
+      "batches": 43,
+      "total_return": 0.3269967879154403,
+      "annual_return": 0.3932046628311141,
+      "max_drawdown": 0.09686609040285854,
+      "sharpe": 1.8384743260794727,
+      "calmar": 4.059260172427797,
+      "win_rate": 0.627906976744186
+    },
+    "bench_index_tr": {
+      "batches": 43,
+      "total_return": 0.3704035843741542,
+      "annual_return": 0.4467688701088186,
+      "max_drawdown": 0.09973585022244202,
+      "sharpe": 1.8983387748444818,
+      "calmar": 4.479521346761318,
+      "win_rate": 0.6046511627906976
+    }
+  },
+  "test": {
+    "ret_icir": {
+      "batches": 19,
+      "total_return": -0.24596566512102436,
+      "annual_return": -0.5271059844994392,
+      "max_drawdown": 0.2911772907356005,
+      "sharpe": -1.486403891674468,
+      "calmar": -1.810257878173853,
+      "win_rate": 0.5263157894736842
+    },
+    "ret_ridge": {
+      "batches": 19,
+      "total_return": -0.2574919786315639,
+      "annual_return": -0.5460397916639921,
+      "max_drawdown": 0.2982032947613322,
+      "sharpe": -1.6751357155190938,
+      "calmar": -1.831099123505716,
+      "win_rate": 0.42105263157894735
+    },
+    "ret_lgbm": {
+      "batches": 19,
+      "total_return": -0.005340804943904542,
+      "annual_return": -0.014104738014956597,
+      "max_drawdown": 0.15930928432149993,
+      "sharpe": 0.16788049484383963,
+      "calmar": -0.08853682366993762,
+      "win_rate": 0.47368421052631576
+    },
+    "bench_equal_members": {
+      "batches": 19,
+      "total_return": -0.12954746063199585,
+      "annual_return": -0.3079046355332976,
+      "max_drawdown": 0.2253580833645218,
+      "sharpe": -1.13891868171487,
+      "calmar": -1.3662906204045715,
+      "win_rate": 0.47368421052631576
+    },
+    "bench_index_tr": {
+      "batches": 20,
+      "total_return": -0.21896831204901412,
+      "annual_return": -0.46355523800126974,
+      "max_drawdown": 0.23399929565679978,
+      "sharpe": -1.7428013409902066,
+      "calmar": -1.9810112534746824,
+      "win_rate": 0.4
+    }
+  },
+  "full_eval": {
+    "ret_icir": {
+      "batches": 62,
+      "total_return": -0.034242534689720494,
+      "annual_return": -0.027926265808690842,
+      "max_drawdown": 0.35374354205560155,
+      "sharpe": 0.06282880517798359,
+      "calmar": -0.0789449487795918,
+      "win_rate": 0.5483870967741935
+    },
+    "ret_ridge": {
+      "batches": 62,
+      "total_return": 0.2890505298203183,
+      "annual_return": 0.2292459648029932,
+      "max_drawdown": 0.2982032947613321,
+      "sharpe": 0.8121068971402505,
+      "calmar": 0.7687573170057389,
+      "win_rate": 0.5645161290322581
+    },
+    "ret_lgbm": {
+      "batches": 62,
+      "total_return": 0.7555735379638717,
+      "annual_return": 0.5801161601439646,
+      "max_drawdown": 0.18767979112147948,
+      "sharpe": 1.5446010874487606,
+      "calmar": 3.090988948130664,
+      "win_rate": 0.5645161290322581
+    },
+    "bench_equal_members": {
+      "batches": 62,
+      "total_return": 0.15508772377418056,
+      "annual_return": 0.12434581999331229,
+      "max_drawdown": 0.24825538683592552,
+      "sharpe": 0.6293436303246065,
+      "calmar": 0.5008786378339242,
+      "win_rate": 0.5806451612903226
+    },
+    "bench_index_tr": {
+      "batches": 63,
+      "total_return": 0.07032862467782697,
+      "annual_return": 0.05587792972399219,
+      "max_drawdown": 0.24507132395475606,
+      "sharpe": 0.3393234587153693,
+      "calmar": 0.22800680562001663,
+      "win_rate": 0.5396825396825397
+    }
+  }
+}

@@ -1,0 +1,13 @@
+test_failed_stop_remains_pending (__main__.Tests.test_failed_stop_remains_pending) ... ok
+test_future_quotes_do_not_change_past (__main__.Tests.test_future_quotes_do_not_change_past) ... ok
+test_no_rule_change_matches_previous_engine (__main__.Tests.test_no_rule_change_matches_previous_engine) ... ok
+test_partial_basis_reconciles (__main__.Tests.test_partial_basis_reconciles) ... ok
+test_profit_next_open (__main__.Tests.test_profit_next_open) ... ok
+test_selection_future_invariance (__main__.Tests.test_selection_future_invariance) ... ok
+test_split_does_not_invent_profit_signal (__main__.Tests.test_split_does_not_invent_profit_signal) ... ok
+test_stop_next_open_and_cooldown (__main__.Tests.test_stop_next_open_and_cooldown) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.137s
+
+OK

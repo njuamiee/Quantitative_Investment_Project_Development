@@ -1,0 +1,9 @@
+{
+  "strategy": "expanded_lgbm__div40_fixed25__cost5__delay0",
+  "max_stock_weight": 0.010221832905142753,
+  "median_effective_holdings": 37.818478202073074,
+  "max_industry_weight": 0.07812479973686674,
+  "cash_identity_error": 5.820766091346741e-11,
+  "latency_sessions": 0,
+  "warning": "Delay5 moves forecasts by one 5-session rebalance cycle, not one session."
+}
