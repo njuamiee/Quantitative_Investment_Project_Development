@@ -1,0 +1,10 @@
+{
+  "test": "change future labels and future ICs",
+  "horizon": 20,
+  "factors": 20,
+  "window": 126,
+  "fit_index": 879,
+  "last_label_exit_index": 878,
+  "max_prediction_difference": 0.0,
+  "passed": true
+}

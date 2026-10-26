@@ -1,0 +1,42 @@
+[
+  {
+    "model": "ridge",
+    "max_abs_prediction_difference": 1.5273690223693848e-07,
+    "rank_agreement": 1.0
+  },
+  {
+    "model": "ic",
+    "max_abs_prediction_difference": 0.0,
+    "rank_agreement": 1.0
+  },
+  {
+    "model": "conditional_ic",
+    "max_abs_prediction_difference": 0.0,
+    "rank_agreement": 1.0
+  },
+  {
+    "model": "lightgbm",
+    "max_abs_prediction_difference": 0.0,
+    "rank_agreement": 1.0
+  },
+  {
+    "model": "ranker",
+    "max_abs_prediction_difference": 0.0,
+    "rank_agreement": 1.0
+  },
+  {
+    "model": "xgboost",
+    "max_abs_prediction_difference": 0.035773977637290955,
+    "rank_agreement": 0.15213375796178344
+  },
+  {
+    "model": "extra_trees",
+    "max_abs_prediction_difference": 0.0,
+    "rank_agreement": 1.0
+  },
+  {
+    "model": "catboost",
+    "max_abs_prediction_difference": 0.0,
+    "rank_agreement": 1.0
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "horizons": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    15,
+    20
+  ],
+  "factors": [
+    20,
+    40,
+    60,
+    80,
+    100
+  ],
+  "models": [
+    "ridge",
+    "ic",
+    "conditional_ic",
+    "lightgbm",
+    "ranker",
+    "xgboost",
+    "extra_trees",
+    "catboost"
+  ],
+  "refit": [
+    "quarterly",
+    "monthly",
+    "daily"
+  ],
+  "training_sessions": [
+    126,
+    252,
+    504
+  ],
+  "libraries": [
+    "daily",
+    "daily_auto",
+    "vendor_asof"
+  ],
+  "outer_start": "2025-07-02",
+  "data_end": "2026-10-19",
+  "seed": 20261026,
+  "label": "adjusted open(t+h+1)/adjusted open(t+1)-1",
+  "factor_screen": "quarterly, mature training labels only; coverage>=70%, IC shrinkage, abs correlation<0.98",
+  "objective": "Sharpe rf1.5% >1, geometric Calmar >2, maximum drawdown <0.30",
+  "historical_data_previously_inspected": true,
+  "excluded_models": [
+    "Jev/XJ: user excluded 2026-10-26"
+  ],
+  "explicit_horizon_change": "user: after 5 sessions only 10,15,20"
+}

@@ -1,0 +1,29 @@
+{
+  "completed_models": 4887,
+  "actual_fits": 147058,
+  "completed_accounts": 15811200,
+  "fold_boundaries_checked": 147058,
+  "sampled_prediction_rows_checked": 4992600,
+  "independent_label_checks": 320,
+  "max_cash_flow_error": 1.3969838619232178e-09,
+  "scope": "timestamp, numeric and sampled prediction-file audit; not proof of future profitability",
+  "source_code": {
+    "account.py": "3d202b75ef2572c1939ac1211c9789d0566203dd651e9eb53a117f8452092d2f",
+    "audit.py": "c270ac4eec0cf87a2bf12e8fab67ba0c24a0ba9698a6b098d8495b3b370c3a1e",
+    "build_report.py": "3a1e677c02ccb8b2910155cc61de46a6c415520b2940f981bfddd46b4b096a44",
+    "config.py": "8642863504e27d2b32afc7cf78b153a541a8a2f416c814d2e6fb4f38758aff66",
+    "controlled_comparisons.py": "db8e7d215222580d9e69df6b40784bdca58634e81671f1db4001d1f24ac19a55",
+    "evaluate.py": "5e1fd64fcf594eea7b7bc35941704f0dfe13a0940ec1adf69c63baee88803624",
+    "features.py": "0f719b552b7660af1665ab8f8554930aa149fed8f5c3a5fd47cc26ca3742bc8f",
+    "local_next.py": "a76893928f24ffb2399aab203d04e3a7c3324c055a35e4f6c3d94d98854cf363",
+    "minute_study.py": "ebb7e159d9e28bf7e1bb6ea37561dba9fec0337aafff4ae0adc73930a558dd9c",
+    "monthly_selection.py": "b6ef8a847328fe2e6d774afaa19f8401e28db6489d85c56a74c47f1e84510ca1",
+    "prepare.py": "f4ba94380678d9cdaf96b47d3f5988bf3e4c030daed79e02268509041bae9226",
+    "report_details.py": "05306375047364b9a7eae7fda8b9ae2eb60374cfb00d9bea4256e3ce889154b6",
+    "runner.py": "6a3fec71d1ed8dd4ecabb7816bf38421a9122628fe15da41d78d9e5e41f9d777",
+    "server_control.py": "c60dd589e519cc799c813b6ca2b5243a5e93a07689777129b80649cf7a012ebc",
+    "test_system.py": "b1656a769cf150f3345e2eeab4579ed9a4502e6485402f8313cdeefd98a83697",
+    "train.py": "d94a7e18abee16a30df0cf4107a75b5e9ce565ac00207467818c1a075afe7e91",
+    "watch_report.py": "23959019b2dbf3bf825787c54e27358a8384e2529652a3840f12a3595116961f"
+  }
+}

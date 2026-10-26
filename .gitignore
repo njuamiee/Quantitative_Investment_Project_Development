@@ -65,3 +65,12 @@ node_modules/
 /training_runs/audit_rebuild_20261021/original/*pred*.parquet
 /training_runs/audit_rebuild_20261021/original/risk_metadata.parquet
 /training_runs/research_20261021/*.parquet
+
+# October 26 exhaustive research: local inputs, cache and live run state
+/training_runs/systematic_20261026/data/
+/training_runs/systematic_20261026/models/
+/training_runs/systematic_20261026/*.sqlite3*
+/training_runs/systematic_20261026/*.log
+/training_runs/systematic_20261026/*launch*.json
+/training_runs/systematic_20261026/*.tmp
+/training_runs/systematic_20261026/minute/first30.npz

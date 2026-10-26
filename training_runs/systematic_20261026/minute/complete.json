@@ -1,0 +1,17 @@
+{
+  "accounts": 1152,
+  "period": [
+    "2026-07-01",
+    "2026-09-30"
+  ],
+  "price": "each actual minute amount/volume benchmark; not a guaranteed queue fill",
+  "capacity": "1% or 5% of realized per-minute amount, shared across sides",
+  "decision": "fixed quantities from previous close, only first 30 minutes fill",
+  "minute_signal": "Q4 train/validation, Q3 held frozen; missing prior-minute factor falls back to daily score",
+  "caveats": [
+    "no bid/ask queue",
+    "no live execution claim",
+    "same historical period previously examined"
+  ],
+  "max_cash_error": 1.1059455573558807e-09
+}

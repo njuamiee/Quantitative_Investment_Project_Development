@@ -1,0 +1,14 @@
+{
+  "max_absolute_daily_account_difference": 0.0,
+  "rows": 314,
+  "risk_id": 2000,
+  "config": {
+    "horizon": 2,
+    "count": 20,
+    "model": "lightgbm",
+    "frequency": "quarterly",
+    "window": 252,
+    "library": "daily"
+  },
+  "passed": true
+}
