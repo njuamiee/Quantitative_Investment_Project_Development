@@ -1,0 +1,56 @@
+{
+  "prepared": "2026-10-26",
+  "source_hashes_checked": 20,
+  "latest_result_rows_checked": 8,
+  "chapters": 29,
+  "pages": 32,
+  "visual_review": {
+    "pages_opened_at_original_resolution": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "result": "passed"
+  },
+  "research_tests_rerun": {
+    "audit_rebuild_20261021": 10,
+    "meeting_update_20261023": 8,
+    "result": "passed"
+  },
+  "renderer": "canonical render_docx.py PNG pipeline with native Word PDF conversion because Windows bundle has no LibreOffice",
+  "outputs_sha256": {
+    "整个量化项目说明书.docx": "91f4679ddee54f5509afe15bc230b2a252ee71dc82bde89730265539777a75ca",
+    "整个量化项目说明书.html": "2f15e78e96545b004e81aac7eb80a3e702ad32c12df89b75378b9fec8dcebaed",
+    "整个量化项目说明书.md": "24e0b0d840a6a1dc27e5b566896436d2d9274a5fbf46e46cb5e580ef3ee59fb3",
+    "来源与版本校验.json": "f1d7c16c583b89db58b337fbc8370bd9a140225132123681eef67f5fe387ab6a"
+  }
+}

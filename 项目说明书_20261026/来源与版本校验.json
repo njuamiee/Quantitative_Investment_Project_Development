@@ -1,0 +1,90 @@
+{
+  "prepared": "2026-10-26",
+  "research_batch": "meeting_update_20261023",
+  "data_end": "2026-10-19",
+  "chapters": 29,
+  "characters": 19767,
+  "scope": "Python repository only",
+  "sources": {
+    "S01": {
+      "path": "1023会议记录/项目关键信息_20261023.md",
+      "sha256": "ada85d8555aa8c8002943da004af1acb100ac300cec98d59ccc9344321bda176"
+    },
+    "S02": {
+      "path": "tools/research_20261017/README.md",
+      "sha256": "fca82a659a27805eefd0205fee58b1a1e403ddfb8ce3b746ee83e3d471c97c0c"
+    },
+    "S03": {
+      "path": "实验更新_20261023/实验更新报告.md",
+      "sha256": "639364db3e6e16602d40add7bb4e530e3fba0cffe78a603d21c27061b3c34cfc"
+    },
+    "S04": {
+      "path": "新项目_20261017/03_训练和因子筛选_具体日子逐步解释.md",
+      "sha256": "55fbb665de028542be9795deef6153fa05265bc89be7c609327aa71aeb7cb4c6"
+    },
+    "S05": {
+      "path": "tools/research_20261017/PROTOCOL.md",
+      "sha256": "f7388fb5b0e210b77113b4b02cdfefe217b2d92de970471d38e0ca991ed5997a"
+    },
+    "S06": {
+      "path": "复盘与重跑_20261021/复盘报告.md",
+      "sha256": "492770930620afdf4428a9cb1ebadd74ef6147b2f07b27010c4a335a493c3c01"
+    },
+    "S07": {
+      "path": "tools/research_20261018/DATA_INPUTS.md",
+      "sha256": "72eb97b3e418895863d0a29528384737b3f8a1b22d58f6220979a8941ad38df2"
+    },
+    "S08": {
+      "path": "新项目_20261017/05_真实一天_股票池到成交.md",
+      "sha256": "ad580193e2d07478d6a5b7c9a769e10d6164c1d07b32893adfa71bd45eba8a64"
+    },
+    "S09": {
+      "path": "tools/research_20260930/README.md",
+      "sha256": "0a5cd8d5ca37e2b331bc7d998aabd3c3a77c8ff9df44533d01b22a65a999f67f"
+    },
+    "S10": {
+      "path": "tools/research_20261011/README.md",
+      "sha256": "11ab222bedc8c4c4c409332988870ed1c0e3b42f757ccd9cc3825a9427664626"
+    },
+    "S11": {
+      "path": "training_runs/lgbm_hmm_20260920/report.md",
+      "sha256": "052d56caf2a6fd27b77bbcb65d154838c41cbb2c0696c515d76ea004d895fa49"
+    },
+    "S12": {
+      "path": "README.md",
+      "sha256": "a29303c41123d967358dd5bb2543a4c9bdc34869e9fa791550a507cde0a37aa8"
+    },
+    "S13": {
+      "path": "training_runs/research_20261011/validation_selected_summary.csv",
+      "sha256": "2cf4089f9d0051c266a6ef2d1132523d4e7db8820691f0646e19de2c7ec27a39"
+    },
+    "S14": {
+      "path": "新项目_20261018_深入实验/01_任务逐项答复.md",
+      "sha256": "91f6c7243fd348a2642d7ae1c1d4d541f863301a74500a39a0cb5e2268d6f9c2"
+    },
+    "S15": {
+      "path": "学习笔记/20261013_完整项目讲义/01_从零读懂量化项目_完整导读.md",
+      "sha256": "f185c0dcfa0c1934118133e3f470c6c2fa6b87d9b2751469739df2e7914e34e4"
+    },
+    "S16": {
+      "path": "新项目_20261021_中证2000实验/README_历史结果已修正.md",
+      "sha256": "6dd1bc0cd8e318a151c27e10750e42ea4fea6e37505f1404522fb69cd189cc2d"
+    },
+    "S17": {
+      "path": "training_runs/audit_rebuild_20261021/old_audit.json",
+      "sha256": "4c793cea677237663bcc2c81b2d7957203c474b9e6f2e006f72e1b8ddba09f89"
+    },
+    "S18": {
+      "path": "实验更新_20261023/实验协议.md",
+      "sha256": "d9be966b80456b5c38ea3bacce1a9431d2e13f5826b8ba847bdbd2f33dfd19c3"
+    },
+    "S19": {
+      "path": "实验更新_20261023/全部实验结果.csv",
+      "sha256": "157afd30a7116b72fa5b155a10e47064a5dde4e5bbf49a32fbe9e7f8853923c6"
+    },
+    "S20": {
+      "path": "training_runs/meeting_update_20261023/final_audit.json",
+      "sha256": "0f75380519e6969e020c65424550fd606ada005f34de53dc8f44b0b6f8844682"
+    }
+  }
+}
