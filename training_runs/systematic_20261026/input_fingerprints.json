@@ -1,0 +1,144 @@
+{
+  "created": "2026-10-27T08:10:26.549551+08:00",
+  "scope": "prepared frozen matrices and minute execution inputs",
+  "files": [
+    {
+      "path": "data/ai_factor_proposals.json",
+      "bytes": 16314,
+      "sha256": "6872addd001d8ba3200e473140cb5386d87d422a389ea5717114d9d922494259"
+    },
+    {
+      "path": "data/calendar.json",
+      "bytes": 20284,
+      "sha256": "3190f7b2cb67d619e6944bd5dee2fb866a9cca92512d95243540a688d3d2e7c7"
+    },
+    {
+      "path": "data/hmm_audit.json",
+      "bytes": 63532,
+      "sha256": "e19a17ca927e93d622499fdc1250d0c1927befa50ab555baec229fe04a1e2eb8"
+    },
+    {
+      "path": "data/ic_daily.npz",
+      "bytes": 10269591,
+      "sha256": "24c4e6271379474d6c199262c82f76882caccdccdf7846acebccba2e3feffc36"
+    },
+    {
+      "path": "data/ic_daily_auto.npz",
+      "bytes": 11798597,
+      "sha256": "73a114141c0361a20de0e378d46bb1b49387abbd198a35f966d708349ce8bb09"
+    },
+    {
+      "path": "data/ic_vendor_asof.npz",
+      "bytes": 44564098,
+      "sha256": "9be1f469d634595bb3704377def082d293e7ef28cb0262db549dcca712a1f21f"
+    },
+    {
+      "path": "data/label_exit_index.npy",
+      "bytes": 3552448,
+      "sha256": "f2e1bf6a32ad851634459b4dbef9eb67f7727a37a7d6fc0900c8458dd21c0d11"
+    },
+    {
+      "path": "data/labels.npy",
+      "bytes": 3552448,
+      "sha256": "519a2e19077f42aa8fb874c61d1c691c1c216b654fb133023007cd388780793b"
+    },
+    {
+      "path": "data/manifest.json",
+      "bytes": 1532,
+      "sha256": "dd16002da22a25bef20d0fcd0bcead1888ac0fd3c278eb2ebeb678f28cd5a86d"
+    },
+    {
+      "path": "data/market.npz",
+      "bytes": 13487497,
+      "sha256": "f05db68252b2643273d353f5760c5656ff5a158daf40742a3c6e94cad7cbf08d"
+    },
+    {
+      "path": "data/meta.parquet",
+      "bytes": 135484,
+      "sha256": "adc3ad022926b4d165debc24923c59c02e7c148cce3c71a3d861c4ed989b962a"
+    },
+    {
+      "path": "data/minute.npy",
+      "bytes": 4440528,
+      "sha256": "a1381abe3e34f393c8e1af6a6ca7be67b7877f64c32bb4dc032c142994523d60"
+    },
+    {
+      "path": "data/minute_names.json",
+      "bytes": 223,
+      "sha256": "364e2a7f2f62ce93d20f6830b591e3c3a16437f4601781047e672c40be379855"
+    },
+    {
+      "path": "data/names_daily.json",
+      "bytes": 6832,
+      "sha256": "2baa3765de557f99726937e4320ec4b3c88b0f22f0643eac3d7b2a879145cfe2"
+    },
+    {
+      "path": "data/names_daily_auto.json",
+      "bytes": 8197,
+      "sha256": "93c5f44e19006ef16ea449809db214c2751bac90b68804b1e127c84c29ea78c4"
+    },
+    {
+      "path": "data/names_vendor_asof.json",
+      "bytes": 47604,
+      "sha256": "2a1707fb2ed6a84487d9eaf84ae67a46f7dbf95254de86a19da5b954c63dfe3d"
+    },
+    {
+      "path": "data/regimes.parquet",
+      "bytes": 156986,
+      "sha256": "8ffcdb16e3de44c954030751bc3e778a0a002246e31880b33c10482326bde4d8"
+    },
+    {
+      "path": "data/stocks.json",
+      "bytes": 5298,
+      "sha256": "22b61c8b1b4a1c7f5dfc9fe6af5150e7f515d1fb83193e005340a7e3c414efd8"
+    },
+    {
+      "path": "data/targets.npy",
+      "bytes": 3552448,
+      "sha256": "1d55ec9a9622dcb4204a68f8013b5dc2947ddb4a4123b3fdffb4aba24f9aeec0"
+    },
+    {
+      "path": "data/vendor_age.npy",
+      "bytes": 444168,
+      "sha256": "df001fc39c7981e87170506c7610c7d1950b05ff7cb1ff5258359fa3cdcde5b9"
+    },
+    {
+      "path": "data/X_daily.npy",
+      "bytes": 138096568,
+      "sha256": "bfbd734cdbde544b2c70d6d252c85c931278e318733222229a69f630690749fb"
+    },
+    {
+      "path": "data/X_daily_auto.npy",
+      "bytes": 162074728,
+      "sha256": "c6647da1a0c6ced00306dba0e900a0193436ea760a5d7b55bff7219d2b81c51a"
+    },
+    {
+      "path": "data/X_vendor_asof.npy",
+      "bytes": 872982768,
+      "sha256": "4c64626d827055efe1010ea963139df8825a9b8486556234965ef39c970f4d34"
+    },
+    {
+      "path": "minute/first30.npz",
+      "bytes": 4372008,
+      "sha256": "824e8219a8a076a030032ee3f5733402347ff0095905114ec8412f4b6a15c0a0"
+    }
+  ],
+  "local_runtime": {
+    "python": "3.11.8",
+    "platform": "Windows",
+    "packages": {
+      "numpy": "1.26.3",
+      "pandas": "2.1.4",
+      "scipy": "1.15.2",
+      "scikit-learn": "1.6.1",
+      "lightgbm": "4.7.0",
+      "xgboost": "3.2.0",
+      "catboost": "1.2.10",
+      "hmmlearn": "0.3.3",
+      "numba": "0.68.0",
+      "llvmlite": "0.50.0",
+      "pyarrow": "19.0.1"
+    }
+  },
+  "note": "A fingerprint verifies the input vintage; it does not prove the historical publication time of vendor fields."
+}

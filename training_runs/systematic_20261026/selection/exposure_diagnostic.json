@@ -1,0 +1,9 @@
+{
+  "added_after_primary_search": true,
+  "not_a_selector_candidate": true,
+  "additional_accounts": 2,
+  "target": "primary fee5 account previous-close actual equity exposure; same target for both fee scenarios",
+  "actual_exposure_can_differ_due_to_fills": true,
+  "future_budget_mutation_check": true,
+  "causal_unchanged_days": 158
+}

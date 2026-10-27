@@ -2,6 +2,8 @@
 
 See `系统重设计_20261026/研究协议.md` for the frozen research design and its limitations.
 
+The registered batch completed on 2026-10-27: 8,640 model configurations, 967,680 retained fits and 27,993,600 account configurations, plus 1,152 separate minute cases. Read `系统重设计_20261026/全组合实验最终解读.md`. The continuous monthly selector did not meet all performance targets. Completion of the computation and audit is distinct from performance acceptance or production readiness.
+
 For a Chinese beginner's explanation, read `系统重设计_20261026/先读这份说明.md` and the live HTML report. The report contains 18 charts, including paired comparisons for every declared model coordinate and every account-rule coordinate. These are descriptive comparisons, not independent trials or causal population estimates. The monthly decision details distinguish prediction horizon, model refitting frequency and account rebalancing interval.
 
 Use the existing research Python environment, from the repository root:
@@ -21,6 +23,8 @@ Use the existing research Python environment, from the repository root:
 `--limit N` runs the next N pending model configurations for engineering checks; those results are still identified as a partial batch. Re-run the command to resume after interruption. Do not start two runners against the same queue. The parent uses six local worker processes (ordinary Python computation, not delegated AI agents), one BLAS thread each. The Windows background launcher uses hidden windows. Keep the machine awake for computation to continue; this project does not change OS power settings.
 
 `watch_report.py` refreshes the HTML and PNG chart snapshot every five minutes when completed counts change. It exits after the queue reaches a terminal state and writes a final audit receipt. It does not notify external services or place trades. A stale heartbeat is visibly reported instead of being called success.
+
+Use `status.py` for read-only queue/checkpoint status, `provenance.py` for fingerprints of prepared inputs, and `watch_report.py --final-only` to wait for terminal completion before generating the final report and audit. `final_summary.py` refuses to generate a completed-batch interpretation unless the report and audit both match all declared counts. CSV and image publication use temporary files and atomic replacement to tolerate transient Windows reader locks. `diagnostics.py` adds two clearly labelled, post-search equal-pool controls whose next-day target exposure follows the primary account's previous close; they never enter the monthly candidate selector.
 
 Distributed continuation uses disjoint shards: `core` is the 960 daily-library/252-session configurations; `xgboost_extra` is the remaining 960 XGBoost configurations, kept on Windows. `remote` is the 6,720 non-core, non-XGBoost configurations on the existing data server, in a task-owned directory under `/tmp`, with 40 one-thread workers. `local_next.py` waits for the core shard before starting the Windows XGBoost expansion. `server_control.py watch` transfers only completed artifacts, checks archive, prediction and results SHA256 values, then publishes the completion receipt locally. It never uploads credentials or modifies the original server data directory.
 

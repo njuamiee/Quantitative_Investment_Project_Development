@@ -93,6 +93,25 @@ class LedgerTests(unittest.TestCase):
                     for other in RISK_BASELINES:
                         if other!=axis:self.assertEqual(a[other],b[other])
             if horizon==1:self.assertFalse(any(k[0]=='rebalance' for k in risk_pairs(horizon)))
+    def test_report_csv_survives_temporary_destination_lock(self):
+        import tempfile
+        from pathlib import Path
+        from unittest.mock import patch
+        import pandas as pd
+        from config import write_csv
+        original=Path.replace;attempts=[]
+        with tempfile.TemporaryDirectory() as folder:
+            target=Path(folder)/'report.csv';target.write_text('old complete snapshot',encoding='utf-8')
+            def replace(source,dest):
+                attempts.append(1)
+                if len(attempts)==1:
+                    self.assertEqual(target.read_text(),'old complete snapshot')
+                    raise PermissionError('reader holds destination')
+                return original(source,dest)
+            with patch.object(Path,'replace',replace),patch('config.time.sleep'):
+                write_csv(pd.DataFrame({'completed':[8640]}),target)
+            self.assertEqual(pd.read_csv(target).completed.iloc[0],8640)
+            self.assertEqual(len(attempts),2)
     def test_compute_shards_cover_grid_once(self):
         from runner import configurations
         from config import key

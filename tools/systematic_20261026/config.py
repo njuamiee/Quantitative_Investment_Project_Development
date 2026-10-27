@@ -16,18 +16,33 @@ WINDOWS = [126, 252, 504]
 LIBRARIES = ['daily', 'daily_auto', 'vendor_asof']
 SEED = 20261026
 
+def atomic_replace(temp, path):
+    for attempt in range(40):
+        try:
+            Path(temp).replace(path);return
+        except OSError as ex:
+            # Windows readers can report EINVAL as well as access denied for
+            # a destination that is temporarily open without delete sharing.
+            transient=isinstance(ex,PermissionError) or (os.name=='nt' and ex.errno in (13,22))
+            if not transient or attempt==39:raise
+            time.sleep(.25)
+
+def temporary_path(path):
+    path=Path(path)
+    return path.with_name(path.stem+'.'+str(os.getpid())+'.'+uuid.uuid4().hex[:8]+'.tmp'+path.suffix)
+
+def write_csv(frame,path,**kwargs):
+    path=Path(path);path.parent.mkdir(parents=True,exist_ok=True);temp=temporary_path(path)
+    frame.to_csv(temp,index=False,encoding='utf-8-sig',**kwargs)
+    atomic_replace(temp,path)
+
 def dump(value, path):
     path = Path(path); path.parent.mkdir(parents=True, exist_ok=True)
     temp = path.with_suffix(path.suffix + '.' + str(os.getpid()) + '.' + uuid.uuid4().hex[:8] + '.tmp')
     temp.write_text(json.dumps(value, ensure_ascii=False, indent=2, default=str), encoding='utf-8')
     # Windows readers/antivirus may briefly hold a destination handle without
     # delete sharing. That must not kill a multi-day research queue.
-    for attempt in range(40):
-        try:
-            temp.replace(path);break
-        except PermissionError:
-            if attempt==39:raise
-            time.sleep(.25)
+    atomic_replace(temp,path)
 
 def digest(path):
     h=hashlib.sha256()

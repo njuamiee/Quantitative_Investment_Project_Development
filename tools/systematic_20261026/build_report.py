@@ -7,27 +7,31 @@ import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from config import RUN,REPORT,HORIZONS,COUNTS,MODELS,FREQUENCIES,START,END,dump,digest
+from config import RUN,REPORT,HORIZONS,COUNTS,MODELS,FREQUENCIES,START,END,dump,digest,write_csv,temporary_path,atomic_replace
 from monthly_selection import completed,select_and_replay
 from account import metrics
 from controlled_comparisons import compare,risk_compare
 from report_details import detail_charts,decision_rows,acceptance_html
+from diagnostics import lagged_exposure_control
 
 plt.rcParams.update({'font.sans-serif':['Microsoft YaHei','SimHei','DejaVu Sans'],'axes.unicode_minus':False,
                      'figure.facecolor':'#f7f9fc','axes.facecolor':'white','font.size':10})
 COLORS=['#116A7B','#D46642','#536CC5','#7D557F','#55735B']
 def figsave(fig,name):
-    fig.tight_layout();fig.savefig(REPORT/'图表'/name,dpi=160,bbox_inches='tight');plt.close(fig)
+    path=REPORT/'图表'/name;temp=temporary_path(path)
+    fig.tight_layout();fig.savefig(temp,dpi=160,bbox_inches='tight');plt.close(fig);atomic_replace(temp,path)
 
 def build():
     REPORT.mkdir(exist_ok=True);(REPORT/'图表').mkdir(exist_ok=True)
     records=completed()
     if not records:return
-    snapshot=time.strftime('%Y-%m-%d %H:%M:%S');rows=[];risk_rows=[];samples=[];best=None;posthoc=None;total=0;pass_counts=np.zeros(2,int)
+    snapshot=time.strftime('%Y-%m-%d %H:%M:%S');rows=[];risk_rows=[];samples=[];best=None;posthoc=None;total=0;pass_counts=np.zeros(2,int);inactive=np.zeros(2,int)
     for r in records:
         a=np.load(RUN/'models'/r['job']/'risk_results.npz');v=a['metrics'];c=r['config'];total+=len(v)
         risk_rows.extend(risk_compare(r,v))
-        for pi in range(2):pass_counts[pi]+=int(((v[:,pi,3]>1)&(v[:,pi,4]>2)&(v[:,pi,2]<.3)).sum())
+        for pi in range(2):
+            pass_counts[pi]+=int(((v[:,pi,3]>1)&(v[:,pi,4]>2)&(v[:,pi,2]<.3)).sum())
+            inactive[pi]+=int((v[:,pi,5]<=1e-12).sum())
         for period,pi in [('共同历史',0),('最近区间',1)]:
             rows.append(dict(**c,job=r['job'],period=period,accounts=len(v),actual_fits=r['actual_fits'],
                 median_return=float(np.nanmedian(v[:,pi,0])),max_return=float(np.nanmax(v[:,pi,0])),
@@ -35,12 +39,14 @@ def build():
         ix=np.unique(np.linspace(0,len(v)-1,min(12,len(v))).astype(int));samples.append(v[ix,1,:5])
         obj=np.minimum(v[:,0,3],v[:,0,4]/2);obj=np.where(np.isfinite(obj),obj,-np.inf);k=int(np.argmax(obj))
         if best is None or obj[k]>best[0]:best=(obj[k],r,k)
-    df=pd.DataFrame(rows);df.to_csv(REPORT/'已完成模型配置汇总.csv',index=False,encoding='utf-8-sig')
+    df=pd.DataFrame(rows);write_csv(df,REPORT/'已完成模型配置汇总.csv')
     sample=np.concatenate(samples);sample=sample[::max(1,len(sample)//10000)]
     days,curves,summary,decisions=select_and_replay(records)
+    extra,additional_summary=lagged_exposure_control(days,curves);curves.update(extra);summary.extend(additional_summary)
     if best is not None:
         a=np.load(RUN/'models'/best[1]['job']/'full_posthoc.npz');posthoc=a['daily']
-    summary_df=pd.DataFrame(summary);summary_df.to_csv(REPORT/'逐月系统与基准结果.csv',index=False,encoding='utf-8-sig')
+    summary_df=pd.DataFrame(summary);write_csv(summary_df,REPORT/'逐月系统与基准结果.csv')
+    write_csv(summary_df,RUN/'selection/summary.csv')
     # 1. Actual completed model coverage; zero cells are visible.
     cov=pd.DataFrame([r['config'] for r in records]);matrix=cov.groupby(['model','horizon']).size().unstack(fill_value=0).reindex(index=MODELS,columns=HORIZONS,fill_value=0)
     fig,ax=plt.subplots(figsize=(11,5));im=ax.imshow(matrix,cmap='Blues',aspect='auto')
@@ -55,7 +61,7 @@ def build():
     ax.scatter(sample[valid,3],sample[valid,4],s=9,alpha=.4,color=COLORS[0]);ax.axvline(1,color='#b32b36',ls='--');ax.axhline(2,color='#b32b36',ls='--')
     ax.set(xlabel='夏普（无风险利率1.5%）',ylabel='卡玛（远离0的区间压缩显示）',title='最近区间：夏普与卡玛；虚线右上方才同时达标');ax.set_yscale('symlog',linthresh=2);figsave(fig,'03_夏普与卡玛.png')
     # 4-5. These are replayed accounts, not concatenated winning curves.
-    names=[('rolling_cash_fallback_fee5','逐月选择：不合格则现金'),('rolling_equal_fallback_fee5','逐月选择：不合格则股票池等权'),('dynamic_pool_equal_fee5','动态股票池等权基准'),('quarter_pool_buyhold_fee5','季度初股票池等权、季内持有')]
+    names=[('rolling_cash_fallback_fee5','逐月选择：不合格则现金'),('rolling_equal_fallback_fee5','逐月选择：不合格则股票池等权'),('dynamic_pool_equal_fee5','动态股票池等权基准'),('quarter_pool_buyhold_fee5','季度初股票池等权、季内持有'),('lagged_exposure_equal_fee5','跟随系统昨日仓位的等权参照')]
     fig,ax=plt.subplots(figsize=(11,5.3))
     for i,(k,label) in enumerate(names):ax.plot(days,curves[k][:,0]/1e6,label=label,color=COLORS[i],lw=1.8)
     if posthoc is not None:ax.plot(days,posthoc[:,0]/1e6,label='事后全历史最佳：仅描述，不可用作选型证明',color='#888888',ls=':',lw=1.2)
@@ -85,7 +91,7 @@ def build():
     lo,hi=np.quantile(means,[.025,.975]);fig,ax=plt.subplots(figsize=(9,4));ax.hist(np.asarray(means)*100,bins=45,color=COLORS[0],alpha=.8)
     ax.axvline(0,color='#b32b36',ls='--');ax.set(title=f'逐月系统相对等权：20日成组重采样\n年化日均收益差95%区间 [{lo:.1%}, {hi:.1%}]',xlabel='年化日均收益差 %（不是复合年化收益差）',ylabel='重采样次数');figsave(fig,'09_相对收益不确定性.png')
     pass_common=int(pass_counts[0]);pass_recent=int(pass_counts[1]);fits=sum(r['actual_fits'] for r in records)
-    paired=compare(records);paired.to_csv(REPORT/'控制变量配对比较.csv',index=False,encoding='utf-8-sig')
+    paired=compare(records);write_csv(paired,REPORT/'控制变量配对比较.csv')
     details=detail_charts(paired,risk_rows,figsave) if len(paired) else []
     decisions_html=decision_rows(decisions)
     if len(paired):
@@ -103,12 +109,22 @@ def build():
         ax.boxplot(data,labels=labels,showfliers=False);ax.axhline(0,color='gray',lw=.8)
         ax.set(title='只改变预测期限：全部固定每日换仓，与5日期限配对',xlabel='预测期限（交易日）',ylabel='相同规则下收益差中位数（百分点）');figsave(fig,'14_期限控制比较.png')
     status='全部完成' if len(records)==8640 else '运行中的阶段快照，非最终验收'
+    best_card=None
+    if best is not None:
+        _,record,risk_id=best;folder=RUN/'models'/record['job']
+        with np.load(folder/'risk_results.npz') as a:best_metrics=a['metrics'][risk_id,:,:5].tolist()
+        best_card=dict(job=record['job'],model_config=record['config'],risk_id=risk_id,
+            risk_config=json.loads((folder/'risk_registry.json').read_text())[risk_id],
+            common_and_recent_metrics=best_metrics,
+            metric_order=['total_return','annual_return','max_drawdown','sharpe','calmar'],
+            selection='posthoc whole-history max(min(Sharpe,Calmar/2)); descriptive only, not a deployment recommendation')
     manifest=dict(generated=snapshot,status=status,completed_model_configs=len(records),actual_model_fits=fits,
                   completed_account_configs=total,registered_model_configs=8640,registered_account_configs=27993600,
                   pass_common=pass_common,pass_recent=pass_recent,candidate_snapshot=[r['job'] for r in records],
+                  zero_equity_exposure_configs=dict(common=int(inactive[0]),recent=int(inactive[1])),
+                  descriptive_best_fixed=best_card,
                   data_end=END,paired_block_bootstrap_interval=[float(lo),float(hi)],
                   code_hashes={p.name:digest(p) for p in __import__('pathlib').Path(__file__).parent.glob('*.py')})
-    dump(manifest,REPORT/'结果快照.json')
     sources=[('Microsoft Qlib滚动研究框架','https://github.com/microsoft/qlib'),('Microsoft RD-Agent因子研究闭环','https://github.com/microsoft/RD-Agent'),
              ('Vanguard 2024：机器学习、可解释性与风控','https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/machine-learning-role-in-hunt-alpha.html'),
              ('美联储2024：因子选择与结构变化','https://www.federalreserve.gov/econres/feds/factor-selection-and-structural-breaks.htm'),
@@ -146,13 +162,15 @@ def build():
     paired_html+=''.join(img(n) for n in details)
     if details:paired_html+='<p>风控图逐一改变持股数、权重、仓位预算、HMM、退出、集中度、反弹入场、交易池和换仓间隔。横线是各模型配对结果的四分位范围，不是置信区间；同时展示收益、回撤和实际仓位，便于区分减少投资带来的风险变化。所有配对摘要均保留CSV，零差异与不利变化一并纳入。</p>'
     def pct(v):return f'{v:.2%}' if pd.notna(v) else '无定义'
-    table=summary_df[summary_df.period=='recent'][['strategy','total_return','max_drawdown','sharpe','calmar','mean_exposure']].copy()
+    table=summary_df[['period','strategy','total_return','max_drawdown','sharpe','calmar','mean_exposure']].copy()
     chinese={'rolling_cash_fallback':'逐月选择，后备现金','rolling_equal_fallback':'逐月选择，后备等权',
-             'dynamic_pool_equal':'动态池等权','quarter_pool_buyhold':'季度初等权、季内持有'}
+             'dynamic_pool_equal':'动态池等权','quarter_pool_buyhold':'季度初等权、季内持有',
+             'lagged_exposure_equal':'跟随昨日仓位等权（诊断）'}
     table['strategy']=table.strategy.map(lambda s:chinese[s.rsplit('_fee',1)[0]]+' / '+s.rsplit('_fee',1)[1])
     for c in ['total_return','max_drawdown','mean_exposure']:table[c]=table[c].map(pct)
     for c in ['sharpe','calmar']:table[c]=table[c].map(lambda v:f'{v:.2f}' if pd.notna(v) else '无定义')
-    table.columns=['系统/成本（bp/边）','收益','回撤','夏普','卡玛','实际仓位']
+    recent_table=table[table.period=='recent'].drop(columns='period');common_table=table[table.period=='common'].drop(columns='period')
+    for t in [recent_table,common_table]:t.columns=['系统/成本（bp/边）','收益','回撤','夏普','卡玛','实际仓位']
     body=f'''<p class="eyebrow">北交所横截面选股 · 系统重设计 · {snapshot}</p><h1>让规则每月更新，<br>让每一次选择都有证据。</h1>
 <p class="status">{status}。行情截至 {END}；已查看过的历史用于探索，不能称为全新独立样本。</p>
 <div class="cards"><div><b>{len(records):,}</b>已完成模型配置 / 8,640</div><div><b>{fits:,}</b>实际拟合次数</div><div><b>{total:,}</b>已完成策略账户 / 27,993,600</div></div>
@@ -160,8 +178,12 @@ def build():
 <h2>这次系统怎样工作</h2><p>每日收盘：动态股票池和当时可得因子 → 按成熟答案重训或沿用模型 → 股票排名 → 市场状态与仓位上限 → 次日模拟交易。每月开始：只用此前63/126日的真实模拟账户记录，综合夏普和卡玛选择下一月规则；两个窗口中较差的表现决定评分。没有合格候选时，分别比较现金与股票池等权两种后备规则。换规则后重新运行一份连续现金和股票账本，不拼接赢家资金曲线。</p>
 <h2>实验覆盖和结果</h2><p>8个期限 × 5个因子数量 × 8类模型 × 3种重训频率 × 3种训练窗口 × 3类因子库，共8,640个模型配置。风控层再独立组合持股数、权重、仓位、HMM、退出规则、行业/市值约束、入场条件、池大小与换仓频率；去除1日期限中等价的换仓重复项，登记27,993,600个策略配置。这些是配置数，不是相互独立的统计样本。</p>
 {img('01_实验覆盖.png')}<p>目前共同历史中有 {pass_common:,} 个配置同时通过“夏普&gt;1、卡玛&gt;2、回撤&lt;30%”；最近区间有 {pass_recent:,} 个。事后找到通过者，不等于事前能选中。未完成配置不计入任何已完成数。</p>
+<p>其中共同历史全程股票仓位为0的配置有 {int(inactive[0]):,} 个，最近区间有 {int(inactive[1]):,} 个；这些保留为风险规则拒绝入场的实验结果，不算盈利通过者。不同参数还可能产生相同的持仓路径，所以账户配置总数不等于独立策略或独立证据的数量。</p>
 {img('02_收益与回撤.png')}{img('03_夏普与卡玛.png')}
-<h2>真正要验收的是逐月选择系统</h2><p>最近区间：2026-05-22至2026-10-19。5bp与15bp均为每边合并成本情景；15bp保持同一选择规则，不按后段成绩重新挑模型。现金的收益假设为0。图中灰色虚线是事后最佳，仅供观察。</p>{table.to_html(index=False,escape=True)}
+<h2>真正要验收的是逐月选择系统</h2><p>5bp与15bp均为每边合并成本情景；15bp保持同一选择规则，不按后段成绩重新挑模型。现金的收益假设为0。图中灰色虚线是事后最佳，仅供观察。</p>
+<h3>共同历史：2025-07-02至2026-10-19</h3><p>前63日没有足够账户记录选型，现金分支会空仓，等权分支按后备规则持股。共同历史收益包含这段预热，因此不能把它们的全部差额都归于选股。</p>{common_table.to_html(index=False,escape=True)}
+<h3>最近区间：2026-05-22至2026-10-19</h3>{recent_table.to_html(index=False,escape=True)}
+<p>“跟随昨日仓位等权”是在看到主结果后增加的诊断参照：下一日只使用逐月现金分支此前收盘的实际仓位，在动态池中等权投资，每日重新计算目标。同样使用现金、容量和成本账本，实际仓位仍会因成交不同而略有差异；两个成本情景共用主系统5bp账户的历史仓位目标。它帮助区分低仓位与选股效果，不是新的独立验证，也不参加月度选型或计入主网格数量。</p>
 {img('04_连续资金曲线.png')}{img('05_回撤曲线.png')}{img('08_实际仓位.png')}
 {decisions_html}
 <h2>期限、重训频率和不确定性</h2><p>按你的最新要求，期限仅为1、2、3、4、5、10、15、20日。每日重训并不天然更好，必须在同日期、成本、因子及风控条件下比较。当前覆盖尚不均衡时，禁止把先跑完的一类宣布为最终赢家。</p>
@@ -174,11 +196,8 @@ def build():
 <h2>文件与复现</h2><p>完整协议见《研究协议.md》。每个模型配置保留预测、训练边界、因子清单、全部风控结果和选择评分；任务队列保留待运行、运行、完成、失败状态。结果快照.json记录本页的实际候选集合。脚本位于 tools/systematic_20261026，账本结果位于 training_runs/systematic_20261026。完成图表会由监视脚本更新，刷新本文件即可查看最新落盘快照。</p>'''
     page='<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>组合研究 · 实验进度与图表</title><style>body{background:#eef2f5;color:#20323e;font:16px/1.8 "Microsoft YaHei",sans-serif;margin:0}main{max-width:1120px;margin:auto;padding:48px 36px;background:white}h1{font-size:42px;line-height:1.3}h2{font-size:25px;border-top:1px solid #dbe4e9;padding-top:32px;margin-top:42px}p{max-width:1000px}.eyebrow{color:#116a7b}.status{padding:16px;background:#fff1d6;border-left:4px solid #c48622}.cards{display:flex;gap:20px;margin:30px 0}.cards div{flex:1;padding:24px;background:#eaf4f5}.cards b{display:block;font-size:32px;color:#116a7b}img{width:100%;height:auto;margin:15px 0}table{border-collapse:collapse;width:100%;font-size:13px}td,th{padding:9px;border-bottom:1px solid #ddd;text-align:right}td:first-child,th:first-child{text-align:left}a{color:#116a7b}@media(max-width:700px){main{padding:20px}.cards{display:block}h1{font-size:30px}}</style><main>'+body+'</main></html>'
     dest=REPORT/'实验进度与结果.html';tmp=dest.with_suffix('.tmp.html');tmp.write_text(page,encoding='utf-8')
-    for attempt in range(40):
-        try:tmp.replace(dest);break
-        except PermissionError:
-            if attempt==39:raise
-            time.sleep(.25)
+    atomic_replace(tmp,dest)
+    dump(manifest,REPORT/'结果快照.json')
     print(json.dumps(dict(model_configs=len(records),fits=fits,accounts=total,pass_common=pass_common,pass_recent=pass_recent,generated=snapshot),ensure_ascii=False),flush=True)
 
 if __name__=='__main__':build()

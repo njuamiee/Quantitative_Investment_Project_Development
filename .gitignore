@@ -74,3 +74,11 @@ node_modules/
 /training_runs/systematic_20261026/*launch*.json
 /training_runs/systematic_20261026/*.tmp
 /training_runs/systematic_20261026/minute/first30.npz
+/training_runs/systematic_20261026/progress.json
+/training_runs/systematic_20261026/remote_progress.json
+/training_runs/systematic_20261026/local_phase2.json
+/training_runs/systematic_20261026/server_sync_status.json
+/training_runs/systematic_20261026/queue_manifest.json
+/系统重设计_20261026/运行需要检查.json
+/系统重设计_20261026/*.tmp.*
+/系统重设计_20261026/图表/*.tmp.*

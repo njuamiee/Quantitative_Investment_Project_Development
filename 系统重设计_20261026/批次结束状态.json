@@ -1,0 +1,18 @@
+{
+  "completed": 8640,
+  "failed": 0,
+  "audit_exit": 0,
+  "interpretation_exit": 0,
+  "fully_completed": true,
+  "performance_target_met": false,
+  "report_snapshot": "2026-10-27 08:14:02",
+  "completed_at": "2026-10-27T12:48:23.406996+08:00",
+  "timestamp": 1793076503.4069963,
+  "audit_sha256": "a67583c9ff831afef9416e94c7693d360ab58b5ebe564cf90e440dcd3d747ffe",
+  "report_sha256": "5901ad5018ad7049f690ea0b34c407cb66183a73ba1337bbe4088031e71412f5",
+  "interpretation_sha256": "9e477b7c7d633249c9ee8e0980f6f5482166c4757da54f675b7540aee425cc4f",
+  "embedded_images_checked": 18,
+  "model_coordinate_comparisons": 78624,
+  "risk_coordinate_comparisons": 239760,
+  "note": "Computation, reporting and audit complete; this does not certify future profitability or production deployment."
+}

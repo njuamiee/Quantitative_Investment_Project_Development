@@ -3,7 +3,7 @@ import html
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from config import REPORT
+from config import REPORT,write_csv
 
 NAMES=dict(ridge='Ridge线性模型',ic='IC权重',conditional_ic='状态条件IC',
     lightgbm='LightGBM',ranker='LightGBM排序',xgboost='XGBoost',extra_trees='ExtraTrees',catboost='CatBoost',
@@ -25,7 +25,7 @@ RISK_LABELS={
 
 def detail_charts(paired,risk_rows,figsave):
     p=paired[paired.period=='recent'];r=pd.DataFrame(risk_rows)
-    r.to_csv(REPORT/'风控控制变量配对比较.csv',index=False,encoding='utf-8-sig')
+    write_csv(r,REPORT/'风控控制变量配对比较.csv')
     r=r[r.period=='recent'];out=[]
     for axis,alts,title,filename in [
         ('count',['40','60','80','100'],'只改变候选因子数：与20个配对','15_因子数量控制比较.png'),
@@ -81,7 +81,7 @@ def decision_rows(logs):
                 '入场条件':NAMES[r['entry']],'交易池数量':r['pool'],'换仓间隔':r['rebalance_days']})
         else:item.update({'模型':'无合格候选，按预先固定的后备分支执行'})
         rows.append(item)
-    pd.DataFrame(rows).to_csv(REPORT/'逐月选择规则明细.csv',index=False,encoding='utf-8-sig')
+    write_csv(pd.DataFrame(rows),REPORT/'逐月选择规则明细.csv')
     body='<h2>每个月具体用了哪套规则</h2><p>下列是当前已完成候选集合的历史模拟决定。因子数为上限，实际数量见因子审计；基础仓位和持股数仍受HMM、个股上限及成交容量约束。预测期限决定训练答案，换仓间隔决定重新下单的频率，重训频率决定模型多久重新学习，三者不同。</p>'
     for item in rows:
         month=item['信号月份'];cut=item['使用截至哪天的账户记录'] or '尚无账户验证历史'
