@@ -1,0 +1,7 @@
+{
+  "actions.json": "0c83a3c92fa469210980ebc726df9dd253c025b55ead7c7702bce4d56547c30f",
+  "audit.json": "51fc4462890f9a80c2ede8ade6e5dfaf1f3ad279c78520c0fbe66d6354a902c7",
+  "signals.jsonl": "b6a5fbcbf89443deb363cc2a26d8a33cc16886d4414d9693161856ed6dc64bbc",
+  "ticks.csv.gz": "b166fe5db9b490d5195e3504fd05aa00bb9e7ece5a587715be586bb62e0aec79",
+  "ticks.parquet": "2e3c954726dd5ffee70e924e4d587b19a9ed17677af80807fd108ce18f4b3078"
+}

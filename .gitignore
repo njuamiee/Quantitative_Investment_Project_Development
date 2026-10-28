@@ -2,6 +2,8 @@
 /training_data/
 /.venv_quant/
 /.venv_research_20261011/
+/.venv_message/
+/training_runs/vnpy_message/
 
 # Reproducible document preview intermediates
 /training_runs/**/docx_qa*/

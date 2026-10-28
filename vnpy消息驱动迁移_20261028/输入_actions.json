@@ -1,0 +1,30 @@
+[
+  {
+    "date": "2026-09-29",
+    "symbol": "920012.BSE",
+    "dividend": 0.6799999999999999,
+    "ratio": 1.0,
+    "settlement": "gross receivable at ex-date, payment date and dividend tax unverified"
+  },
+  {
+    "date": "2026-09-30",
+    "symbol": "920000.BSE",
+    "dividend": 0.0699999999999999,
+    "ratio": 1.0,
+    "settlement": "gross receivable at ex-date, payment date and dividend tax unverified"
+  },
+  {
+    "date": "2026-09-30",
+    "symbol": "920186.BSE",
+    "dividend": 0.4,
+    "ratio": 1.0,
+    "settlement": "gross receivable at ex-date, payment date and dividend tax unverified"
+  },
+  {
+    "date": "2026-09-30",
+    "symbol": "920222.BSE",
+    "dividend": 0.25,
+    "ratio": 1.0,
+    "settlement": "gross receivable at ex-date, payment date and dividend tax unverified"
+  }
+]

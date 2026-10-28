@@ -1,0 +1,37 @@
+[
+  {
+    "date": "20260923",
+    "input_rows": 289713,
+    "quarantined": 3357,
+    "sha256": "4f89220a3be11f4726347afe7a0728bc84cbfccab658be8aacf7f3850700058f",
+    "reasons": "nonfinite fields, zero pretrade last price, negative cumulative volume, crossed two-sided book"
+  },
+  {
+    "date": "20260924",
+    "input_rows": 267813,
+    "quarantined": 3067,
+    "sha256": "afd163f6e7416dea74b75c8ae852b3a8795c3aa3d8372a4c347f70d15a27fdfc",
+    "reasons": "nonfinite fields, zero pretrade last price, negative cumulative volume, crossed two-sided book"
+  },
+  {
+    "date": "20260928",
+    "input_rows": 271803,
+    "quarantined": 3048,
+    "sha256": "cae5e747d8d479d7602d33d3c36ac1304e417f83344afade898cbd9f7dc54d0e",
+    "reasons": "nonfinite fields, zero pretrade last price, negative cumulative volume, crossed two-sided book"
+  },
+  {
+    "date": "20260929",
+    "input_rows": 244246,
+    "quarantined": 2430,
+    "sha256": "3ccdd142a0106b8543fc02efd6a75c01534a7fb75efed7a5d1f451ea816d4de4",
+    "reasons": "nonfinite fields, zero pretrade last price, negative cumulative volume, crossed two-sided book"
+  },
+  {
+    "date": "20260930",
+    "input_rows": 242183,
+    "quarantined": 2975,
+    "sha256": "2fbc001f3d175db178bc1979b5793a1bf9218b8582063eb893401a70aa3c499f",
+    "reasons": "nonfinite fields, zero pretrade last price, negative cumulative volume, crossed two-sided book"
+  }
+]

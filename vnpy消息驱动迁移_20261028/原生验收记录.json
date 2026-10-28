@@ -1,0 +1,30 @@
+[
+  {
+    "case": "simple_100ms_0.01",
+    "native_trades": 11,
+    "source_sha256": "1de4add45cc61d3a29b1d48598c0c4bded79f2927373920c429c22ec87276d36",
+    "report": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\vnpy_message\\native\\simple_100ms_0.01\\report.json",
+    "remote": "/home/vnpy/quant_message/results/accept_20261028_205753/simple_100ms_0.01"
+  },
+  {
+    "case": "simple_1000ms_0.01",
+    "native_trades": 11,
+    "source_sha256": "1de4add45cc61d3a29b1d48598c0c4bded79f2927373920c429c22ec87276d36",
+    "report": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\vnpy_message\\native\\simple_1000ms_0.01\\report.json",
+    "remote": "/home/vnpy/quant_message/results/accept_20261028_205753/simple_1000ms_0.01"
+  },
+  {
+    "case": "simple_100ms_0.05",
+    "native_trades": 11,
+    "source_sha256": "1de4add45cc61d3a29b1d48598c0c4bded79f2927373920c429c22ec87276d36",
+    "report": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\vnpy_message\\native\\simple_100ms_0.05\\report.json",
+    "remote": "/home/vnpy/quant_message/results/accept_20261028_205753/simple_100ms_0.05"
+  },
+  {
+    "case": "full_100ms_0.01",
+    "native_trades": 43,
+    "source_sha256": "1de4add45cc61d3a29b1d48598c0c4bded79f2927373920c429c22ec87276d36",
+    "report": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\training_runs\\vnpy_message\\native\\full_100ms_0.01\\report.json",
+    "remote": "/home/vnpy/quant_message/results/accept_20261028_205753/full_100ms_0.01"
+  }
+]
