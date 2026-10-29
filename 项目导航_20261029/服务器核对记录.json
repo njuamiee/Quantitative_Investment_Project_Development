@@ -1,0 +1,12 @@
+{
+  "user": "vnpy",
+  "release": "/home/vnpy/quant_message/releases/f24db168ac19f1a4",
+  "module_count": 17,
+  "runtime_matches_local": true,
+  "different_files": [],
+  "results_exists": true,
+  "run_reports": 14,
+  "report_exists": true,
+  "checked_at": "2026-10-29",
+  "scope": "quant_message/*.py; read-only server verification"
+}

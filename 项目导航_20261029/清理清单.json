@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-29",
+  "status": "completed",
+  "backup": "C:\\Users\\Amiee\\Downloads\\量化工作文件\\tmp\\文档清理备份_20261029.zip",
+  "backup_sha256": "f288e15fb4e2f2c4afdcba300f4ff6094c203bf14b43a28c271cd5a1ebd62964",
+  "root_readme_original_sha256": "38260565f2abcb3a9c5762ac994585d5631f726092399fe0466ff5651f056e7a",
+  "deleted_files": [
+    {
+      "path": "天软因子库/通过API和TS交互/量化因子库WebAPI接口说明v24.11.pdf",
+      "replacement": "天软因子库/因子下载说明（天软科技）/深圳天软科技因子服务05：量化因子库WebAPI接口说明v24.11.pdf",
+      "reason": "SHA-256 completely identical; retain supplier download-document copy",
+      "bytes": 730799,
+      "sha256": "46cecf6e2ee7114750b34a4243cf8083d7729b8edcd4fe667c82a945d52d93d2",
+      "replacement_sha256": "46cecf6e2ee7114750b34a4243cf8083d7729b8edcd4fe667c82a945d52d93d2"
+    },
+    {
+      "path": "output/b9b2711d-1074-432b-b523-0fbfd3ca4be3/stage2/formatted-北交所智能选股与自动化交易系统项目文档.html",
+      "replacement": "output/b9b2711d-1074-432b-b523-0fbfd3ca4be3/stage3/北交所智能选股与自动化交易系统_项目文档.docx",
+      "reason": "Completed beautify-only pipeline intermediate; final Word and source Markdown retained",
+      "bytes": 194102,
+      "sha256": "10a5bff513dbe211d2c53be5bea57d0db5694f819e101f45925ca5acb73a3df0",
+      "replacement_sha256": "1d18c6c92ad91f5910a181ce86d5454465eaa0498e06ac0e6322b7bef0ad906e"
+    }
+  ],
+  "archived": "历史学习资料/20261029_文档整理/原项目入口_README.md",
+  "preserved": [
+    "all experiment evidence and curves",
+    "original teacher demo and template",
+    "all unique supplier documents",
+    "user draft Markdown and final Word",
+    "historical copies referenced by report generators"
+  ]
+}
