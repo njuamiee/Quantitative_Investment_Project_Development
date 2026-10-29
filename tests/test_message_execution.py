@@ -31,6 +31,18 @@ def signal(at=T, candidates=None, **kw):
 
 
 class ExecutionTests(unittest.TestCase):
+    def test_float32_quote_noise_does_not_add_a_price_tick(self):
+        b=broker(slippage_bps=0);b.on_tick(tick(price=14.35))
+        order(b,price=14.35)
+        b.on_tick(tick(1,price=14.350000381469727))
+        self.assertEqual(b.fills[0].price,14.35)
+
+    def test_real_slippage_is_not_removed_by_quote_normalization(self):
+        b=broker(slippage_bps=1);b.on_tick(tick(price=14.35))
+        order(b,price=14.35)
+        b.on_tick(tick(1,price=14.350000381469727))
+        self.assertEqual(b.fills,[])
+
     def test_decision_cannot_fill_same_quote(self):
         b = broker(slippage_bps=0)
         b.on_tick(tick())

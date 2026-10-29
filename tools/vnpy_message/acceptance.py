@@ -45,7 +45,7 @@ if not result.wasSuccessful():raise SystemExit(1)
         remote = "/home/vnpy/quant_message/results/" + job + "/" + name
         code = prefix + f"""
 from quant_message.native_validation import run
-r=run('/home/vnpy/quant_message/data/replay_20260923_30',{remote!r},kind={kind!r},latency={latency},slippage={slippage})
+r=run('/home/vnpy/quant_message/data/database_base',{remote!r},kind={kind!r},latency={latency},slippage={slippage})
 """
         result = as_vnpy(code, 240)
         (LOCAL / ("native_" + name + ".log.json")).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")

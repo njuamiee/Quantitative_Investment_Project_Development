@@ -4,6 +4,8 @@
 
 用户在 2026-10-28 明确：目前只需要模拟交易，不接真实交易账户。交付重点是历史 Tick 回放、原生 DeltaOne 引擎验证、前视与成交规则测试，以及未来实时行情的统一接入口。
 
+2026-10-29 起，原生回放已改为 **ClickHouse → vn.py Database → DeltaOne 原始加载器 → 引擎 → 策略回调**。不再用函数替换把Parquet文件直接喂给引擎。历史原始文件只在一次性入库时读取；回放中的每个“当日”仍来自历史数据库，不是当日实时行情。行情订阅仍未接通，vn.py本身不产生行情。
+
 ## 从研究到消息驱动
 
 研究模型先产生带时间戳的股票评分。执行系统依次接收信号、行情、委托回报和成交回报，每一步只使用当时已经收到的数据。发出委托不等于成交，只有成交消息才改变持仓。
@@ -37,8 +39,8 @@ Windows 自建回放测试与 Linux 原生引擎测试是两组不同证据，�
 1. 使用量化账号连接后，通过 `sudo -iu vnpy` 运行 `/home/vnpy/.venv/bin/python`，不切换成 root 运行策略。sudo 密码仅从既有本地配置读取，通过标准输入传递。
 2. 原生运行时为 Python 3.13，vn.py 4.5.0，包含二进制 DeltaOne 和 Level2。项目独立放在 `/home/vnpy/quant_message/`。
 3. 原生 `is_equity('920000.BSE')` 返回 False。`native_validation.enable_bse_equities()` 仅在当前回放进程补充 BSE 分类，不修改商业版二进制，不把北交所伪装成上交所。
-4. 当前 ClickHouse 的 26,805 条 Tick 概览均标为 SSE，BSE 查询为空。尚未判定哪些数据是错误映射，不能批量改库。新回放从校验后的原始北交所文件读取，显式构造 BSE；原库保持不变。
-5. 原生环境缺少 Arrow，项目依赖目录单独安装 `pyarrow==21.0.0`，同时支持同内容的 CSV+gzip。
+4. 初查公共 ClickHouse 的 26,805 条 Tick 概览均标为 SSE，BSE 查询为空。新样本通过已安装驱动的 `save_tick_data` 导入独立库 `quant_message_20261029_base`；扰动样本在 `quant_message_20261029_mutated`。107只股票逐字段校验读回散列、共1,300,881条。公共库不改动，数据库选择只影响回放进程的内存配置。原始SQL调用记录随结果保存。
+5. 原生环境缺少 Arrow，项目依赖目录单独安装 `pyarrow==21.0.0`。Arrow仅用于数据整理和入库，回放函数没有Parquet/CSV行情入口。
 6. 原生报表函数含链式赋值，在 pandas 3 下触发兼容性告警。回放通过独立依赖目录使用 `pandas==2.3.3`，关闭 Copy-on-Write，避免静默使用可能没更新成功的收益表；不降级整个 vn.py 环境。
 7. 分钟数据存在全空占位行和成交额/成交量不符合 OHLC 的行，回放隔离这些记录并生成质量清单。Tick 导入也过滤无有效成交价、缺失字段或买卖盘倒挂行。隔离行数量必须随结果一起阅读。
 8. 在 pandas 2.3.3 下，多股原生资金汇总仍只返回两个日期且各字段为空；因此不能把兼容性修复视为财务报表正确的证明。`portfolio_audit.py` 从成交、每日末笔有效报价和公司行为重建全部交易日，复算手续费、现金、持股和净值，并与执行账本交叉核对。异常原表保留，`native_statistics_valid=false`；正式图表使用 `audited_equity.csv`。单股同费用、无股息口径的重建曲线与原生表完全一致。
@@ -72,7 +74,7 @@ Windows 自建回放测试与 Linux 原生引擎测试是两组不同证据，�
 
 脚本执行简单版的延迟/滑点对照和完整信号版回放，将机器报告、成交单和资金表取回 `training_runs/vnpy_message/native/`。它不会连接交易柜台。原始数据、模型文件、环境、运行日志不推送 Git。
 
-重建输入时依次运行 `tools/vnpy_message/prepare_native_inputs.py` 和 `tools/vnpy_message/stage_inputs.py`，再运行验收脚本。Parquet与CSV压缩文件由同一批行生成，输入散列及公司行为文件随报告交付。项目模型在本地研究环境训练并导出带时间戳的信号；未声称所有机器学习依赖已在商业版Python3.13里安装或不同Python环境的pickle可以互换。
+重建输入时依次运行 `tools/vnpy_message/prepare_native_inputs.py` 和 `tools/vnpy_message/stage_inputs.py`，然后在服务器调用 `python -m quant_message.database_io --data-dir <整理后的输入目录> --database <新的任务专属库> --output <新清单目录>` 一次性入库。库名必须以 `quant_message_20261029_` 开头；非空库拒绝再次导入，避免重复数据。项目模型在本地研究环境训练并导出带时间戳的信号；未声称所有机器学习依赖已在商业版Python3.13里安装或不同Python环境的pickle可以互换。
 
 验收样本：2026-09-23、24、28、29、30日，107只股票，1,300,881条有效Tick。完整信号版产生43条成交回报；简单单股版产生11条。另有2026年第三季度65个交易日的六组分钟代理对照。这些是技术验收，不是新的参数搜索，也未达到或证明此前设定的收益/夏普/卡玛目标。
 
@@ -82,8 +84,16 @@ Windows 自建回放测试与 Linux 原生引擎测试是两组不同证据，�
 
 ```bash
 export PYTHONPATH=/home/vnpy/quant_message/deps:/home/vnpy/quant_message/releases/<release>
-/home/vnpy/.venv/bin/python -m quant_message.native_validation --data-dir /home/vnpy/quant_message/data/replay_20260923_30 --output /home/vnpy/quant_message/results/new_run --kind simple
+/home/vnpy/.venv/bin/python -m quant_message.native_validation --data-dir /home/vnpy/quant_message/data/database_base --output /home/vnpy/quant_message/results/new_run --kind simple
 ```
+
+`--data-dir`在回放时只指向数据库清单、日期、合约集合、已生成信号和公司行为文件；其中没有行情文件。策略既不直接查数据库，也不读取历史Tick文件。`--execution paper`仅切换成自建撮合，仍由同一原生引擎从同一数据库推送Tick，且只允许在BacktestingEngine中使用历史时钟。
+
+严格对照命令：本地运行 `tools/vnpy_message/database_experiments.py`（数据库样本已准备），完成14组回放后运行 `tools/vnpy_message/compare_database.py`。输出到 `vnpy数据库对照_20261029`。包含两种策略、两种撮合、基准/前缀截断/未来扰动，以及旧文件加载与新数据库加载的回归比较。`tick_depth`和`queue_depth`是原生引擎设置，不将其未经文档验证地解释为同等的盘口成交量约束。
+
+未来扰动检查截至2026-09-24的消息序列、信号目标、委托意图、成交和逐日净值；未来行情乘1.15、未来评分反转并改变仓位上限，未来结果必须实际改变。八类模型另测试未成熟标签及未来特征被篡改后拟合输出不变。历史因子来源、真实发布时间和样本股票池的可得性并未由这些检查自动证明。
+
+这次对照修复了自建撮合将float32报价噪声误取整为额外一档价格的问题；先归一化报价的微小误差，再施加真实滑点。原2026-10-28分钟代理报告保留为修复前证据，不能当成本次版本的新运行结果。
 
 ## 实时行情该如何选择
 

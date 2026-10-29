@@ -38,9 +38,12 @@ class PaperBroker:
             if self.journal.exists():
                 raise FileExistsError("new replay journal required; never silently overwrite")
         self.curve = []
+        self.signal_audit = []
         self.cash_flows = 0.
 
     def record(self, kind, payload):
+        if kind == 'signal':
+            self.signal_audit.append(dict(at=self.now.isoformat(), **payload))
         if self.journal:
             with self.journal.open("a", encoding="utf-8") as f:
                 f.write(json.dumps({"kind": kind, "at": self.now, "data": payload},
@@ -173,6 +176,12 @@ class PaperBroker:
                     not askbuy and tick.limit_down and tick.last <= tick.limit_down):
                 continue  # Queue priority at locked limits is unknown: conservative no fill.
             i = self.instruments[tick.symbol]
+            # Recorded float32 quotes such as 14.350000381 are representations
+            # of an exchange tick, not a price one tick higher. Normalize only
+            # tiny quote noise BEFORE applying economic slippage.
+            nearest = round(px / i.tick_size) * i.tick_size
+            if abs(px - nearest) <= min(i.tick_size * .005, abs(px) * 1e-7):
+                px = nearest
             px *= 1 + (1 if askbuy else -1) * self.costs.slippage_bps / 10000
             px = (math.ceil(px / i.tick_size - 1e-9) if askbuy else math.floor(px / i.tick_size + 1e-9)) * i.tick_size
             if (askbuy and px > o.limit + 1e-8) or (not askbuy and px < o.limit - 1e-8):

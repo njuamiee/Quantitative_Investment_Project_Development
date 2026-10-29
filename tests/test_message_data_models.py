@@ -74,12 +74,22 @@ class ModelTests(unittest.TestCase):
 
     def test_future_training_mutation_does_not_change_fit(self):
         f = training_frame(); at = pd.Timestamp("2026-01-10T09:00:00+08:00")
-        a = fit(f, ["x0", "x1"], "ridge", at, 2)
         future = f.label_available_at >= at
-        f.loc[future, ["target", "x0", "x1"]] = 1e9
-        b = fit(f, ["x0", "x1"], "ridge", at, 2)
-        np.testing.assert_array_equal(a.model.coef_, b.model.coef_)
-        self.assertEqual(a.features, b.features)
+        mutated=f.copy();mutated.loc[future,["target","x0","x1"]]=1e9
+        serving=f.iloc[:20];probabilities=serving[[f'hmm_p{i}' for i in range(3)]]
+        for family in FAMILIES:
+            with self.subTest(family=family):
+                a=fit(f,["x0","x1"],family,at,2)
+                b=fit(mutated,["x0","x1"],family,at,2)
+                self.assertEqual(a.features,b.features)
+                np.testing.assert_array_equal(a.predict(serving,at,probabilities),b.predict(serving,at,probabilities))
+
+    def test_past_training_mutation_changes_fit_positive_control(self):
+        f=training_frame();at=pd.Timestamp('2026-01-10T09:00:00+08:00')
+        a=fit(f,['x0','x1'],'ridge',at,2)
+        f.loc[f.label_available_at<at,'target'] *= -1
+        b=fit(f,['x0','x1'],'ridge',at,2)
+        self.assertFalse(np.array_equal(a.model.coef_,b.model.coef_))
 
     def test_future_features_rejected_at_inference(self):
         f = training_frame(); at = pd.Timestamp("2026-01-10T09:00:00+08:00")

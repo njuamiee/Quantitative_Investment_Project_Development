@@ -1,0 +1,3248 @@
+[
+  {
+    "at": "2026-09-23T09:37:04+08:00",
+    "id": "simple:3b105612d72ca3130794e9b5",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T09:38:04+08:00",
+    "id": "simple:54d946e8317da7f1f69cb29f",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6963
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T09:39:04+08:00",
+    "id": "simple:3217fe737fb2d177e1886313",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T09:40:01+08:00",
+    "id": "simple:3422a8f1c4614a98c17acc16",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6968
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T09:41:01+08:00",
+    "id": "simple:c49b6bf210cb2df0df11890a",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T09:44:01+08:00",
+    "id": "simple:4deeb179f833aa277ecabdaf",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6986
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T09:49:13+08:00",
+    "id": "simple:5261e96553fdd1730e4d7a28",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6979
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T09:51:04+08:00",
+    "id": "simple:0c1b236072fe88bb5be19c9b",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T09:56:04+08:00",
+    "id": "simple:e5ac65426c5203af4c436fe1",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T09:58:01+08:00",
+    "id": "simple:4bfae38515226db2e00a16d8",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6971
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:00:01+08:00",
+    "id": "simple:a4011bac910df90bea766b5d",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:05:07+08:00",
+    "id": "simple:1c3163f14f60043e5be8bd72",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:08:07+08:00",
+    "id": "simple:35c3ddebfdb61dccc849a472",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6975
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:11:01+08:00",
+    "id": "simple:10bad63def58fdcfb2420dae",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:16:07+08:00",
+    "id": "simple:a7f11ebb011790815c42d4c7",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:21:10+08:00",
+    "id": "simple:1e67911238a41b263657bbde",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:23:46+08:00",
+    "id": "simple:a1ee939a1da977778c44d17b",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7028
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:24:01+08:00",
+    "id": "simple:5f50e47891f9d48880ba6bf3",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:29:28+08:00",
+    "id": "simple:531d5a67825040afb95033e7",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:30:25+08:00",
+    "id": "simple:c11600ed6a0c3a133648b169",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7019
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:32:40+08:00",
+    "id": "simple:effddd41bc3e91ddf8de95c0",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:36:34+08:00",
+    "id": "simple:2745f0c35710ce5e90144755",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7050
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:37:04+08:00",
+    "id": "simple:e88c63c105388384966bdcd6",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:42:01+08:00",
+    "id": "simple:78cac433e6ceb0bbd2daffcd",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7032
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:45:37+08:00",
+    "id": "simple:c73a9f6ac98686524e489ea6",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:51:22+08:00",
+    "id": "simple:1b94104aad0446c402f1168d",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:53:04+08:00",
+    "id": "simple:f4160bbfda5a408735734356",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7050
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T10:58:16+08:00",
+    "id": "simple:1b03ebf01b4c169b8e354162",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7050
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T11:01:07+08:00",
+    "id": "simple:b75d524e4da9f6e98e8ac699",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T11:06:31+08:00",
+    "id": "simple:2b1970fe97403a7855037cf9",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T11:12:04+08:00",
+    "id": "simple:dfcb82659f352ed4b75683dc",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7050
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T11:17:01+08:00",
+    "id": "simple:033309fc9d8f8bf0f053697f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T11:22:16+08:00",
+    "id": "simple:3bb1faf5690024cd9f2624de",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7041
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T11:27:22+08:00",
+    "id": "simple:e773915061ecb4b32632011e",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:00:01+08:00",
+    "id": "simple:099f83293930e1818aa9eb7a",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7037
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:05:01+08:00",
+    "id": "simple:60754f60d3ff36cb37feb979",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7010
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:10:43+08:00",
+    "id": "simple:243f46f073f79b121fcc1dce",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:15:49+08:00",
+    "id": "simple:d6019dd15cc585a4fe8b0f77",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:23:19+08:00",
+    "id": "simple:badb59de132c7a84909cf710",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:29:04+08:00",
+    "id": "simple:afff83dde21acae8b5e25312",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:30:49+08:00",
+    "id": "simple:32f818d6d3425941a5351baf",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6997
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:36:16+08:00",
+    "id": "simple:654c9e03c768cf51c90241f7",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6988
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:40:19+08:00",
+    "id": "simple:338a310b7db9c20f61ceb919",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:41:19+08:00",
+    "id": "simple:a2a6822df74d7970e354ceba",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6988
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:42:31+08:00",
+    "id": "simple:5b22b336d2b061c4db726fd7",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:43:52+08:00",
+    "id": "simple:ba21c52776a9fbd6bfae45d9",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6988
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:49:25+08:00",
+    "id": "simple:3600c544080cd1347a67b53f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:55:28+08:00",
+    "id": "simple:f4648a756a4adbb772f456b5",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T13:58:10+08:00",
+    "id": "simple:4ccac09947c107a6c7b1ee44",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6962
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:03:10+08:00",
+    "id": "simple:67c811c6a0531d54efc54d73",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7001
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:04:49+08:00",
+    "id": "simple:612e40a44271edad74f0b398",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:10:16+08:00",
+    "id": "simple:1e902d29427044d5a77cc94d",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:11:04+08:00",
+    "id": "simple:08edc25af4575ab9bf2032b1",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6975
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:16:16+08:00",
+    "id": "simple:29af4fc05eea4f496dbcfbb7",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6975
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:18:01+08:00",
+    "id": "simple:727305f1aa1b467faa2797da",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:23:13+08:00",
+    "id": "simple:5a4ac719c960710d5d451ae6",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:28:25+08:00",
+    "id": "simple:d4bc54b805d511d70da553d7",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:33:25+08:00",
+    "id": "simple:759b2ba0fb4a5c2ab0719d82",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:39:16+08:00",
+    "id": "simple:28f8095021cd72f21e6a4ab6",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:45:07+08:00",
+    "id": "simple:bc3c1803ca16056a4514967e",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:49:01+08:00",
+    "id": "simple:af91535f53fb40144c869404",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7015
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:54:04+08:00",
+    "id": "simple:32560469bae5364bfc58c79d",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7006
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-23T14:59:07+08:00",
+    "id": "simple:a5f7ed14b107244f583b8154",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6988
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T09:25:01+08:00",
+    "id": "simple:cc787bf0e2734d99c67271f8",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6993
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T09:30:01+08:00",
+    "id": "simple:1e567b2e7ad6ddd4fc413d0f",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6993
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T09:35:01+08:00",
+    "id": "simple:8a0c8c31b57cc38a7bf2b72b",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T09:40:01+08:00",
+    "id": "simple:13ea055414ab1d1a53b9ef9e",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T09:44:04+08:00",
+    "id": "simple:54fa63bd62095c7dee1f0bd2",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7014
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T09:45:19+08:00",
+    "id": "simple:41f44652782f913e326da646",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T09:46:01+08:00",
+    "id": "simple:b628ead209f08ce3e3e0da7d",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6956
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T09:51:13+08:00",
+    "id": "simple:203850211e5c856ef494e3b9",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6961
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T09:54:07+08:00",
+    "id": "simple:82f6148b4c7b3b178bf6b356",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T09:59:01+08:00",
+    "id": "simple:64d344779f628a769df7938d",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6970
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:04:13+08:00",
+    "id": "simple:f03e8edaa64f33920c9ced6e",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:09:49+08:00",
+    "id": "simple:e73dafaf54454a4f7051551f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:15:01+08:00",
+    "id": "simple:84fffa8b28d475f392695e07",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:19:01+08:00",
+    "id": "simple:91daa54d07f20db584c6abae",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6996
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:24:46+08:00",
+    "id": "simple:8a1cc4eb7fc26e3d029dcd41",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6983
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:27:13+08:00",
+    "id": "simple:ac4f23ded8da935485bff6e2",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:33:01+08:00",
+    "id": "simple:e2ccfa7354dd9dfc36fe39c5",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:35:37+08:00",
+    "id": "simple:ceefe88c09c51f3203d22abb",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7009
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:43:58+08:00",
+    "id": "simple:f11716abac24ca3b0711d341",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7009
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:49:28+08:00",
+    "id": "simple:f620a881fda8bd5724f8c35e",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7000
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:54:01+08:00",
+    "id": "simple:1a307285e1fad61561a6f040",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T10:59:01+08:00",
+    "id": "simple:0187279ae69fe6b7df63b0fe",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T11:00:19+08:00",
+    "id": "simple:68d9a85591ea61548aaa8c57",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7000
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T11:05:43+08:00",
+    "id": "simple:5f80348221ba94cebaf38347",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T11:11:16+08:00",
+    "id": "simple:0bc3c3761d1441b2b7c0098f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T11:17:16+08:00",
+    "id": "simple:cf5fed4933a3d5572ebd84cf",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T11:22:25+08:00",
+    "id": "simple:0456513fb5276393f54c572a",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T11:23:04+08:00",
+    "id": "simple:159fe1d3514dafc299f5bd6f",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7063
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T11:28:04+08:00",
+    "id": "simple:369942eb39e9b1752f557dd1",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7063
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T11:29:04+08:00",
+    "id": "simple:fd04b158fd1bf6b9d55a129c",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:00:01+08:00",
+    "id": "simple:0aebd16c80d0a699db889210",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:06:16+08:00",
+    "id": "simple:0460d069f77f40ba35324e91",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7049
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:11:49+08:00",
+    "id": "simple:75a807ab27bf68c64cfffd94",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7049
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:16:52+08:00",
+    "id": "simple:9275a7a89a97b5e5881e1540",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7054
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:18:31+08:00",
+    "id": "simple:13a0a1e76e07c72dd2e2f007",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:24:40+08:00",
+    "id": "simple:aa0b9d119c9d0ff76af3e9af",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:30:04+08:00",
+    "id": "simple:a30f771b3c6e85d71aeb64de",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:32:07+08:00",
+    "id": "simple:39465e4715ea3a3497815dff",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7049
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:37:19+08:00",
+    "id": "simple:137febcccf71cf199d590b5f",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7036
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:43:04+08:00",
+    "id": "simple:c2be10d8a7d198b61eaaaea4",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7063
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:44:04+08:00",
+    "id": "simple:3251dd784bf25b8284a387cd",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:52:34+08:00",
+    "id": "simple:fc3d038a171198200a1db897",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T13:58:22+08:00",
+    "id": "simple:dc15238b9aeb5def6286b20b",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:07:04+08:00",
+    "id": "simple:821f32a76ee6cfb1facb64cc",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7063
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:11:07+08:00",
+    "id": "simple:3c0fe281ad6b505ce346e103",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:17:01+08:00",
+    "id": "simple:d51479765c925d0d68e82f2f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:19:04+08:00",
+    "id": "simple:580e3b71cd2c9ec81c8bf617",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7058
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:24:04+08:00",
+    "id": "simple:7e55cfdfbee7154c02c6e067",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7036
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:29:31+08:00",
+    "id": "simple:c02288720def70b3d15db592",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7040
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:34:31+08:00",
+    "id": "simple:e03d5caf97bba30230ab9561",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7036
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:35:04+08:00",
+    "id": "simple:24bc2595d083bf76810b577f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:41:37+08:00",
+    "id": "simple:42431ea8f85babc24d3f26a2",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:46:01+08:00",
+    "id": "simple:3e2a21de287c85008bcacdb5",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7036
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:50:01+08:00",
+    "id": "simple:1937a96bcdf81d5c64b4ddab",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:51:01+08:00",
+    "id": "simple:2ff4488dd72461a7f730e6d4",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7018
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:53:01+08:00",
+    "id": "simple:14cd008665672d8df1c99a9e",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T14:55:01+08:00",
+    "id": "simple:5ffda5e573f4cc26adfe9454",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6992
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-24T15:00:01+08:00",
+    "id": "simple:5433fbac159dde2360296828",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6996
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T09:25:02+08:00",
+    "id": "simple:206a9115d4cc8389b1cff222",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7355
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T09:30:02+08:00",
+    "id": "simple:150a8a8ca007227093fbde51",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T09:35:20+08:00",
+    "id": "simple:d18fe92da312763da134b13f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T09:36:02+08:00",
+    "id": "simple:c260e7a0225d2a1f85196536",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7161
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T09:41:08+08:00",
+    "id": "simple:97ef82cd8e0d9453ac407581",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7176
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T09:42:08+08:00",
+    "id": "simple:babd6f86af5080ec892464a5",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T09:47:14+08:00",
+    "id": "simple:5e59786fe450b10f2cf650c3",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T09:50:02+08:00",
+    "id": "simple:056d89a6b2b1ff63083e2e6a",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7157
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T09:55:02+08:00",
+    "id": "simple:2350f25aceb53ba37f5dbc21",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:00:20+08:00",
+    "id": "simple:78e902949b2ba6aa63277798",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:03:08+08:00",
+    "id": "simple:b1d55df6b669c0bced039923",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7219
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:09:05+08:00",
+    "id": "simple:7cb28d7534ee068e1585a167",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:11:35+08:00",
+    "id": "simple:df59d6a01ca283c03e028ebe",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7182
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:17:17+08:00",
+    "id": "simple:68698af35de9ffd962aafae3",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7224
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:18:02+08:00",
+    "id": "simple:8fdb299478b2ad1637e9764d",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:28:05+08:00",
+    "id": "simple:007853dfe4c6d99fc323b07a",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:34:14+08:00",
+    "id": "simple:030ef83ab72966c66b68528e",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:36:05+08:00",
+    "id": "simple:6850d160d78bf9b60c340463",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7224
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:40:17+08:00",
+    "id": "simple:035942058c02338c7b92f58b",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:45:32+08:00",
+    "id": "simple:03f9c0031d3e168f292584c0",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:51:17+08:00",
+    "id": "simple:94a44363669bf075650e1544",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7243
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:57:47+08:00",
+    "id": "simple:19bf1ad0f07c344ab9436b7b",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7243
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T10:58:38+08:00",
+    "id": "simple:50a308a2bd7664bbbb4180ee",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T11:04:05+08:00",
+    "id": "simple:aef305bc085a9aaf7c1d4fad",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T11:09:11+08:00",
+    "id": "simple:8051338a1f791869c7ad0231",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T11:14:02+08:00",
+    "id": "simple:f4b121a5d1c3a60de9b6f4c4",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7238
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T11:18:08+08:00",
+    "id": "simple:5c48410fdc40abe4aad6a1df",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T11:25:59+08:00",
+    "id": "simple:f08e2a544fe88543432fcd10",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:00:59+08:00",
+    "id": "simple:4eb7271f5227c29aa4790a47",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7252
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:04:05+08:00",
+    "id": "simple:04f3e164bed535f834d43c8c",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:09:05+08:00",
+    "id": "simple:db79142c859c2d825d73cfcc",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:15:02+08:00",
+    "id": "simple:e238cb0ddead6898fd4856e3",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:21:26+08:00",
+    "id": "simple:e7d44f0adaca71f6dcf64e2a",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:28:11+08:00",
+    "id": "simple:c0d7d03c67d10e22bef8a425",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:34:17+08:00",
+    "id": "simple:f547945ac7239c42f0818dba",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:38:11+08:00",
+    "id": "simple:4f26ea73e21bb7abe1ee5340",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7291
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:40:08+08:00",
+    "id": "simple:c413c50c92008b5b634b80ef",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:47:14+08:00",
+    "id": "simple:463b79502d187836167d0856",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:52:47+08:00",
+    "id": "simple:5b53640f32429cc75e96c575",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T13:59:17+08:00",
+    "id": "simple:512a51c9c854e8ce45f8e5a7",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:01:20+08:00",
+    "id": "simple:87a03a47ef19137efc9b830e",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7252
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:07:17+08:00",
+    "id": "simple:527a123675cf790729f292d4",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7238
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:14:02+08:00",
+    "id": "simple:20d6aea825a780c3ef83eaab",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:21:32+08:00",
+    "id": "simple:bbf65afab6cae8e8cf4a66d9",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:25:05+08:00",
+    "id": "simple:b8bdd1c61a391640709ead9f",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7219
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:28:05+08:00",
+    "id": "simple:b8c9f3db72fc28b3a60f27cc",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:30:05+08:00",
+    "id": "simple:6b22b09bd250ca28c459688b",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7243
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:35:08+08:00",
+    "id": "simple:a54eff1e0a51f550fd6beaf4",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7252
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:36:02+08:00",
+    "id": "simple:202f5b0ea66f49501e5c5309",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:41:47+08:00",
+    "id": "simple:a622c0a47b0c4708404635b9",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:43:02+08:00",
+    "id": "simple:6a03a4f8ab6a15ded965c5db",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7252
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:47:26+08:00",
+    "id": "simple:1acd9bb8840ef99fe1ffb4ca",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:50:50+08:00",
+    "id": "simple:377efdbc7d70040c4b4e11fe",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7271
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:56:02+08:00",
+    "id": "simple:db634d42f228a26b170eaac6",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7131
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-28T14:59:38+08:00",
+    "id": "simple:a475f4f81a53c18d02134d8f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T09:25:01+08:00",
+    "id": "simple:96a6c78710f48a279e377571",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T09:30:01+08:00",
+    "id": "simple:52d8945a8315bf4ac5e952eb",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T09:31:01+08:00",
+    "id": "simple:8e521cb515bf46ac92029829",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7151
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T09:36:01+08:00",
+    "id": "simple:f2941d35ce2eb8140aec8cc9",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 7034
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T09:41:01+08:00",
+    "id": "simple:8f7eeb48e26b2f91f4ad3c58",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6839
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T09:45:07+08:00",
+    "id": "simple:5527978020cccd82ad8caf3a",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T09:46:01+08:00",
+    "id": "simple:bb649f43ac0cea9ed4235968",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6902
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T09:47:04+08:00",
+    "id": "simple:81cb7f6023e029095b3ac44d",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T09:49:04+08:00",
+    "id": "simple:2ac528bffdce17ede1c290be",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6805
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T09:55:01+08:00",
+    "id": "simple:c098d46d7ca137f43c6a4921",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6703
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T09:58:04+08:00",
+    "id": "simple:76aa2243b3901a03ffd01a30",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:03:22+08:00",
+    "id": "simple:37b392784044af41a136dbf6",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:09:01+08:00",
+    "id": "simple:27ffdc3c3216770a55a5b654",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:14:04+08:00",
+    "id": "simple:425c01e2192df34254f3970f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:16:13+08:00",
+    "id": "simple:6f1e19bf735499dd29eb5e70",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6915
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:19:25+08:00",
+    "id": "simple:901bff2eae7fa42b5e50ce2b",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:24:55+08:00",
+    "id": "simple:87bc1484a7a1fb5b42d99212",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:26:04+08:00",
+    "id": "simple:92838cb13b258383c54c46df",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6911
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:30:19+08:00",
+    "id": "simple:98c7949cca8770e986aef9b9",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:36:19+08:00",
+    "id": "simple:e699e6d116ac22110f5019c9",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:42:10+08:00",
+    "id": "simple:d5dc594510aef7180a0d04a8",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:47:22+08:00",
+    "id": "simple:c0687e31421881a92fb6990f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:51:04+08:00",
+    "id": "simple:4691a4f545991073f627a36f",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6911
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:56:13+08:00",
+    "id": "simple:0508eafe0ec65a3142a8d067",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6911
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T10:58:07+08:00",
+    "id": "simple:a9d8c685e4f3ef39f7362baf",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T11:04:46+08:00",
+    "id": "simple:8c5d29ee066a8b34be4dfd01",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T11:05:07+08:00",
+    "id": "simple:484f2869bcf84eab5aac44e0",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6945
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T11:12:13+08:00",
+    "id": "simple:e671f92b3ed5c133a068a121",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6941
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T11:18:04+08:00",
+    "id": "simple:c3596bfc3925cdf058246a47",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6932
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T11:25:19+08:00",
+    "id": "simple:b6e92aa4290a2d0af8e838ba",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:00:01+08:00",
+    "id": "simple:8f1f7d2121901c6736568bdf",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:03:31+08:00",
+    "id": "simple:43bf614213f1e248baad0a8d",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6924
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:09:13+08:00",
+    "id": "simple:3d0f8586febc592387a2b2f3",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6924
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:14:22+08:00",
+    "id": "simple:51aeb383204ecce17b702d07",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:20:58+08:00",
+    "id": "simple:b4f4a6aeaf280fe5cd0b736c",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:22:04+08:00",
+    "id": "simple:a70175c05c5e937cc88f4c68",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6924
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:27:01+08:00",
+    "id": "simple:45f26422b5d1547b9b473627",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:32:04+08:00",
+    "id": "simple:cf6d8b2dcec4b335730d262f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:38:31+08:00",
+    "id": "simple:7283d0955f871296e56f996f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:43:34+08:00",
+    "id": "simple:96bcc9fe913d12f388bb3261",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:49:04+08:00",
+    "id": "simple:21e8d7f9655fabc740bdb255",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:52:04+08:00",
+    "id": "simple:750175ae023e852bd95c75b3",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6932
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T13:57:04+08:00",
+    "id": "simple:1ecfd29de566a0a89e636bf7",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6924
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:02:16+08:00",
+    "id": "simple:e9a895ba0bca7d4125e24a25",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6928
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:03:13+08:00",
+    "id": "simple:6991cc2af2b2f285a132a172",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:10:25+08:00",
+    "id": "simple:421c60b7121e29dfd0dc7bea",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:12:28+08:00",
+    "id": "simple:15215d9f9be76f6632d060e7",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6907
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:17:28+08:00",
+    "id": "simple:e6f3f96274cad6aac125ee73",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6907
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:19:01+08:00",
+    "id": "simple:7d2f5a52ee2600647dd57855",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:24:01+08:00",
+    "id": "simple:8e01a19de4462df2b84ed1f8",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6919
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:28:04+08:00",
+    "id": "simple:4a789a7b3d316d220c47ef09",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:31:31+08:00",
+    "id": "simple:dfc6d1b09deca402a9bd75ea",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6915
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:35:13+08:00",
+    "id": "simple:9e441b2aac2101f08974313d",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:41:13+08:00",
+    "id": "simple:14f603615bd124f7b474c1d0",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6941
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:44:07+08:00",
+    "id": "simple:e0a295917ebdc10d573e6411",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:48:10+08:00",
+    "id": "simple:7749bce7f7b02658f77601ff",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6954
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:49:16+08:00",
+    "id": "simple:5c9a5ceb8ab33cc0fcfe6e78",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:54:04+08:00",
+    "id": "simple:d363f294675a2dc12dfb0688",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6963
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-29T14:58:01+08:00",
+    "id": "simple:6165b18a06a48d437873385e",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T09:25:00+08:00",
+    "id": "simple:f83a3b1d0540d4647aad4ebc",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T09:30:00+08:00",
+    "id": "simple:f7a9f1f839fc3043f1a1c303",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T09:34:00+08:00",
+    "id": "simple:4a525b6ad8bee4dfd5063f9d",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6913
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T09:39:00+08:00",
+    "id": "simple:3643b95ce09790522d55cc37",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6927
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T09:40:00+08:00",
+    "id": "simple:2bffe52c2c5a4317d6d89d63",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T09:42:03+08:00",
+    "id": "simple:4386622230e727051ceb8cb9",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6875
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T09:48:06+08:00",
+    "id": "simple:fc8f9c9d86d152c902411a72",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T09:54:00+08:00",
+    "id": "simple:20f393ad1a1cd18931f50f38",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6854
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T09:57:09+08:00",
+    "id": "simple:3d1b7ea110a29f92038d41d1",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:02:06+08:00",
+    "id": "simple:bdeb07e9098ef012cd8b4b11",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6850
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:06:15+08:00",
+    "id": "simple:10189bd6784d6c9c75c55f6f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:07:06+08:00",
+    "id": "simple:9dfb4b8943bb05444a18048b",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6875
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:08:00+08:00",
+    "id": "simple:c78310c8988e662dd334a812",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:13:06+08:00",
+    "id": "simple:640df63ad7280e3bd3f31625",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6875
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:14:00+08:00",
+    "id": "simple:4c539e7c2963db352bd06b48",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:17:00+08:00",
+    "id": "simple:4e0a849e4df91bcf48e4b304",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6858
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:21:03+08:00",
+    "id": "simple:a306b2ac42725e91b55ff8a6",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:26:06+08:00",
+    "id": "simple:c9d8bb83322f5183b13b5da4",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:28:24+08:00",
+    "id": "simple:29c9597238aa77f751d9df2b",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6923
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:29:00+08:00",
+    "id": "simple:d272ff22220226efbc3e1f4f",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:32:03+08:00",
+    "id": "simple:c54d9feb49ce76dbb3d10e0a",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6884
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:33:03+08:00",
+    "id": "simple:8896f85aa717fcee1786410c",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:38:06+08:00",
+    "id": "simple:5388099bf26ea5c86a24a700",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:39:09+08:00",
+    "id": "simple:f33cb3d2a9a952c8f18680a6",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6897
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:42:12+08:00",
+    "id": "simple:05e77562e123b6ed7aadd79e",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:47:09+08:00",
+    "id": "simple:daae181c83dbae49771d9aaa",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6918
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:52:27+08:00",
+    "id": "simple:92ed92d6ece2edb4d17169a5",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6884
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T10:57:27+08:00",
+    "id": "simple:e8e3961ae1186a6c37961c20",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T11:03:51+08:00",
+    "id": "simple:ee4e3723da465fab3e35d14b",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6888
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T11:09:00+08:00",
+    "id": "simple:f024b0bfa827fd507c9dc05f",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6884
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T11:14:12+08:00",
+    "id": "simple:d1c5de120ffb4a02a7d00e65",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6875
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T11:19:15+08:00",
+    "id": "simple:b8234f8c5c2f3a580ab86ac2",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T11:23:21+08:00",
+    "id": "simple:a563329685267a665f8bd5a3",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6901
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T11:24:03+08:00",
+    "id": "simple:18c943786317784fe683d703",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:00:00+08:00",
+    "id": "simple:78d18367d61fdca8c856e83a",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6875
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:02:03+08:00",
+    "id": "simple:1fe1d59312b5500acf179709",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:08:27+08:00",
+    "id": "simple:9938d5e7fb8bd0abf9f10f5d",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:14:09+08:00",
+    "id": "simple:38164c7f3597fb9731c1d55d",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:19:21+08:00",
+    "id": "simple:7e9d920f082f4b3732f23235",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:24:30+08:00",
+    "id": "simple:7e6339f5837f184064f7f633",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:30:00+08:00",
+    "id": "simple:98291c00bfbc0d6e5ed1ae89",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:35:06+08:00",
+    "id": "simple:046fd3578bfd6f4f9488979e",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:41:57+08:00",
+    "id": "simple:74e57a51be1ff75d7d0a0224",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:43:00+08:00",
+    "id": "simple:0c2811d38f9d646f3e551944",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6940
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:48:03+08:00",
+    "id": "simple:ee0b792cff03650a692ecadb",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6940
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:49:03+08:00",
+    "id": "simple:c4dec1fc9f16eaed6ac22098",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:52:30+08:00",
+    "id": "simple:ad446e7107f8837b6b78bac4",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6914
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:55:06+08:00",
+    "id": "simple:7ca81c5e16cf3c22cbf99457",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T13:58:15+08:00",
+    "id": "simple:c816905afcb0de345027bb05",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6931
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:07:39+08:00",
+    "id": "simple:4bc23b68ae29596df65c6f6e",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6923
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:16:21+08:00",
+    "id": "simple:edb5479c735b0720b689e71d",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6923
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:19:03+08:00",
+    "id": "simple:afd6546517bb56e4554e3ba0",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:25:09+08:00",
+    "id": "simple:c0dfb2254b856ec8bb815717",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:29:12+08:00",
+    "id": "simple:9cac57ef3cb9a7a653c2ffb0",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6940
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:34:42+08:00",
+    "id": "simple:a27076b7b70a0b0fcafa8a26",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6918
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:37:00+08:00",
+    "id": "simple:23f2a1d81e58e014615a8177",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:42:45+08:00",
+    "id": "simple:78e0caab6092c962ec072572",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:44:24+08:00",
+    "id": "simple:d2b3053ebdd3828b1c34bf98",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6936
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:47:12+08:00",
+    "id": "simple:4f2e7f0a8cb31cbe0522ab89",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:50:45+08:00",
+    "id": "simple:99c7184650aeb9d8376f1f01",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6936
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:51:00+08:00",
+    "id": "simple:491678ec82c83d0fea40204d",
+    "model": "simple",
+    "weights": {},
+    "targets": {
+      "920000.BSE": 0
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T14:55:00+08:00",
+    "id": "simple:2d61dfc0e15baa33e5d12d87",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6901
+    },
+    "research_only": true
+  },
+  {
+    "at": "2026-09-30T15:00:00+08:00",
+    "id": "simple:d3bedf2c73e4c6fb7ab4ad73",
+    "model": "simple",
+    "weights": {
+      "920000.BSE": 0.1
+    },
+    "targets": {
+      "920000.BSE": 6949
+    },
+    "research_only": true
+  }
+]

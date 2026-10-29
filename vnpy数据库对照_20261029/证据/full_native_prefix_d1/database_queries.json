@@ -1,0 +1,3533 @@
+[
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1017,
+    "parameters": {
+      "symbol": "920000",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2136,
+    "parameters": {
+      "symbol": "920002",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2415,
+    "parameters": {
+      "symbol": "920006",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1766,
+    "parameters": {
+      "symbol": "920008",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2474,
+    "parameters": {
+      "symbol": "920010",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3270,
+    "parameters": {
+      "symbol": "920012",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3942,
+    "parameters": {
+      "symbol": "920015",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2495,
+    "parameters": {
+      "symbol": "920019",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 4126,
+    "parameters": {
+      "symbol": "920021",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2394,
+    "parameters": {
+      "symbol": "920026",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3839,
+    "parameters": {
+      "symbol": "920045",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2225,
+    "parameters": {
+      "symbol": "920046",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3232,
+    "parameters": {
+      "symbol": "920047",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3992,
+    "parameters": {
+      "symbol": "920060",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2321,
+    "parameters": {
+      "symbol": "920075",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3344,
+    "parameters": {
+      "symbol": "920077",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1776,
+    "parameters": {
+      "symbol": "920078",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3838,
+    "parameters": {
+      "symbol": "920083",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3840,
+    "parameters": {
+      "symbol": "920087",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3200,
+    "parameters": {
+      "symbol": "920088",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2123,
+    "parameters": {
+      "symbol": "920092",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1288,
+    "parameters": {
+      "symbol": "920098",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2381,
+    "parameters": {
+      "symbol": "920100",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2298,
+    "parameters": {
+      "symbol": "920111",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3206,
+    "parameters": {
+      "symbol": "920116",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1781,
+    "parameters": {
+      "symbol": "920119",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1780,
+    "parameters": {
+      "symbol": "920122",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3063,
+    "parameters": {
+      "symbol": "920125",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2276,
+    "parameters": {
+      "symbol": "920128",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2324,
+    "parameters": {
+      "symbol": "920130",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3397,
+    "parameters": {
+      "symbol": "920139",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1829,
+    "parameters": {
+      "symbol": "920159",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2488,
+    "parameters": {
+      "symbol": "920161",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2200,
+    "parameters": {
+      "symbol": "920169",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1438,
+    "parameters": {
+      "symbol": "920171",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2367,
+    "parameters": {
+      "symbol": "920174",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2970,
+    "parameters": {
+      "symbol": "920178",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3823,
+    "parameters": {
+      "symbol": "920179",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2196,
+    "parameters": {
+      "symbol": "920181",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3464,
+    "parameters": {
+      "symbol": "920185",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3602,
+    "parameters": {
+      "symbol": "920186",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2673,
+    "parameters": {
+      "symbol": "920190",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2855,
+    "parameters": {
+      "symbol": "920193",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2026,
+    "parameters": {
+      "symbol": "920200",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2434,
+    "parameters": {
+      "symbol": "920206",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1982,
+    "parameters": {
+      "symbol": "920207",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1897,
+    "parameters": {
+      "symbol": "920208",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1705,
+    "parameters": {
+      "symbol": "920212",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1802,
+    "parameters": {
+      "symbol": "920220",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1504,
+    "parameters": {
+      "symbol": "920222",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2741,
+    "parameters": {
+      "symbol": "920223",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2118,
+    "parameters": {
+      "symbol": "920225",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2169,
+    "parameters": {
+      "symbol": "920249",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1911,
+    "parameters": {
+      "symbol": "920273",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1787,
+    "parameters": {
+      "symbol": "920284",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1646,
+    "parameters": {
+      "symbol": "920304",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2662,
+    "parameters": {
+      "symbol": "920344",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2359,
+    "parameters": {
+      "symbol": "920357",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3353,
+    "parameters": {
+      "symbol": "920367",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3359,
+    "parameters": {
+      "symbol": "920368",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1816,
+    "parameters": {
+      "symbol": "920371",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2869,
+    "parameters": {
+      "symbol": "920394",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2858,
+    "parameters": {
+      "symbol": "920402",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2878,
+    "parameters": {
+      "symbol": "920403",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3374,
+    "parameters": {
+      "symbol": "920427",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 4240,
+    "parameters": {
+      "symbol": "920438",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3783,
+    "parameters": {
+      "symbol": "920478",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2608,
+    "parameters": {
+      "symbol": "920491",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3022,
+    "parameters": {
+      "symbol": "920493",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3771,
+    "parameters": {
+      "symbol": "920509",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3191,
+    "parameters": {
+      "symbol": "920510",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3313,
+    "parameters": {
+      "symbol": "920522",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3752,
+    "parameters": {
+      "symbol": "920526",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1962,
+    "parameters": {
+      "symbol": "920533",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3730,
+    "parameters": {
+      "symbol": "920571",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2546,
+    "parameters": {
+      "symbol": "920576",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3428,
+    "parameters": {
+      "symbol": "920592",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2699,
+    "parameters": {
+      "symbol": "920593",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2985,
+    "parameters": {
+      "symbol": "920599",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3851,
+    "parameters": {
+      "symbol": "920640",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1650,
+    "parameters": {
+      "symbol": "920662",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2097,
+    "parameters": {
+      "symbol": "920699",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2294,
+    "parameters": {
+      "symbol": "920706",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 4094,
+    "parameters": {
+      "symbol": "920725",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1722,
+    "parameters": {
+      "symbol": "920726",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2757,
+    "parameters": {
+      "symbol": "920735",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2452,
+    "parameters": {
+      "symbol": "920748",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1875,
+    "parameters": {
+      "symbol": "920770",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3092,
+    "parameters": {
+      "symbol": "920786",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2358,
+    "parameters": {
+      "symbol": "920790",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3353,
+    "parameters": {
+      "symbol": "920799",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2986,
+    "parameters": {
+      "symbol": "920808",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3045,
+    "parameters": {
+      "symbol": "920809",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3503,
+    "parameters": {
+      "symbol": "920821",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1719,
+    "parameters": {
+      "symbol": "920826",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1806,
+    "parameters": {
+      "symbol": "920855",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1718,
+    "parameters": {
+      "symbol": "920866",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1682,
+    "parameters": {
+      "symbol": "920876",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3926,
+    "parameters": {
+      "symbol": "920895",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3047,
+    "parameters": {
+      "symbol": "920946",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2321,
+    "parameters": {
+      "symbol": "920953",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 4188,
+    "parameters": {
+      "symbol": "920961",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1461,
+    "parameters": {
+      "symbol": "920964",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1856,
+    "parameters": {
+      "symbol": "920970",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3160,
+    "parameters": {
+      "symbol": "920971",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3191,
+    "parameters": {
+      "symbol": "920981",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3408,
+    "parameters": {
+      "symbol": "920982",
+      "exchange": "BSE",
+      "start": "2026-09-23 00:00:00",
+      "end": "2026-09-23 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 778,
+    "parameters": {
+      "symbol": "920000",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2483,
+    "parameters": {
+      "symbol": "920002",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1971,
+    "parameters": {
+      "symbol": "920006",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1395,
+    "parameters": {
+      "symbol": "920008",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1865,
+    "parameters": {
+      "symbol": "920010",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2606,
+    "parameters": {
+      "symbol": "920012",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 4064,
+    "parameters": {
+      "symbol": "920015",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2161,
+    "parameters": {
+      "symbol": "920019",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3749,
+    "parameters": {
+      "symbol": "920021",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2814,
+    "parameters": {
+      "symbol": "920026",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3417,
+    "parameters": {
+      "symbol": "920045",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1431,
+    "parameters": {
+      "symbol": "920046",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2801,
+    "parameters": {
+      "symbol": "920047",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3623,
+    "parameters": {
+      "symbol": "920060",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2134,
+    "parameters": {
+      "symbol": "920075",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2831,
+    "parameters": {
+      "symbol": "920077",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1622,
+    "parameters": {
+      "symbol": "920078",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3530,
+    "parameters": {
+      "symbol": "920083",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3646,
+    "parameters": {
+      "symbol": "920087",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3018,
+    "parameters": {
+      "symbol": "920088",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1472,
+    "parameters": {
+      "symbol": "920092",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1147,
+    "parameters": {
+      "symbol": "920098",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2216,
+    "parameters": {
+      "symbol": "920100",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2406,
+    "parameters": {
+      "symbol": "920111",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2783,
+    "parameters": {
+      "symbol": "920116",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1786,
+    "parameters": {
+      "symbol": "920119",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1706,
+    "parameters": {
+      "symbol": "920122",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2559,
+    "parameters": {
+      "symbol": "920125",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2202,
+    "parameters": {
+      "symbol": "920128",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2261,
+    "parameters": {
+      "symbol": "920130",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3154,
+    "parameters": {
+      "symbol": "920139",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1672,
+    "parameters": {
+      "symbol": "920159",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2407,
+    "parameters": {
+      "symbol": "920161",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1957,
+    "parameters": {
+      "symbol": "920169",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1166,
+    "parameters": {
+      "symbol": "920171",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1965,
+    "parameters": {
+      "symbol": "920174",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2688,
+    "parameters": {
+      "symbol": "920178",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3192,
+    "parameters": {
+      "symbol": "920179",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1806,
+    "parameters": {
+      "symbol": "920181",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2802,
+    "parameters": {
+      "symbol": "920185",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3315,
+    "parameters": {
+      "symbol": "920186",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2801,
+    "parameters": {
+      "symbol": "920190",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2622,
+    "parameters": {
+      "symbol": "920193",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3599,
+    "parameters": {
+      "symbol": "920200",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2127,
+    "parameters": {
+      "symbol": "920206",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2011,
+    "parameters": {
+      "symbol": "920207",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1672,
+    "parameters": {
+      "symbol": "920208",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1908,
+    "parameters": {
+      "symbol": "920212",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1665,
+    "parameters": {
+      "symbol": "920220",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1793,
+    "parameters": {
+      "symbol": "920222",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2908,
+    "parameters": {
+      "symbol": "920223",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2427,
+    "parameters": {
+      "symbol": "920225",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1666,
+    "parameters": {
+      "symbol": "920249",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1543,
+    "parameters": {
+      "symbol": "920273",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1551,
+    "parameters": {
+      "symbol": "920284",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1315,
+    "parameters": {
+      "symbol": "920304",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2423,
+    "parameters": {
+      "symbol": "920344",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2170,
+    "parameters": {
+      "symbol": "920357",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2922,
+    "parameters": {
+      "symbol": "920367",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3181,
+    "parameters": {
+      "symbol": "920368",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1699,
+    "parameters": {
+      "symbol": "920371",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2463,
+    "parameters": {
+      "symbol": "920394",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2321,
+    "parameters": {
+      "symbol": "920402",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2688,
+    "parameters": {
+      "symbol": "920403",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3522,
+    "parameters": {
+      "symbol": "920427",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 4142,
+    "parameters": {
+      "symbol": "920438",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3015,
+    "parameters": {
+      "symbol": "920478",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2104,
+    "parameters": {
+      "symbol": "920491",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2829,
+    "parameters": {
+      "symbol": "920493",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3975,
+    "parameters": {
+      "symbol": "920509",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3516,
+    "parameters": {
+      "symbol": "920510",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2898,
+    "parameters": {
+      "symbol": "920522",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3310,
+    "parameters": {
+      "symbol": "920526",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1879,
+    "parameters": {
+      "symbol": "920533",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3117,
+    "parameters": {
+      "symbol": "920571",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2636,
+    "parameters": {
+      "symbol": "920576",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3169,
+    "parameters": {
+      "symbol": "920592",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2483,
+    "parameters": {
+      "symbol": "920593",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2614,
+    "parameters": {
+      "symbol": "920599",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3898,
+    "parameters": {
+      "symbol": "920640",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1559,
+    "parameters": {
+      "symbol": "920662",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1916,
+    "parameters": {
+      "symbol": "920699",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2578,
+    "parameters": {
+      "symbol": "920706",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 4108,
+    "parameters": {
+      "symbol": "920725",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1537,
+    "parameters": {
+      "symbol": "920726",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2573,
+    "parameters": {
+      "symbol": "920735",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2586,
+    "parameters": {
+      "symbol": "920748",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1540,
+    "parameters": {
+      "symbol": "920770",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3158,
+    "parameters": {
+      "symbol": "920786",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2079,
+    "parameters": {
+      "symbol": "920790",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3028,
+    "parameters": {
+      "symbol": "920799",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2678,
+    "parameters": {
+      "symbol": "920808",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2810,
+    "parameters": {
+      "symbol": "920809",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3622,
+    "parameters": {
+      "symbol": "920821",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1253,
+    "parameters": {
+      "symbol": "920826",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1321,
+    "parameters": {
+      "symbol": "920855",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1461,
+    "parameters": {
+      "symbol": "920866",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1361,
+    "parameters": {
+      "symbol": "920876",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3885,
+    "parameters": {
+      "symbol": "920895",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2716,
+    "parameters": {
+      "symbol": "920946",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1630,
+    "parameters": {
+      "symbol": "920953",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 4137,
+    "parameters": {
+      "symbol": "920961",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1316,
+    "parameters": {
+      "symbol": "920964",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 1388,
+    "parameters": {
+      "symbol": "920970",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3358,
+    "parameters": {
+      "symbol": "920971",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 2915,
+    "parameters": {
+      "symbol": "920981",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 3050,
+    "parameters": {
+      "symbol": "920982",
+      "exchange": "BSE",
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-09-24 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920000",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920002",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920006",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920008",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920010",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920012",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920015",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920019",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920021",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920026",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920045",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920046",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920047",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920060",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920075",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920077",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920078",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920083",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920087",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920088",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920092",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920098",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920100",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920111",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920116",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920119",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920122",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920125",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920128",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920130",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920139",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920159",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920161",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920169",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920171",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920174",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920178",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920179",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920181",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920185",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920186",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920190",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920193",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920200",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920206",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920207",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920208",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920212",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920220",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920222",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920223",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920225",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920249",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920273",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920284",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920304",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920344",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920357",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920367",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920368",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920371",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920394",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920402",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920403",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920427",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920438",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920478",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920491",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920493",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920509",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920510",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920522",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920526",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920533",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920571",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920576",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920592",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920593",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920599",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920640",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920662",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920699",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920706",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920725",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920726",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920735",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920748",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920770",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920786",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920790",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920799",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920808",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920809",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920821",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920826",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920855",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920866",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920876",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920895",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920946",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920953",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920961",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920964",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920970",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920971",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920981",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  },
+  {
+    "query": "\nSELECT * FROM tick_data FINAL\nWHERE symbol = %(symbol)s\nAND exchange = %(exchange)s\nAND datetime >= toDateTime64(%(start)s, 3, %(timezone)s)\nAND datetime <= toDateTime64(%(end)s, 3, %(timezone)s)\nORDER BY datetime ASC\n",
+    "rows": 0,
+    "parameters": {
+      "symbol": "920982",
+      "exchange": "BSE",
+      "start": "2026-09-25 00:00:00",
+      "end": "2026-09-25 23:59:59",
+      "timezone": "Etc/UTC"
+    }
+  }
+]

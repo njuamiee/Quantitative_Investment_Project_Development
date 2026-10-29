@@ -1,0 +1,198 @@
+{
+  "prefix_checks": [
+    {
+      "strategy": "simple",
+      "engine": "native",
+      "experiment": "prefix",
+      "checks": {
+        "tick_audit.json": true,
+        "signal_audit.json": true,
+        "orders.csv": true,
+        "fills.csv": true,
+        "audited_equity.csv": true
+      },
+      "passed": true
+    },
+    {
+      "strategy": "simple",
+      "engine": "native",
+      "experiment": "mutated",
+      "checks": {
+        "tick_audit.json": true,
+        "signal_audit.json": true,
+        "orders.csv": true,
+        "fills.csv": true,
+        "audited_equity.csv": true,
+        "future_input_actually_changed": true,
+        "future_outcome_actually_changed": true
+      },
+      "passed": true
+    },
+    {
+      "strategy": "simple",
+      "engine": "paper",
+      "experiment": "prefix",
+      "checks": {
+        "tick_audit.json": true,
+        "signal_audit.json": true,
+        "orders.csv": true,
+        "fills.csv": true,
+        "audited_equity.csv": true
+      },
+      "passed": true
+    },
+    {
+      "strategy": "simple",
+      "engine": "paper",
+      "experiment": "mutated",
+      "checks": {
+        "tick_audit.json": true,
+        "signal_audit.json": true,
+        "orders.csv": true,
+        "fills.csv": true,
+        "audited_equity.csv": true,
+        "future_input_actually_changed": true,
+        "future_outcome_actually_changed": true
+      },
+      "passed": true
+    },
+    {
+      "strategy": "full",
+      "engine": "native",
+      "experiment": "prefix",
+      "checks": {
+        "tick_audit.json": true,
+        "signal_audit.json": true,
+        "orders.csv": true,
+        "fills.csv": true,
+        "audited_equity.csv": true
+      },
+      "passed": true
+    },
+    {
+      "strategy": "full",
+      "engine": "native",
+      "experiment": "mutated",
+      "checks": {
+        "tick_audit.json": true,
+        "signal_audit.json": true,
+        "orders.csv": true,
+        "fills.csv": true,
+        "audited_equity.csv": true,
+        "future_input_actually_changed": true,
+        "future_outcome_actually_changed": true
+      },
+      "passed": true
+    },
+    {
+      "strategy": "full",
+      "engine": "paper",
+      "experiment": "prefix",
+      "checks": {
+        "tick_audit.json": true,
+        "signal_audit.json": true,
+        "orders.csv": true,
+        "fills.csv": true,
+        "audited_equity.csv": true
+      },
+      "passed": true
+    },
+    {
+      "strategy": "full",
+      "engine": "paper",
+      "experiment": "mutated",
+      "checks": {
+        "tick_audit.json": true,
+        "signal_audit.json": true,
+        "orders.csv": true,
+        "fills.csv": true,
+        "audited_equity.csv": true,
+        "future_input_actually_changed": true,
+        "future_outcome_actually_changed": true
+      },
+      "passed": true
+    }
+  ],
+  "loader_migration": [
+    {
+      "strategy": "simple",
+      "checks": {
+        "orders.csv": true,
+        "fills.csv": true,
+        "audited_equity.csv": true
+      },
+      "passed": true
+    },
+    {
+      "strategy": "full",
+      "checks": {
+        "orders.csv": true,
+        "fills.csv": true,
+        "audited_equity.csv": true
+      },
+      "passed": true
+    }
+  ],
+  "engine_comparison": [
+    {
+      "strategy": "simple",
+      "identical_tick_stream": true,
+      "identical_strategy_parameters": true,
+      "native_fills": 11,
+      "paper_fills": 112,
+      "first_fill_difference": {
+        "index": 0,
+        "native": {
+          "symbol": "920000.BSE",
+          "side": "buy",
+          "price": 14.350000381469728,
+          "quantity": 6937,
+          "at": "2026-09-23 09:38:07+08:00"
+        },
+        "paper": {
+          "symbol": "920000.BSE",
+          "side": "buy",
+          "price": 14.35,
+          "quantity": 122,
+          "at": "2026-09-23 09:38:10+08:00"
+        }
+      },
+      "native_return_pct": -0.6681261711271369,
+      "paper_return_pct": -0.4769341257842341
+    },
+    {
+      "strategy": "full",
+      "identical_tick_stream": true,
+      "identical_strategy_parameters": true,
+      "native_fills": 43,
+      "paper_fills": 276,
+      "first_fill_difference": {
+        "index": 0,
+        "native": {
+          "symbol": "920077.BSE",
+          "side": "buy",
+          "price": 13.039999961853027,
+          "quantity": 7639,
+          "at": "2026-09-23 09:30:04+08:00"
+        },
+        "paper": {
+          "symbol": "920077.BSE",
+          "side": "buy",
+          "price": 13.04,
+          "quantity": 6559,
+          "at": "2026-09-23 09:30:04+08:00"
+        }
+      },
+      "native_return_pct": -2.655457387927762,
+      "paper_return_pct": -2.536468085726362
+    }
+  ],
+  "all_prefix_passed": true,
+  "all_loader_migration_passed": true,
+  "limits": [
+    "fixed 107-symbol retrospective sample, not a point-in-time universe certification",
+    "historical feature/signal release times are assumptions; source factor production not rerun",
+    "original optimized batch strategy is not fully reproduced by this five-session execution test",
+    "realtime feed remains unconnected; no real orders"
+  ]
+}

@@ -27,11 +27,13 @@ def create_strategy_class(base):
         account_id = ""
         risk_json = "{}"
         slippage_bps = 5.
+        replay_latency_ms = 100
+        replay_participation = 1.
         naive_gateway_timezone = "Asia/Shanghai"
         equity = 0.
         error = ""
         parameters = ["mode", "strategy_kind", "capital", "signal_path", "corporate_action_path", "state_path", "account_id",
-                      "risk_json", "slippage_bps", "naive_gateway_timezone"]
+                      "risk_json", "slippage_bps", "naive_gateway_timezone", "replay_latency_ms", "replay_participation"]
         variables = ["equity", "error"]
 
         def __init__(self, name, engine, vt_symbols, parameters):
@@ -45,9 +47,10 @@ def create_strategy_class(base):
             self.timer_engine = None
             self.signal_file_version = None
             self.signal_checked_second = None
+            self.tick_audit = {}
 
         def on_init(self):
-            if self.mode not in ("paper", "live", "backtest") or self.strategy_kind not in ("simple", "full"):
+            if self.mode not in ("paper", "live", "backtest", "paper_backtest") or self.strategy_kind not in ("simple", "full"):
                 raise ValueError("invalid strategy mode")
             instruments = [Instrument(s, step=1 if s.endswith(".BSE") else 100) for s in self.vt_symbols]
             if self.strategy_kind == "full":
@@ -58,9 +61,14 @@ def create_strategy_class(base):
                     raise RuntimeError("historical research packets are forbidden in live mode")
             if self.mode == "paper":
                 self.port = PaperBroker(instruments, self.capital, Costs(slippage_bps=self.slippage_bps))
+            elif self.mode == 'paper_backtest':
+                from .history import PaperReplayBroker
+                self.port = PaperReplayBroker(self, instruments, self.capital,
+                    Costs(slippage_bps=self.slippage_bps,latency_ms=self.replay_latency_ms,participation=self.replay_participation))
             elif self.mode == "backtest":
                 from .live import NativeReplayBroker
-                self.port = NativeReplayBroker(self, instruments, self.capital, Costs(slippage_bps=self.slippage_bps))
+                self.port = NativeReplayBroker(self, instruments, self.capital, Costs(slippage_bps=self.slippage_bps,
+                    latency_ms=self.replay_latency_ms,participation=self.replay_participation))
             else:
                 from .live import LiveBroker
                 self.port = LiveBroker(self, instruments, self.state_path, self.account_id, self.capital)
@@ -124,7 +132,7 @@ def create_strategy_class(base):
                         raise ValueError("unverified gateway timezone")
                     at = at.replace(tzinfo=SH)
                 at = stamp(at)
-                received = at if self.mode == "backtest" else datetime.now(SH)
+                received = at if self.mode in ("backtest", "paper_backtest") else datetime.now(SH)
                 if at > received:
                     raise ValueError("exchange timestamp is ahead of receiver clock")
                 key = (tick.vt_symbol, at.date())
@@ -138,6 +146,12 @@ def create_strategy_class(base):
                 t = Tick(tick.vt_symbol, at, received, float(tick.last_price), float(tick.bid_price_1),
                     float(tick.ask_price_1), float(tick.bid_volume_1), float(tick.ask_volume_1), increment,
                     identity, float(tick.limit_up), float(tick.limit_down))
+                if self.mode in ('backtest','paper_backtest'):
+                    from .database_io import tick_row
+                    day=at.date().isoformat()
+                    bucket=self.tick_audit.setdefault(day,dict(count=0,hash=hashlib.sha256()))
+                    bucket['count']+=1
+                    bucket['hash'].update((json.dumps(tick_row(tick),separators=(',',':'))+'\n').encode())
                 # A file update is read as a whole atomic replacement, never while
                 # training is writing it. Availability checks still gate each packet.
                 if self.strategy_kind == "full":

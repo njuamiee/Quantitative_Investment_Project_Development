@@ -13,6 +13,7 @@ from pathlib import Path
 
 from .domain import Costs, Fill, Instrument, Order, Position, SH, stamp
 from .paper import PaperBroker
+from .history import ReplayActions
 
 
 def close_failed_start(function):
@@ -254,7 +255,7 @@ class LiveBroker(PaperBroker):
         self.lock.close()
 
 
-class NativeReplayBroker(LiveBroker):
+class NativeReplayBroker(ReplayActions,LiveBroker):
     """Real DeltaOne backtesting orders, with the same risk/reconciliation code.
 
     This port is only accepted with the installed BacktestingEngine type.
@@ -270,20 +271,7 @@ class NativeReplayBroker(LiveBroker):
         self.terminal = {}
         self.acknowledged = {}
         self.failed = False
-        path = getattr(owner, "corporate_action_path", "")
-        actions = json.loads(Path(path).read_text()) if path else []
-        self.replay_actions = sorted([a for a in actions if a['symbol'] in self.instruments],
-                                     key=lambda a: a['date'])
-        if any(a['ratio'] != 1 for a in self.replay_actions):
-            raise RuntimeError("native share-split position reconciliation is not implemented")
-
-    def advance(self, now):
-        super().advance(now)
-        # Remove before dispatch because corporate_action calls advance again.
-        while self.replay_actions and self.replay_actions[0]['date'] <= self.day.isoformat():
-            a = self.replay_actions.pop(0)
-            self.corporate_action(a['date'] + ':' + a['symbol'], a['symbol'], self.now,
-                                  a['dividend'], a['ratio'], credit_cash=False)
+        self.configure_actions(owner)
 
     def persist(self, clean):
         pass
